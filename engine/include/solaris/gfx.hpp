@@ -71,10 +71,20 @@ struct PoliticalMap {
     int pixelAt(float lat, float lon) const;
 };
 
+struct MediaCredit {
+    std::string title, author, license, source, note, noteEs;
+};
+
 struct Gfx {
+    std::map<std::string, MediaCredit> mediaCredits;
     std::map<std::string, Texture> media;
     GLuint mediaFor(const std::string& key) const {
         auto it = media.find(key); return it == media.end() ? 0 : it->second.id;
+    }
+    std::string nationMedia(const Nation& n, const Content& content) const {
+        if (!n.isCityState) for (const auto& t : content.nationTemplates)
+            if (t.name == n.name && mediaFor("nation_"+t.id)) return "nation_"+t.id;
+        return "culture_"+n.culture;
     }
     Camera cam;
     Texture earth;

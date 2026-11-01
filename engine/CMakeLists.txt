@@ -47,10 +47,11 @@ set_target_properties(SolarisHistory PROPERTIES
 )
 
 # Copia el contenido junto al ejecutable en la carpeta de salida
-add_custom_command(TARGET SolarisHistory POST_BUILD
+add_custom_target(SolarisContent ALL
     COMMAND ${CMAKE_COMMAND} -E copy_directory
             "${CMAKE_SOURCE_DIR}/../content"
             "$<TARGET_FILE_DIR:SolarisHistory>/content"
+    DEPENDS SolarisHistory
     COMMENT "Copiando contenido junto al ejecutable"
 )
 

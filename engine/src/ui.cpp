@@ -34,16 +34,18 @@ void UI::end() {
 
 void UI::tooltipAtMouse() {
     if (tooltip.empty()) return;
-    float scale = 0.33f;
-    float tw = textW(tooltip, scale) + 18;
-    float th = 26;
-    float x = mx + 16, y = my + 18;
-    if (x + tw > w - 8) x = w - tw - 8;
-    if (y + th > h - 8) y = my - th - 12;
-    rect({x + 2, y + 3, tw, th}, Color(0, 0, 0, 110));
-    rect({x, y, tw, th}, Color(26, 25, 22, 248));
-    outline({x, y, tw, th}, pal::border, 1);
-    text(tooltip, x + 9, y + 5, scale, pal::text);
+    float scale=0.30f;
+    float tw=std::min(440.0f,textW(tooltip,scale)+18);
+    auto lines=wrap(tooltip,tw-18,scale);
+    float lh=G->font.lineHeight(scale)+2;
+    float th=std::min((int)lines.size(),10)*lh+18;
+    float x=std::clamp(mx+16,8.0f,std::max(8.0f,w-tw-8));
+    float y=my+18;
+    if(y+th>h-8) y=std::max(8.0f,my-th-12);
+    rect({x+2,y+3,tw,th},Color(0,0,0,110));
+    rect({x,y,tw,th},Color(26,25,22,248));
+    outline({x,y,tw,th},pal::border,1);
+    textBlock(tooltip,x+9,y+8,tw-18,scale,pal::text,2,10);
 }
 
 bool UI::overUI(float x, float y) const {

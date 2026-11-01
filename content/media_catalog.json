@@ -85,7 +85,9 @@
  },
  {
   "id": "resource_papiro",
-  "article": "Papyrus"
+  "article": "Papyrus",
+  "author_override": "Unknown ancient author; scan from 社会历史博物馆 (ISBN 7-5347-1397-8)",
+  "author_source": "https://commons.wikimedia.org/wiki/File:Papyrus.jpg"
  },
  {
   "id": "resource_lapislazuli",
@@ -94,336 +96,543 @@
  {
   "id": "culture_egipcio",
   "article": "Naqada culture",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Double Bird-Head Palette & Fish Palette, Naqada II.jpg",
+  "note_es": "Paletas ceremoniales de Naqada II; IV milenio a. C.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_nubio",
   "article": "A-Group culture",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "A-Group Bowl.jpg",
+  "note_es": "Ceramica nubia del Grupo A; IV-III milenio a. C.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_sumerio",
   "article": "Sumer",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Blau Monuments (front).jpg",
+  "note_es": "Monumentos Blau de la Mesopotamia temprana; finales del IV milenio a. C.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_semita",
   "article": "Ancient Semitic-speaking peoples",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Shamash-sun-symbol.svg",
+  "note_es": "Simbolo religioso mesopotamico de Shamash, de epoca posterior; no es bandera de todos los pueblos semitas.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_elamita",
   "article": "Elam",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Goatfishes Louvre Sb19.jpg",
+  "note_es": "Motivo de una pieza elamita conservada en el Louvre; ilustracion arqueologica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_anatolio",
   "article": "Çatalhöyük",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Seated Woman of Çatalhöyük on black background.jpg",
+  "note_es": "Estatuilla neolitica de Catalhoyuk; ilustracion arqueologica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_egeo",
   "article": "Aegean civilization",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Labrys-symbol.svg",
+  "note_es": "Representacion de la doble hacha, asociada a la Creta minoica posterior; no es una bandera neolitica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_balcanico",
   "article": "Vinča culture",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Vinca clay figure 02.jpg",
+  "note_es": "Figura de arcilla de la cultura Vinca; ilustracion arqueologica.",
+  "kind": "historical_illustration",
+  "author_override": "Michel wal",
+  "author_source": "https://commons.wikimedia.org/wiki/File:Vinca_clay_figure_02.jpg"
  },
  {
   "id": "culture_danubiano",
   "article": "Linear Pottery culture",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "020210808 142018 Bowl, Linear Band Pottery culture, Wieliczka.jpg",
+  "note_es": "Cuenco de la cultura de ceramica de bandas; ilustracion arqueologica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_megalitico",
   "article": "Megalith",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Triple-Spiral-4turns green transparent.svg",
+  "note_es": "Representacion moderna de una triple espiral de tradicion megalitica; no es bandera nacional.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_nordico",
   "article": "Funnelbeaker culture",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "0854 Ein Krug aus Bronocice, 3.550 v. Chr..JPG",
+  "note_es": "Vasija de Bronocice, cultura de vasos de embudo, hacia 3550 a. C.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_estepario",
   "article": "Yamnaya culture",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Yamnaya pottery of the Azov-Black Sea steppes.png",
+  "note_es": "Ceramica de la cultura Yamnaya; ilustracion arqueologica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_caucasico",
   "article": "Kura–Araxes culture",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Saxsı küp, Təpəyatağı.JPG",
+  "note_es": "Vasija de la tradicion Kura-Araxes; ilustracion arqueologica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_iranio",
   "article": "Tepe Sialk",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Céramiques de Tepe Sialk - musée du Louvre.jpg",
+  "note_es": "Ceramica de Tepe Sialk conservada en el Louvre; ilustracion arqueologica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_bereber",
   "article": "Berbers",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Bijoux traditionnels de Kabylie.JPG",
+  "note_es": "Joyeria tradicional de Cabilia, de epoca posterior; no es bandera prehistorica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_arabigo",
   "article": "Pre-Islamic Arabia",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Anthropomorphic stele at National Museum of Korea 01.jpg",
+  "note_es": "Estela antropomorfa de Arabia; ilustracion arqueologica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_italico",
   "article": "Rinaldone culture",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Ascia rinaldone.png",
+  "note_es": "Hacha de la cultura Rinaldone del Calcolitico italiano; ilustracion arqueologica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_iberico",
   "article": "Los Millares",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Cuenco oculado-Los Millares.JPG",
+  "note_es": "Cuenco con decoracion oculada de Los Millares; ilustracion arqueologica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_sardino",
   "article": "Ozieri culture",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Dea madre 1.JPG",
+  "note_es": "Estatuilla de diosa madre de la tradicion Ozieri; ilustracion arqueologica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "culture_chipriota",
   "article": "Prehistoric Cyprus",
-  "note": "Cultural illustration, not an attested flag in 3300 BC."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Bronce age idol.jpg",
+  "note_es": "Idolo chipriota de la Edad del Bronce, posterior al inicio de la partida.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_egipto",
   "article": "Narmer Palette",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Double crown (white crown on top).svg",
+  "note_es": "Doble corona del Alto y Bajo Egipto, emblema de la realeza unificada; posterior a 3300 a. C.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_sumeria",
   "article": "Sumer",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Bull's head ornament for a lyre MET DP260070.jpg",
+  "note_es": "Cabeza de toro de una lira sumeria del III milenio a. C.; motivo representativo, no bandera.",
+  "kind": "historical_illustration",
+  "author_override": "Metropolitan Museum of Art (CC0 photograph); ancient maker unknown",
+  "author_source": "https://commons.wikimedia.org/wiki/File:Bull%27s_head_ornament_for_a_lyre_MET_DP260070.jpg"
  },
  {
   "id": "nation_acad",
   "article": "Akkadian Empire",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Adda Seal Akkadian Empire 2300 BC.jpg",
+  "note_es": "Sello de Adda, periodo acadio, hacia 2300 a. C.; no es bandera nacional.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_elam",
   "article": "Elam",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Goatfishes Louvre Sb19.jpg",
+  "note_es": "Motivo de una pieza elamita conservada en el Louvre; ilustracion arqueologica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_siria",
   "article": "Ebla",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological illustration from a later period; not a national flag in 3300 BC.",
+  "file": "Ibbit-Lim.png",
+  "note_es": "Estatua de Ibbit-Lim, rey de Ebla, hacia el siglo XX a. C.; no es bandera nacional.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_canaan",
   "article": "Canaan",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "The Ghassulian star.jpg",
+  "note_es": "Estrella de un mural ghassuliense del Calcolitico levantino; motivo arqueologico, no bandera.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_fenicia",
   "article": "Phoenicia",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Tanit Symbol.svg",
+  "note_es": "Simbolo religioso fenicio-punico de Tanit, de epoca posterior; no es bandera de toda Fenicia.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_asiria",
   "article": "Assyria",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Ashur symbol Nimrud.png",
+  "note_es": "Simbolo del dios Assur documentado en Nimrud, de epoca asiria posterior.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_babilonia",
   "article": "Babylonia",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Shamash-sun-symbol.svg",
+  "note_es": "Simbolo religioso mesopotamico de Shamash; no es bandera nacional babilonica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_hatti",
   "article": "Hattians",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Hittite sun disk.svg",
+  "note_es": "Representacion del disco solar anatolio de la Edad del Bronce.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_arzawa",
   "article": "Arzawa",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Hittite sun disk.svg",
+  "note_es": "Motivo anatolio de la Edad del Bronce compartido como ilustracion regional; no es un escudo documentado de Arzawa.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_wilusa",
   "article": "Wilusa",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Hittite sun disk.svg",
+  "note_es": "Motivo anatolio de la Edad del Bronce compartido como ilustracion regional; no es un escudo documentado de Wilusa.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_creta",
   "article": "Minoan civilization",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Labrys-symbol.svg",
+  "note_es": "Representacion de la doble hacha, asociada a la Creta minoica posterior; no es una bandera neolitica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_micenas",
   "article": "Mycenaean Greece",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Lions-Gate-Mycenae.jpg",
+  "note_es": "Relieve de los leones de Micenas, siglo XIII a. C.; motivo monumental, no bandera.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_atenas",
   "article": "Classical Athens",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Owl of Athena and Patron (from ancient coin).png",
+  "note_es": "Lechuza de Atenea tomada de una moneda antigua; motivo numismatico ateniense.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_yamnaya",
   "article": "Yamnaya culture",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Yamnaya pottery of the Azov-Black Sea steppes.png",
+  "note_es": "Ceramica de la cultura Yamnaya; ilustracion arqueologica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_tracia",
   "article": "Thrace",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological illustration from a later period; not a national flag in 3300 BC.",
+  "file": "Panagyurishte Treasure, Rhyton.jpg",
+  "note_es": "Tesoro de Panagyurishte, siglos IV-III a. C.; ilustracion arqueologica de la Tracia antigua.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_dacia",
   "article": "Dacia",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Dacian symbols.png",
+  "note_es": "Simbolos dacios documentados en fuentes posteriores; no representan un estado de 3300 a. C.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_vincha",
   "article": "Vinča culture",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Vinca clay figure 02.jpg",
+  "note_es": "Figura de arcilla de la cultura Vinca; ilustracion arqueologica.",
+  "kind": "historical_illustration",
+  "author_override": "Michel wal",
+  "author_source": "https://commons.wikimedia.org/wiki/File:Vinca_clay_figure_02.jpg"
  },
  {
   "id": "nation_iberia",
   "article": "Iberians",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Lady of Elche at the National Arquaeological Museum, Madrid (Spain).jpg",
+  "note_es": "Dama de Elche, escultura iberica de epoca posterior; no es bandera nacional.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_tartessos",
   "article": "Tartessos",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological illustration from a later period; not a national flag in 3300 BC.",
+  "file": "Tesoro del Carambolo - Museo Arqueológico de Sevilla.jpg",
+  "note_es": "Tesoro del Carambolo, siglos VII-V a. C.; ilustracion arqueologica, no bandera.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_lusitania",
   "article": "Lusitanians",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological illustration from a later period; not a national flag in 3300 BC.",
+  "file": "Granite statue of a Lusitanian Warrior, dating from the 1st century AD, National Archaeology Museum, Lisbon (12691953623).jpg",
+  "note_es": "Estatua de guerrero lusitano del siglo I d. C.; motivo arqueologico, no bandera.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_etruria",
   "article": "Etruscan civilization",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Urna cineraria biconica con coperchio a elmo crestato, da pozzo cinerario a monterozzi, loc. forse fontanaccia.jpg",
+  "note_es": "Urna cineraria etrusca con tapa en forma de casco; ilustracion arqueologica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_sicanos",
   "article": "Sicani",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Triskelion.svg",
+  "note_es": "Trisquel, motivo regional de Sicilia documentado en epocas posteriores; no es bandera de los sicanos.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_sardena",
   "article": "Nuragic civilization",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Dea madre 1.JPG",
+  "note_es": "Estatuilla de diosa madre de la tradicion Ozieri; ilustracion arqueologica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_alashiya",
   "article": "Alashiya",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Amarna letter. \"Message from the king of Alashiya, your brother\" to the Pharaoh of Egypt, possibly Akhenaten. C. 1350 BCE. From Tell e-Amarna, Egypt. British Museum.jpg",
+  "note_es": "Carta de Amarna del rey de Alashiya, hacia 1350 a. C.; documento arqueologico, no bandera.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_libia",
   "article": "Ancient Libya",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Bijoux traditionnels de Kabylie.JPG",
+  "note_es": "Joyeria tradicional de Cabilia, de epoca posterior; no es bandera prehistorica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_numidia",
   "article": "Numidia",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Coin, Masinissa.png",
+  "note_es": "Moneda del reino numida de Masinisa; motivo numismatico posterior.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_mauretania",
   "article": "Mauretania",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Portrait Juba II Louvre Ma1886.jpg",
+  "note_es": "Retrato del rey Juba II de Mauretania, siglo I a. C.; no es bandera.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_nubia",
   "article": "Nubia",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Qustul Incense Burner, Qustal, Nubia, Cemetery L, tomb 24, A-Group, 3200-3000 BC, limestone - Oriental Institute Museum, University of Chicago - DSC08007.JPG",
+  "note_es": "Incensario de Qustul, Grupo A nubio, hacia 3200-3000 a. C.; ilustracion arqueologica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_kush",
   "article": "Kingdom of Kush",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Relief of Arikankharer slaying his enemies (Worcester Art Mus 1922.145) 01.jpg",
+  "note_es": "Relieve real kushita de Arikankharer, posterior al inicio de la partida; no es bandera.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_arabia",
   "article": "Pre-Islamic Arabia",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Anthropomorphic stele at National Museum of Korea 01.jpg",
+  "note_es": "Estela antropomorfa de Arabia; ilustracion arqueologica.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_dilmun",
   "article": "Dilmun",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Dilmun stamp seal with hunters and goats, rectangular pen, ca early 2nd millennium BC.jpg",
+  "note_es": "Sello de Dilmun con cazadores y cabras, comienzos del II milenio a. C.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_saba",
   "article": "Sabaeans",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Sabaen kingdom’s coat of arms (cropped).jpg",
+  "note_es": "Emblema grabado asociado al reino sabeo; pieza arqueologica de epoca posterior.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_urartu",
   "article": "Urartu",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Armenian - Head of a Bull - Walters 54791 - Three Quarter.jpg",
+  "note_es": "Cabeza de toro urartiana; motivo arqueologico del I milenio a. C.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_media",
   "article": "Medes",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Gold Rhyton in the form of a Ram's Head - Reza Abbasi Museum - Tehran, Iran.jpg",
+  "note_es": "Riton iranio con cabeza de carnero; ilustracion regional, no bandera documentada de los medos.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_persia",
   "article": "Achaemenid Empire",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Faravahar.svg",
+  "note_es": "Faravahar, simbolo religioso iranio de epoca posterior; no es bandera de 3300 a. C.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_britania",
   "article": "Celtic Britons",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Triple-Spiral-4turns green transparent.svg",
+  "note_es": "Motivo de triple espiral utilizado como identificacion cultural; no es bandera de los britanos.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_caledonia",
   "article": "Caledonians",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Triple-Spiral-4turns green transparent.svg",
+  "note_es": "Motivo de triple espiral compartido como identificacion regional; no es bandera documentada de Caledonia.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_germania",
   "article": "Germanic peoples",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Bronze figure of a German Bibliothèque Nationale.jpg",
+  "note_es": "Figura antigua de bronce de un germano; ilustracion arqueologica, no bandera.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_escandia",
   "article": "Nordic Bronze Age",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "DO-10044-Figurer Grevensvænge.jpg",
+  "note_es": "Figuras de Grevensvaenge, Edad del Bronce nordica; ilustracion arqueologica posterior.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_alba_longa",
   "article": "Alba Longa",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Capitoline Wolf of Roman Kingdom.svg",
+  "note_es": "Motivo de la tradicion legendaria latina compartida con Roma; no es un escudo conservado de Alba Longa.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_lavinium",
   "article": "Lavinium",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Capitoline Wolf of Roman Kingdom.svg",
+  "note_es": "Motivo de la tradicion legendaria latina; no es un escudo conservado de Lavinium.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_tusculum",
   "article": "Tusculum",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Ancient Roman Republic coin of L. Servius Rufus 44-43 BC img061.jpg",
+  "note_es": "Moneda tardorrepublicana asociada a Tusculum; motivo numismatico, no bandera de su fundacion.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_aricia",
   "article": "Ariccia",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Capitoline Wolf of Roman Kingdom.svg",
+  "note_es": "Motivo de la tradicion legendaria latina; no es un escudo conservado de Aricia.",
+  "kind": "historical_illustration"
  },
  {
   "id": "nation_roma",
   "article": "Roman Kingdom",
-  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Capitoline Wolf of Roman Kingdom.svg",
+  "note_es": "Representacion de la loba capitolina, simbolo romano de tradicion posterior; no es bandera del reino antiguo.",
+  "kind": "historical_illustration"
  },
  {
   "id": "tech_agricultura",
-  "article": "Agriculture"
+  "article": "Agriculture",
+  "file": "Maler der Grabkammer des Sennudem 001.jpg",
+  "note_es": "Escena agricola de la tumba de Sennedjem, Egipto, de epoca posterior al inicio de la partida.",
+  "note": "Agricultural scene from the tomb of Sennedjem in Egypt, from a later period than the game start."
  },
  {
   "id": "tech_ceramica",
@@ -439,26 +648,45 @@
  },
  {
   "id": "tech_escritura",
-  "article": "Writing"
+  "article": "Writing",
+  "file": "P1150884 Louvre Uruk III tablette écriture précunéiforme AO19936 rwk.jpg",
+  "note_es": "Tablilla de escritura precuneiforme de Uruk III conservada en el Louvre.",
+  "note": "A proto-cuneiform tablet from Uruk III in the Louvre.",
+  "author_override": "Mbzt",
+  "author_source": "https://commons.wikimedia.org/wiki/File:P1150884_Louvre_Uruk_III_tablette_%C3%A9criture_pr%C3%A9cun%C3%A9iforme_AO19936_rwk.jpg"
  },
  {
   "id": "tech_cobre",
-  "article": "Copper metallurgy in Africa"
+  "article": "Copper metallurgy in Africa",
+  "file": "Axe, chalcolithic, BKB.jpg",
+  "note_es": "Hacha del Calcolitico utilizada para ilustrar la tecnologia del cobre.",
+  "note": "A Chalcolithic axe illustrating copper technology."
  },
  {
   "id": "tech_bronce",
-  "article": "Bronze Age"
+  "article": "Bronze Age",
+  "file": "Socketed axe, Bronze age.jpg",
+  "note_es": "Hacha de la Edad del Bronce utilizada para ilustrar su metalurgia.",
+  "note": "A Bronze Age socketed axe illustrating bronze metallurgy."
  },
  {
   "id": "tech_hierro",
-  "article": "Iron Age"
+  "article": "Iron Age",
+  "author_override": "Sandstein",
+  "author_source": "https://commons.wikimedia.org/wiki/File:HMB_Keltengrab_Münsingen-Rain_Grab_91.jpg"
  },
  {
   "id": "flag_es",
-  "file": "Flag of Spain.svg"
+  "file": "Flag of Spain.svg",
+  "kind": "modern_flag",
+  "note": "Modern national flag used only to select the interface language.",
+  "note_es": "Bandera moderna utilizada solo para elegir el idioma de la interfaz."
  },
  {
   "id": "flag_en",
-  "file": "Flag of the United Kingdom.svg"
+  "file": "Flag of the United Kingdom.svg",
+  "kind": "modern_flag",
+  "note": "Modern national flag used only to select the interface language.",
+  "note_es": "Bandera moderna utilizada solo para elegir el idioma de la interfaz."
  }
 ]

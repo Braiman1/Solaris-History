@@ -365,12 +365,24 @@ void Game::drawMenu() {
         return;
     }
     if (menuPage == 3) {
-        ui.text("Creditos", 56, 270, 0.50f, pal::gold);
-        ui.text("Solaris History - Braiman1", 56, 320, 0.38f, pal::text);
-        ui.text("Globo: NASA Blue Marble", 56, 360, 0.30f, pal::dim);
-        if (G.media.empty()) ui.textBlock("Imagenes de Wikimedia pendientes de descargar.", 56, 460, 650, 0.28f, pal::war);
-        ui.textBlock("Imagenes historicas: Wikimedia Commons. Fuentes, autores y licencias en content/media/attributions.json.", 56, 405, 650, 0.32f, pal::dim);
-        ui.textBlock("Los grupos representan comunidades de 3300 a.C. Las naciones posteriores se desbloquean por fecha. Los simbolos antiguos son emblemas, no banderas nacionales modernas.", 56, 500, 650, 0.30f, pal::dim);
+        ui.text("Creditos", 56, 250, 0.50f, pal::gold);
+        ui.text("Solaris History - Braiman1 · NASA Blue Marble · Wikimedia Commons", 56, 288, 0.28f, pal::text);
+        ui.text("Fuentes, autores y licencias de las imagenes", 56, 322, 0.30f, pal::goldDim);
+        const int visible=std::max(1,std::min(5,(P.h-450)/78));
+        if(ui.wheel) creditsScroll-=(int)ui.wheel;
+        creditsScroll=std::clamp(creditsScroll,0,std::max(0,(int)G.mediaCredits.size()-visible));
+        auto credit=G.mediaCredits.begin();
+        std::advance(credit,creditsScroll);
+        for(int k=0;k<visible && credit!=G.mediaCredits.end();++k,++credit) {
+            float y=362.0f+k*78;
+            drawMedia(credit->first,{56,y,64,64});
+            ui.text(ellipsize(G.font,credit->second.title,0.28f,560),132,y,0.28f,pal::text);
+            ui.text(ellipsize(G.font,credit->second.author,0.25f,560),132,y+22,0.25f,pal::dim);
+            ui.text(credit->second.license,132,y+44,0.25f,pal::good);
+        }
+        if(ui.smallButton("Subir",{530,h-68,85,32},creditsScroll>0)) --creditsScroll;
+        if(ui.smallButton("Bajar",{628,h-68,85,32},creditsScroll+visible<(int)G.mediaCredits.size())) ++creditsScroll;
+        ui.text("Los simbolos no son banderas de 3300 a.C. Consulta su contexto al pasar el raton.",56,h-105,0.26f,pal::dim);
         return;
     }
     ui.text("ELIGE TU GRUPO", 56, 240, 0.40f, pal::gold);
@@ -383,8 +395,8 @@ void Game::drawMenu() {
         int i = playable[menuScroll + k];
         const CityStateDef& cs = C.cityStates[i];
         Rect row(56, 280.0f + k * 63, 664, 55);
-        if (ui.button(cs.name, row, true, i == menuSelection ? pal::gold : pal::dim, 0.36f)) menuSelection = i;
-        if (GLuint emblem = G.mediaFor("culture_"+cs.culture)) ui.icon(emblem, {row.x+8,row.y+5,44,44});
+        if (ui.button(cs.name+" · "+C.province(cs.capital).name, row, true, i == menuSelection ? pal::gold : pal::dim, 0.36f)) menuSelection = i;
+        drawMedia("culture_"+cs.culture, {row.x+8,row.y+5,44,44});
     }
     if (ui.smallButton("Subir", {560, 238, 76, 30}, menuScroll > 0)) --menuScroll;
     if (ui.smallButton("Bajar", {644, 238, 76, 30}, menuScroll + visible < (int)playable.size())) ++menuScroll;
@@ -453,7 +465,8 @@ void Game::drawTopBar() {
         ui.addHit(r);
     }
 
-    if (ui.smallButton("Tecnologias", {842, 14, 130, 28})) openModal(Modal::Technology);
+    if (ui.smallButton("Tecnologias", {842, 14, 108, 28})) openModal(Modal::Technology);
+    if (ui.smallButton("Recursos", {958, 14, 92, 28})) openModal(Modal::Resources);
     // tecnologia
     float tech = n.tech;
     float next = (n.era + 1 < (int)C.eras.size()) ? C.eras[(size_t)n.era + 1].tech : tech;
@@ -533,7 +546,7 @@ void Game::drawProvincePanel() {
     Province& pv = sim.prov[(size_t)selectedProvince];
     const TerrainDef& terr = C.terrainOfProvince(selectedProvince);
     const ResourceDef& res = C.resourceOfProvince(selectedProvince);
-    if (GLuint image = G.mediaFor("resource_"+res.id)) ui.icon(image, {r.x+r.w-54,r.y+10,40,40});
+    drawMedia("resource_"+res.id, {r.x+r.w-54,r.y+10,40,40});
     const CultureDef& cu = C.culture(pd.cultureId);
     bool mine = pv.owner == sim.player;
 
@@ -626,7 +639,8 @@ void Game::drawNationPanel() {
 
     ui.rect({r.x, r.y, r.w, 4}, n.color);
     ui.text("TU NACION", x, r.y + 12, 0.24f, pal::faint);
-    ui.text(ellipsize(G.font, n.name, 0.52f, wd - 4), x, r.y + 30, 0.52f, pal::text);
+    drawMedia(G.nationMedia(n,C),{r.x+r.w-78,r.y+12,62,62});
+    ui.text(ellipsize(G.font, n.name, 0.52f, wd - 70), x, r.y + 30, 0.52f, pal::text);
     std::string sub = (n.isCityState ? "Ciudad-estado" : C.gov(n.gov).name) + std::string("  ·  ") + C.era(n.era).shortName;
     ui.text(sub, x, r.y + 66, 0.28f, pal::dim);
     ui.divider(x, r.y + 88, wd);
@@ -664,7 +678,7 @@ void Game::drawNationPanel() {
         if (cid >= 0) {
             const Character& c = sim.chars[(size_t)cid];
             ui.text(ellipsize(G.font, c.name, 0.29f, 150), x + 84, cy + 2, 0.29f, pal::text);
-            ui.textR(std::to_string(c.age(sim.abs())) + " a", x + wd - 8, cy + 4, 0.24f, pal::faint);
+            ui.textR(std::to_string(c.age(sim.abs())) + " anos", x + wd - 8, cy + 4, 0.24f, pal::faint);
         } else {
             ui.text("vacante", x + 84, cy + 3, 0.26f, pal::bad);
         }
@@ -888,6 +902,7 @@ void Game::drawModal() {
         case Modal::Diplomacy: drawDiplomacyModal(); break;
         case Modal::Chronicle: drawChronicleModal(); break;
         case Modal::Elections: drawElectionsModal(); break;
+        case Modal::Resources: drawResourcesModal(); break;
         case Modal::Technology: drawTechnologyModal(); break;
         case Modal::Help: drawHelpModal(); break;
         case Modal::GameOver: drawGameOverModal(); break;
@@ -934,8 +949,7 @@ void Game::drawFoundModal() {
         Rect row(r.x + 20, ry + k * 78, r.w - 40, 70);
         ui.rect(row, Color(19, 21, 25, 220));
         ui.outline(row, used ? Color(80, 76, 70, 100) : pal::borderSoft, 1);
-        if (GLuint emblem = G.mediaFor("nation_"+t.id)) ui.icon(emblem, {row.x+8,row.y+12,40,40});
-        else ui.rect({row.x + 10, row.y + 14, 8, 40}, t.color);
+        if (!drawMedia("nation_"+t.id, {row.x+8,row.y+12,40,40})) ui.rect({row.x + 10, row.y + 14, 8, 40}, t.color);
         ui.text(t.name, row.x + 54, row.y + 8, 0.42f, used ? pal::faint : pal::text);
         ui.text(C.gov(t.gov).name + "  ·  " + t.adj, row.x + 54, row.y + 38, 0.26f, pal::dim);
         ui.textBlock(t.desc, row.x + 54, row.y + 54, row.w - 190, 0.24f, pal::faint, 0, 1);
@@ -1056,14 +1070,14 @@ void Game::drawDiplomacyModal() {
         Rect row(r.x + 20, r.y + 92 + k * 72, r.w - 40, 64);
         ui.rect(row, Color(19, 21, 25, 220));
         ui.outline(row, war ? pal::bad.withAlpha(110) : pal::borderSoft, 1);
-        ui.rect({row.x + 8, row.y + 12, 6, 40}, o.color);
-        ui.text(o.name, row.x + 24, row.y + 6, 0.38f, pal::text);
+        drawMedia(G.nationMedia(o,C),{row.x+8,row.y+12,40,40});
+        ui.text(o.name, row.x + 60, row.y + 6, 0.38f, pal::text);
         ui.text((o.isCityState ? "Ciudad-estado" : C.gov(o.gov).name) + "  ·  " + std::to_string(provs) +
-                " prov.  ·  " + numStr(sim.nationArmyPower(o.id), 1) + " fuerza", row.x + 24, row.y + 32, 0.24f, pal::dim);
+                " prov.  ·  " + numStr(sim.nationArmyPower(o.id), 1) + " fuerza", row.x + 60, row.y + 32, 0.24f, pal::dim);
         if (war) {
-            ui.text("En guerra (" + std::to_string(sim.warMonths(sim.player, o.id)) + " meses)", row.x + 24, row.y + 47, 0.23f, pal::bad);
+            ui.text("En guerra (" + std::to_string(sim.warMonths(sim.player, o.id)) + " meses)", row.x + 60, row.y + 47, 0.23f, pal::bad);
         } else {
-            ui.text("En paz", row.x + 24, row.y + 47, 0.23f, pal::faint);
+            ui.text("En paz", row.x + 60, row.y + 47, 0.23f, pal::faint);
         }
         if (war) {
             if (ui.button("Proponer paz", {row.x + row.w - 142, row.y + 16, 128, 32}, true, pal::good, 0.26f)) {
@@ -1227,10 +1241,26 @@ void Game::loadGame() {
     setStatus("Partida cargada.");
 }
 
-void Game::drawLanguageFlag(Rect r, bool english) {
-    if (GLuint texture = G.mediaFor(english ? "flag_en" : "flag_es")) {
-        ui.icon(texture,r); return;
+bool Game::drawMedia(const std::string& id, Rect r) {
+    GLuint texture=G.mediaFor(id);
+    if (!texture) return false;
+    if (id.rfind("flag_",0)!=0) {
+        ui.rect(r,Color(222,215,194));
+        ui.outline(r,pal::borderSoft,1);
     }
+    ui.icon(texture,r);
+    if (ui.hover(r)) {
+        auto it=G.mediaCredits.find(id);
+        if (it!=G.mediaCredits.end()) {
+            const auto& c=it->second;
+            ui.tooltip=c.title+" · "+c.license+" · "+(Locale::english?c.note:c.noteEs);
+        }
+    }
+    return true;
+}
+
+void Game::drawLanguageFlag(Rect r, bool english) {
+    if (drawMedia(english?"flag_en":"flag_es", {r.x,r.y+(r.h-r.w)*0.5f,r.w,r.w})) return;
     if (!english) {
         ui.rect(r, Color(170, 21, 27));
         ui.rect({r.x, r.y+r.h*0.25f, r.w, r.h*0.5f}, Color(241, 191, 0));
@@ -1272,14 +1302,34 @@ void Game::drawTechnologyModal() {
     for (int k=0;k<visible && k+modalScroll<(int)C.technologies.size();++k) {
         const auto& t = C.technologies[k+modalScroll];
         float y=r.y+100+k*78;
-        GLuint image=G.mediaFor("tech_"+t.id);
-        if (image) ui.icon(image,{r.x+24,y,60,60});
+        drawMedia("tech_"+t.id,{r.x+24,y,60,60});
         ui.text(t.name+" - "+numStr(t.points,0)+" pt",r.x+100,y,0.34f,pal::text);
         ui.text(n.tech >= t.points ? "Desbloqueada" : "Bloqueada",r.x+100,y+23,0.27f,n.tech>=t.points?pal::good:pal::faint);
         ui.text("Agricultura +"+numStr(t.farm*100,0)+"%   Militar +"+numStr(t.military*100,0)+"%",r.x+100,y+45,0.26f,pal::dim);
     }
     if(ui.smallButton("Subir",{r.x+24,r.y+r.h-40,90,28},modalScroll>0)) --modalScroll;
     if(ui.smallButton("Bajar",{r.x+124,r.y+r.h-40,90,28},modalScroll+visible<(int)C.technologies.size())) ++modalScroll;
+}
+
+void Game::drawResourcesModal() {
+    Rect r(P.w*0.5f-380,P.h*0.5f-280,760,560);
+    drawModalFrame("Recursos",r);
+    ui.text("Produccion y comercio de tus provincias",r.x+24,r.y+62,0.30f,pal::dim);
+    const int visible=6;
+    if(ui.wheel) modalScroll-=(int)ui.wheel;
+    modalScroll=std::clamp(modalScroll,0,std::max(0,(int)C.resources.size()-visible));
+    for(int k=0;k<visible && modalScroll+k<(int)C.resources.size();++k) {
+        const auto& resource=C.resources[modalScroll+k];
+        float y=r.y+94+k*67;
+        drawMedia("resource_"+resource.id,{r.x+24,y,54,54});
+        ui.text(resource.name,r.x+96,y+4,0.36f,pal::text);
+        int count=0;
+        for(const auto& province:sim.prov)
+            if(province.owner==sim.player && C.province(province.def).resourceId==resource.id) ++count;
+        ui.text("Provincias propias: "+std::to_string(count)+"   ·   Valor comercial: "+numStr(resource.value,1),r.x+96,y+30,0.27f,pal::dim);
+    }
+    if(ui.smallButton("Subir",{r.x+24,r.y+r.h-40,90,28},modalScroll>0)) --modalScroll;
+    if(ui.smallButton("Bajar",{r.x+124,r.y+r.h-40,90,28},modalScroll+visible<(int)C.resources.size())) ++modalScroll;
 }
 
 } // namespace sol

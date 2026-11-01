@@ -23,6 +23,38 @@ class ImporterTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as out, patch.object(media,'query',return_value=info):
             with self.assertRaisesRegex(ValueError,'license requires manual review'):media.fetch({'id':'test','file':'Example.png'},Path(out))
             self.assertEqual(list(Path(out).iterdir()),[])
+    def test_svg_internal_gradient_and_external_reference(self):
+        info={'query':{'pages':{'1':{'imageinfo':[{'url':'https://upload.wikimedia.org/example.svg','descriptionurl':'https://commons.wikimedia.org/wiki/File:Example.svg','extmetadata':{'LicenseShortName':{'value':'CC0'}}}]}}}}
+        svg=b'<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><defs><linearGradient id="g"><stop stop-color="red"/><stop offset="1" stop-color="blue"/></linearGradient></defs><rect width="40" height="40" style="fill:url(#g);stroke:none"/></svg>'
+        with tempfile.TemporaryDirectory() as out, patch.object(media,'query',return_value=info), patch.object(media,'request',return_value=svg):
+            media.fetch({'id':'safe','file':'Example.svg'},Path(out))
+            self.assertEqual(len((Path(out)/'safe.rgba').read_bytes()),128*128*4)
+        external=b'<svg xmlns="http://www.w3.org/2000/svg"><image href="/tmp/private.png"/></svg>'
+        with tempfile.TemporaryDirectory() as out, patch.object(media,'query',return_value=info), patch.object(media,'request',return_value=external):
+            with self.assertRaisesRegex(ValueError,'external references'):media.fetch({'id':'bad','file':'Example.svg'},Path(out))
+            self.assertEqual(list(Path(out).iterdir()),[])
+
+    def test_bundled_assets_are_complete_and_attributed(self):
+        import hashlib
+        root=media.ROOT/'content'
+        catalogue=json.loads((root/'media_catalog.json').read_text())
+        credits={item['id']:item for item in json.loads((root/'media/attributions.json').read_text())}
+        index={item['id'] for item in json.loads((root/'media/index.json').read_text())}
+        self.assertEqual(index,{item['id'] for item in catalogue})
+        self.assertEqual(set(credits),index)
+        for item in catalogue:
+            with self.subTest(asset=item['id']):
+                raw=(root/'media'/(item['id']+'.rgba')).read_bytes()
+                self.assertEqual(len(raw),128*128*4)
+                self.assertEqual(hashlib.sha256(raw).hexdigest(),credits[item['id']]['sha256'])
+                self.assertTrue(credits[item['id']]['source'].startswith('https://commons.wikimedia.org/'))
+                self.assertTrue(credits[item['id']]['license'])
+                self.assertTrue(credits[item['id']]['author'])
+                if item.get('file'):self.assertEqual(credits[item['id']]['file'],'File:'+item['file'])
+                if item['id'].startswith(('culture_','nation_')):
+                    self.assertIn('note_es',credits[item['id']])
+                    self.assertNotIn('provisional',credits[item['id']]['note_es'])
+
     def test_catalogue_covers_content(self):
         root=media.ROOT/'content';catalogue=json.loads((root/'media_catalog.json').read_text());ids=[i['id'] for i in catalogue]
         self.assertEqual(len(ids),len(set(ids)))

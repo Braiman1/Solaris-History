@@ -8,7 +8,7 @@ static Platform* g_platform = nullptr;
 
 static LRESULT CALLBACK wndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp) {
     Platform* p = g_platform;
-    if (!p) return DefWindowProc(hwnd, msg, wp, lp);
+    if (!p) return DefWindowProcW(hwnd, msg, wp, lp);
     switch (msg) {
         case WM_CLOSE:
             p->running = false;
@@ -70,7 +70,7 @@ static LRESULT CALLBACK wndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp) {
         case WM_ERASEBKGND:
             return 1;
     }
-    return DefWindowProc(hwnd, msg, wp, lp);
+    return DefWindowProcW(hwnd, msg, wp, lp);
 }
 
 bool Platform::init(HINSTANCE instance, int width, int height, const wchar_t* title) {

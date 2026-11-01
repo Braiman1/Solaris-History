@@ -2162,5 +2162,2297 @@
  {
   "es": "Imagenes de Wikimedia pendientes de descargar.",
   "en": "Wikimedia images are awaiting download."
+ },
+ {
+  "es": "Fuentes, autores y licencias de las imagenes",
+  "en": "Image sources, authors and licenses"
+ },
+ {
+  "es": "Los simbolos no son banderas de 3300 a.C. Consulta su contexto al pasar el raton.",
+  "en": "These symbols are not flags from 3300 BC. Hover for their historical context."
+ },
+ {
+  "es": "Produccion y comercio de tus provincias",
+  "en": "Production and trade in your provinces"
+ },
+ {
+  "es": "Provincias propias:",
+  "en": "Owned provinces:"
+ },
+ {
+  "es": "Valor comercial:",
+  "en": "Trade value:"
+ },
+ {
+  "es": "Edad",
+  "en": "Age"
+ },
+ {
+  "es": "CONSEJO",
+  "en": "COUNCIL"
+ },
+ {
+  "es": "Consejo",
+  "en": "Council"
+ },
+ {
+  "es": "Ninguno",
+  "en": "None"
+ },
+ {
+  "es": "Ninguna",
+  "en": "None"
+ },
+ {
+  "es": "Mover",
+  "en": "Move"
+ },
+ {
+  "es": "Ver todo",
+  "en": "View all"
+ },
+ {
+  "es": "CRONICA",
+  "en": "CHRONICLE"
+ },
+ {
+  "es": "Globo",
+  "en": "Globe"
+ },
+ {
+  "es": "Regresar",
+  "en": "Return"
+ },
+ {
+  "es": "Defensa",
+  "en": "Defense"
+ },
+ {
+  "es": "Ataque",
+  "en": "Attack"
+ },
+ {
+  "es": "Fuerza",
+  "en": "Strength"
+ },
+ {
+  "es": "fuerza",
+  "en": "strength"
+ },
+ {
+  "es": "Comida",
+  "en": "Food"
+ },
+ {
+  "es": "Exhausto",
+  "en": "Exhausted"
+ },
+ {
+  "es": "Abandonar",
+  "en": "Leave"
+ },
+ {
+  "es": "Siguiente",
+  "en": "Next"
+ },
+ {
+  "es": "Anterior",
+  "en": "Previous"
+ },
+ {
+  "es": "Cerrar",
+  "en": "Close"
+ },
+ {
+  "es": "Cancelar",
+  "en": "Cancel"
+ },
+ {
+  "es": "Aceptar",
+  "en": "Accept"
+ },
+ {
+  "es": "CONTROLES",
+  "en": "CONTROLS"
+ },
+ {
+  "es": "COSTE",
+  "en": "COST"
+ },
+ {
+  "es": "BATALLA",
+  "en": "BATTLE"
+ },
+ {
+  "es": "RECURSOS",
+  "en": "RESOURCES"
+ },
+ {
+  "es": "Bloqueado",
+  "en": "Locked"
+ },
+ {
+  "es": "Desbloqueado",
+  "en": "Unlocked"
+ },
+ {
+  "es": "Reino",
+  "en": "Kingdom"
+ },
+ {
+  "es": "Ciudad",
+  "en": "City"
+ },
+ {
+  "es": "COSTES",
+  "en": "COSTS"
+ },
+ {
+  "es": "Tropas",
+  "en": "Troops"
+ },
+ {
+  "es": "Mas",
+  "en": "More"
+ },
+ {
+  "es": "mes",
+  "en": "month"
+ },
+ {
+  "es": "sin nombre",
+  "en": "unnamed"
+ },
+ {
+  "es": "Tierra",
+  "en": "Earth"
+ },
+ {
+  "es": "CREAR PARTIDA",
+  "en": "NEW GAME"
+ },
+ {
+  "es": "CARGAR PARTIDA",
+  "en": "LOAD GAME"
+ },
+ {
+  "es": "OPCIONES",
+  "en": "OPTIONS"
+ },
+ {
+  "es": "CREDITOS",
+  "en": "CREDITS"
+ },
+ {
+  "es": "SALIR",
+  "en": "QUIT"
+ },
+ {
+  "es": "VOLVER",
+  "en": "BACK"
+ },
+ {
+  "es": "GRAN ESTRATEGIA EN TIEMPO REAL  ·  3300 A.C.",
+  "en": "REAL-TIME GRAND STRATEGY  ·  3300 BC"
+ },
+ {
+  "es": "VENTAJAS:",
+  "en": "BONUSES:"
+ },
+ {
+  "es": "EQUILIBRIO",
+  "en": "BALANCED"
+ },
+ {
+  "es": "AGRICULTURA",
+  "en": "FARMING"
+ },
+ {
+  "es": "COMERCIO",
+  "en": "TRADE"
+ },
+ {
+  "es": "MILITAR",
+  "en": "MILITARY"
+ },
+ {
+  "es": "TECNOLOGIA",
+  "en": "TECHNOLOGY"
+ },
+ {
+  "es": "NAVAL",
+  "en": "NAVAL"
+ },
+ {
+  "es": "ESTABILIDAD",
+  "en": "STABILITY"
+ },
+ {
+  "es": "AYUDA",
+  "en": "HELP"
+ },
+ {
+  "es": "IDIOMA / LANGUAGE",
+  "en": "IDIOMA / LANGUAGE"
+ },
+ {
+  "es": "NO SE PUDO CARGAR LA PARTIDA. COMPRUEBA QUE USA EL MISMO MAPA.",
+  "en": "COULD NOT LOAD THE GAME. MAKE SURE IT USES THE SAME MAP."
+ },
+ {
+  "es": "PARTIDA CARGADA.",
+  "en": "GAME LOADED."
+ },
+ {
+  "es": "PARTIDA GUARDADA EN SOLARIS_QUICKSAVE.SAV",
+  "en": "GAME SAVED TO SOLARIS_QUICKSAVE.SAV"
+ },
+ {
+  "es": "IMAGENES HISTORICAS: WIKIMEDIA COMMONS. FUENTES, AUTORES Y LICENCIAS EN CONTENT/MEDIA/ATTRIBUTIONS.JSON.",
+  "en": "HISTORICAL IMAGES: WIKIMEDIA COMMONS. SOURCES, AUTHORS AND LICENSES IN CONTENT/MEDIA/ATTRIBUTIONS.JSON."
+ },
+ {
+  "es": "LOS GRUPOS REPRESENTAN COMUNIDADES DE 3300 A.C. LAS NACIONES POSTERIORES SE DESBLOQUEAN POR FECHA. LOS SIMBOLOS ANTIGUOS SON EMBLEMAS, NO BANDERAS NACIONALES MODERNAS.",
+  "en": "THE GROUPS REPRESENT COMMUNITIES IN 3300 BC. LATER STATES UNLOCK BY DATE. ANCIENT SYMBOLS ARE EMBLEMS, NOT MODERN NATIONAL FLAGS."
+ },
+ {
+  "es": "GLOBO: NASA BLUE MARBLE",
+  "en": "GLOBE: NASA BLUE MARBLE"
+ },
+ {
+  "es": "LOS EGIPCIOS",
+  "en": "THE EGYPTIANS"
+ },
+ {
+  "es": "LOS SUMERIOS",
+  "en": "THE SUMERIANS"
+ },
+ {
+  "es": "LOS ANATOLIOS",
+  "en": "THE ANATOLIANS"
+ },
+ {
+  "es": "LOS SEMITAS",
+  "en": "THE SEMITIC PEOPLES"
+ },
+ {
+  "es": "LOS EGEOS",
+  "en": "THE AEGEAN PEOPLES"
+ },
+ {
+  "es": "LOS LATINOS",
+  "en": "THE LATINS"
+ },
+ {
+  "es": "EGIPCIO PREDINASTICO",
+  "en": "PREDYNASTIC EGYPTIAN"
+ },
+ {
+  "es": "ITALICO NEOLITICO",
+  "en": "NEOLITHIC ITALIC"
+ },
+ {
+  "es": "EGIPTO",
+  "en": "EGYPT"
+ },
+ {
+  "es": "SUMERIA",
+  "en": "SUMER"
+ },
+ {
+  "es": "ACAD",
+  "en": "AKKAD"
+ },
+ {
+  "es": "ASIRIA",
+  "en": "ASSYRIA"
+ },
+ {
+  "es": "BABILONIA",
+  "en": "BABYLONIA"
+ },
+ {
+  "es": "FENICIA",
+  "en": "PHOENICIA"
+ },
+ {
+  "es": "SIRIA",
+  "en": "SYRIA"
+ },
+ {
+  "es": "CANAAN",
+  "en": "CANAAN"
+ },
+ {
+  "es": "CRETA",
+  "en": "CRETE"
+ },
+ {
+  "es": "MICENAS",
+  "en": "MYCENAE"
+ },
+ {
+  "es": "ATENAS",
+  "en": "ATHENS"
+ },
+ {
+  "es": "TRACIA",
+  "en": "THRACE"
+ },
+ {
+  "es": "IBERIA",
+  "en": "IBERIA"
+ },
+ {
+  "es": "LUSITANIA",
+  "en": "LUSITANIA"
+ },
+ {
+  "es": "ETRURIA",
+  "en": "ETRURIA"
+ },
+ {
+  "es": "ROMA",
+  "en": "ROME"
+ },
+ {
+  "es": "SARDENA",
+  "en": "SARDINIA"
+ },
+ {
+  "es": "LIBIA",
+  "en": "LIBYA"
+ },
+ {
+  "es": "NUMIDIA",
+  "en": "NUMIDIA"
+ },
+ {
+  "es": "MAURETANIA",
+  "en": "MAURETANIA"
+ },
+ {
+  "es": "NUBIA",
+  "en": "NUBIA"
+ },
+ {
+  "es": "ARABIA",
+  "en": "ARABIA"
+ },
+ {
+  "es": "MEDIA",
+  "en": "MEDIA"
+ },
+ {
+  "es": "PERSIA",
+  "en": "PERSIA"
+ },
+ {
+  "es": "BRITANIA",
+  "en": "BRITAIN"
+ },
+ {
+  "es": "CALEDONIA",
+  "en": "CALEDONIA"
+ },
+ {
+  "es": "GERMANIA",
+  "en": "GERMANIA"
+ },
+ {
+  "es": "ESCANDIA",
+  "en": "SCANDIA"
+ },
+ {
+  "es": "MONARQUIA",
+  "en": "MONARCHY"
+ },
+ {
+  "es": "REPUBLICA",
+  "en": "REPUBLIC"
+ },
+ {
+  "es": "TEOCRACIA",
+  "en": "THEOCRACY"
+ },
+ {
+  "es": "NEOLITICO TARDIO",
+  "en": "LATE NEOLITHIC"
+ },
+ {
+  "es": "NEOLITICO",
+  "en": "NEOLITHIC"
+ },
+ {
+  "es": "CALCOLITICO",
+  "en": "CHALCOLITHIC"
+ },
+ {
+  "es": "EDAD DEL BRONCE",
+  "en": "BRONZE AGE"
+ },
+ {
+  "es": "EDAD DEL HIERRO",
+  "en": "IRON AGE"
+ },
+ {
+  "es": "EPOCA CLASICA",
+  "en": "CLASSICAL AGE"
+ },
+ {
+  "es": "BRONCE",
+  "en": "BRONZE"
+ },
+ {
+  "es": "HIERRO",
+  "en": "IRON"
+ },
+ {
+  "es": "CLASICA",
+  "en": "CLASSICAL"
+ },
+ {
+  "es": "TIERRA CONOCIDA",
+  "en": "KNOWN WORLD"
+ },
+ {
+  "es": "NACIONES VIVAS",
+  "en": "LIVING NATIONS"
+ },
+ {
+  "es": "PROVINCIAS POBLADAS",
+  "en": "POPULATED PROVINCES"
+ },
+ {
+  "es": "TERRITORIOS LIBRES",
+  "en": "UNCLAIMED TERRITORIES"
+ },
+ {
+  "es": "ARRASTRA EL GLOBO PARA GIRARLO.",
+  "en": "DRAG THE GLOBE TO ROTATE IT."
+ },
+ {
+  "es": "RUEDA DEL RATON PARA ACERCARTE.",
+  "en": "USE THE MOUSE WHEEL TO ZOOM."
+ },
+ {
+  "es": "HAZ CLIC EN UNA PROVINCIA PARA VERLA.",
+  "en": "CLICK A PROVINCE TO INSPECT IT."
+ },
+ {
+  "es": "COLONIZA TERRITORIOS VECINOS Y FUNDA TU NACION.",
+  "en": "COLONIZE NEIGHBORING LANDS AND FOUND YOUR NATION."
+ },
+ {
+  "es": "F5 GUARDA, F9 CARGA, ESPACIO PAUSA.",
+  "en": "F5 SAVES, F9 LOADS, SPACE PAUSES."
+ },
+ {
+  "es": "ELIGE LA PROVINCIA DE DESTINO  ·  ESC PARA CANCELAR",
+  "en": "CHOOSE A DESTINATION PROVINCE  ·  ESC TO CANCEL"
+ },
+ {
+  "es": "RECLUTAR",
+  "en": "RECRUIT"
+ },
+ {
+  "es": "TECNOLOGIAS",
+  "en": "TECHNOLOGIES"
+ },
+ {
+  "es": "PUNTOS TECNOLOGICOS:",
+  "en": "TECHNOLOGY POINTS:"
+ },
+ {
+  "es": "DESBLOQUEADA",
+  "en": "UNLOCKED"
+ },
+ {
+  "es": "BLOQUEADA",
+  "en": "LOCKED"
+ },
+ {
+  "es": "CERAMICA",
+  "en": "POTTERY"
+ },
+ {
+  "es": "RIEGO",
+  "en": "IRRIGATION"
+ },
+ {
+  "es": "RUEDA",
+  "en": "WHEEL"
+ },
+ {
+  "es": "ESCRITURA",
+  "en": "WRITING"
+ },
+ {
+  "es": "METALURGIA DEL COBRE",
+  "en": "COPPER METALLURGY"
+ },
+ {
+  "es": "METALURGIA DEL BRONCE",
+  "en": "BRONZE METALLURGY"
+ },
+ {
+  "es": "METALURGIA DEL HIERRO",
+  "en": "IRON METALLURGY"
+ },
+ {
+  "es": "NECESITAS 2 PROVINCIAS, 60 ORO, 5 DE PRESTIGIO Y 3 PUNTOS TECNOLOGICOS.",
+  "en": "REQUIRES 2 PROVINCES, 60 GOLD, 5 PRESTIGE AND 3 TECHNOLOGY POINTS."
+ },
+ {
+  "es": "REQUISITOS: 2 PROVINCIAS, 60 ORO, 5 DE PRESTIGIO Y 3 PUNTOS TECNOLOGICOS.",
+  "en": "REQUIREMENTS: 2 PROVINCES, 60 GOLD, 5 PRESTIGE AND 3 TECHNOLOGY POINTS."
+ },
+ {
+  "es": "ELIGE EL NOMBRE Y EL GOBIERNO DE TU PUEBLO.",
+  "en": "CHOOSE THE NAME AND GOVERNMENT OF YOUR PEOPLE."
+ },
+ {
+  "es": "TU CULTURA AUN NO TIENE NACIONES HISTORICAS DISPONIBLES.",
+  "en": "YOUR CULTURE HAS NO HISTORICAL NATIONS AVAILABLE YET."
+ },
+ {
+  "es": "NOMBRE EN USO",
+  "en": "NAME ALREADY IN USE"
+ },
+ {
+  "es": "FUNDAR",
+  "en": "FOUND"
+ },
+ {
+  "es": "SUBIR",
+  "en": "UP"
+ },
+ {
+  "es": "BAJAR",
+  "en": "DOWN"
+ },
+ {
+  "es": "CONTINUAR",
+  "en": "CONTINUE"
+ },
+ {
+  "es": "NUEVA PARTIDA",
+  "en": "NEW GAME"
+ },
+ {
+  "es": "ENTENDIDO",
+  "en": "UNDERSTOOD"
+ },
+ {
+  "es": "PROVINCIAS",
+  "en": "PROVINCES"
+ },
+ {
+  "es": "CULTURA",
+  "en": "CULTURE"
+ },
+ {
+  "es": "GOBIERNO",
+  "en": "GOVERNMENT"
+ },
+ {
+  "es": "POBLACION",
+  "en": "POPULATION"
+ },
+ {
+  "es": "DESARROLLO",
+  "en": "DEVELOPMENT"
+ },
+ {
+  "es": "TERRENO",
+  "en": "TERRAIN"
+ },
+ {
+  "es": "RECURSO",
+  "en": "RESOURCE"
+ },
+ {
+  "es": "INGRESOS",
+  "en": "INCOME"
+ },
+ {
+  "es": "ALIMENTOS",
+  "en": "FOOD"
+ },
+ {
+  "es": "ALIMENTO",
+  "en": "FOOD"
+ },
+ {
+  "es": "ORO",
+  "en": "GOLD"
+ },
+ {
+  "es": "MADERA",
+  "en": "WOOD"
+ },
+ {
+  "es": "PIEDRA",
+  "en": "STONE"
+ },
+ {
+  "es": "COBRE",
+  "en": "COPPER"
+ },
+ {
+  "es": "PRESTIGIO",
+  "en": "PRESTIGE"
+ },
+ {
+  "es": "LEGITIMIDAD",
+  "en": "LEGITIMACY"
+ },
+ {
+  "es": "LEALTAD",
+  "en": "LOYALTY"
+ },
+ {
+  "es": "DESCONTENTO",
+  "en": "UNREST"
+ },
+ {
+  "es": "MANODE OBRA",
+  "en": "MANPOWER"
+ },
+ {
+  "es": "MANO DE OBRA",
+  "en": "MANPOWER"
+ },
+ {
+  "es": "EJERCITO",
+  "en": "ARMY"
+ },
+ {
+  "es": "EN PAZ",
+  "en": "AT PEACE"
+ },
+ {
+  "es": "GUERRA:",
+  "en": "WAR:"
+ },
+ {
+  "es": "RECLUTAR CONSEJERO (40 ORO)",
+  "en": "RECRUIT ADVISER (40 GOLD)"
+ },
+ {
+  "es": "AYUDA Y CONTROLES (F1)",
+  "en": "HELP AND CONTROLS (F1)"
+ },
+ {
+  "es": "COLONIZAR: 36 MESES",
+  "en": "COLONIZE: 36 MONTHS"
+ },
+ {
+  "es": "COLONIZACION:",
+  "en": "COLONIZATION:"
+ },
+ {
+  "es": "COLONIZACION",
+  "en": "COLONIZATION"
+ },
+ {
+  "es": "NECESITAS UNA PROVINCIA VECINA, ORO Y NINGUNA EXPEDICION ACTIVA.",
+  "en": "REQUIRES A NEIGHBORING PROVINCE, ENOUGH GOLD AND NO ACTIVE EXPEDITION."
+ },
+ {
+  "es": "LA EXPEDICION TARDARA 36 MESES. SOLO PUEDES MANTENER UNA EXPEDICION ACTIVA.",
+  "en": "THE EXPEDITION TAKES 36 MONTHS. YOU CAN MAINTAIN ONLY ONE ACTIVE EXPEDITION."
+ },
+ {
+  "es": "EXPEDICION ENVIADA A",
+  "en": "EXPEDITION SENT TO"
+ },
+ {
+  "es": "INICIA UNA EXPEDICION DE 36 MESES HACIA",
+  "en": "STARTS A 36-MONTH EXPEDITION TO"
+ },
+ {
+  "es": "FUNDA UN ASENTAMIENTO EN",
+  "en": "FOUNDS A SETTLEMENT IN"
+ },
+ {
+  "es": "NUEVO TERRITORIO",
+  "en": "NEW TERRITORY"
+ },
+ {
+  "es": "ASENTAMIENTO TERMINADO EN",
+  "en": "SETTLEMENT COMPLETED IN"
+ },
+ {
+  "es": "NACION FUNDADA",
+  "en": "NATION FOUNDED"
+ },
+ {
+  "es": "HAS FUNDADO",
+  "en": "YOU HAVE FOUNDED"
+ },
+ {
+  "es": "CIUDAD-ESTADO",
+  "en": "CITY-STATE"
+ },
+ {
+  "es": "INDEPENDIENTE",
+  "en": "INDEPENDENT"
+ },
+ {
+  "es": "INDEPENDIENTES",
+  "en": "INDEPENDENT PEOPLES"
+ },
+ {
+  "es": "SIN PROPIETARIO",
+  "en": "UNCLAIMED"
+ },
+ {
+  "es": "SIN GOBERNANTE",
+  "en": "NO RULER"
+ },
+ {
+  "es": "GOBERNANTE",
+  "en": "RULER"
+ },
+ {
+  "es": "CONSEJEROS",
+  "en": "ADVISERS"
+ },
+ {
+  "es": "CONSEJERO",
+  "en": "ADVISER"
+ },
+ {
+  "es": "CANCILLER",
+  "en": "CHANCELLOR"
+ },
+ {
+  "es": "GENERAL",
+  "en": "GENERAL"
+ },
+ {
+  "es": "SACERDOTE",
+  "en": "PRIEST"
+ },
+ {
+  "es": "REELEGIR",
+  "en": "RE-ELECT"
+ },
+ {
+  "es": "ELEGIR",
+  "en": "ELECT"
+ },
+ {
+  "es": "PROPONER PAZ",
+  "en": "OFFER PEACE"
+ },
+ {
+  "es": "DECLARAR GUERRA",
+  "en": "DECLARE WAR"
+ },
+ {
+  "es": "NO HAY NACIONES DISPONIBLES.",
+  "en": "NO NATIONS AVAILABLE."
+ },
+ {
+  "es": "PAZ",
+  "en": "PEACE"
+ },
+ {
+  "es": "CONSTRUCCIONES",
+  "en": "BUILDINGS"
+ },
+ {
+  "es": "EDIFICIO",
+  "en": "BUILDING"
+ },
+ {
+  "es": "REQUISITOS",
+  "en": "REQUIREMENTS"
+ },
+ {
+  "es": "DISPONIBLE",
+  "en": "AVAILABLE"
+ },
+ {
+  "es": "NO DISPONIBLE",
+  "en": "UNAVAILABLE"
+ },
+ {
+  "es": "YA CONSTRUIDO",
+  "en": "ALREADY BUILT"
+ },
+ {
+  "es": "RECLUTAMIENTO",
+  "en": "RECRUITMENT"
+ },
+ {
+  "es": "UNIDADES",
+  "en": "UNITS"
+ },
+ {
+  "es": "SOLDADO",
+  "en": "SOLDIER"
+ },
+ {
+  "es": "SOLDADOS",
+  "en": "SOLDIERS"
+ },
+ {
+  "es": "LANCERO",
+  "en": "SPEARMAN"
+ },
+ {
+  "es": "LANCEROS",
+  "en": "SPEARMEN"
+ },
+ {
+  "es": "JINETE",
+  "en": "HORSEMAN"
+ },
+ {
+  "es": "JINETES",
+  "en": "HORSEMEN"
+ },
+ {
+  "es": "BARCO",
+  "en": "SHIP"
+ },
+ {
+  "es": "BARCOS",
+  "en": "SHIPS"
+ },
+ {
+  "es": "GRANJA",
+  "en": "FARM"
+ },
+ {
+  "es": "GRANERO",
+  "en": "GRANARY"
+ },
+ {
+  "es": "MERCADO",
+  "en": "MARKET"
+ },
+ {
+  "es": "CUARTEL",
+  "en": "BARRACKS"
+ },
+ {
+  "es": "TEMPLO",
+  "en": "TEMPLE"
+ },
+ {
+  "es": "PUERTO",
+  "en": "HARBOR"
+ },
+ {
+  "es": "MURALLA",
+  "en": "WALL"
+ },
+ {
+  "es": "MINA",
+  "en": "MINE"
+ },
+ {
+  "es": "TALLER",
+  "en": "WORKSHOP"
+ },
+ {
+  "es": "TRIGO",
+  "en": "WHEAT"
+ },
+ {
+  "es": "CEBADA",
+  "en": "BARLEY"
+ },
+ {
+  "es": "PESCADO",
+  "en": "FISH"
+ },
+ {
+  "es": "GANADO",
+  "en": "LIVESTOCK"
+ },
+ {
+  "es": "ESTANO",
+  "en": "TIN"
+ },
+ {
+  "es": "PLATA",
+  "en": "SILVER"
+ },
+ {
+  "es": "SAL",
+  "en": "SALT"
+ },
+ {
+  "es": "OBSIDIANA",
+  "en": "OBSIDIAN"
+ },
+ {
+  "es": "VINO",
+  "en": "WINE"
+ },
+ {
+  "es": "ACEITE",
+  "en": "OLIVE OIL"
+ },
+ {
+  "es": "LINO",
+  "en": "FLAX"
+ },
+ {
+  "es": "INCIENSO",
+  "en": "INCENSE"
+ },
+ {
+  "es": "CABALLOS",
+  "en": "HORSES"
+ },
+ {
+  "es": "ARCILLA",
+  "en": "CLAY"
+ },
+ {
+  "es": "LANA",
+  "en": "WOOL"
+ },
+ {
+  "es": "PAPIRO",
+  "en": "PAPYRUS"
+ },
+ {
+  "es": "LAPISLAZULI",
+  "en": "LAPIS LAZULI"
+ },
+ {
+  "es": "CEDRO",
+  "en": "CEDAR"
+ },
+ {
+  "es": "VALLE FLUVIAL",
+  "en": "RIVER VALLEY"
+ },
+ {
+  "es": "LLANURA",
+  "en": "PLAINS"
+ },
+ {
+  "es": "COLINAS",
+  "en": "HILLS"
+ },
+ {
+  "es": "MONTANA",
+  "en": "MOUNTAIN"
+ },
+ {
+  "es": "DESIERTO",
+  "en": "DESERT"
+ },
+ {
+  "es": "ESTEPA",
+  "en": "STEPPE"
+ },
+ {
+  "es": "BOSQUE",
+  "en": "FOREST"
+ },
+ {
+  "es": "COSTA",
+  "en": "COAST"
+ },
+ {
+  "es": "ISLA",
+  "en": "ISLAND"
+ },
+ {
+  "es": "OASIS",
+  "en": "OASIS"
+ },
+ {
+  "es": "MARISMA",
+  "en": "MARSH"
+ },
+ {
+  "es": "ENERO",
+  "en": "JANUARY"
+ },
+ {
+  "es": "FEBRERO",
+  "en": "FEBRUARY"
+ },
+ {
+  "es": "MARZO",
+  "en": "MARCH"
+ },
+ {
+  "es": "ABRIL",
+  "en": "APRIL"
+ },
+ {
+  "es": "MAYO",
+  "en": "MAY"
+ },
+ {
+  "es": "JUNIO",
+  "en": "JUNE"
+ },
+ {
+  "es": "JULIO",
+  "en": "JULY"
+ },
+ {
+  "es": "AGOSTO",
+  "en": "AUGUST"
+ },
+ {
+  "es": "SEPTIEMBRE",
+  "en": "SEPTEMBER"
+ },
+ {
+  "es": "OCTUBRE",
+  "en": "OCTOBER"
+ },
+ {
+  "es": "NOVIEMBRE",
+  "en": "NOVEMBER"
+ },
+ {
+  "es": "DICIEMBRE",
+  "en": "DECEMBER"
+ },
+ {
+  "es": "VELOCIDAD",
+  "en": "SPEED"
+ },
+ {
+  "es": "VICTORIA",
+  "en": "VICTORY"
+ },
+ {
+  "es": "DERROTA",
+  "en": "DEFEAT"
+ },
+ {
+  "es": "FIN DE LA PARTIDA",
+  "en": "GAME OVER"
+ },
+ {
+  "es": "SIN EJERCITOS",
+  "en": "NO ARMIES"
+ },
+ {
+  "es": "SIN EDIFICIOS",
+  "en": "NO BUILDINGS"
+ },
+ {
+  "es": "ALIM",
+  "en": "FOOD"
+ },
+ {
+  "es": "MESES",
+  "en": "MONTHS"
+ },
+ {
+  "es": "A.C.",
+  "en": "BC"
+ },
+ {
+  "es": "D.C.",
+  "en": "AD"
+ },
+ {
+  "es": "ANOS",
+  "en": "YEARS"
+ },
+ {
+  "es": "HOMBRES",
+  "en": "MEN"
+ },
+ {
+  "es": "ALMAS",
+  "en": "PEOPLE"
+ },
+ {
+  "es": "MAS...",
+  "en": "MORE..."
+ },
+ {
+  "es": "MARCHA HACIA",
+  "en": "MARCHING TO"
+ },
+ {
+  "es": "NO HAY RUTA PRACTICABLE HASTA",
+  "en": "NO USABLE ROUTE TO"
+ },
+ {
+  "es": "TESORO: ORO DISPONIBLE",
+  "en": "TREASURY: AVAILABLE GOLD"
+ },
+ {
+  "es": "ALIMENTO ALMACENADO",
+  "en": "STORED FOOD"
+ },
+ {
+  "es": "INGRESO NETO DE ORO POR MES",
+  "en": "NET GOLD INCOME PER MONTH"
+ },
+ {
+  "es": "MATERIAL ALMACENADO",
+  "en": "STORED MATERIAL"
+ },
+ {
+  "es": "RECLUTA EJERCITOS Y CONQUISTA O DEFIENDE.",
+  "en": "RECRUIT ARMIES TO CONQUER OR DEFEND."
+ },
+ {
+  "es": "LOS LIDERES ENVEJECEN Y MUEREN PARA SIEMPRE.",
+  "en": "LEADERS GROW OLD AND DIE PERMANENTLY."
+ },
+ {
+  "es": "REPUBLICAS: ELECCIONES Y REELECCION.",
+  "en": "REPUBLICS: ELECTIONS AND RE-ELECTION."
+ },
+ {
+  "es": "PUEBLOS INDEPENDIENTES",
+  "en": "INDEPENDENT PEOPLES"
+ },
+ {
+  "es": "SIN GUARNICION",
+  "en": "NO GARRISON"
+ },
+ {
+  "es": "EL CONSEJO GOBIERNA EN INTERINIDAD.",
+  "en": "THE COUNCIL ACTS AS INTERIM GOVERNMENT."
+ },
+ {
+  "es": "NUEVO CONSEJERO NOMBRADO.",
+  "en": "NEW ADVISER APPOINTED."
+ },
+ {
+  "es": "ELECCIONES PENDIENTES",
+  "en": "ELECTION PENDING"
+ },
+ {
+  "es": "SELECCIONA UNA PROVINCIA PROPIA.",
+  "en": "SELECT A PROVINCE YOU OWN."
+ },
+ {
+  "es": "CONSTRUIDO",
+  "en": "BUILT"
+ },
+ {
+  "es": "CONSTRUIDO EN",
+  "en": "BUILT IN"
+ },
+ {
+  "es": "RECLUTADOS EN",
+  "en": "RECRUITED IN"
+ },
+ {
+  "es": "EN GUERRA",
+  "en": "AT WAR"
+ },
+ {
+  "es": "RECHAZA LA PAZ POR AHORA.",
+  "en": "REJECTS PEACE FOR NOW."
+ },
+ {
+  "es": "ULTIMOS ACONTECIMIENTOS",
+  "en": "RECENT EVENTS"
+ },
+ {
+  "es": "MAS ANTIGUO",
+  "en": "OLDER"
+ },
+ {
+  "es": "MAS RECIENTE",
+  "en": "NEWER"
+ },
+ {
+  "es": "EL PUEBLO ELIGE A SU GOBERNANTE. LA REELECCION ES POSIBLE, PERO NADIE ESCAPA AL TIEMPO: LOS LIDERES ENVEJECEN Y MUEREN, Y NO REGRESAN.",
+  "en": "THE PEOPLE ELECT THEIR RULER. RE-ELECTION IS POSSIBLE, BUT NO ONE ESCAPES TIME: LEADERS GROW OLD AND DIE, NEVER TO RETURN."
+ },
+ {
+  "es": "GOBERNANTE ACTUAL",
+  "en": "CURRENT RULER"
+ },
+ {
+  "es": "MARCIAL",
+  "en": "MARTIAL"
+ },
+ {
+  "es": "DIPLO",
+  "en": "DIPLOMACY"
+ },
+ {
+  "es": "GOBERNARA",
+  "en": "WILL RULE"
+ },
+ {
+  "es": "LA ELECCION NO PUEDE POSPONERSE.",
+  "en": "THE ELECTION CANNOT BE POSTPONED."
+ },
+ {
+  "es": "ARRASTRA CON EL BOTON IZQUIERDO PARA GIRAR LA TIERRA. USA LA RUEDA PARA ACERCARTE. EL MAPA COMPLETO ES LA TIERRA; LA PARTIDA COMIENZA EN EUROPA, AFRICA DEL NORTE Y ORIENTE PROXIMO.",
+  "en": "DRAG WITH THE LEFT MOUSE BUTTON TO ROTATE THE EARTH. USE THE WHEEL TO ZOOM. THE MAP COVERS THE EARTH; THE GAME BEGINS IN EUROPE, NORTH AFRICA AND THE NEAR EAST."
+ },
+ {
+  "es": "ORO, ALIMENTO, MADERA, PIEDRA Y COBRE SOSTIENEN TU PUEBLO. CONSTRUYE GRANJAS, MINAS, PUERTOS Y TEMPLOS. LA TECNOLOGIA TE HARA AVANZAR DEL NEOLITICO AL CALCOLITICO, EL BRONCE, EL HIERRO Y LA EPOCA CLASICA. CADA ERA MEJORA LA PRODUCCION Y DESBLOQUEA UNIDADES.",
+  "en": "GOLD, FOOD, WOOD, STONE AND COPPER SUSTAIN YOUR PEOPLE. BUILD FARMS, MINES, HARBORS AND TEMPLES. TECHNOLOGY TAKES YOU FROM THE NEOLITHIC THROUGH THE COPPER, BRONZE AND IRON AGES TO CLASSICAL ANTIQUITY. EACH AGE IMPROVES PRODUCTION AND UNLOCKS UNITS."
+ },
+ {
+  "es": "EMPIEZAS COMO UNA CIUDAD-ESTADO HISTORICA. COLONIZA PROVINCIAS VECINAS Y FUNDA UNA NACION (EGIPTO, SUMERIA, SIRIA, CANAÁN...). TUS GOBERNANTES Y CONSEJEROS ENVEJECEN Y MUEREN: JAMAS VUELVEN. EN LAS REPUBLICAS HAY ELECCIONES CADA 8 ANOS Y LA REELECCION NO DETIENE LA EDAD.",
+  "en": "START AS AN ANCIENT COMMUNITY. COLONIZE NEIGHBORING PROVINCES AND FOUND A NATION (EGYPT, SUMER, SYRIA, CANAAN...). RULERS AND ADVISERS GROW OLD AND DIE PERMANENTLY. REPUBLICS HOLD ELECTIONS EVERY EIGHT YEARS; RE-ELECTION DOES NOT STOP AGING."
+ },
+ {
+  "es": "RECLUTA SOLDADOS, LANCEROS, JINETES (REQUIEREN CABALLOS Y LA EDAD DEL BRONCE) Y BARCOS (REQUIEREN UN PUERTO). SELECCIONA UN EJERCITO Y HAZ CLIC EN UNA PROVINCIA DE DESTINO. LAS BATALLAS SE RESUELVEN AL LLEGAR; EL TERRENO Y LAS MURALLAS FAVORECEN AL DEFENSOR.",
+  "en": "RECRUIT SOLDIERS, SPEARMEN, HORSEMEN (REQUIRING HORSES AND THE BRONZE AGE) AND SHIPS (REQUIRING A HARBOR). SELECT AN ARMY AND CLICK A DESTINATION PROVINCE. BATTLES RESOLVE UPON ARRIVAL; TERRAIN AND WALLS FAVOR THE DEFENDER."
+ },
+ {
+  "es": "ESPACIO: PAUSA   ·   1-4: VELOCIDAD   ·   ESC: CERRAR   ·   F5: GUARDAR   ·   F9: CARGAR   ·   F1: AYUDA",
+  "en": "SPACE: PAUSE   ·   1-4: SPEED   ·   ESC: CLOSE   ·   F5: SAVE   ·   F9: LOAD   ·   F1: HELP"
+ },
+ {
+  "es": "SOLARIS HISTORY · OPEN SOURCE GPLV3 · MOTOR C++ Y CONTENIDO JAVA · TEXTURAS NASA BLUE MARBLE",
+  "en": "SOLARIS HISTORY · OPEN SOURCE GPLV3 · C++ ENGINE AND JAVA CONTENT TOOLS · NASA BLUE MARBLE TEXTURES"
+ },
+ {
+  "es": "TU NACION HA CAIDO",
+  "en": "YOUR NATION HAS FALLEN"
+ },
+ {
+  "es": "LAS CIUDADES SE DESMORONAN, LOS NOMBRES SE OLVIDAN Y LA HISTORIA SIGUE SIN TI. PUEDES COMENZAR DE NUEVO EN OTRA CIUDAD-ESTADO.",
+  "en": "CITIES CRUMBLE, NAMES ARE FORGOTTEN AND HISTORY GOES ON WITHOUT YOU. YOU CAN START AGAIN WITH ANOTHER PEOPLE."
+ },
+ {
+  "es": "REINO DESAPARECIDO",
+  "en": "FALLEN KINGDOM"
+ },
+ {
+  "es": "COMIENZA LA PARTIDA EN EL",
+  "en": "THE GAME BEGINS IN"
+ },
+ {
+  "es": " DA SUS PRIMEROS PASOS.",
+  "en": " TAKES ITS FIRST STEPS."
+ },
+ {
+  "es": "ELIGE UN TERRITORIO VECINO Y FUNDA TU NACION CUANDO ESTES LISTO.",
+  "en": "CHOOSE A NEIGHBORING TERRITORY AND FOUND YOUR NATION WHEN YOU ARE READY."
+ },
+ {
+  "es": "ES NOMBRADO NUEVO CONSEJERO.",
+  "en": "IS APPOINTED AS A NEW ADVISER."
+ },
+ {
+  "es": "ELECCION EN",
+  "en": "ELECTION IN"
+ },
+ {
+  "es": "ASUME EL PODER.",
+  "en": "TAKES POWER."
+ },
+ {
+  "es": "HA SIDO ELEGIDO GOBERNANTE DE",
+  "en": "HAS BEEN ELECTED RULER OF"
+ },
+ {
+  "es": "HA MUERTO A LOS",
+  "en": "HAS DIED AT AGE"
+ },
+ {
+  "es": "SUCEDE EN EL TRONO DE",
+  "en": "SUCCEEDS TO THE THRONE OF"
+ },
+ {
+  "es": "HEREDA EL GOBIERNO DE",
+  "en": "INHERITS THE GOVERNMENT OF"
+ },
+ {
+  "es": "HA MUERTO. SU PUESTO EN EL CONSEJO QUEDA VACANTE.",
+  "en": "HAS DIED. THEIR COUNCIL SEAT IS VACANT."
+ },
+ {
+  "es": "DECLARA LA GUERRA A",
+  "en": "DECLARES WAR ON"
+ },
+ {
+  "es": "HAS ENTRADO EN GUERRA CONTRA",
+  "en": "YOU ARE NOW AT WAR WITH"
+ },
+ {
+  "es": "PAZ ENTRE",
+  "en": "PEACE BETWEEN"
+ },
+ {
+  "es": "SE HA FIRMADO LA PAZ CON",
+  "en": "PEACE HAS BEEN SIGNED WITH"
+ },
+ {
+  "es": "BAJO EL GOBIERNO DE",
+  "en": "UNDER THE RULE OF"
+ },
+ {
+  "es": "SU PUEBLO",
+  "en": "ITS PEOPLE"
+ },
+ {
+  "es": "LA HISTORIA DE TU PUEBLO COMIENZA AHORA.",
+  "en": "THE HISTORY OF YOUR PEOPLE BEGINS NOW."
+ },
+ {
+  "es": "ENTRA EN LA",
+  "en": "ENTERS THE"
+ },
+ {
+  "es": "NUEVA ERA",
+  "en": "NEW AGE"
+ },
+ {
+  "es": "TU PUEBLO HA ENTRADO EN LA",
+  "en": "YOUR PEOPLE HAVE ENTERED THE"
+ },
+ {
+  "es": "NUEVAS UNIDADES Y EDIFICIOS DISPONIBLES.",
+  "en": "NEW UNITS AND BUILDINGS ARE AVAILABLE."
+ },
+ {
+  "es": "SE REBELA Y ABANDONA",
+  "en": "REBELS AND LEAVES"
+ },
+ {
+  "es": "HAS PERDIDO",
+  "en": "YOU HAVE LOST"
+ },
+ {
+  "es": "POR UNA REBELION.",
+  "en": "TO A REBELLION."
+ },
+ {
+  "es": "NACION INVALIDA",
+  "en": "INVALID NATION"
+ },
+ {
+  "es": "NO CONTROLAS ESA PROVINCIA",
+  "en": "YOU DO NOT CONTROL THAT PROVINCE"
+ },
+ {
+  "es": "UNIDAD INVALIDA",
+  "en": "INVALID UNIT"
+ },
+ {
+  "es": "REQUIERE",
+  "en": "REQUIRES"
+ },
+ {
+  "es": "NECESITAS CABALLOS EN TU TERRITORIO",
+  "en": "YOU NEED HORSES IN YOUR TERRITORY"
+ },
+ {
+  "es": "SOLO EN PROVINCIAS COSTERAS",
+  "en": "ONLY IN COASTAL PROVINCES"
+ },
+ {
+  "es": "REQUIERE UN PUERTO",
+  "en": "REQUIRES A HARBOR"
+ },
+ {
+  "es": "POBLACION INSUFICIENTE",
+  "en": "INSUFFICIENT POPULATION"
+ },
+ {
+  "es": "ORO INSUFICIENTE",
+  "en": "INSUFFICIENT GOLD"
+ },
+ {
+  "es": "ALIMENTO INSUFICIENTE",
+  "en": "INSUFFICIENT FOOD"
+ },
+ {
+  "es": "MADERA INSUFICIENTE",
+  "en": "INSUFFICIENT WOOD"
+ },
+ {
+  "es": "PIEDRA INSUFICIENTE",
+  "en": "INSUFFICIENT STONE"
+ },
+ {
+  "es": "MANO DE OBRA INSUFICIENTE",
+  "en": "INSUFFICIENT MANPOWER"
+ },
+ {
+  "es": "RECLUTA",
+  "en": "RECRUITS"
+ },
+ {
+  "es": "EDIFICIO INVALIDO",
+  "en": "INVALID BUILDING"
+ },
+ {
+  "es": "CONSTRUYE",
+  "en": "BUILDS"
+ },
+ {
+  "es": "BATALLA DE",
+  "en": "BATTLE OF"
+ },
+ {
+  "es": "VENCE A",
+  "en": "DEFEATS"
+ },
+ {
+  "es": "LAS MILICIAS LOCALES",
+  "en": "THE LOCAL MILITIA"
+ },
+ {
+  "es": "VICTORIA EN",
+  "en": "VICTORY AT"
+ },
+ {
+  "es": "BAJAS ENEMIGAS:",
+  "en": "ENEMY CASUALTIES:"
+ },
+ {
+  "es": "ES RECHAZADO.",
+  "en": "IS REPELLED."
+ },
+ {
+  "es": "DERROTA EN",
+  "en": "DEFEAT AT"
+ },
+ {
+  "es": "TUS TROPAS SE RETIRAN.",
+  "en": "YOUR TROOPS RETREAT."
+ },
+ {
+  "es": "LA CAPITAL DE",
+  "en": "THE CAPITAL OF"
+ },
+ {
+  "es": "SE TRASLADA A",
+  "en": "MOVES TO"
+ },
+ {
+  "es": "HA SIDO DESTRUIDA.",
+  "en": "HAS BEEN DESTROYED."
+ },
+ {
+  "es": "TU NACION HA CAIDO. LA HISTORIA CONTINUA SIN TI.",
+  "en": "YOUR NATION HAS FALLEN. HISTORY CONTINUES WITHOUT YOU."
+ },
+ {
+  "es": "UNA SEQUIA GOLPEA",
+  "en": "A DROUGHT STRIKES"
+ },
+ {
+  "es": "ALIMENTO PERDIDO.",
+  "en": "FOOD LOST."
+ },
+ {
+  "es": "EXCELENTE COSECHA EN",
+  "en": "EXCELLENT HARVEST IN"
+ },
+ {
+  "es": "LA CRECIDA DEL RIO FERTILIZA",
+  "en": "THE RIVER FLOOD FERTILIZES"
+ },
+ {
+  "es": "UN TEMBLOR DE TIERRA SACUDE",
+  "en": "AN EARTHQUAKE SHAKES"
+ },
+ {
+  "es": "ESTADO LATINO HISTORICO INDEPENDIENTE. DISPONIBLE A PARTIR DE",
+  "en": "INDEPENDENT HISTORICAL LATIN STATE. AVAILABLE FROM"
+ },
+ {
+  "es": "FECHA APROXIMADA O TRADICIONAL.",
+  "en": "APPROXIMATE OR TRADITIONAL DATE."
+ },
+ {
+  "es": "COMUNIDADES PREHISTORICAS DEL LACIO. EL NOMBRE LATINOS ES UNA ETIQUETA DE JUEGO; ROMA AUN NO EXISTE.",
+  "en": "PREHISTORIC COMMUNITIES OF LATIUM. LATINS IS A GAMEPLAY LABEL; ROME DOES NOT EXIST YET."
+ },
+ {
+  "es": "EGIPCIO",
+  "en": "EGYPTIAN"
+ },
+ {
+  "es": "SUMERIO",
+  "en": "SUMERIAN"
+ },
+ {
+  "es": "SEMITA ORIENTAL",
+  "en": "EAST SEMITIC"
+ },
+ {
+  "es": "SEMITA",
+  "en": "SEMITIC"
+ },
+ {
+  "es": "ANATOLIO NEOLITICO",
+  "en": "NEOLITHIC ANATOLIAN"
+ },
+ {
+  "es": "ANATOLIO",
+  "en": "ANATOLIAN"
+ },
+ {
+  "es": "EGEO NEOLITICO",
+  "en": "NEOLITHIC AEGEAN"
+ },
+ {
+  "es": "EGEO",
+  "en": "AEGEAN"
+ },
+ {
+  "es": "NUBIO (GRUPO A)",
+  "en": "NUBIAN (A-GROUP)"
+ },
+ {
+  "es": "NUBIO",
+  "en": "NUBIAN"
+ },
+ {
+  "es": "ELAMITA",
+  "en": "ELAMITE"
+ },
+ {
+  "es": "BALCANICO (VINCA)",
+  "en": "BALKAN (VINČA)"
+ },
+ {
+  "es": "DANUBIANO (LBK)",
+  "en": "DANUBIAN (LBK)"
+ },
+ {
+  "es": "MEGALITICO ATLANTICO",
+  "en": "ATLANTIC MEGALITHIC"
+ },
+ {
+  "es": "NORDICO NEOLITICO",
+  "en": "NEOLITHIC NORDIC"
+ },
+ {
+  "es": "ESTEPARIO (YAMNAYA)",
+  "en": "STEPPE (YAMNAYA)"
+ },
+ {
+  "es": "CAUCASICO (KURA-ARAXES)",
+  "en": "CAUCASIAN (KURA-ARAXES)"
+ },
+ {
+  "es": "IRANIO DE LA MESETA",
+  "en": "IRANIAN PLATEAU"
+ },
+ {
+  "es": "BEREBER (LIBIO)",
+  "en": "BERBER (LIBYAN)"
+ },
+ {
+  "es": "ARABIGO NOMADA",
+  "en": "NOMADIC ARABIAN"
+ },
+ {
+  "es": "IBERICO (LOS MILLARES)",
+  "en": "IBERIAN (LOS MILLARES)"
+ },
+ {
+  "es": "SARDO (OZIERI)",
+  "en": "SARDINIAN (OZIERI)"
+ },
+ {
+  "es": "CHIPRIOTA",
+  "en": "CYPRIOT"
+ },
+ {
+  "es": "ITALICO",
+  "en": "ITALIC"
+ },
+ {
+  "es": "LATINO",
+  "en": "LATIN"
+ },
+ {
+  "es": "EGIPCIOS",
+  "en": "EGYPTIANS"
+ },
+ {
+  "es": "SUMERIOS",
+  "en": "SUMERIANS"
+ },
+ {
+  "es": "SEMITAS",
+  "en": "SEMITIC PEOPLES"
+ },
+ {
+  "es": "ANATOLIOS",
+  "en": "ANATOLIANS"
+ },
+ {
+  "es": "EGEOS",
+  "en": "AEGEANS"
+ },
+ {
+  "es": "LATINOS",
+  "en": "LATINS"
+ },
+ {
+  "es": "EL NILO DICTA LA VIDA: COSECHAS SEGURAS, TEOCRACIA FUERTE Y UN PUEBLO QUE VENERA A SUS MUERTOS.",
+  "en": "THE NILE GOVERNS LIFE: RELIABLE HARVESTS, STRONG THEOCRACY AND A PEOPLE WHO REVERE THEIR DEAD."
+ },
+ {
+  "es": "GUERREROS DEL ALTO NILO Y MAESTROS DEL ARCO; RICOS EN ORO Y GANADO, PERO ENCAJONADOS ENTRE DESIERTOS.",
+  "en": "WARRIORS OF THE UPPER NILE AND MASTERS OF THE BOW; RICH IN GOLD AND CATTLE, SURROUNDED BY DESERTS."
+ },
+ {
+  "es": "INVENTORES DE LA CIUDAD Y LA ESCRITURA. CANALES, TEMPLOS Y CONTABILIDAD ANTES QUE NADIE.",
+  "en": "PIONEERS OF CITIES AND WRITING. CANALS, TEMPLES AND ACCOUNTING BEFORE ANYONE ELSE."
+ },
+ {
+  "es": "PASTORES Y MERCADERES DE LA MEDIA LUNA FERTIL; SE ADAPTAN A CUALQUIER TIERRA Y COMERCIAN CON TODOS.",
+  "en": "PASTORALISTS AND MERCHANTS OF THE FERTILE CRESCENT; ADAPTABLE SETTLERS WHO TRADE WITH EVERYONE."
+ },
+ {
+  "es": "MONTANESES DE SUSA Y ANSHAN: ARQUEROS TEMIBLES Y UNA CORTE ORGULLOSA DE SU INDEPENDENCIA.",
+  "en": "HIGHLANDERS OF SUSA AND ANSHAN: FORMIDABLE ARCHERS AND A COURT PROUD OF ITS INDEPENDENCE."
+ },
+ {
+  "es": "LOS PRIMEROS URBANISTAS DEL MUNDO. OBSIDIANA, TRIGO Y GANADO EN LAS MESETAS DE ANATOLIA.",
+  "en": "THE EARLIEST URBAN COMMUNITIES. OBSIDIAN, WHEAT AND CATTLE ON THE ANATOLIAN PLATEAUS."
+ },
+ {
+  "es": "ISLAS, VIENTO Y COMERCIO. MARINOS NATOS CON CIUDADES ABIERTAS AL MAR Y A LAS IDEAS.",
+  "en": "ISLANDS, WIND AND TRADE. NATURAL SAILORS WITH CITIES OPEN TO THE SEA AND NEW IDEAS."
+ },
+ {
+  "es": "METALURGICOS PIONEROS DEL DANUBIO; RICOS EN COBRE Y ORO, FEROCES DEFENSORES DE SUS VALLES.",
+  "en": "PIONEERING DANUBIAN METALWORKERS; RICH IN COPPER AND GOLD, FIERCE DEFENDERS OF THEIR VALLEYS."
+ },
+ {
+  "es": "AGRICULTORES DE LAS LLANURAS CENTRALES. ALDEAS GRANDES, CAMPOS DE TRIGO Y CRECIMIENTO CONSTANTE.",
+  "en": "FARMERS OF THE CENTRAL PLAINS. LARGE VILLAGES, WHEAT FIELDS AND STEADY GROWTH."
+ },
+ {
+  "es": "CONSTRUCTORES DE PIEDRA Y NAVEGANTES DE CABOTAJE. SOCIEDADES RITUALES MUY COHESIONADAS.",
+  "en": "STONE BUILDERS AND COASTAL SAILORS. CLOSE-KNIT SOCIETIES SHAPED BY RITUAL."
+ },
+ {
+  "es": "CAZADORES, PESCADORES Y NAVEGANTES DEL BALTICO Y EL MAR DEL NORTE. DUROS EN INVIERNO.",
+  "en": "HUNTERS, FISHERS AND SAILORS OF THE BALTIC AND NORTH SEA, HARDENED BY WINTER."
+ },
+ {
+  "es": "JINETES Y PASTORES DE LA ESTEPA PONTICA. MOVILIDAD BRUTAL Y HAMBRE DE HORIZONTES.",
+  "en": "HERDERS OF THE PONTIC STEPPE. GREAT MOBILITY AND A HUNGER FOR DISTANT HORIZONS."
+ },
+ {
+  "es": "METALURGICOS DE MONTANA ENTRE DOS MARES; ARTESANOS DEL BRONCE Y GUARDIANES DE LOS PASOS.",
+  "en": "MOUNTAIN METALWORKERS BETWEEN TWO SEAS; BRONZE ARTISANS AND GUARDIANS OF THE PASSES."
+ },
+ {
+  "es": "GENTES DE OASIS Y MESETAS ALTAS; COMERCIO CARAVANERO Y ARQUEROS DE MONTANA.",
+  "en": "PEOPLE OF OASES AND HIGH PLATEAUS; CARAVAN TRADERS AND MOUNTAIN ARCHERS."
+ },
+ {
+  "es": "SENORES DEL MAGREB Y DEL DESIERTO; NOMADAS, JINETES Y GUIAS DE CARAVANAS.",
+  "en": "PEOPLES OF THE MAGHREB AND DESERT; NOMADS, RIDERS AND CARAVAN GUIDES."
+ },
+ {
+  "es": "CARAVANEROS Y CRIADORES DEL DESIERTO ARABIGO. CONOCEN CADA POZO Y CADA RUTA.",
+  "en": "CARAVAN TRADERS AND HERDERS OF THE ARABIAN DESERT. THEY KNOW EVERY WELL AND ROUTE."
+ },
+ {
+  "es": "ALDEANOS DE COLINAS Y LLANURAS ITALICAS; COMUNIDADES RURALES SOLIDAS Y LABORIOSAS.",
+  "en": "VILLAGERS OF THE ITALIAN HILLS AND PLAINS; STRONG, HARDWORKING RURAL COMMUNITIES."
+ },
+ {
+  "es": "METALURGICOS DEL SURESTE IBERICO; COBRE, MURALLAS CICLOPEAS Y FUERTE SENTIDO DEL CLAN.",
+  "en": "METALWORKERS OF SOUTHEASTERN IBERIA; COPPER, MASSIVE WALLS AND STRONG CLAN TIES."
+ },
+ {
+  "es": "ISLENOS DE LA OBSIDIANA Y LOS NURAGAS; ARTESANOS Y PASTORES DIFÍCILES DE SOMETER.",
+  "en": "ISLANDERS OF OBSIDIAN AND NURAGHI; ARTISANS AND HERDERS WHO RESIST CONQUEST."
+ },
+ {
+  "es": "PUENTE ENTRE ORIENTE Y OCCIDENTE; COBRE, VINO Y PUERTOS ABIERTOS A TODAS LAS FLOTAS.",
+  "en": "A BRIDGE BETWEEN EAST AND WEST; COPPER, WINE AND HARBORS OPEN TO EVERY FLEET."
+ },
+ {
+  "es": "EL REINO DE LAS DOS TIERRAS, DEL DELTA A ELEFANTINA.",
+  "en": "THE KINGDOM OF THE TWO LANDS, FROM THE DELTA TO ELEPHANTINE."
+ },
+ {
+  "es": "LA LIGA DE LAS CIUDADES DEL SUR MESOPOTAMICO.",
+  "en": "THE LEAGUE OF SOUTHERN MESOPOTAMIAN CITIES."
+ },
+ {
+  "es": "EL IMPERIO DE LOS CUATRO CONFINES, BAJO UN SOLO REY.",
+  "en": "THE EMPIRE OF THE FOUR QUARTERS UNDER A SINGLE KING."
+ },
+ {
+  "es": "LA MESETA Y LA LLANURA UNIDAS POR LOS ARQUEROS DE SUSA.",
+  "en": "PLATEAU AND PLAIN UNITED BY THE ARCHERS OF SUSA."
+ },
+ {
+  "es": "EL CORAZON DE LAS RUTAS ENTRE MESOPOTAMIA Y EL MAR.",
+  "en": "THE HEART OF THE ROUTES BETWEEN MESOPOTAMIA AND THE SEA."
+ },
+ {
+  "es": "CIUDADES DEL JORDAN Y DE LA COSTA, ENTRE EGIPTO Y ASIA.",
+  "en": "CITIES OF THE JORDAN AND THE COAST, BETWEEN EGYPT AND ASIA."
+ },
+ {
+  "es": "CEDRO, PURPURA Y PUERTOS QUE LLEGAN A TODO EL MEDITERRANEO.",
+  "en": "CEDAR, PURPLE DYE AND PORTS REACHING ACROSS THE MEDITERRANEAN."
+ },
+ {
+  "es": "EL DIOS ASSUR Y UN EJERCITO QUE NO RETROCEDE.",
+  "en": "THE GOD ASHUR AND AN ARMY THAT NEVER RETREATS."
+ },
+ {
+  "es": "LA PUERTA DE LOS DIOSES Y LA CIUDAD DE LAS LEYES.",
+  "en": "THE GATE OF THE GODS AND THE CITY OF LAWS."
+ },
+ {
+  "es": "EL REINO DE LAS MIL DIVINIDADES Y DE LOS CARROS DE GUERRA.",
+  "en": "THE LAND OF A THOUSAND DEITIES AND WAR CHARIOTS."
+ },
+ {
+  "es": "LAS CIUDADES LIBRES DEL OESTE ANATOLIO.",
+  "en": "THE FREE CITIES OF WESTERN ANATOLIA."
+ },
+ {
+  "es": "LA ILIOS DE LAS LEYENDAS, GUARDIANA DE LOS ESTRECHOS.",
+  "en": "THE LEGENDARY ILIOS, GUARDIAN OF THE STRAITS."
+ },
+ {
+  "es": "LA TALASOCRACIA DEL LABERINTO Y DEL TORO SAGRADO.",
+  "en": "THE SEA POWER OF THE LABYRINTH AND THE SACRED BULL."
+ },
+ {
+  "es": "LOS AQUEOS DE LA EDAD DEL BRONCE, RICOS EN ORO Y CARROS.",
+  "en": "BRONZE AGE ACHAEANS, RICH IN GOLD AND CHARIOTS."
+ },
+ {
+  "es": "LA CIUDAD DE LA COLINA Y DEL ACEITE DE OLIVA.",
+  "en": "THE CITY OF THE HILL AND OLIVE OIL."
+ },
+ {
+  "es": "LOS SENORES DE LOS KURGANES Y DE LA ESTEPA SIN FIN.",
+  "en": "LORDS OF THE BURIAL MOUNDS AND THE ENDLESS STEPPE."
+ },
+ {
+  "es": "ORO, CABALLOS Y MONTANAS ENTRE EL DANUBIO Y EL EGEO.",
+  "en": "GOLD, HORSES AND MOUNTAINS BETWEEN THE DANUBE AND THE AEGEAN."
+ },
+ {
+  "es": "LAS GRANDES ALDEAS DE LA CULTURA CUCUTENI-TRIPILIA.",
+  "en": "THE LARGE VILLAGES OF THE CUCUTENI-TRYPILLIA CULTURE."
+ },
+ {
+  "es": "LA CULTURA DEL DANUBIO Y DE SUS TEMPLOS DE BARRO.",
+  "en": "THE CULTURE OF THE DANUBE AND ITS CLAY TEMPLES."
+ },
+ {
+  "es": "COBRE, FORTALEZAS Y CLANES DEL SURESTE DE IBERIA.",
+  "en": "COPPER, FORTRESSES AND CLANS OF SOUTHEASTERN IBERIA."
+ },
+ {
+  "es": "EL REINO DEL METAL Y DE LAS RUTAS ATLANTICAS.",
+  "en": "THE KINGDOM OF METAL AND ATLANTIC TRADE ROUTES."
+ },
+ {
+  "es": "PUEBLOS DEL OESTE IBERICO, PASTORES Y GUERREROS.",
+  "en": "PEOPLES OF WESTERN IBERIA, HERDERS AND WARRIORS."
+ },
+ {
+  "es": "LOS SENORES DEL METAL Y DE LOS RITOS DE ITALIA CENTRAL.",
+  "en": "THE METALWORKING AND RITUAL COMMUNITIES OF CENTRAL ITALY."
+ },
+ {
+  "es": "LOS PUEBLOS DE LA SICILIA DEL TRIGO Y DEL VINO.",
+  "en": "THE PEOPLES OF SICILY, LAND OF WHEAT AND WINE."
+ },
+ {
+  "es": "OBSIDIANA, NURAGAS Y PASTORES DE LAS MONTANAS SARDAS.",
+  "en": "OBSIDIAN, NURAGHI AND HERDERS OF THE SARDINIAN MOUNTAINS."
+ },
+ {
+  "es": "EL REINO DEL COBRE DE CHIPRE, ENTRE ANATOLIA, LEVANTE Y EGIPTO.",
+  "en": "THE COPPER KINGDOM OF CYPRUS, BETWEEN ANATOLIA, THE LEVANT AND EGYPT."
+ },
+ {
+  "es": "LAS TRIBUS LIBIAS ENTRE EL DESIERTO Y EL MAR.",
+  "en": "LIBYAN TRIBES BETWEEN THE DESERT AND THE SEA."
+ },
+ {
+  "es": "JINETES NUMIDAS, LA MEJOR CABALLERIA DE AFRICA.",
+  "en": "NUMIDIAN HORSEMEN, THE FINEST CAVALRY IN AFRICA."
+ },
+ {
+  "es": "EL EXTREMO OCCIDENTAL DE AFRICA Y LAS COLUMNAS DE HERCULES.",
+  "en": "THE WESTERN EDGE OF AFRICA AND THE PILLARS OF HERCULES."
+ },
+ {
+  "es": "EL REINO DE KERMA, ENTRE LA PRIMERA Y LA TERCERA CATARATA.",
+  "en": "THE KINGDOM OF KERMA, BETWEEN THE FIRST AND THIRD CATARACTS."
+ },
+ {
+  "es": "LOS ARQUEROS DEL SUR Y EL ORO DEL DESIERTO.",
+  "en": "THE ARCHERS OF THE SOUTH AND THE GOLD OF THE DESERT."
+ },
+ {
+  "es": "LAS TRIBUS DEL HIYAZ Y LAS RUTAS DE CARAVANAS.",
+  "en": "THE TRIBES OF THE HEJAZ AND THE CARAVAN ROUTES."
+ },
+ {
+  "es": "EL EMPORIO DEL GOLFO, ENTRE MESOPOTAMIA Y EL INDO.",
+  "en": "THE TRADING CENTER OF THE GULF, BETWEEN MESOPOTAMIA AND THE INDUS."
+ },
+ {
+  "es": "INCIENSO, MIRRA Y LAS MONTANAS VERDES DEL SUR.",
+  "en": "INCENSE, MYRRH AND THE GREEN MOUNTAINS OF THE SOUTH."
+ },
+ {
+  "es": "FORTALEZAS DE MONTANA EN TORNO AL LAGO VAN.",
+  "en": "MOUNTAIN FORTRESSES AROUND LAKE VAN."
+ },
+ {
+  "es": "LOS CABALLOS DE LA MESETA IRANIA.",
+  "en": "THE HORSES OF THE IRANIAN PLATEAU."
+ },
+ {
+  "es": "LA TIERRA DE ANSHAN Y DE LOS GRANDES REYES.",
+  "en": "THE LAND OF ANSHAN AND THE GREAT KINGS."
+ },
+ {
+  "es": "LAS ISLAS DEL ESTAÑO Y DE LOS CIRCULOS DE PIEDRA.",
+  "en": "THE ISLANDS OF TIN AND STONE CIRCLES."
+ },
+ {
+  "es": "LAS TIERRAS ALTAS DEL NORTE.",
+  "en": "THE NORTHERN HIGHLANDS."
+ },
+ {
+  "es": "LOS BOSQUES Y MARISMAS DEL NORTE.",
+  "en": "THE FORESTS AND MARSHES OF THE NORTH."
+ },
+ {
+  "es": "LOS ESTRECHOS Y LAS ISLAS DEL NORTE.",
+  "en": "THE NORTHERN STRAITS AND ISLANDS."
+ },
+ {
+  "es": "ESTADO LATINO HISTORICO INDEPENDIENTE. DISPONIBLE A PARTIR DE 1200 A.C.; FECHA APROXIMADA O TRADICIONAL.",
+  "en": "INDEPENDENT HISTORICAL LATIN STATE. AVAILABLE FROM 1200 BC; APPROXIMATE OR TRADITIONAL DATE."
+ },
+ {
+  "es": "ESTADO LATINO HISTORICO INDEPENDIENTE. DISPONIBLE A PARTIR DE 1000 A.C.; FECHA APROXIMADA O TRADICIONAL.",
+  "en": "INDEPENDENT HISTORICAL LATIN STATE. AVAILABLE FROM 1000 BC; APPROXIMATE OR TRADITIONAL DATE."
+ },
+ {
+  "es": "ESTADO LATINO HISTORICO INDEPENDIENTE. DISPONIBLE A PARTIR DE 753 A.C.; FECHA APROXIMADA O TRADICIONAL.",
+  "en": "INDEPENDENT HISTORICAL LATIN STATE. AVAILABLE FROM 753 BC; TRADITIONAL DATE."
+ },
+ {
+  "es": "CAMPOS DE REGADIO Y GRANEROS: +15% ALIMENTOS.",
+  "en": "IRRIGATED FIELDS AND GRANARIES: +15% FOOD."
+ },
+ {
+  "es": "AGUA SEGURA: +10% CRECIMIENTO DE POBLACION.",
+  "en": "SAFE WATER: +10% POPULATION GROWTH."
+ },
+ {
+  "es": "MUROS DE ADOBE O PIEDRA: +30% DEFENSA PROVINCIAL.",
+  "en": "MUDBRICK OR STONE WALLS: +30% PROVINCIAL DEFENSE."
+ },
+ {
+  "es": "CARPINTERIA Y HERRAMIENTAS: +20% MADERA.",
+  "en": "WOODWORKING AND TOOLS: +20% WOOD."
+ },
+ {
+  "es": "EXTRACCION DE PIEDRA: +20% PIEDRA.",
+  "en": "STONE EXTRACTION: +20% STONE."
+ },
+ {
+  "es": "GALERIAS DE COBRE: +25% COBRE.",
+  "en": "COPPER WORKINGS: +25% COPPER."
+ },
+ {
+  "es": "FERIAS Y RUTAS: +20% COMERCIO.",
+  "en": "FAIRS AND TRADE ROUTES: +20% TRADE."
+ },
+ {
+  "es": "CASA DE LOS DIOSES: +6% ESTABILIDAD.",
+  "en": "HOUSE OF THE GODS: +6% STABILITY."
+ },
+ {
+  "es": "CONTABLES Y ARCHIVOS: +18% TECNOLOGIA.",
+  "en": "ACCOUNTANTS AND ARCHIVES: +18% TECHNOLOGY."
+ },
+ {
+  "es": "MUELLE Y ASTILLERO: +COMERCIO, PERMITE BARCOS.",
+  "en": "WHARF AND SHIPYARD: IMPROVES TRADE AND ENABLES SHIPS."
+ },
+ {
+  "es": "LEVAS ORGANIZADAS: +25% MANO DE OBRA.",
+  "en": "ORGANIZED LEVIES: +25% MANPOWER."
+ },
+ {
+  "es": "REBANOS Y PASTOS: +8% ALIMENTOS.",
+  "en": "FLOCKS AND PASTURES: +8% FOOD."
+ },
+ {
+  "es": "INFANTERIA LIGERA DE LANZA CORTA Y ESCUDO DE CUERO. BARATA Y FIABLE.",
+  "en": "LIGHT INFANTRY WITH SHORT SPEARS AND LEATHER SHIELDS. CHEAP AND RELIABLE."
+ },
+ {
+  "es": "FORMACION CERRADA DE LANZAS LARGAS. EXCELENTE CONTRA JINETES Y EN COLINAS.",
+  "en": "A CLOSE FORMATION OF LONG SPEARS. EXCELLENT AGAINST CAVALRY AND IN HILLS."
+ },
+ {
+  "es": "CARROS Y JINETES DE LA ESTEPA. DEVASTADORES EN CAMPO ABIERTO, FRAGILES EN ASEDIOS.",
+  "en": "CHARIOTS AND STEPPE RIDERS. DEVASTATING IN THE OPEN, VULNERABLE IN SIEGES."
+ },
+ {
+  "es": "GALERA DE REMOS PARA COMERCIO, DESEMBARCOS Y CONTROL DE LAS RUTAS MARITIMAS.",
+  "en": "AN OARED GALLEY FOR TRADE, LANDINGS AND CONTROL OF SEA ROUTES."
+ },
+ {
+  "es": "LA CIUDAD DEL MURO BLANCO, HEREDERA DE LAS TRADICIONES DEL BAJO Y ALTO EGIPTO.",
+  "en": "THE CITY OF THE WHITE WALL, HEIR TO THE TRADITIONS OF LOWER AND UPPER EGYPT."
+ },
+ {
+  "es": "LA PRIMERA GRAN CIUDAD. TEMPLOS DE ADOBE, CANALES Y ESCRITURA CUNEIFORME.",
+  "en": "THE FIRST GREAT CITY. MUDBRICK TEMPLES, CANALS AND CUNEIFORM WRITING."
+ },
+ {
+  "es": "MILENIOS DE VIDA URBANA EN LA MESETA DE KONYA; SANTUARIOS Y OBSIDIANA.",
+  "en": "MILLENNIA OF URBAN LIFE ON THE KONYA PLATEAU; SHRINES AND OBSIDIAN."
+ },
+ {
+  "es": "UNA DE LAS CIUDADES MAS ANTIGUAS DEL MUNDO, JUNTO AL JORDAN Y SUS MANANTIALES.",
+  "en": "ONE OF THE OLDEST CITIES, BESIDE THE JORDAN AND ITS SPRINGS."
+ },
+ {
+  "es": "EL CONTROL DEL ESTRECHO DE LOS DARDANELOS VALE MAS QUE UN REINO.",
+  "en": "CONTROL OF THE DARDANELLES IS WORTH MORE THAN A KINGDOM."
+ },
+ {
+  "es": "EL LABERINTO DE CRETA: ACEITE, BRONCE Y UNA FLOTA QUE DOMINA EL EGEO.",
+  "en": "THE LABYRINTH OF CRETE: OIL, BRONZE AND A FLEET DOMINATING THE AEGEAN."
+ },
+ {
+  "es": "PUERTO DEL GOLFO Y CIUDAD DE LA LUNA.",
+  "en": "A GULF PORT AND CITY OF THE MOON."
+ },
+ {
+  "es": "LA PUERTA DE LAS MONTANAS ELAMITAS.",
+  "en": "THE GATEWAY TO THE ELAMITE MOUNTAINS."
+ },
+ {
+  "es": "EMPORIO DEL CEDRO Y DEL COMERCIO MARITIMO LEVANTINO.",
+  "en": "A CENTER FOR CEDAR AND LEVANTINE SEA TRADE."
+ },
+ {
+  "es": "SENORA DE LAS LLANURAS SIRIAS Y DE LA RUTA DE LA PLATA.",
+  "en": "MISTRESS OF THE SYRIAN PLAINS AND THE SILVER ROUTE."
+ },
+ {
+  "es": "ORO, COBRE Y NECROPOLIS PRINCIPESCAS DEL MAR NEGRO.",
+  "en": "GOLD, COPPER AND PRINCELY BURIAL GROUNDS ON THE BLACK SEA."
+ },
+ {
+  "es": "FORTALEZA DEL COBRE EN EL SURESTE IBERICO.",
+  "en": "A COPPER FORTRESS IN SOUTHEASTERN IBERIA."
+ },
+ {
+  "es": "POZO",
+  "en": "WELL"
+ },
+ {
+  "es": "CANTERA",
+  "en": "QUARRY"
+ },
+ {
+  "es": "CASA DE ESCRIBAS",
+  "en": "SCRIBES HOUSE"
+ },
+ {
+  "es": "ESCRIBAS",
+  "en": "SCRIBES"
+ },
+ {
+  "es": "GANADERIA",
+  "en": "ANIMAL HUSBANDRY"
+ },
+ {
+  "es": "INGRESO",
+  "en": "INCOME"
+ },
+ {
+  "es": "NACE",
+  "en": "THE BIRTH OF"
+ },
+ {
+  "es": "GRANJAS",
+  "en": "FARMS"
+ },
+ {
+  "es": "ADMINISTRADOR",
+  "en": "ADMINISTRATOR"
+ },
+ {
+  "es": "DIPLOMATICO",
+  "en": "DIPLOMAT"
+ },
+ {
+  "es": "PIADOSO",
+  "en": "PIOUS"
+ },
+ {
+  "es": "AMBICIOSO",
+  "en": "AMBITIOUS"
+ },
+ {
+  "es": "CRUEL",
+  "en": "CRUEL"
+ },
+ {
+  "es": "SABIO",
+  "en": "WISE"
+ },
+ {
+  "es": "CONSTRUCTOR",
+  "en": "BUILDER"
+ },
+ {
+  "es": "ENFERMIZO",
+  "en": "SICKLY"
+ },
+ {
+  "es": "ROBUSTO",
+  "en": "ROBUST"
+ },
+ {
+  "es": "CODICIOSO",
+  "en": "GREEDY"
+ },
+ {
+  "es": "CARISMATICO",
+  "en": "CHARISMATIC"
+ },
+ {
+  "es": "FUERZA MILITAR",
+  "en": "MILITARY STRENGTH"
+ },
+ {
+  "es": "EXPANSION",
+  "en": "EXPANSION"
+ },
+ {
+  "es": "COSTE DE EDIFICIOS",
+  "en": "BUILDING COSTS"
+ },
+ {
+  "es": "ANOS DE ESPERANZA DE VIDA",
+  "en": "YEARS OF LIFE EXPECTANCY"
+ },
+ {
+  "es": "IMAGENES DE WIKIMEDIA PENDIENTES DE DESCARGAR.",
+  "en": "WIKIMEDIA IMAGES ARE AWAITING DOWNLOAD."
+ },
+ {
+  "es": "FUENTES, AUTORES Y LICENCIAS DE LAS IMAGENES",
+  "en": "IMAGE SOURCES, AUTHORS AND LICENSES"
+ },
+ {
+  "es": "LOS SIMBOLOS NO SON BANDERAS DE 3300 A.C. CONSULTA SU CONTEXTO AL PASAR EL RATON.",
+  "en": "THESE SYMBOLS ARE NOT FLAGS FROM 3300 BC. HOVER FOR THEIR HISTORICAL CONTEXT."
+ },
+ {
+  "es": "PRODUCCION Y COMERCIO DE TUS PROVINCIAS",
+  "en": "PRODUCTION AND TRADE IN YOUR PROVINCES"
+ },
+ {
+  "es": "PROVINCIAS PROPIAS:",
+  "en": "OWNED PROVINCES:"
+ },
+ {
+  "es": "VALOR COMERCIAL:",
+  "en": "TRADE VALUE:"
+ },
+ {
+  "es": "EDAD",
+  "en": "AGE"
+ },
+ {
+  "es": "NINGUNO",
+  "en": "NONE"
+ },
+ {
+  "es": "NINGUNA",
+  "en": "NONE"
+ },
+ {
+  "es": "MOVER",
+  "en": "MOVE"
+ },
+ {
+  "es": "VER TODO",
+  "en": "VIEW ALL"
+ },
+ {
+  "es": "GLOBO",
+  "en": "GLOBE"
+ },
+ {
+  "es": "REGRESAR",
+  "en": "RETURN"
+ },
+ {
+  "es": "DEFENSA",
+  "en": "DEFENSE"
+ },
+ {
+  "es": "ATAQUE",
+  "en": "ATTACK"
+ },
+ {
+  "es": "FUERZA",
+  "en": "STRENGTH"
+ },
+ {
+  "es": "COMIDA",
+  "en": "FOOD"
+ },
+ {
+  "es": "EXHAUSTO",
+  "en": "EXHAUSTED"
+ },
+ {
+  "es": "ABANDONAR",
+  "en": "LEAVE"
+ },
+ {
+  "es": "SIGUIENTE",
+  "en": "NEXT"
+ },
+ {
+  "es": "ANTERIOR",
+  "en": "PREVIOUS"
+ },
+ {
+  "es": "CERRAR",
+  "en": "CLOSE"
+ },
+ {
+  "es": "CANCELAR",
+  "en": "CANCEL"
+ },
+ {
+  "es": "ACEPTAR",
+  "en": "ACCEPT"
+ },
+ {
+  "es": "BLOQUEADO",
+  "en": "LOCKED"
+ },
+ {
+  "es": "DESBLOQUEADO",
+  "en": "UNLOCKED"
+ },
+ {
+  "es": "REINO",
+  "en": "KINGDOM"
+ },
+ {
+  "es": "CIUDAD",
+  "en": "CITY"
+ },
+ {
+  "es": "TROPAS",
+  "en": "TROOPS"
+ },
+ {
+  "es": "MAS",
+  "en": "MORE"
+ },
+ {
+  "es": "MES",
+  "en": "MONTH"
+ },
+ {
+  "es": "SIN NOMBRE",
+  "en": "UNNAMED"
+ },
+ {
+  "es": "TIERRA",
+  "en": "EARTH"
+ },
+ {
+  "es": "Elegido",
+  "en": "Selected"
+ },
+ {
+  "es": "vacante",
+  "en": "vacant"
+ },
+ {
+  "es": "Era",
+  "en": "Age"
+ },
+ {
+  "es": "ATQ",
+  "en": "ATK"
+ },
+ {
+  "es": "Sucesion",
+  "en": "Succession"
+ },
+ {
+  "es": "Rebelion",
+  "en": "Rebellion"
+ },
+ {
+  "es": "Batalla",
+  "en": "Battle"
+ },
+ {
+  "es": "toma",
+  "en": "captures"
+ },
+ {
+  "es": "caballos",
+  "en": "horses"
+ },
+ {
+  "es": "puerto",
+  "en": "harbor"
+ },
+ {
+  "es": "ELEGIDO",
+  "en": "SELECTED"
+ },
+ {
+  "es": "VACANTE",
+  "en": "VACANT"
+ },
+ {
+  "es": "ERA",
+  "en": "AGE"
+ },
+ {
+  "es": "SUCESION",
+  "en": "SUCCESSION"
+ },
+ {
+  "es": "REBELION",
+  "en": "REBELLION"
+ },
+ {
+  "es": "TOMA",
+  "en": "CAPTURES"
  }
 ]

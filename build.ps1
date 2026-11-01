@@ -1,7 +1,7 @@
 # Solaris History - compilacion con CMake + MinGW
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
-$build = Join-Path $root "build"
+$build = Join-Path $root ".tools\build-windows"
 
 Write-Host "== Solaris History: compilando ==" -ForegroundColor Yellow
 

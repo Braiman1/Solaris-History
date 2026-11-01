@@ -379,6 +379,14 @@ void Gfx::makeGlow() {
 }
 
 bool Gfx::init(const Content& content, const std::string& contentDir) {
+    Json credits = Json::parse(readTextFile(contentDir + "/media/attributions.json"));
+    for (const auto& a : credits.array()) {
+        MediaCredit credit;
+        credit.title=a["file"].string(); credit.author=a["author"].string();
+        credit.license=a["license"].string(); credit.source=a["source"].string();
+        credit.note=a["note"].string(); credit.noteEs=a["note_es"].string(credit.note);
+        mediaCredits[a["id"].string()]=credit;
+    }
     Json assets = Json::parse(readTextFile(contentDir + "/media/index.json"));
     for (const auto& a : assets.array()) {
         std::string id = a["id"].string();
