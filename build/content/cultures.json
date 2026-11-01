@@ -1,0 +1,422 @@
+[
+ {
+  "id": "egipcio",
+  "name": "Egipcio Predinastico",
+  "short": "Egipcios",
+  "color": [
+   201,
+   162,
+   39
+  ],
+  "desc": "El Nilo dicta la vida: cosechas seguras, teocracia fuerte y un pueblo que venera a sus muertos.",
+  "mods": {
+   "farm": 1.25,
+   "growth": 1.15,
+   "tech": 1.05,
+   "trade": 1.0,
+   "mil": 0.95,
+   "stab": 1.1,
+   "naval": 0.85,
+   "expansion": 0.9
+  }
+ },
+ {
+  "id": "nubio",
+  "name": "Nubio (Grupo A)",
+  "short": "Nubios",
+  "color": [
+   120,
+   84,
+   44
+  ],
+  "desc": "Guerreros del alto Nilo y maestros del arco; ricos en oro y ganado, pero encajonados entre desiertos.",
+  "mods": {
+   "farm": 0.95,
+   "growth": 1.0,
+   "tech": 0.9,
+   "trade": 0.95,
+   "mil": 1.15,
+   "stab": 1.0,
+   "naval": 0.7,
+   "expansion": 1.0
+  }
+ },
+ {
+  "id": "sumerio",
+  "name": "Sumerio",
+  "short": "Sumerios",
+  "color": [
+   46,
+   139,
+   139
+  ],
+  "desc": "Inventores de la ciudad y la escritura. Canales, templos y contabilidad antes que nadie.",
+  "mods": {
+   "farm": 1.1,
+   "growth": 1.05,
+   "tech": 1.2,
+   "trade": 1.2,
+   "mil": 1.0,
+   "stab": 0.9,
+   "naval": 0.8,
+   "expansion": 1.05
+  }
+ },
+ {
+  "id": "semita",
+  "name": "Semita Oriental",
+  "short": "Semitas",
+  "color": [
+   155,
+   107,
+   58
+  ],
+  "desc": "Pastores y mercaderes de la media luna fertil; se adaptan a cualquier tierra y comercian con todos.",
+  "mods": {
+   "farm": 0.95,
+   "growth": 1.0,
+   "tech": 1.05,
+   "trade": 1.25,
+   "mil": 1.05,
+   "stab": 0.95,
+   "naval": 0.9,
+   "expansion": 1.1
+  }
+ },
+ {
+  "id": "elamita",
+  "name": "Elamita",
+  "short": "Elamitas",
+  "color": [
+   122,
+   79,
+   160
+  ],
+  "desc": "Montaneses de Susa y Anshan: arqueros temibles y una corte orgullosa de su independencia.",
+  "mods": {
+   "farm": 0.9,
+   "growth": 0.95,
+   "tech": 1.0,
+   "trade": 1.05,
+   "mil": 1.15,
+   "stab": 1.0,
+   "naval": 0.6,
+   "expansion": 1.0
+  }
+ },
+ {
+  "id": "anatolio",
+  "name": "Anatolio Neolitico",
+  "short": "Anatolios",
+  "color": [
+   138,
+   59,
+   46
+  ],
+  "desc": "Los primeros urbanistas del mundo. Obsidiana, trigo y ganado en las mesetas de Anatolia.",
+  "mods": {
+   "farm": 1.1,
+   "growth": 1.05,
+   "tech": 1.15,
+   "trade": 1.05,
+   "mil": 1.0,
+   "stab": 1.0,
+   "naval": 0.8,
+   "expansion": 1.0
+  }
+ },
+ {
+  "id": "egeo",
+  "name": "Egeo Neolitico",
+  "short": "Egeos",
+  "color": [
+   47,
+   111,
+   158
+  ],
+  "desc": "Islas, viento y comercio. Marinos natos con ciudades abiertas al mar y a las ideas.",
+  "mods": {
+   "farm": 0.9,
+   "growth": 1.0,
+   "tech": 1.1,
+   "trade": 1.25,
+   "mil": 1.0,
+   "stab": 1.0,
+   "naval": 1.3,
+   "expansion": 1.05
+  }
+ },
+ {
+  "id": "balcanico",
+  "name": "Balcanico (Vinca)",
+  "short": "Balcanicos",
+  "color": [
+   138,
+   90,
+   43
+  ],
+  "desc": "Metalurgicos pioneros del Danubio; ricos en cobre y oro, feroces defensores de sus valles.",
+  "mods": {
+   "farm": 1.05,
+   "growth": 1.0,
+   "tech": 1.05,
+   "trade": 0.95,
+   "mil": 1.1,
+   "stab": 0.95,
+   "naval": 0.9,
+   "expansion": 1.1
+  }
+ },
+ {
+  "id": "danubiano",
+  "name": "Danubiano (LBK)",
+  "short": "Danubianos",
+  "color": [
+   78,
+   122,
+   58
+  ],
+  "desc": "Agricultores de las llanuras centrales. Aldeas grandes, campos de trigo y crecimiento constante.",
+  "mods": {
+   "farm": 1.15,
+   "growth": 1.1,
+   "tech": 1.0,
+   "trade": 0.95,
+   "mil": 0.95,
+   "stab": 1.0,
+   "naval": 0.7,
+   "expansion": 1.05
+  }
+ },
+ {
+  "id": "megalitico",
+  "name": "Megalitico Atlantico",
+  "short": "Megaliticos",
+  "color": [
+   90,
+   110,
+   122
+  ],
+  "desc": "Constructores de piedra y navegantes de cabotaje. Sociedades rituales muy cohesionadas.",
+  "mods": {
+   "farm": 0.95,
+   "growth": 0.95,
+   "tech": 0.9,
+   "trade": 0.9,
+   "mil": 1.05,
+   "stab": 1.15,
+   "naval": 1.0,
+   "expansion": 1.0
+  }
+ },
+ {
+  "id": "nordico",
+  "name": "Nordico Neolitico",
+  "short": "Nordicos",
+  "color": [
+   90,
+   106,
+   74
+  ],
+  "desc": "Cazadores, pescadores y navegantes del Baltico y el Mar del Norte. Duros en invierno.",
+  "mods": {
+   "farm": 0.9,
+   "growth": 1.0,
+   "tech": 0.95,
+   "trade": 1.0,
+   "mil": 1.05,
+   "stab": 1.0,
+   "naval": 1.2,
+   "expansion": 1.05
+  }
+ },
+ {
+  "id": "estepario",
+  "name": "Estepario (Yamnaya)",
+  "short": "Esteparios",
+  "color": [
+   110,
+   127,
+   62
+  ],
+  "desc": "Jinetes y pastores de la estepa pontica. Movilidad brutal y hambre de horizontes.",
+  "mods": {
+   "farm": 0.7,
+   "growth": 1.0,
+   "tech": 0.9,
+   "trade": 0.9,
+   "mil": 1.3,
+   "stab": 0.9,
+   "naval": 0.5,
+   "expansion": 1.25
+  }
+ },
+ {
+  "id": "caucasico",
+  "name": "Caucasico (Kura-Araxes)",
+  "short": "Caucasicos",
+  "color": [
+   74,
+   90,
+   138
+  ],
+  "desc": "Metalurgicos de montana entre dos mares; artesanos del bronce y guardianes de los pasos.",
+  "mods": {
+   "farm": 0.9,
+   "growth": 1.0,
+   "tech": 1.1,
+   "trade": 1.0,
+   "mil": 1.1,
+   "stab": 1.0,
+   "naval": 0.6,
+   "expansion": 1.0
+  }
+ },
+ {
+  "id": "iranio",
+  "name": "Iranio de la Meseta",
+  "short": "Iranios",
+  "color": [
+   90,
+   74,
+   138
+  ],
+  "desc": "Gentes de oasis y mesetas altas; comercio caravanero y arqueros de montana.",
+  "mods": {
+   "farm": 0.85,
+   "growth": 0.95,
+   "tech": 1.05,
+   "trade": 1.1,
+   "mil": 1.05,
+   "stab": 1.0,
+   "naval": 0.5,
+   "expansion": 1.05
+  }
+ },
+ {
+  "id": "bereber",
+  "name": "Bereber (Libio)",
+  "short": "Bereberes",
+  "color": [
+   160,
+   138,
+   74
+  ],
+  "desc": "Senores del Magreb y del desierto; nomadas, jinetes y guias de caravanas.",
+  "mods": {
+   "farm": 0.8,
+   "growth": 0.95,
+   "tech": 0.85,
+   "trade": 1.1,
+   "mil": 1.1,
+   "stab": 1.0,
+   "naval": 1.05,
+   "expansion": 1.1
+  }
+ },
+ {
+  "id": "arabigo",
+  "name": "Arabigo Nomada",
+  "short": "Arabigos",
+  "color": [
+   176,
+   138,
+   90
+  ],
+  "desc": "Caravaneros y criadores del desierto arabigo. Conocen cada pozo y cada ruta.",
+  "mods": {
+   "farm": 0.7,
+   "growth": 1.0,
+   "tech": 0.85,
+   "trade": 1.2,
+   "mil": 1.05,
+   "stab": 0.9,
+   "naval": 0.8,
+   "expansion": 1.15
+  }
+ },
+ {
+  "id": "italico",
+  "name": "Italico Neolitico",
+  "short": "Italicos",
+  "color": [
+   122,
+   59,
+   90
+  ],
+  "desc": "Aldeanos de colinas y llanuras italicas; comunidades rurales solidas y laboriosas.",
+  "mods": {
+   "farm": 1.05,
+   "growth": 1.05,
+   "tech": 1.0,
+   "trade": 1.0,
+   "mil": 1.05,
+   "stab": 1.05,
+   "naval": 1.0,
+   "expansion": 1.0
+  }
+ },
+ {
+  "id": "iberico",
+  "name": "Iberico (Los Millares)",
+  "short": "Ibericos",
+  "color": [
+   176,
+   106,
+   58
+  ],
+  "desc": "Metalurgicos del sureste iberico; cobre, murallas ciclopeas y fuerte sentido del clan.",
+  "mods": {
+   "farm": 1.0,
+   "growth": 1.0,
+   "tech": 1.0,
+   "trade": 1.0,
+   "mil": 1.05,
+   "stab": 1.0,
+   "naval": 1.0,
+   "expansion": 1.05
+  }
+ },
+ {
+  "id": "sardino",
+  "name": "Sardo (Ozieri)",
+  "short": "Sardos",
+  "color": [
+   90,
+   122,
+   138
+  ],
+  "desc": "Islenos de la obsidiana y los nuragas; artesanos y pastores difíciles de someter.",
+  "mods": {
+   "farm": 0.9,
+   "growth": 0.95,
+   "tech": 1.0,
+   "trade": 1.0,
+   "mil": 1.0,
+   "stab": 1.1,
+   "naval": 1.15,
+   "expansion": 0.95
+  }
+ },
+ {
+  "id": "chipriota",
+  "name": "Chipriota",
+  "short": "Chipriotas",
+  "color": [
+   79,
+   111,
+   168
+  ],
+  "desc": "Puente entre oriente y occidente; cobre, vino y puertos abiertos a todas las flotas.",
+  "mods": {
+   "farm": 0.9,
+   "growth": 1.0,
+   "tech": 1.0,
+   "trade": 1.2,
+   "mil": 0.95,
+   "stab": 1.0,
+   "naval": 1.15,
+   "expansion": 1.0
+  }
+ }
+]

@@ -1,0 +1,3 @@
+C:/Users/braim/Documents/Solaris History/build/CMakeFiles/SolarisHistory.dir
+C:/Users/braim/Documents/Solaris History/build/CMakeFiles/edit_cache.dir
+C:/Users/braim/Documents/Solaris History/build/CMakeFiles/rebuild_cache.dir

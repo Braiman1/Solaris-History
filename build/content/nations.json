@@ -1,0 +1,592 @@
+[
+ {
+  "id": "egipto",
+  "name": "Egipto",
+  "culture": "egipcio",
+  "capital": "Menfis",
+  "color": [
+   212,
+   175,
+   55
+  ],
+  "gov": "monarquia",
+  "adj": "Egipcio",
+  "desc": "El reino de las Dos Tierras, del Delta a Elefantina."
+ },
+ {
+  "id": "sumeria",
+  "name": "Sumeria",
+  "culture": "sumerio",
+  "capital": "Uruk",
+  "color": [
+   46,
+   139,
+   139
+  ],
+  "gov": "republica",
+  "adj": "Sumerio",
+  "desc": "La liga de las ciudades del sur mesopotamico."
+ },
+ {
+  "id": "acad",
+  "name": "Acad",
+  "culture": "semita",
+  "capital": "Kish",
+  "color": [
+   155,
+   107,
+   58
+  ],
+  "gov": "monarquia",
+  "adj": "Acadio",
+  "desc": "El imperio de los cuatro confines, bajo un solo rey."
+ },
+ {
+  "id": "elam",
+  "name": "Elam",
+  "culture": "elamita",
+  "capital": "Susa",
+  "color": [
+   122,
+   79,
+   160
+  ],
+  "gov": "monarquia",
+  "adj": "Elamita",
+  "desc": "La meseta y la llanura unidas por los arqueros de Susa."
+ },
+ {
+  "id": "siria",
+  "name": "Siria",
+  "culture": "semita",
+  "capital": "Ebla",
+  "color": [
+   196,
+   107,
+   74
+  ],
+  "gov": "monarquia",
+  "adj": "Sirio",
+  "desc": "El corazon de las rutas entre Mesopotamia y el mar."
+ },
+ {
+  "id": "canaan",
+  "name": "Canaan",
+  "culture": "semita",
+  "capital": "Jerico",
+  "color": [
+   62,
+   142,
+   90
+  ],
+  "gov": "teocracia",
+  "adj": "Cananeo",
+  "desc": "Ciudades del Jordan y de la costa, entre Egipto y Asia."
+ },
+ {
+  "id": "fenicia",
+  "name": "Fenicia",
+  "culture": "semita",
+  "capital": "Biblos",
+  "color": [
+   58,
+   126,
+   154
+  ],
+  "gov": "republica",
+  "adj": "Fenicio",
+  "desc": "Cedro, purpura y puertos que llegan a todo el Mediterraneo."
+ },
+ {
+  "id": "asiria",
+  "name": "Asiria",
+  "culture": "semita",
+  "capital": "Assur",
+  "color": [
+   124,
+   127,
+   138
+  ],
+  "gov": "monarquia",
+  "adj": "Asirio",
+  "desc": "El dios Assur y un ejercito que no retrocede."
+ },
+ {
+  "id": "babilonia",
+  "name": "Babilonia",
+  "culture": "semita",
+  "capital": "Babilonia",
+  "color": [
+   177,
+   85,
+   60
+  ],
+  "gov": "monarquia",
+  "adj": "Babilonio",
+  "desc": "La puerta de los dioses y la ciudad de las leyes."
+ },
+ {
+  "id": "hatti",
+  "name": "Hatti",
+  "culture": "anatolio",
+  "capital": "Hattusa",
+  "color": [
+   138,
+   59,
+   46
+  ],
+  "gov": "monarquia",
+  "adj": "Hatti",
+  "desc": "El reino de las mil divinidades y de los carros de guerra."
+ },
+ {
+  "id": "arzawa",
+  "name": "Arzawa",
+  "culture": "anatolio",
+  "capital": "Efeso",
+  "color": [
+   168,
+   92,
+   62
+  ],
+  "gov": "monarquia",
+  "adj": "Arzawano",
+  "desc": "Las ciudades libres del oeste anatolio."
+ },
+ {
+  "id": "wilusa",
+  "name": "Wilusa",
+  "culture": "anatolio",
+  "capital": "Troya",
+  "color": [
+   201,
+   123,
+   60
+  ],
+  "gov": "monarquia",
+  "adj": "Wilusano",
+  "desc": "La Ilios de las leyendas, guardiana de los estrechos."
+ },
+ {
+  "id": "creta",
+  "name": "Creta",
+  "culture": "egeo",
+  "capital": "Knossos",
+  "color": [
+   47,
+   111,
+   158
+  ],
+  "gov": "teocracia",
+  "adj": "Cretense",
+  "desc": "La talasocracia del laberinto y del toro sagrado."
+ },
+ {
+  "id": "micenas",
+  "name": "Micenas",
+  "culture": "egeo",
+  "capital": "Micenas",
+  "color": [
+   107,
+   76,
+   154
+  ],
+  "gov": "monarquia",
+  "adj": "Aqueo",
+  "desc": "Los aqueos de la edad del bronce, ricos en oro y carros."
+ },
+ {
+  "id": "atenas",
+  "name": "Atenas",
+  "culture": "egeo",
+  "capital": "Atenas",
+  "color": [
+   62,
+   127,
+   168
+  ],
+  "gov": "republica",
+  "adj": "Ateniense",
+  "desc": "La ciudad de la colina y del aceite de oliva."
+ },
+ {
+  "id": "yamnaya",
+  "name": "Yamnaya",
+  "culture": "estepario",
+  "capital": "Estepa Pontica",
+  "color": [
+   110,
+   127,
+   62
+  ],
+  "gov": "monarquia",
+  "adj": "Yamnaya",
+  "desc": "Los senores de los kurganes y de la estepa sin fin."
+ },
+ {
+  "id": "tracia",
+  "name": "Tracia",
+  "culture": "balcanico",
+  "capital": "Varna",
+  "color": [
+   150,
+   110,
+   50
+  ],
+  "gov": "monarquia",
+  "adj": "Tracio",
+  "desc": "Oro, caballos y montanas entre el Danubio y el Egeo."
+ },
+ {
+  "id": "dacia",
+  "name": "Dacia",
+  "culture": "danubiano",
+  "capital": "Cucuteni",
+  "color": [
+   78,
+   122,
+   58
+  ],
+  "gov": "monarquia",
+  "adj": "Dacio",
+  "desc": "Las grandes aldeas de la cultura Cucuteni-Tripilia."
+ },
+ {
+  "id": "vincha",
+  "name": "Vincha",
+  "culture": "balcanico",
+  "capital": "Vinca",
+  "color": [
+   160,
+   82,
+   45
+  ],
+  "gov": "teocracia",
+  "adj": "Vinchano",
+  "desc": "La cultura del Danubio y de sus templos de barro."
+ },
+ {
+  "id": "iberia",
+  "name": "Iberia",
+  "culture": "iberico",
+  "capital": "Los Millares",
+  "color": [
+   176,
+   106,
+   58
+  ],
+  "gov": "monarquia",
+  "adj": "Ibero",
+  "desc": "Cobre, fortalezas y clanes del sureste de Iberia."
+ },
+ {
+  "id": "tartessos",
+  "name": "Tartessos",
+  "culture": "iberico",
+  "capital": "Valencina",
+  "color": [
+   192,
+   138,
+   46
+  ],
+  "gov": "monarquia",
+  "adj": "Tartesio",
+  "desc": "El reino del metal y de las rutas atlanticas."
+ },
+ {
+  "id": "lusitania",
+  "name": "Lusitania",
+  "culture": "iberico",
+  "capital": "Lisboa",
+  "color": [
+   122,
+   138,
+   58
+  ],
+  "gov": "republica",
+  "adj": "Lusitano",
+  "desc": "Pueblos del oeste iberico, pastores y guerreros."
+ },
+ {
+  "id": "latinos",
+  "name": "Latinos",
+  "culture": "italico",
+  "capital": "Lacio",
+  "color": [
+   122,
+   59,
+   90
+  ],
+  "gov": "monarquia",
+  "adj": "Latino",
+  "desc": "Las aldeas del Lacio antes de la fundacion de Roma."
+ },
+ {
+  "id": "etruria",
+  "name": "Etruria",
+  "culture": "italico",
+  "capital": "Etruria",
+  "color": [
+   139,
+   90,
+   139
+  ],
+  "gov": "republica",
+  "adj": "Etrusco",
+  "desc": "Los senores del metal y de los ritos de Italia central."
+ },
+ {
+  "id": "sicanos",
+  "name": "Sicanos",
+  "culture": "italico",
+  "capital": "Siracusa",
+  "color": [
+   168,
+   118,
+   62
+  ],
+  "gov": "monarquia",
+  "adj": "Sicano",
+  "desc": "Los pueblos de la Sicilia del trigo y del vino."
+ },
+ {
+  "id": "sardena",
+  "name": "Sardena",
+  "culture": "sardino",
+  "capital": "Cerdana",
+  "color": [
+   90,
+   122,
+   138
+  ],
+  "gov": "republica",
+  "adj": "Sardo",
+  "desc": "Obsidiana, nuragas y pastores de las montanas sardas."
+ },
+ {
+  "id": "alashiya",
+  "name": "Alashiya",
+  "culture": "chipriota",
+  "capital": "Kition",
+  "color": [
+   79,
+   111,
+   168
+  ],
+  "gov": "monarquia",
+  "adj": "Alashiyo",
+  "desc": "El reino del cobre de Chipre, entre Anatolia, Levante y Egipto.",
+  "era": 2
+ },
+ {
+  "id": "libia",
+  "name": "Libia",
+  "culture": "bereber",
+  "capital": "Cirenaica",
+  "color": [
+   160,
+   138,
+   74
+  ],
+  "gov": "monarquia",
+  "adj": "Libico",
+  "desc": "Las tribus libias entre el desierto y el mar."
+ },
+ {
+  "id": "numidia",
+  "name": "Numidia",
+  "culture": "bereber",
+  "capital": "Numidia",
+  "color": [
+   176,
+   146,
+   74
+  ],
+  "gov": "monarquia",
+  "adj": "Numida",
+  "desc": "Jinetes numidas, la mejor caballeria de Africa."
+ },
+ {
+  "id": "mauretania",
+  "name": "Mauretania",
+  "culture": "bereber",
+  "capital": "Marruecos",
+  "color": [
+   154,
+   106,
+   42
+  ],
+  "gov": "monarquia",
+  "adj": "Mauritano",
+  "desc": "El extremo occidental de Africa y las Columnas de Hercules."
+ },
+ {
+  "id": "nubia",
+  "name": "Nubia",
+  "culture": "nubio",
+  "capital": "Kerma",
+  "color": [
+   107,
+   74,
+   42
+  ],
+  "gov": "monarquia",
+  "adj": "Nubio",
+  "desc": "El reino de Kerma, entre la primera y la tercera catarata."
+ },
+ {
+  "id": "kush",
+  "name": "Kush",
+  "culture": "nubio",
+  "capital": "Kerma",
+  "color": [
+   74,
+   107,
+   58
+  ],
+  "gov": "teocracia",
+  "adj": "Kushita",
+  "desc": "Los arqueros del sur y el oro del desierto."
+ },
+ {
+  "id": "arabia",
+  "name": "Arabia",
+  "culture": "arabigo",
+  "capital": "Hiyaz",
+  "color": [
+   176,
+   138,
+   90
+  ],
+  "gov": "monarquia",
+  "adj": "Arabigo",
+  "desc": "Las tribus del Hiyaz y las rutas de caravanas."
+ },
+ {
+  "id": "dilmun",
+  "name": "Dilmun",
+  "culture": "arabigo",
+  "capital": "Dilmun",
+  "color": [
+   58,
+   138,
+   154
+  ],
+  "gov": "republica",
+  "adj": "Dilmunita",
+  "desc": "El emporio del golfo, entre Mesopotamia y el Indo."
+ },
+ {
+  "id": "saba",
+  "name": "Saba",
+  "culture": "arabigo",
+  "capital": "Yemen",
+  "color": [
+   160,
+   82,
+   45
+  ],
+  "gov": "monarquia",
+  "adj": "Sabeo",
+  "desc": "Incienso, mirra y las montanas verdes del sur."
+ },
+ {
+  "id": "urartu",
+  "name": "Urartu",
+  "culture": "caucasico",
+  "capital": "Van",
+  "color": [
+   74,
+   90,
+   138
+  ],
+  "gov": "monarquia",
+  "adj": "Urarteo",
+  "desc": "Fortalezas de montana en torno al lago Van."
+ },
+ {
+  "id": "media",
+  "name": "Media",
+  "culture": "iranio",
+  "capital": "Rayy",
+  "color": [
+   90,
+   74,
+   138
+  ],
+  "gov": "monarquia",
+  "adj": "Medo",
+  "desc": "Los caballos de la meseta irania."
+ },
+ {
+  "id": "persia",
+  "name": "Persia",
+  "culture": "iranio",
+  "capital": "Anshan",
+  "color": [
+   106,
+   42,
+   90
+  ],
+  "gov": "monarquia",
+  "adj": "Persa",
+  "desc": "La tierra de Anshan y de los grandes reyes.",
+  "era": 2
+ },
+ {
+  "id": "britania",
+  "name": "Britania",
+  "culture": "megalitico",
+  "capital": "Wessex",
+  "color": [
+   90,
+   110,
+   122
+  ],
+  "gov": "republica",
+  "adj": "Britano",
+  "desc": "Las islas del estaño y de los circulos de piedra."
+ },
+ {
+  "id": "caledonia",
+  "name": "Caledonia",
+  "culture": "megalitico",
+  "capital": "Escocia",
+  "color": [
+   58,
+   90,
+   122
+  ],
+  "gov": "monarquia",
+  "adj": "Caledonio",
+  "desc": "Las tierras altas del norte."
+ },
+ {
+  "id": "germania",
+  "name": "Germania",
+  "culture": "nordico",
+  "capital": "Alemania Norte",
+  "color": [
+   90,
+   106,
+   74
+  ],
+  "gov": "monarquia",
+  "adj": "Germanico",
+  "desc": "Los bosques y marismas del norte."
+ },
+ {
+  "id": "escandia",
+  "name": "Escandia",
+  "culture": "nordico",
+  "capital": "Dinamarca",
+  "color": [
+   74,
+   122,
+   106
+  ],
+  "gov": "monarquia",
+  "adj": "Escandio",
+  "desc": "Los estrechos y las islas del norte."
+ }
+]

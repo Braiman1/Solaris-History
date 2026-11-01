@@ -1,0 +1,173 @@
+[
+ {
+  "id": "granja",
+  "name": "Granjas",
+  "cost": {
+   "gold": 40,
+   "wood": 20,
+   "stone": 0
+  },
+  "era": 0,
+  "mods": {
+   "food": 0.15
+  },
+  "desc": "Campos de regadio y graneros: +15% alimentos."
+ },
+ {
+  "id": "pozo",
+  "name": "Pozo",
+  "cost": {
+   "gold": 30,
+   "wood": 10,
+   "stone": 15
+  },
+  "era": 0,
+  "mods": {
+   "growth": 0.1
+  },
+  "desc": "Agua segura: +10% crecimiento de poblacion."
+ },
+ {
+  "id": "muralla",
+  "name": "Muralla",
+  "cost": {
+   "gold": 60,
+   "wood": 10,
+   "stone": 45
+  },
+  "era": 0,
+  "mods": {
+   "defense": 0.3
+  },
+  "desc": "Muros de adobe o piedra: +30% defensa provincial."
+ },
+ {
+  "id": "taller",
+  "name": "Taller",
+  "cost": {
+   "gold": 35,
+   "wood": 25,
+   "stone": 0
+  },
+  "era": 0,
+  "mods": {
+   "wood": 0.2
+  },
+  "desc": "Carpinteria y herramientas: +20% madera."
+ },
+ {
+  "id": "cantera",
+  "name": "Cantera",
+  "cost": {
+   "gold": 40,
+   "wood": 20,
+   "stone": 0
+  },
+  "era": 1,
+  "mods": {
+   "stone": 0.2
+  },
+  "desc": "Extraccion de piedra: +20% piedra."
+ },
+ {
+  "id": "mina",
+  "name": "Mina",
+  "cost": {
+   "gold": 55,
+   "wood": 30,
+   "stone": 10
+  },
+  "era": 1,
+  "mods": {
+   "copper": 0.25
+  },
+  "desc": "Galerias de cobre: +25% cobre."
+ },
+ {
+  "id": "mercado",
+  "name": "Mercado",
+  "cost": {
+   "gold": 60,
+   "wood": 15,
+   "stone": 20
+  },
+  "era": 1,
+  "mods": {
+   "trade": 0.2
+  },
+  "desc": "Ferias y rutas: +20% comercio."
+ },
+ {
+  "id": "templo",
+  "name": "Templo",
+  "cost": {
+   "gold": 50,
+   "wood": 10,
+   "stone": 35
+  },
+  "era": 0,
+  "mods": {
+   "stability": 0.06,
+   "legit": 1.0
+  },
+  "desc": "Casa de los dioses: +6% estabilidad."
+ },
+ {
+  "id": "escribas",
+  "name": "Casa de Escribas",
+  "cost": {
+   "gold": 55,
+   "wood": 10,
+   "stone": 20
+  },
+  "era": 1,
+  "mods": {
+   "tech": 0.18
+  },
+  "desc": "Contables y archivos: +18% tecnologia."
+ },
+ {
+  "id": "puerto",
+  "name": "Puerto",
+  "cost": {
+   "gold": 60,
+   "wood": 40,
+   "stone": 10
+  },
+  "era": 0,
+  "mods": {
+   "trade": 0.12,
+   "naval": 0.2
+  },
+  "desc": "Muelle y astillero: +comercio, permite barcos."
+ },
+ {
+  "id": "cuartel",
+  "name": "Cuartel",
+  "cost": {
+   "gold": 50,
+   "wood": 10,
+   "stone": 30
+  },
+  "era": 0,
+  "mods": {
+   "manpower": 0.25
+  },
+  "desc": "Levas organizadas: +25% mano de obra."
+ },
+ {
+  "id": "ganaderia",
+  "name": "Ganaderia",
+  "cost": {
+   "gold": 45,
+   "wood": 15,
+   "stone": 0
+  },
+  "era": 0,
+  "mods": {
+   "food": 0.08,
+   "trade": 0.05
+  },
+  "desc": "Rebanos y pastos: +8% alimentos."
+ }
+]

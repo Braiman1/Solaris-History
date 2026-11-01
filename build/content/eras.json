@@ -1,0 +1,47 @@
+[
+ {
+  "id": 0,
+  "name": "Neolitico Tardio",
+  "short": "Neolitico",
+  "tech": 0,
+  "prod": 1.0,
+  "start": -3300,
+  "desc": "Aldeas agricolas, piedra pulida y primeras ciudades."
+ },
+ {
+  "id": 1,
+  "name": "Calcolitico",
+  "short": "Calcolitico",
+  "tech": 120,
+  "prod": 1.1,
+  "start": -3300,
+  "desc": "Cobre, rueda y jerarquias cada vez mas complejas."
+ },
+ {
+  "id": 2,
+  "name": "Edad del Bronce",
+  "short": "Bronce",
+  "tech": 420,
+  "prod": 1.25,
+  "start": -3300,
+  "desc": "Bronce, carros de guerra y primeros imperios."
+ },
+ {
+  "id": 3,
+  "name": "Edad del Hierro",
+  "short": "Hierro",
+  "tech": 950,
+  "prod": 1.4,
+  "start": -3300,
+  "desc": "Hierro, alfabeto y pueblos en movimiento."
+ },
+ {
+  "id": 4,
+  "name": "Epoca Clasica",
+  "short": "Clasica",
+  "tech": 1800,
+  "prod": 1.6,
+  "start": -3300,
+  "desc": "Ciudades-estado, filosofia y grandes imperios."
+ }
+]

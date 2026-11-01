@@ -1,0 +1,529 @@
+{
+ "traits": [
+  {
+   "id": "administrador",
+   "name": "Administrador",
+   "desc": "+8% ingresos",
+   "mods": {
+    "income": 0.08
+   }
+  },
+  {
+   "id": "general",
+   "name": "General",
+   "desc": "+8% fuerza militar",
+   "mods": {
+    "mil": 0.08
+   }
+  },
+  {
+   "id": "diplomatico",
+   "name": "Diplomatico",
+   "desc": "+10% estabilidad",
+   "mods": {
+    "stab": 0.1
+   }
+  },
+  {
+   "id": "piadoso",
+   "name": "Piadoso",
+   "desc": "+6 legitimidad y +5% estabilidad",
+   "mods": {
+    "legit": 6,
+    "stab": 0.05
+   }
+  },
+  {
+   "id": "ambicioso",
+   "name": "Ambicioso",
+   "desc": "+10% expansion, -5 estabilidad",
+   "mods": {
+    "expansion": 0.1,
+    "stab": -0.05
+   }
+  },
+  {
+   "id": "cruel",
+   "name": "Cruel",
+   "desc": "+10% fuerza militar, -10 estabilidad",
+   "mods": {
+    "mil": 0.1,
+    "stab": -0.1
+   }
+  },
+  {
+   "id": "sabio",
+   "name": "Sabio",
+   "desc": "+10% tecnologia",
+   "mods": {
+    "tech": 0.1
+   }
+  },
+  {
+   "id": "constructor",
+   "name": "Constructor",
+   "desc": "-15% coste de edificios",
+   "mods": {
+    "build": -0.15
+   }
+  },
+  {
+   "id": "enfermizo",
+   "name": "Enfermizo",
+   "desc": "-10 anos de esperanza de vida",
+   "mods": {
+    "life": -10
+   }
+  },
+  {
+   "id": "robusto",
+   "name": "Robusto",
+   "desc": "+10 anos de esperanza de vida",
+   "mods": {
+    "life": 10
+   }
+  },
+  {
+   "id": "codicioso",
+   "name": "Codicioso",
+   "desc": "+10% ingresos, -5 estabilidad",
+   "mods": {
+    "income": 0.1,
+    "stab": -0.05
+   }
+  },
+  {
+   "id": "carismatico",
+   "name": "Carismatico",
+   "desc": "+10 legitimidad",
+   "mods": {
+    "legit": 10
+   }
+  }
+ ],
+ "names": {
+  "egipcio": [
+   [
+    "Narmer",
+    "Hor-Aha",
+    "Djer",
+    "Den",
+    "Semerkhet",
+    "Qaa",
+    "Iry-Hor",
+    "Escorpion"
+   ],
+   [
+    "Neithhotep",
+    "Merneith",
+    "Khenthap",
+    "Betrest",
+    "Nimaethap",
+    "Seshemetka"
+   ]
+  ],
+  "nubio": [
+   [
+    "Aman",
+    "Sesostris",
+    "Kerma",
+    "Taharqa",
+    "Amaniastabarqa",
+    "Piye",
+    "Kashta",
+    "Sabrakamani"
+   ],
+   [
+    "Makeda",
+    "Amanirenas",
+    "Shanakdakhete",
+    "Nawidemak",
+    "Amanishakheto",
+    "Kandake"
+   ]
+  ],
+  "sumerio": [
+   [
+    "Enmerkar",
+    "Lugalbanda",
+    "Gilgamesh",
+    "Dumuzid",
+    "Enmebaragesi",
+    "Urukagina",
+    "Meskiaggasher",
+    "Lugalzagesi"
+   ],
+   [
+    "Kubaba",
+    "Puabi",
+    "Baranamtarra",
+    "Shagshag",
+    "Ninbanda",
+    "Enheduanna"
+   ]
+  ],
+  "semita": [
+   [
+    "Sargon",
+    "Rimush",
+    "Manishtusu",
+    "Naram-Sin",
+    "Shamshi-Adad",
+    "Ibbi-Sin",
+    "Yasmah-Adad",
+    "Zimri-Lim"
+   ],
+   [
+    "Tashlultum",
+    "Sammuramat",
+    "Beltak",
+    "Iltani",
+    "Sibtu",
+    "Zakutu"
+   ]
+  ],
+  "elamita": [
+   [
+    "Kindattu",
+    "Humban",
+    "Shutruk",
+    "Untash",
+    "Puzur-Inshushinak",
+    "Tan-Ruhuratir",
+    "Kutir-Nahhunte",
+    "Shilhak"
+   ],
+   [
+    "Napir-Asu",
+    "Itti",
+    "Rishatum",
+    "Shala",
+    "Anunitu",
+    "Urtaku"
+   ]
+  ],
+  "anatolio": [
+   [
+    "Anitta",
+    "Pithana",
+    "Labarna",
+    "Hattusili",
+    "Mursili",
+    "Tudhaliya",
+    "Arnuwanda",
+    "Suppiluliuma"
+   ],
+   [
+    "Tawananna",
+    "Asmunikal",
+    "Puduhepa",
+    "Danuhepa",
+    "Gassulawiya",
+    "Malnigal"
+   ]
+  ],
+  "egeo": [
+   [
+    "Minos",
+    "Radamantis",
+    "Sarpedon",
+    "Idomeneo",
+    "Agamenon",
+    "Menelao",
+    "Odiseo",
+    "Teseo"
+   ],
+   [
+    "Ariadna",
+    "Helena",
+    "Clitemnestra",
+    "Penelope",
+    "Electra",
+    "Andromaca"
+   ]
+  ],
+  "balcanico": [
+   [
+    "Zalmoxis",
+    "Sitalces",
+    "Cotys",
+    "Dromichaites",
+    "Oroles",
+    "Burebista",
+    "Deceneo",
+    "Moskon"
+   ],
+   [
+    "Bendis",
+    "Meda",
+    "Kotysa",
+    "Sarmis",
+    "Drypetis",
+    "Amadoka"
+   ]
+  ],
+  "danubiano": [
+   [
+    "Vindex",
+    "Marbod",
+    "Zbelut",
+    "Moget",
+    "Bato",
+    "Pannon",
+    "Sarmus",
+    "Tauriscus"
+   ],
+   [
+    "Sava",
+    "Dora",
+    "Liba",
+    "Mira",
+    "Tisa",
+    "Dunja"
+   ]
+  ],
+  "megalitico": [
+   [
+    "Belenos",
+    "Cernunnos",
+    "Lugus",
+    "Taranis",
+    "Diviciaco",
+    "Bituito",
+    "Ambicatus",
+    "Segovesus"
+   ],
+   [
+    "Epona",
+    "Rosmerta",
+    "Brigantia",
+    "Sulis",
+    "Nantosuelta",
+    "Andarta"
+   ]
+  ],
+  "nordico": [
+   [
+    "Haldan",
+    "Skjold",
+    "Frodi",
+    "Halfdan",
+    "Ragnar",
+    "Bjorn",
+    "Ingjald",
+    "Godfred"
+   ],
+   [
+    "Sigrid",
+    "Thyra",
+    "Gudrun",
+    "Astrid",
+    "Skadi",
+    "Hilda"
+   ]
+  ],
+  "estepario": [
+   [
+    "Wiro",
+    "Deiwos",
+    "Perkuno",
+    "Aryo",
+    "Skandho",
+    "Yemo",
+    "Manu",
+    "Kurgan"
+   ],
+   [
+    "Dana",
+    "Saraswati",
+    "Priya",
+    "Usha",
+    "Anahita",
+    "Arma"
+   ]
+  ],
+  "caucasico": [
+   [
+    "Tushpa",
+    "Sarduri",
+    "Menuas",
+    "Argishti",
+    "Rusa",
+    "Sargon",
+    "Erimena",
+    "Haldi"
+   ],
+   [
+    "Nwari",
+    "Anahit",
+    "Nane",
+    "Astghik",
+    "Varduhi",
+    "Tarhunna"
+   ]
+  ],
+  "iranio": [
+   [
+    "Achaemenes",
+    "Teispes",
+    "Cambyses",
+    "Darius",
+    "Arsames",
+    "Cyrus",
+    "Phraortes",
+    "Deioces"
+   ],
+   [
+    "Atossa",
+    "Cassandane",
+    "Roxana",
+    "Artystone",
+    "Amestris",
+    "Parysatis"
+   ]
+  ],
+  "bereber": [
+   [
+    "Syphax",
+    "Masinissa",
+    "Juba",
+    "Bocchus",
+    "Gaia",
+    "Massyli",
+    "Hiempsal",
+    "Jugurtha"
+   ],
+   [
+    "Sophonisba",
+    "Eunoe",
+    "Dido",
+    "Tingis",
+    "Yuba",
+    "Kalis"
+   ]
+  ],
+  "arabigo": [
+   [
+    "Yatha",
+    "Karib",
+    "Shamir",
+    "Abkarib",
+    "Amir",
+    "Hassan",
+    "Wahb",
+    "Ilum"
+   ],
+   [
+    "Bilqis",
+    "Shams",
+    "Layla",
+    "Hind",
+    "Zabibe",
+    "Ishara"
+   ]
+  ],
+  "italico": [
+   [
+    "Romulo",
+    "Remo",
+    "Numitor",
+    "Aventino",
+    "Tarquino",
+    "Servio",
+    "Turno",
+    "Latinus"
+   ],
+   [
+    "Rea Silvia",
+    "Hersilia",
+    "Lucrecia",
+    "Tanaquil",
+    "Lavinia",
+    "Camila"
+   ]
+  ],
+  "iberico": [
+   [
+    "Indibil",
+    "Mandonio",
+    "Istolacio",
+    "Indortes",
+    "Arganthonios",
+    "Gargoris",
+    "Corribilo",
+    "Avaros"
+   ],
+   [
+    "Habidis",
+    "Nuk",
+    "Sos",
+    "Iberia",
+    "Astan",
+    "Nertha"
+   ]
+  ],
+  "sardino": [
+   [
+    "Sardus",
+    "Norax",
+    "Iolaus",
+    "Arbata",
+    "Ospitone",
+    "Hostio",
+    "Balaro",
+    "Amsicora"
+   ],
+   [
+    "Sardinia",
+    "Pira",
+    "Nora",
+    "Tharros",
+    "Sulci",
+    "Bosa"
+   ]
+  ],
+  "chipriota": [
+   [
+    "Kinyras",
+    "Teucro",
+    "Pygmalion",
+    "Onesilos",
+    "Salamis",
+    "Belos",
+    "Adonis",
+    "Kiniras"
+   ],
+   [
+    "Myrrha",
+    "Smyrna",
+    "Kinyra",
+    "Europa",
+    "Ledra",
+    "Paphos"
+   ]
+  ]
+ },
+ "governments": {
+  "teocracia": {
+   "name": "Teocracia",
+   "desc": "El poder del templo. Sucesion por el clero; legitimidad alta, estabilidad dependiente de la fe.",
+   "legit": 75,
+   "stab": 0.1,
+   "election": 0
+  },
+  "monarquia": {
+   "name": "Monarquia",
+   "desc": "El rey y su dinastia. Sucesion hereditaria; legitimidad media.",
+   "legit": 60,
+   "stab": 0.05,
+   "election": 0
+  },
+  "republica": {
+   "name": "Republica",
+   "desc": "Consejo de notables. Elecciones periodicas: los lideres pueden ser reelegidos, pero siguen siendo mortales.",
+   "legit": 50,
+   "stab": 0.0,
+   "election": 8
+  }
+ }
+}

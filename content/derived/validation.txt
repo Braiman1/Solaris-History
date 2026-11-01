@@ -1,0 +1,7 @@
+Solaris History - validacion de contenido
+=========================================
+
+Errores: 0
+Avisos: 0
+
+Resultado: OK, el contenido es coherente.

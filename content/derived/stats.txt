@@ -1,0 +1,109 @@
+SOLARIS HISTORY - CONTENIDO
+===========================
+Ano inicial: -3300  |  Provincias: 164  |  Ciudades-estado: 12 (6 jugables)
+Naciones fundables: 42  |  Culturas: 20  |  Unidades: 4  |  Edificios: 12  |  Eras: 5
+Provincias costeras: 106  |  Enlaces terrestres: 385  |  Enlaces maritimos: 195
+
+Provincias por region
+  Anatolia                11
+  Arabia                   5
+  Atlantico                3
+  Balcanes                 5
+  Britania                 6
+  Caucaso                  3
+  Chipre                   2
+  Creta                    3
+  Danubio                 10
+  Egeo                     3
+  Egipto                  14
+  Elam                     2
+  Estepa                   3
+  Galias                   8
+  Grecia                   6
+  Iberia                   4
+  Iran                     8
+  Italia                  10
+  Levante                 15
+  Libia                    2
+  Magreb                   5
+  Mesopotamia             19
+  Nordico                 10
+  Nubia                    2
+  Sahara                   3
+  Sardena                  2
+
+Provincias por cultura
+  Anatolio Neolitico        11
+  Arabigo Nomada             5
+  Balcanico (Vinca)          5
+  Bereber (Libio)            9
+  Caucasico (Kura-Araxes)    3
+  Chipriota                  2
+  Danubiano (LBK)           10
+  Egeo Neolitico            12
+  Egipcio Predinastico      15
+  Elamita                    2
+  Estepario (Yamnaya)        3
+  Iberico (Los Millares)     4
+  Iranio de la Meseta        8
+  Italico Neolitico         10
+  Megalitico Atlantico      17
+  Nordico Neolitico         10
+  Nubio (Grupo A)            2
+  Sardo (Ozieri)             2
+  Semita Oriental           24
+  Sumerio                   10
+
+Terrenos
+  Bosque                     9
+  Colinas                   12
+  Costa                     28
+  Desierto                   6
+  Estepa                     3
+  Isla                      15
+  Llanura                   32
+  Marisma                    6
+  Montana                   14
+  Oasis                      7
+  Valle fluvial             32
+
+Ciudades-estado iniciales
+  Menfis       egipcio      teocracia   Menfis        16.0k [jugable]
+  Uruk         sumerio      monarquia   Uruk          18.0k [jugable]
+  Catal Huyuk  anatolio     teocracia   Catalhoyuk    12.0k [jugable]
+  Jerico       semita       monarquia   Jerico         6.0k [jugable]
+  Troya        anatolio     monarquia   Troya          8.0k [jugable]
+  Knossos      egeo         teocracia   Knossos       10.0k [jugable]
+  Ur           sumerio      monarquia   Ur            14.0k 
+  Susa         elamita      monarquia   Susa          10.0k 
+  Biblos       semita       monarquia   Biblos         9.0k 
+  Ebla         semita       monarquia   Ebla          10.0k 
+  Varna        balcanico    teocracia   Varna          7.0k 
+  Los Millares iberico      monarquia   Los Millares   6.0k 
+
+Unidades
+  Soldado    era 0   800 hombres  oro  25  ATQ 10  DEF 10  mant. 0.8
+  Lancero    era 0   800 hombres  oro  32  ATQ  8  DEF 16  mant. 0.9
+  Jinete     era 2   400 hombres  oro  60  ATQ 20  DEF  8  mant. 1.6
+  Barco      era 0   200 hombres  oro  45  ATQ  8  DEF  6  mant. 0.8
+
+Edificios
+  Granjas            era 0   40 oro /  20 madera /   0 piedra
+  Pozo               era 0   30 oro /  10 madera /  15 piedra
+  Muralla            era 0   60 oro /  10 madera /  45 piedra
+  Taller             era 0   35 oro /  25 madera /   0 piedra
+  Cantera            era 1   40 oro /  20 madera /   0 piedra
+  Mina               era 1   55 oro /  30 madera /  10 piedra
+  Mercado            era 1   60 oro /  15 madera /  20 piedra
+  Templo             era 0   50 oro /  10 madera /  35 piedra
+  Casa de Escribas   era 1   55 oro /  10 madera /  20 piedra
+  Puerto             era 0   60 oro /  40 madera /  10 piedra
+  Cuartel            era 0   50 oro /  10 madera /  30 piedra
+  Ganaderia          era 0   45 oro /  15 madera /   0 piedra
+
+Eras
+  0. Neolitico Tardio     tec   0  prod 1.00  desde -3300
+  1. Calcolitico          tec 120  prod 1.10  desde -3300
+  2. Edad del Bronce      tec 420  prod 1.25  desde -3300
+  3. Edad del Hierro      tec 950  prod 1.40  desde -3300
+  4. Epoca Clasica        tec 1800  prod 1.60  desde -3300

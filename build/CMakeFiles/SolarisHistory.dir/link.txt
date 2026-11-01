@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\SolarisHistory.dir/objects.a
+C:\Users\braim\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\ar.exe qc CMakeFiles\SolarisHistory.dir/objects.a @CMakeFiles\SolarisHistory.dir\objects1.rsp
+C:\Users\braim\AppData\Local\Microsoft\WinGet\Packages\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\mingw64\bin\c++.exe -O3 -DNDEBUG -mwindows -Wl,--whole-archive CMakeFiles\SolarisHistory.dir/objects.a -Wl,--no-whole-archive -o SolarisHistory.exe -Wl,--out-implib,libSolarisHistory.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\SolarisHistory.dir\linkLibs.rsp
