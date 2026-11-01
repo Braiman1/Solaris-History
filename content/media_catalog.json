@@ -1,0 +1,464 @@
+[
+ {
+  "id": "resource_trigo",
+  "article": "Wheat"
+ },
+ {
+  "id": "resource_cebada",
+  "article": "Barley"
+ },
+ {
+  "id": "resource_pescado",
+  "article": "Fish"
+ },
+ {
+  "id": "resource_ganado",
+  "article": "Cattle"
+ },
+ {
+  "id": "resource_madera",
+  "article": "Wood"
+ },
+ {
+  "id": "resource_cedro",
+  "article": "Cedrus"
+ },
+ {
+  "id": "resource_piedra",
+  "article": "Stone"
+ },
+ {
+  "id": "resource_cobre",
+  "article": "Copper"
+ },
+ {
+  "id": "resource_estano",
+  "article": "Tin"
+ },
+ {
+  "id": "resource_oro",
+  "article": "Gold"
+ },
+ {
+  "id": "resource_plata",
+  "article": "Silver"
+ },
+ {
+  "id": "resource_sal",
+  "article": "Salt"
+ },
+ {
+  "id": "resource_obsidiana",
+  "article": "Obsidian"
+ },
+ {
+  "id": "resource_vino",
+  "article": "Wine"
+ },
+ {
+  "id": "resource_aceite",
+  "article": "Olive oil"
+ },
+ {
+  "id": "resource_lino",
+  "article": "Flax"
+ },
+ {
+  "id": "resource_incienso",
+  "article": "Incense"
+ },
+ {
+  "id": "resource_caballos",
+  "article": "Horse"
+ },
+ {
+  "id": "resource_arcilla",
+  "article": "Clay"
+ },
+ {
+  "id": "resource_ceramica",
+  "article": "Pottery"
+ },
+ {
+  "id": "resource_lana",
+  "article": "Wool"
+ },
+ {
+  "id": "resource_papiro",
+  "article": "Papyrus"
+ },
+ {
+  "id": "resource_lapislazuli",
+  "article": "Lapis lazuli"
+ },
+ {
+  "id": "culture_egipcio",
+  "article": "Naqada culture",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_nubio",
+  "article": "A-Group culture",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_sumerio",
+  "article": "Sumer",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_semita",
+  "article": "Ancient Semitic-speaking peoples",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_elamita",
+  "article": "Elam",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_anatolio",
+  "article": "Çatalhöyük",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_egeo",
+  "article": "Aegean civilization",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_balcanico",
+  "article": "Vinča culture",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_danubiano",
+  "article": "Linear Pottery culture",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_megalitico",
+  "article": "Megalith",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_nordico",
+  "article": "Funnelbeaker culture",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_estepario",
+  "article": "Yamnaya culture",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_caucasico",
+  "article": "Kura–Araxes culture",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_iranio",
+  "article": "Tepe Sialk",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_bereber",
+  "article": "Berbers",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_arabigo",
+  "article": "Pre-Islamic Arabia",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_italico",
+  "article": "Rinaldone culture",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_iberico",
+  "article": "Los Millares",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_sardino",
+  "article": "Ozieri culture",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "culture_chipriota",
+  "article": "Prehistoric Cyprus",
+  "note": "Cultural illustration, not an attested flag in 3300 BC."
+ },
+ {
+  "id": "nation_egipto",
+  "article": "Narmer Palette",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_sumeria",
+  "article": "Sumer",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_acad",
+  "article": "Akkadian Empire",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_elam",
+  "article": "Elam",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_siria",
+  "article": "Ebla",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_canaan",
+  "article": "Canaan",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_fenicia",
+  "article": "Phoenicia",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_asiria",
+  "article": "Assyria",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_babilonia",
+  "article": "Babylonia",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_hatti",
+  "article": "Hattians",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_arzawa",
+  "article": "Arzawa",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_wilusa",
+  "article": "Wilusa",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_creta",
+  "article": "Minoan civilization",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_micenas",
+  "article": "Mycenaean Greece",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_atenas",
+  "article": "Classical Athens",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_yamnaya",
+  "article": "Yamnaya culture",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_tracia",
+  "article": "Thrace",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_dacia",
+  "article": "Dacia",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_vincha",
+  "article": "Vinča culture",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_iberia",
+  "article": "Iberians",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_tartessos",
+  "article": "Tartessos",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_lusitania",
+  "article": "Lusitanians",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_etruria",
+  "article": "Etruscan civilization",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_sicanos",
+  "article": "Sicani",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_sardena",
+  "article": "Nuragic civilization",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_alashiya",
+  "article": "Alashiya",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_libia",
+  "article": "Ancient Libya",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_numidia",
+  "article": "Numidia",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_mauretania",
+  "article": "Mauretania",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_nubia",
+  "article": "Nubia",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_kush",
+  "article": "Kingdom of Kush",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_arabia",
+  "article": "Pre-Islamic Arabia",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_dilmun",
+  "article": "Dilmun",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_saba",
+  "article": "Sabaeans",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_urartu",
+  "article": "Urartu",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_media",
+  "article": "Medes",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_persia",
+  "article": "Achaemenid Empire",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_britania",
+  "article": "Celtic Britons",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_caledonia",
+  "article": "Caledonians",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_germania",
+  "article": "Germanic peoples",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_escandia",
+  "article": "Nordic Bronze Age",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_alba_longa",
+  "article": "Alba Longa",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_lavinium",
+  "article": "Lavinium",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_tusculum",
+  "article": "Tusculum",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_aricia",
+  "article": "Ariccia",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "nation_roma",
+  "article": "Roman Kingdom",
+  "note": "Historical illustration or emblem. No claim of a contemporary national flag."
+ },
+ {
+  "id": "tech_agricultura",
+  "article": "Agriculture"
+ },
+ {
+  "id": "tech_ceramica",
+  "article": "Pottery"
+ },
+ {
+  "id": "tech_riego",
+  "article": "Irrigation"
+ },
+ {
+  "id": "tech_rueda",
+  "article": "Wheel"
+ },
+ {
+  "id": "tech_escritura",
+  "article": "Writing"
+ },
+ {
+  "id": "tech_cobre",
+  "article": "Copper metallurgy in Africa"
+ },
+ {
+  "id": "tech_bronce",
+  "article": "Bronze Age"
+ },
+ {
+  "id": "tech_hierro",
+  "article": "Iron Age"
+ },
+ {
+  "id": "flag_es",
+  "file": "Flag of Spain.svg"
+ },
+ {
+  "id": "flag_en",
+  "file": "Flag of the United Kingdom.svg"
+ }
+]

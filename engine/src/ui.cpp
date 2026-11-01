@@ -119,15 +119,15 @@ void UI::divider(float x, float y, float wdt, Color c) {
 }
 
 void UI::text(const std::string& s, float x, float y, float scale, Color c, bool shadow) {
-    G->font.draw(s, x, y, scale, c, shadow);
+    G->font.draw(Locale::text(s), x, y, scale, c, shadow);
 }
 
 void UI::textC(const std::string& s, float cx, float y, float scale, Color c, bool shadow) {
-    G->font.draw(s, cx - textW(s, scale) * 0.5f, y, scale, c, shadow);
+    G->font.draw(Locale::text(s), cx - textW(s, scale) * 0.5f, y, scale, c, shadow);
 }
 
 void UI::textR(const std::string& s, float rx, float y, float scale, Color c, bool shadow) {
-    G->font.draw(s, rx - textW(s, scale), y, scale, c, shadow);
+    G->font.draw(Locale::text(s), rx - textW(s, scale), y, scale, c, shadow);
 }
 
 std::vector<std::string> UI::wrap(const std::string& s, float maxW, float scale) const {
@@ -135,7 +135,7 @@ std::vector<std::string> UI::wrap(const std::string& s, float maxW, float scale)
     std::string line;
     std::vector<std::string> words;
     std::string cur;
-    for (char c : s) {
+    for (char c : Locale::text(s)) {
         if (c == ' ') { if (!cur.empty()) words.push_back(cur); cur.clear(); }
         else cur += c;
     }

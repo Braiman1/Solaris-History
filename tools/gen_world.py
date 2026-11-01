@@ -621,3 +621,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    from expand_content import apply
+    apply()

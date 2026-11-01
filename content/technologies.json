@@ -1,0 +1,74 @@
+[
+ {
+  "id": "agricultura",
+  "name": "Agricultura",
+  "points": 1,
+  "farm": 0.05,
+  "military": 0,
+  "wikipedia": "Agriculture",
+  "desc": "Se desbloquea automaticamente al alcanzar 1 puntos tecnologicos."
+ },
+ {
+  "id": "ceramica",
+  "name": "Ceramica",
+  "points": 3,
+  "farm": 0,
+  "military": 0,
+  "wikipedia": "Pottery",
+  "desc": "Se desbloquea automaticamente al alcanzar 3 puntos tecnologicos."
+ },
+ {
+  "id": "riego",
+  "name": "Riego",
+  "points": 12,
+  "farm": 0.1,
+  "military": 0,
+  "wikipedia": "Irrigation",
+  "desc": "Se desbloquea automaticamente al alcanzar 12 puntos tecnologicos."
+ },
+ {
+  "id": "rueda",
+  "name": "Rueda",
+  "points": 30,
+  "farm": 0,
+  "military": 0.04,
+  "wikipedia": "Wheel",
+  "desc": "Se desbloquea automaticamente al alcanzar 30 puntos tecnologicos."
+ },
+ {
+  "id": "escritura",
+  "name": "Escritura",
+  "points": 60,
+  "farm": 0,
+  "military": 0,
+  "wikipedia": "Writing",
+  "desc": "Se desbloquea automaticamente al alcanzar 60 puntos tecnologicos."
+ },
+ {
+  "id": "cobre",
+  "name": "Metalurgia del cobre",
+  "points": 120,
+  "farm": 0,
+  "military": 0.08,
+  "wikipedia": "Copper metallurgy in Africa",
+  "desc": "Se desbloquea automaticamente al alcanzar 120 puntos tecnologicos."
+ },
+ {
+  "id": "bronce",
+  "name": "Metalurgia del bronce",
+  "points": 420,
+  "farm": 0,
+  "military": 0.12,
+  "wikipedia": "Bronze Age",
+  "desc": "Se desbloquea automaticamente al alcanzar 420 puntos tecnologicos."
+ },
+ {
+  "id": "hierro",
+  "name": "Metalurgia del hierro",
+  "points": 950,
+  "farm": 0,
+  "military": 0.15,
+  "wikipedia": "Iron Age",
+  "desc": "Se desbloquea automaticamente al alcanzar 950 puntos tecnologicos."
+ }
+]

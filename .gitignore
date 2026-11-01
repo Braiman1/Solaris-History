@@ -1,1 +1,4 @@
 .tools/
+
+solaris_options.cfg
+__pycache__/

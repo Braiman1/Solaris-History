@@ -9,6 +9,17 @@ if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
 endif()
 
+add_library(solaris_sim src/content.cpp src/sim.cpp)
+target_include_directories(solaris_sim PUBLIC include)
+include(CTest)
+if(BUILD_TESTING)
+    add_executable(SimTest tests/sim_test.cpp)
+    target_link_libraries(SimTest PRIVATE solaris_sim)
+    add_test(NAME simulation COMMAND SimTest)
+    set_tests_properties(simulation PROPERTIES WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/..")
+endif()
+
+if(WIN32)
 add_executable(SolarisHistory WIN32
     src/main.cpp
     src/content.cpp
@@ -42,3 +53,5 @@ add_custom_command(TARGET SolarisHistory POST_BUILD
             "$<TARGET_FILE_DIR:SolarisHistory>/content"
     COMMENT "Copiando contenido junto al ejecutable"
 )
+
+endif()

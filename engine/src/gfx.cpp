@@ -379,6 +379,13 @@ void Gfx::makeGlow() {
 }
 
 bool Gfx::init(const Content& content, const std::string& contentDir) {
+    Json assets = Json::parse(readTextFile(contentDir + "/media/index.json"));
+    for (const auto& a : assets.array()) {
+        std::string id = a["id"].string();
+        // IDs come from the bundled catalogue, never arbitrary paths.
+        if (id.empty() || id.find_first_not_of("abcdefghijklmnopqrstuvwxyz0123456789_-") != std::string::npos) continue;
+        media[id].loadRaw(contentDir + "/media/" + id + ".rgba", 128, 128);
+    }
     if (!earth.loadRaw(contentDir + "/textures/earth.rgba", 2048, 1024, true)) return false;
     if (!font.init()) return false;
     if (!map.build(content, contentDir)) return false;

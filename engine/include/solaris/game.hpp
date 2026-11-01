@@ -10,7 +10,7 @@
 namespace sol {
 
 enum class Screen { Menu, Play };
-enum class Modal { None, Event, FoundNation, Buildings, Recruit, Diplomacy, Chronicle, Elections, Help, GameOver };
+enum class Modal { None, Event, FoundNation, Buildings, Recruit, Diplomacy, Chronicle, Elections, Help, Technology, GameOver };
 
 struct Game {
     Platform& P;
@@ -22,6 +22,10 @@ struct Game {
     Screen screen = Screen::Menu;
     Modal modal = Modal::None;
     int menuSelection = 0;
+    int menuPage = 0, menuScroll = 0;
+    void loadGame();
+    void drawLanguageFlag(Rect r, bool english);
+    void drawTechnologyModal();
     int selectedProvince = -1;
     int selectedArmyId = -1;
     int hoverProvince = -1;

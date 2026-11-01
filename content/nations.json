@@ -308,20 +308,6 @@
   "desc": "Pueblos del oeste iberico, pastores y guerreros."
  },
  {
-  "id": "latinos",
-  "name": "Latinos",
-  "culture": "italico",
-  "capital": "Lacio",
-  "color": [
-   122,
-   59,
-   90
-  ],
-  "gov": "monarquia",
-  "adj": "Latino",
-  "desc": "Las aldeas del Lacio antes de la fundacion de Roma."
- },
- {
   "id": "etruria",
   "name": "Etruria",
   "culture": "italico",
@@ -333,7 +319,8 @@
   ],
   "gov": "republica",
   "adj": "Etrusco",
-  "desc": "Los senores del metal y de los ritos de Italia central."
+  "desc": "Los senores del metal y de los ritos de Italia central.",
+  "earliest_year": -900
  },
  {
   "id": "sicanos",
@@ -588,5 +575,85 @@
   "gov": "monarquia",
   "adj": "Escandio",
   "desc": "Los estrechos y las islas del norte."
+ },
+ {
+  "id": "alba_longa",
+  "name": "Alba Longa",
+  "culture": "italico",
+  "capital": "Alba Longa",
+  "color": [
+   155,
+   65,
+   65
+  ],
+  "gov": "monarquia",
+  "adj": "Latino",
+  "era": 0,
+  "earliest_year": -1200,
+  "desc": "Estado latino historico independiente. Disponible a partir de 1200 a.C.; fecha aproximada o tradicional."
+ },
+ {
+  "id": "lavinium",
+  "name": "Lavinium",
+  "culture": "italico",
+  "capital": "Lavinium",
+  "color": [
+   155,
+   65,
+   65
+  ],
+  "gov": "monarquia",
+  "adj": "Latino",
+  "era": 0,
+  "earliest_year": -1200,
+  "desc": "Estado latino historico independiente. Disponible a partir de 1200 a.C.; fecha aproximada o tradicional."
+ },
+ {
+  "id": "tusculum",
+  "name": "Tusculum",
+  "culture": "italico",
+  "capital": "Tusculum",
+  "color": [
+   155,
+   65,
+   65
+  ],
+  "gov": "monarquia",
+  "adj": "Latino",
+  "era": 0,
+  "earliest_year": -1000,
+  "desc": "Estado latino historico independiente. Disponible a partir de 1000 a.C.; fecha aproximada o tradicional."
+ },
+ {
+  "id": "aricia",
+  "name": "Aricia",
+  "culture": "italico",
+  "capital": "Aricia",
+  "color": [
+   155,
+   65,
+   65
+  ],
+  "gov": "monarquia",
+  "adj": "Latino",
+  "era": 0,
+  "earliest_year": -1000,
+  "desc": "Estado latino historico independiente. Disponible a partir de 1000 a.C.; fecha aproximada o tradicional."
+ },
+ {
+  "id": "roma",
+  "name": "Roma",
+  "culture": "italico",
+  "capital": "Colinas del Tiber",
+  "color": [
+   155,
+   65,
+   65
+  ],
+  "gov": "monarquia",
+  "adj": "Latino",
+  "era": 0,
+  "earliest_year": -753,
+  "desc": "Estado latino historico independiente. Disponible a partir de 753 a.C.; fecha aproximada o tradicional."
  }
 ]

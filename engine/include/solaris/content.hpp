@@ -8,6 +8,11 @@
 
 namespace sol {
 
+struct TechnologyDef {
+    std::string id, name, desc;
+    float points = 0, farm = 0, military = 0;
+};
+
 struct TerrainDef {
     std::string id, name;
     float food = 1, defense = 1, move = 1;
@@ -62,6 +67,7 @@ struct TraitDef {
 
 struct NationTemplate {
     std::string id, name, culture, capitalName, gov, adj, desc;
+    int earliestYear = -3300;
     int era = 0;
     Color color;
 };
@@ -94,6 +100,7 @@ struct Content {
     std::vector<UnitDef> units;
     std::vector<BuildingDef> buildings;
     std::vector<EraDef> eras;
+    std::vector<TechnologyDef> technologies;
     std::vector<GovDef> govs;
     std::vector<TraitDef> traits;
     std::vector<NationTemplate> nationTemplates;

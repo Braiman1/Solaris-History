@@ -9,6 +9,7 @@ namespace sol {
 
 struct Province {
     int def = 0;
+    int colonizer = 0, colonyMonths = 0;
     int owner = 0;          // 0 = independiente
     float pop = 1;
     float loyalty = 60;

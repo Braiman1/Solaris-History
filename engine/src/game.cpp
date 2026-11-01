@@ -20,15 +20,19 @@ static void trace(const char* fmt, ...) {
 }
 
 static std::string shortDate(int year, int month) {
-    std::string m = monthName(month);
+    std::string m = Locale::text(monthName(month));
     if (m.size() > 3) m = m.substr(0, 3);
     return m + " " + std::to_string(year < 0 ? -year : year);
 }
 
 static std::string ellipsize(const Font& f, const std::string& s, float scale, float maxW) {
-    if (f.width(s, scale) <= maxW) return s;
-    std::string out = s;
-    while (!out.empty() && f.width(out + "...", scale) > maxW) out.pop_back();
+    std::string out = Locale::text(s);
+    if (f.width(out, scale) <= maxW) return out;
+    while (!out.empty() && f.width(out + "...", scale) > maxW) {
+        size_t pos=out.size()-1;
+        while(pos>0 && ((unsigned char)out[pos]&0xc0)==0x80) --pos;
+        out.erase(pos);
+    }
     return out + "...";
 }
 
@@ -52,6 +56,8 @@ bool Game::init(const std::string& contentDir) {
                     "Solaris History", MB_ICONERROR);
         return false;
     }
+    if (!Locale::load(contentDir + "/locales.json")) return false;
+    Locale::english = readTextFile("solaris_options.cfg").find("en") == 0;
     sim.init(C, 0);
     screen = Screen::Menu;
     for (int i = 0; i < (int)C.cityStates.size(); ++i) {
@@ -150,17 +156,7 @@ void Game::handleKeys() {
         sim.save("solaris_quicksave.sav");
         setStatus("Partida guardada en solaris_quicksave.sav");
     }
-    if (P.keyPressed[VK_F9]) {
-        if (sim.load("solaris_quicksave.sav")) {
-            selectedProvince = sim.nations[(size_t)sim.player].capital;
-            selectedArmyId = -1;
-            modal = Modal::None;
-            speed = 0;
-            setStatus("Partida cargada.");
-        } else {
-            setStatus("No se pudo cargar la partida.");
-        }
-    }
+    if (P.keyPressed[VK_F9]) loadGame();
 }
 
 void Game::handlePlayInput() {
@@ -290,11 +286,14 @@ void Game::render() {
     G.map.sync(sim, selectedProvince);
     G.drawGlobe(sim, selectedProvince, time, P.w, P.h);
     ui.begin(P, G);
+    bool modalClick = ui.clicked;
+    if (modal != Modal::None) { ui.clicked = false; P.mousePressed[0] = false; }
     drawMarkers();
     drawTopBar();
     drawProvincePanel();
     drawNationPanel();
     drawLog();
+    ui.clicked = modalClick; P.mousePressed[0] = modalClick;
 
     if (selectedArmyId >= 0) {
         std::string hint = "Elige la provincia de destino  ·  Esc para cancelar";
@@ -329,7 +328,7 @@ void Game::render() {
 // menu
 // ---------------------------------------------------------------------------
 void Game::drawMenu() {
-    float w = (float)P.w, h = (float)P.h;
+    float h = (float)P.h;
     ui.rect({0, 0, 800, h}, Color(8, 10, 15, 208));
     ui.rect({798, 0, 1, h}, Color(176, 144, 78, 60));
     ui.text("SOLARIS", 54, 48, 1.24f, pal::gold, true);
@@ -337,34 +336,62 @@ void Game::drawMenu() {
     ui.text("GRAN ESTRATEGIA EN TIEMPO REAL  ·  3300 a.C.", 58, 188, 0.34f, pal::dim);
     ui.divider(56, 222, 660, pal::border);
 
-    ui.text("ELIGE TU CIUDAD-ESTADO", 56, 240, 0.40f, pal::gold);
-    ui.text("Las primeras ciudades escriben la historia.", 56, 266, 0.30f, pal::dim);
-
-    int idx = 0;
-    int visibleIdx = 0;
-    for (int i = 0; i < (int)C.cityStates.size(); ++i) {
-        const CityStateDef& cs = C.cityStates[(size_t)i];
-        if (!cs.playable) continue;
-        Rect r(56, 294 + idx * 69, 664, 60);
-        bool hovered = ui.hover(r);
-        bool sel = (i == menuSelection);
-        if (hovered) P.setCursorHand(true);
-        ui.rect(r, sel ? Color(47, 41, 29, 245) : (hovered ? Color(32, 31, 28, 230) : Color(22, 23, 26, 220)));
-        ui.outline(r, sel ? pal::gold : (hovered ? pal::border : Color(80, 74, 62, 120)), sel ? 1.6f : 1.0f);
-        if (sel) ui.cornerAccents(r, pal::gold, 12);
-        ui.rect({r.x + 14, r.y + 12, 5, r.h - 24}, cs.color);
-        ui.text(cs.name, r.x + 32, r.y + 7, 0.46f, sel ? pal::gold : pal::text);
-        const CultureDef& cu = C.culture(cs.culture);
-        ui.text(cu.shortName + "  ·  " + C.gov(cs.gov).name, r.x + 32, r.y + 33, 0.29f, pal::dim);
-        ui.text(std::to_string(sim.prov[(size_t)cs.capital].pop > 0 ? (int)sim.prov[(size_t)cs.capital].pop : 0) + "k almas", r.x + r.w - 18, r.y + 33, 0.28f, pal::faint);
-        if (ui.clicked && hovered) menuSelection = i;
-        ++idx;
-        ++visibleIdx;
+    if (menuPage == 0) {
+        const char* entries[] = {"Crear partida", "Cargar partida", "Opciones", "Creditos", "Salir"};
+        for (int i = 0; i < 5; ++i) {
+            if (!ui.button(entries[i], {56, 270.0f + i * 66, 450, 50}, true, pal::gold, 0.40f)) continue;
+            if (i == 0) menuPage = 1;
+            else if (i == 1) loadGame();
+            else if (i == 2) menuPage = 2;
+            else if (i == 3) menuPage = 3;
+            else P.running = false;
+        }
+        if (statusTimer > 0) ui.textBlock(status, 56, 620, 650, 0.30f, pal::bad);
+        return;
     }
-
+    if (ui.button("Volver", {56, h - 68, 160, 38})) { menuPage = 0; return; }
+    if (menuPage == 2) {
+        ui.text("Idioma / Language", 56, 270, 0.46f, pal::gold);
+        drawLanguageFlag({56, 320, 64, 40}, false);
+        drawLanguageFlag({56, 385, 64, 40}, true);
+        bool change = false;
+        if (ui.button("Español", {140, 315, 240, 50})) { Locale::english = false; change = true; }
+        if (ui.button("English", {140, 380, 240, 50})) { Locale::english = true; change = true; }
+        if (change) {
+            FILE* f = std::fopen("solaris_options.cfg", "w");
+            if (f) { std::fputs(Locale::english ? "en\n" : "es\n", f); std::fclose(f); }
+        }
+        ui.text(Locale::english ? "English" : "Español", 56, 465, 0.36f, pal::good);
+        return;
+    }
+    if (menuPage == 3) {
+        ui.text("Creditos", 56, 270, 0.50f, pal::gold);
+        ui.text("Solaris History - Braiman1", 56, 320, 0.38f, pal::text);
+        ui.text("Globo: NASA Blue Marble", 56, 360, 0.30f, pal::dim);
+        if (G.media.empty()) ui.textBlock("Imagenes de Wikimedia pendientes de descargar.", 56, 460, 650, 0.28f, pal::war);
+        ui.textBlock("Imagenes historicas: Wikimedia Commons. Fuentes, autores y licencias en content/media/attributions.json.", 56, 405, 650, 0.32f, pal::dim);
+        ui.textBlock("Los grupos representan comunidades de 3300 a.C. Las naciones posteriores se desbloquean por fecha. Los simbolos antiguos son emblemas, no banderas nacionales modernas.", 56, 500, 650, 0.30f, pal::dim);
+        return;
+    }
+    ui.text("ELIGE TU GRUPO", 56, 240, 0.40f, pal::gold);
+    std::vector<int> playable;
+    for (int i = 0; i < (int)C.cityStates.size(); ++i) if (C.cityStates[i].playable) playable.push_back(i);
+    const int visible = std::max(1, std::min(5, (P.h - 490) / 63));
+    if (ui.wheel != 0) menuScroll -= (int)ui.wheel;
+    menuScroll = std::clamp(menuScroll, 0, std::max(0, (int)playable.size() - visible));
+    for (int k = 0; k < visible && menuScroll + k < (int)playable.size(); ++k) {
+        int i = playable[menuScroll + k];
+        const CityStateDef& cs = C.cityStates[i];
+        Rect row(56, 280.0f + k * 63, 664, 55);
+        if (ui.button(cs.name, row, true, i == menuSelection ? pal::gold : pal::dim, 0.36f)) menuSelection = i;
+        if (GLuint emblem = G.mediaFor("culture_"+cs.culture)) ui.icon(emblem, {row.x+8,row.y+5,44,44});
+    }
+    if (ui.smallButton("Subir", {560, 238, 76, 30}, menuScroll > 0)) --menuScroll;
+    if (ui.smallButton("Bajar", {644, 238, 76, 30}, menuScroll + visible < (int)playable.size())) ++menuScroll;
+    int visibleIdx = visible;
     const CityStateDef& cs = C.cityStates[(size_t)menuSelection];
     const CultureDef& cu = C.culture(cs.culture);
-    float dy = 294 + visibleIdx * 69 + 10;
+    float dy = 280 + visibleIdx * 63 + 10;
     ui.divider(56, dy, 664, pal::border);
     ui.text(cu.name, 56, dy + 12, 0.38f, pal::gold);
     ui.textBlock(cs.desc, 56, dy + 36, 660, 0.32f, pal::text, 2, 3);
@@ -382,7 +409,7 @@ void Game::drawMenu() {
     if (ui.button("COMENZAR PARTIDA", startR, true, pal::gold, 0.44f)) startNewGame();
     Rect helpR(370, h - 104, 120, 46);
     if (ui.button("Ayuda", helpR, true, pal::goldDim, 0.36f)) openModal(Modal::Help);
-    ui.text("Open Source · GPLv3 · v0.1", 56, h - 40, 0.28f, pal::faint);
+
     ui.text("Globo: NASA Blue Marble", 56, h - 22, 0.24f, Color(100, 100, 100));
 
     if (modal != Modal::None) drawModal();
@@ -398,9 +425,12 @@ void Game::drawTopBar() {
     ui.text("SOLARIS HISTORY", 18, 5, 0.44f, pal::gold);
     const Nation& n = sim.nations[(size_t)sim.player];
 
-    ui.text(dateLabel(sim.year, sim.month), 224, 4, 0.42f, pal::text);
+    ui.text(Locale::english ? Locale::text(monthName(sim.month)) + " " + yearLabel(sim.year) : dateLabel(sim.year, sim.month), 224, 4, 0.42f, pal::text);
     ui.text(C.era(n.era).name + "  ·  " + C.gov(n.gov).name, 224, 31, 0.26f, pal::dim);
 
+    if (ui.smallButton("Menu", {18, 31, 100, 20})) {
+        speed = 0; screen = Screen::Menu; menuPage = 0;
+    }
     // velocidad
     const char* labels[5] = {"II", ">", ">>", ">>>", "x4"};
     for (int i = 0; i < 5; ++i) {
@@ -423,6 +453,7 @@ void Game::drawTopBar() {
         ui.addHit(r);
     }
 
+    if (ui.smallButton("Tecnologias", {842, 14, 130, 28})) openModal(Modal::Technology);
     // tecnologia
     float tech = n.tech;
     float next = (n.era + 1 < (int)C.eras.size()) ? C.eras[(size_t)n.era + 1].tech : tech;
@@ -502,6 +533,7 @@ void Game::drawProvincePanel() {
     Province& pv = sim.prov[(size_t)selectedProvince];
     const TerrainDef& terr = C.terrainOfProvince(selectedProvince);
     const ResourceDef& res = C.resourceOfProvince(selectedProvince);
+    if (GLuint image = G.mediaFor("resource_"+res.id)) ui.icon(image, {r.x+r.w-54,r.y+10,40,40});
     const CultureDef& cu = C.culture(pd.cultureId);
     bool mine = pv.owner == sim.player;
 
@@ -567,13 +599,15 @@ void Game::drawProvincePanel() {
 
     if (!mine) {
         float cost = 0;
-        bool canCol = sim.canColonize(sim.player, selectedProvince, &cost);
-        std::string label = "Fundar asentamiento (" + numStr(cost, 0) + " oro)";
+
+        const Province& colony = sim.province(selectedProvince);
+        if (colony.colonizer) ui.text("Colonizacion: " + std::to_string(colony.colonyMonths) + " meses", x, by - 24, 0.28f, pal::gold);
+        std::string label = "Colonizar: 36 meses (" + numStr(cost, 0) + " oro)";
         bool canAfford = sim.canColonize(sim.player, selectedProvince, &cost);
         if (ui.button(label, {x, by + 38, wd, 30}, canAfford, pal::good, 0.28f)) {
-            if (sim.colonize(sim.player, selectedProvince)) setStatus("Asentamiento fundado en " + pd.name + ".");
+            if (sim.colonize(sim.player, selectedProvince)) setStatus("Expedicion enviada a " + pd.name + ".");
         }
-        if (ui.hover({x, by + 38, wd, 30}) && !canAfford) ui.tooltip = "Necesitas una provincia vecina y oro suficiente.";
+        if (ui.hover({x, by + 38, wd, 30}) && !canAfford) ui.tooltip = "Necesitas una provincia vecina, oro y ninguna expedicion activa.";
     } else {
         if (ui.button("Diplomacia", {x, by + 38, wd, 28}, true, pal::goldDim, 0.28f)) openModal(Modal::Diplomacy);
     }
@@ -670,7 +704,7 @@ void Game::drawNationPanel() {
         Rect b(x, by, wd, 36);
         bool can = sim.canFound(sim.player);
         if (ui.button("FUNDAR NACION", b, can, pal::gold, 0.40f)) openModal(Modal::FoundNation);
-        if (!can && ui.hover(b)) ui.tooltip = "Necesitas 2 provincias, 60 oro y 5 de prestigio.";
+        if (!can && ui.hover(b)) ui.tooltip = "Necesitas 2 provincias, 60 oro, 5 de prestigio y 3 puntos tecnologicos.";
         by += 42;
     }
     if (ui.button("Diplomacia", {x, by, (wd - 8) / 2, 30}, true, pal::goldDim, 0.29f)) openModal(Modal::Diplomacy);
@@ -854,6 +888,7 @@ void Game::drawModal() {
         case Modal::Diplomacy: drawDiplomacyModal(); break;
         case Modal::Chronicle: drawChronicleModal(); break;
         case Modal::Elections: drawElectionsModal(); break;
+        case Modal::Technology: drawTechnologyModal(); break;
         case Modal::Help: drawHelpModal(); break;
         case Modal::GameOver: drawGameOverModal(); break;
         default: break;
@@ -877,15 +912,15 @@ void Game::drawFoundModal() {
     int provs = 0;
     for (auto& p : sim.prov) if (p.owner == sim.player) ++provs;
     ui.text("Provincias " + std::to_string(provs) + "   ·   Oro " + numStr(n.gold, 0) +
-            "   ·   Prestigio " + numStr(n.prestige, 0), r.x + 24, r.y + 66, 0.30f, pal::dim);
+            "   ·   Tecnologia " + numStr(n.tech, 1) + " / 3", r.x + 24, r.y + 66, 0.30f, pal::dim);
     bool can = sim.canFound(sim.player);
-    if (!can) ui.text("Requisitos: 2 provincias, 60 de oro y 5 de prestigio.", r.x + 24, r.y + 88, 0.27f, pal::bad);
+    if (!can) ui.text("Requisitos: 2 provincias, 60 oro, 5 de prestigio y 3 puntos tecnologicos.", r.x + 24, r.y + 88, 0.27f, pal::bad);
     else ui.text("Elige el nombre y el gobierno de tu pueblo.", r.x + 24, r.y + 88, 0.27f, pal::good);
 
     std::vector<int> list;
     for (int i = 0; i < (int)C.nationTemplates.size(); ++i) {
         const NationTemplate& t = C.nationTemplates[(size_t)i];
-        if (t.culture != n.culture || t.era > n.era) continue;
+        if (t.culture != n.culture || t.era > n.era || sim.year < t.earliestYear) continue;
         list.push_back(i);
     }
     float ry = r.y + 118;
@@ -899,10 +934,11 @@ void Game::drawFoundModal() {
         Rect row(r.x + 20, ry + k * 78, r.w - 40, 70);
         ui.rect(row, Color(19, 21, 25, 220));
         ui.outline(row, used ? Color(80, 76, 70, 100) : pal::borderSoft, 1);
-        ui.rect({row.x + 10, row.y + 14, 8, 40}, t.color);
-        ui.text(t.name, row.x + 28, row.y + 8, 0.42f, used ? pal::faint : pal::text);
-        ui.text(C.gov(t.gov).name + "  ·  " + t.adj, row.x + 28, row.y + 38, 0.26f, pal::dim);
-        ui.textBlock(t.desc, row.x + 28, row.y + 54, row.w - 190, 0.24f, pal::faint, 0, 1);
+        if (GLuint emblem = G.mediaFor("nation_"+t.id)) ui.icon(emblem, {row.x+8,row.y+12,40,40});
+        else ui.rect({row.x + 10, row.y + 14, 8, 40}, t.color);
+        ui.text(t.name, row.x + 54, row.y + 8, 0.42f, used ? pal::faint : pal::text);
+        ui.text(C.gov(t.gov).name + "  ·  " + t.adj, row.x + 54, row.y + 38, 0.26f, pal::dim);
+        ui.textBlock(t.desc, row.x + 54, row.y + 54, row.w - 190, 0.24f, pal::faint, 0, 1);
         bool canThis = can && !used;
         if (used) ui.text("Nombre en uso", row.x + row.w - 130, row.y + 24, 0.24f, pal::bad);
         else if (ui.button("Fundar", {row.x + row.w - 118, row.y + 18, 104, 32}, canThis, pal::gold, 0.28f)) {
@@ -1172,6 +1208,78 @@ void Game::drawGameOverModal() {
         sim.init(C, 0);
     }
     if (ui.button("Salir", {r.x + 214, r.y + r.h - 64, 120, 38}, true, pal::goldDim, 0.32f)) P.running = false;
+}
+
+void Game::loadGame() {
+    Sim candidate;
+    candidate.C = &C;
+    if (!candidate.load("solaris_quicksave.sav")) {
+        setStatus("No se pudo cargar la partida. Comprueba que usa el mismo mapa.");
+        return;
+    }
+    sim = std::move(candidate);
+    screen = Screen::Play;
+    selectedProvince = sim.nations[(size_t)sim.player].capital;
+    selectedArmyId = -1;
+    modal = Modal::None;
+    speed = 0;
+    tickTimer = 0;
+    setStatus("Partida cargada.");
+}
+
+void Game::drawLanguageFlag(Rect r, bool english) {
+    if (GLuint texture = G.mediaFor(english ? "flag_en" : "flag_es")) {
+        ui.icon(texture,r); return;
+    }
+    if (!english) {
+        ui.rect(r, Color(170, 21, 27));
+        ui.rect({r.x, r.y+r.h*0.25f, r.w, r.h*0.5f}, Color(241, 191, 0));
+    } else {
+        ui.rect(r, Color(1, 33, 105));
+        auto diagonal = [&](float x1, float y1, float x2, float y2, float thickness, Color color) {
+            float dx=x2-x1, dy=y2-y1, length=std::sqrt(dx*dx+dy*dy);
+            float nx=-dy/length*thickness/2, ny=dx/length*thickness/2;
+            glDisable(GL_TEXTURE_2D); glColor4ub(color.r,color.g,color.b,color.a);
+            glBegin(GL_QUADS);
+            glVertex2f(x1+nx,y1+ny); glVertex2f(x2+nx,y2+ny);
+            glVertex2f(x2-nx,y2-ny); glVertex2f(x1-nx,y1-ny);
+            glEnd(); glEnable(GL_TEXTURE_2D);
+        };
+        // Scissor keeps the diagonal saltire within the flag.
+        glEnable(GL_SCISSOR_TEST); glScissor((int)r.x, P.h-(int)(r.y+r.h), (int)r.w, (int)r.h);
+        for (int i=0;i<2;++i) {
+            Color c = i ? Color(200,16,46) : Color(255,255,255);
+            diagonal(r.x,r.y,r.x+r.w,r.y+r.h,r.h*(i?0.08f:0.22f),c);
+            diagonal(r.x,r.y+r.h,r.x+r.w,r.y,r.h*(i?0.08f:0.22f),c);
+        }
+        glDisable(GL_SCISSOR_TEST);
+        ui.rect({r.x+r.w*0.4f,r.y,r.w*0.2f,r.h}, Color(255,255,255));
+        ui.rect({r.x,r.y+r.h*0.34f,r.w,r.h*0.32f}, Color(255,255,255));
+        ui.rect({r.x+r.w*0.44f,r.y,r.w*0.12f,r.h}, Color(200,16,46));
+        ui.rect({r.x,r.y+r.h*0.4f,r.w,r.h*0.2f}, Color(200,16,46));
+    }
+    ui.outline(r, pal::goldDim);
+}
+
+void Game::drawTechnologyModal() {
+    Rect r(P.w*0.5f-380, P.h*0.5f-280, 760, 560);
+    drawModalFrame("Tecnologias", r);
+    const Nation& n = sim.nations[(size_t)sim.player];
+    ui.text("Puntos tecnologicos: " + numStr(n.tech, 1), r.x+24, r.y+60, 0.35f, pal::gold);
+    const int visible = 5;
+    if (ui.wheel != 0) modalScroll -= (int)ui.wheel;
+    modalScroll = std::clamp(modalScroll, 0, std::max(0, (int)C.technologies.size()-visible));
+    for (int k=0;k<visible && k+modalScroll<(int)C.technologies.size();++k) {
+        const auto& t = C.technologies[k+modalScroll];
+        float y=r.y+100+k*78;
+        GLuint image=G.mediaFor("tech_"+t.id);
+        if (image) ui.icon(image,{r.x+24,y,60,60});
+        ui.text(t.name+" - "+numStr(t.points,0)+" pt",r.x+100,y,0.34f,pal::text);
+        ui.text(n.tech >= t.points ? "Desbloqueada" : "Bloqueada",r.x+100,y+23,0.27f,n.tech>=t.points?pal::good:pal::faint);
+        ui.text("Agricultura +"+numStr(t.farm*100,0)+"%   Militar +"+numStr(t.military*100,0)+"%",r.x+100,y+45,0.26f,pal::dim);
+    }
+    if(ui.smallButton("Subir",{r.x+24,r.y+r.h-40,90,28},modalScroll>0)) --modalScroll;
+    if(ui.smallButton("Bajar",{r.x+124,r.y+r.h-40,90,28},modalScroll+visible<(int)C.technologies.size())) ++modalScroll;
 }
 
 } // namespace sol

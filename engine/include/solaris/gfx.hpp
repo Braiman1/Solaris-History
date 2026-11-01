@@ -72,6 +72,10 @@ struct PoliticalMap {
 };
 
 struct Gfx {
+    std::map<std::string, Texture> media;
+    GLuint mediaFor(const std::string& key) const {
+        auto it = media.find(key); return it == media.end() ? 0 : it->second.id;
+    }
     Camera cam;
     Texture earth;
     Texture glow;

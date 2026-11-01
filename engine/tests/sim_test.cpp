@@ -1,6 +1,7 @@
-﻿// Solaris History - pruebas de simulacion sin interfaz grafica
+// Solaris History - pruebas de simulacion sin interfaz grafica
 #include "solaris/content.hpp"
 #include "solaris/sim.hpp"
+#include "solaris/locale.hpp"
 #include <cstdio>
 #include <string>
 #include <vector>
@@ -28,12 +29,25 @@ int main() {
         return 1;
     }
     std::printf("Contenido: %s\n", dir.c_str());
-    check(C.provinces.size() == 164, "164 provincias cargadas");
-    check(C.cityStates.size() == 12, "12 ciudades-estado cargadas");
-    check(C.nationTemplates.size() == 42, "42 naciones fundables cargadas");
+    check(C.provinces.size() == 184, "184 provincias cargadas");
+    check(C.cityStates.size() == 13, "13 grupos iniciales cargados");
+    check(C.nationTemplates.size() == 46, "46 naciones fundables cargadas");
 
+    check(Locale::load(dir+"/locales.json"), "catalogo bilingue cargado");
+    Locale::english=true;
+    check(Locale::text("Cargar partida")=="Load game", "menu traducido al ingles");
+    check(Locale::text("Colonizacion: 18 meses")=="Colonization: 18 months", "progreso dinamico traducido");
+    check(Locale::text("Tecnologias")=="Technologies", "traduccion respeta palabras completas");
+    Locale::english=false;
+    check(Locale::text("Cargar partida")=="Cargar partida", "cambio de idioma conserva el espanol");
+    check(C.resourceIndex.count("estano")==1, "estano reconocido por el motor");
+    check(C.resourceIndex.count("papiro")==1, "nuevo recurso papiro reconocido");
     Sim sim;
     sim.init(C, 0);
+    float farmBefore=sim.mods(sim.player).farm;
+    sim.nations[sim.player].tech=1;
+    check(sim.mods(sim.player).farm>farmBefore, "la tecnologia agricola mejora la produccion");
+    sim.nations[sim.player].tech=0;
     const int player = sim.player;
     const int capital = sim.nations[(size_t)player].capital;
     check(player == 1, "el jugador es la primera ciudad-estado");
@@ -52,6 +66,18 @@ int main() {
     sim.nations[(size_t)player].prestige = 100;
     check(sim.canColonize(player, target), "se puede colonizar el vecino");
     check(sim.colonize(player, target), "colonizacion ejecutada");
+    check(sim.prov[(size_t)target].owner == 0, "la expedicion no concede territorio instantaneo");
+    check(!sim.colonize(player, target), "no se puede duplicar una expedicion");
+    sim.save("sim_test_colony.sav");
+    Sim pending;
+    pending.C = &C;
+    check(pending.load("sim_test_colony.sav"), "se carga una expedicion activa");
+    check(pending.prov[(size_t)target].colonyMonths == 36, "se conserva el progreso colonial");
+    std::remove("sim_test_colony.sav");
+    for (int i=0;i<35;++i) sim.step();
+    check(sim.prov[(size_t)target].owner == 0, "el territorio sigue libre tras 35 meses");
+    sim.step();
+    check(sim.prov[(size_t)target].colonyMonths == 0, "la expedicion termina al mes 36");
     check(sim.prov[(size_t)target].owner == player, "el nuevo asentamiento pertenece al jugador");
 
     // fundacion de nacion
@@ -61,6 +87,11 @@ int main() {
             && C.nationTemplates[(size_t)i].era <= sim.nations[(size_t)player].era) { tmpl = i; break; }
     }
     check(tmpl >= 0, "hay una nacion fundable para la cultura del jugador");
+    sim.nations[(size_t)player].gold = 500;
+    sim.nations[(size_t)player].prestige = 100;
+    sim.nations[(size_t)player].tech = 2.99f;
+    check(!sim.canFound(player), "menos de 3 puntos impide fundar");
+    sim.nations[(size_t)player].tech = 3;
     check(sim.canFound(player), "se cumplen los requisitos de fundacion");
     check(sim.foundNation(player, tmpl), "fundacion ejecutada");
     check(!sim.nations[(size_t)player].isCityState, "el jugador ya no es ciudad-estado");
@@ -87,8 +118,8 @@ int main() {
     check(enemy != player && sim.nationAlive(enemy), "hay una nacion rival viva");
     sim.declareWar(player, enemy);
     check(sim.atWar(player, enemy), "la guerra esta declarada");
-    int enemyCapital = sim.nations[(size_t)enemy].capital;
-    int armyId = sim.armies.back().id;
+    int enemyCapital = target; // A reachable owned neighbor tests movement without assuming transit rights across neutral states.
+    int armyId = (int)sim.armies.size() - 1;
     std::vector<int> path;
     float cost = 0;
     bool pathOk = sim.findPath(armyId, enemyCapital, path, cost);
@@ -96,7 +127,7 @@ int main() {
     if (pathOk) {
         sim.orderMove(armyId, enemyCapital);
         int guard = 0;
-        while (sim.armies.back().inTransit() && guard++ < 60) sim.step();
+        while (sim.armies[(size_t)armyId].inTransit() && guard++ < 60) sim.step();
         check(guard < 60, "el ejercito llega a su destino");
     }
     sim.makePeace(player, enemy);
@@ -112,6 +143,7 @@ int main() {
         sim.holdElection(player, candidate);
         check(n.ruler == candidate, "el candidato gano la eleccion");
     }
+    n.gov = "monarquia";
     // muerte del gobernante y sustitucion
     int ruler = sim.livingRuler(player);
     check(ruler >= 0, "hay gobernante antes de la muerte");
@@ -122,6 +154,21 @@ int main() {
         int newRuler = sim.livingRuler(player);
         check(newRuler >= 0, "el consejo o la sucesion nombra un nuevo gobernante");
     }
+
+    // Later Latin states cannot exist in 3300 BC.
+    Sim latin;
+    int latinIndex = 0;
+    for (size_t i=0;i<C.cityStates.size();++i) if(C.cityStates[i].culture=="italico") latinIndex=(int)i;
+    latin.init(C,latinIndex);
+    int lp=latin.player;
+    latin.nations[lp].tech=3; latin.nations[lp].gold=500; latin.nations[lp].prestige=100;
+    for (auto& p : latin.prov) if (C.province(p.def).cultureId=="italico") {p.owner=lp;break;}
+    int rome=-1;
+    for(size_t i=0;i<C.nationTemplates.size();++i) if(C.nationTemplates[i].id=="roma") rome=(int)i;
+    check(rome>=0, "Roma tiene una plantilla separada del grupo latino");
+    check(!latin.foundNation(lp,rome), "Roma bloqueada antes de 753 a.C.");
+    latin.year=-753;
+    check(latin.foundNation(lp,rome), "Roma disponible desde su fecha tradicional");
 
     // economia a largo plazo
     n.gov = "monarquia";

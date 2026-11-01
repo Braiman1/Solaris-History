@@ -1,5 +1,9 @@
 #include "solaris/content.hpp"
+#ifdef _WIN32
 #include <windows.h>
+#else
+#include <filesystem>
+#endif
 #include <cstdio>
 
 namespace sol {
@@ -23,14 +27,22 @@ bool Content::load(const std::string& contentDir) {
         if (txt.empty()) {
             std::string err = "No se pudo abrir ";
             err += name;
+#ifdef _WIN32
             MessageBoxA(nullptr, err.c_str(), "Solaris History - contenido", MB_ICONERROR | MB_OK);
+#else
+            std::fprintf(stderr, "%s\n", err.c_str());
+#endif
             return false;
         }
         std::string perr;
         out = Json::parse(txt, &perr);
         if (out.isNull() && !perr.empty()) {
             std::string err = std::string("Error JSON en ") + name + ": " + perr;
+#ifdef _WIN32
             MessageBoxA(nullptr, err.c_str(), "Solaris History - contenido", MB_ICONERROR | MB_OK);
+#else
+            std::fprintf(stderr, "%s\n", err.c_str());
+#endif
             return false;
         }
         return true;
@@ -45,6 +57,14 @@ bool Content::load(const std::string& contentDir) {
     if (!loadJson("leaders.json", jLeaders)) return false;
     if (!loadJson("nations.json", jNations)) return false;
 
+    Json techs = Json::parse(readTextFile(joinPath(dir, "technologies.json")));
+    if (!techs.isArray() || techs.size() == 0) return false;
+    for (const auto& j : techs.array()) {
+        TechnologyDef t;
+        t.id = j["id"].string(); t.name = j["name"].string(); t.desc = j["desc"].string();
+        t.points = (float)j["points"].number(); t.farm = (float)j["farm"].number(); t.military = (float)j["military"].number();
+        technologies.push_back(t);
+    }
     startYear = jWorld["meta"]["start_year"].integer(-3300);
 
     // Los objetos de terreno/recurso se leen mediante la lista de claves conocidas.
@@ -71,7 +91,7 @@ bool Content::load(const std::string& contentDir) {
         Json jr = jWorld["resources"];
         const char* res[] = {"trigo", "cebada", "pescado", "ganado", "madera", "cedro", "piedra",
                              "cobre", "estano", "oro", "plata", "sal", "obsidiana", "vino",
-                             "aceite", "lino", "incienso", "caballos"};
+                             "aceite", "lino", "incienso", "caballos", "arcilla", "ceramica", "lana", "papiro", "lapislazuli"};
         for (auto* id : res) {
             const Json& r = jr[id];
             if (r.isNull()) continue;
@@ -207,6 +227,7 @@ bool Content::load(const std::string& contentDir) {
         d.name = j["name"].string(d.id);
         d.culture = j["culture"].string();
         d.capitalName = j["capital"].string();
+        d.earliestYear = j["earliest_year"].integer(-3300);
         d.gov = j["gov"].string("monarquia");
         d.adj = j["adj"].string(d.name);
         d.desc = j["desc"].string();
@@ -249,7 +270,7 @@ bool Content::load(const std::string& contentDir) {
     std::sort(provinces.begin(), provinces.end(), [](const ProvinceDef& a, const ProvinceDef& b) { return a.id < b.id; });
     for (size_t i = 0; i < provinces.size(); ++i) {
         if (provinces[i].id != (int)i) {
-            MessageBoxA(nullptr, "Los ids de provincia no son consecutivos", "Solaris History", MB_ICONERROR);
+            std::fprintf(stderr, "Los ids de provincia no son consecutivos\n");
             return false;
         }
     }
@@ -310,6 +331,7 @@ bool Content::hasBuilding(const std::vector<std::string>& list, const std::strin
 
 std::string findContentDir() {
     std::string exe = ".";
+    #ifdef _WIN32
     char buf[MAX_PATH];
     DWORD n = GetModuleFileNameA(nullptr, buf, MAX_PATH);
     if (n > 0) {
@@ -317,6 +339,9 @@ std::string findContentDir() {
         size_t pos = exe.find_last_of("\\/");
         if (pos != std::string::npos) exe = exe.substr(0, pos);
     }
+    #else
+    exe = std::filesystem::current_path().string();
+    #endif
     const char* rel[] = {"/content", "/../content", "/../../content", "/../../../content"};
     for (auto* r : rel) {
         std::string p = exe + r;

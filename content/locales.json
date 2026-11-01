@@ -1,0 +1,2166 @@
+[
+ {
+  "es": "Crear partida",
+  "en": "New game"
+ },
+ {
+  "es": "Cargar partida",
+  "en": "Load game"
+ },
+ {
+  "es": "Opciones",
+  "en": "Options"
+ },
+ {
+  "es": "Creditos",
+  "en": "Credits"
+ },
+ {
+  "es": "Salir",
+  "en": "Quit"
+ },
+ {
+  "es": "Volver",
+  "en": "Back"
+ },
+ {
+  "es": "ELIGE TU GRUPO",
+  "en": "CHOOSE YOUR PEOPLE"
+ },
+ {
+  "es": "COMENZAR PARTIDA",
+  "en": "START GAME"
+ },
+ {
+  "es": "GRAN ESTRATEGIA EN TIEMPO REAL  ·  3300 a.C.",
+  "en": "REAL-TIME GRAND STRATEGY  ·  3300 BC"
+ },
+ {
+  "es": "Ventajas:",
+  "en": "Bonuses:"
+ },
+ {
+  "es": "equilibrio",
+  "en": "balanced"
+ },
+ {
+  "es": "agricultura",
+  "en": "farming"
+ },
+ {
+  "es": "comercio",
+  "en": "trade"
+ },
+ {
+  "es": "militar",
+  "en": "military"
+ },
+ {
+  "es": "tecnologia",
+  "en": "technology"
+ },
+ {
+  "es": "naval",
+  "en": "naval"
+ },
+ {
+  "es": "estabilidad",
+  "en": "stability"
+ },
+ {
+  "es": "Ayuda",
+  "en": "Help"
+ },
+ {
+  "es": "Idioma / Language",
+  "en": "Idioma / Language"
+ },
+ {
+  "es": "No se pudo cargar la partida. Comprueba que usa el mismo mapa.",
+  "en": "Could not load the game. Make sure it uses the same map."
+ },
+ {
+  "es": "Partida cargada.",
+  "en": "Game loaded."
+ },
+ {
+  "es": "Partida guardada en solaris_quicksave.sav",
+  "en": "Game saved to solaris_quicksave.sav"
+ },
+ {
+  "es": "Imagenes historicas: Wikimedia Commons. Fuentes, autores y licencias en content/media/attributions.json.",
+  "en": "Historical images: Wikimedia Commons. Sources, authors and licenses in content/media/attributions.json."
+ },
+ {
+  "es": "Los grupos representan comunidades de 3300 a.C. Las naciones posteriores se desbloquean por fecha. Los simbolos antiguos son emblemas, no banderas nacionales modernas.",
+  "en": "The groups represent communities in 3300 BC. Later states unlock by date. Ancient symbols are emblems, not modern national flags."
+ },
+ {
+  "es": "Globo: NASA Blue Marble",
+  "en": "Globe: NASA Blue Marble"
+ },
+ {
+  "es": "Los Egipcios",
+  "en": "The Egyptians"
+ },
+ {
+  "es": "Los Sumerios",
+  "en": "The Sumerians"
+ },
+ {
+  "es": "Los Anatolios",
+  "en": "The Anatolians"
+ },
+ {
+  "es": "Los Semitas",
+  "en": "The Semitic peoples"
+ },
+ {
+  "es": "Los Egeos",
+  "en": "The Aegean peoples"
+ },
+ {
+  "es": "Los Latinos",
+  "en": "The Latins"
+ },
+ {
+  "es": "Egipcio Predinastico",
+  "en": "Predynastic Egyptian"
+ },
+ {
+  "es": "Italico Neolitico",
+  "en": "Neolithic Italic"
+ },
+ {
+  "es": "Egipto",
+  "en": "Egypt"
+ },
+ {
+  "es": "Sumeria",
+  "en": "Sumer"
+ },
+ {
+  "es": "Acad",
+  "en": "Akkad"
+ },
+ {
+  "es": "Asiria",
+  "en": "Assyria"
+ },
+ {
+  "es": "Babilonia",
+  "en": "Babylonia"
+ },
+ {
+  "es": "Fenicia",
+  "en": "Phoenicia"
+ },
+ {
+  "es": "Siria",
+  "en": "Syria"
+ },
+ {
+  "es": "Canaan",
+  "en": "Canaan"
+ },
+ {
+  "es": "Creta",
+  "en": "Crete"
+ },
+ {
+  "es": "Micenas",
+  "en": "Mycenae"
+ },
+ {
+  "es": "Atenas",
+  "en": "Athens"
+ },
+ {
+  "es": "Tracia",
+  "en": "Thrace"
+ },
+ {
+  "es": "Iberia",
+  "en": "Iberia"
+ },
+ {
+  "es": "Lusitania",
+  "en": "Lusitania"
+ },
+ {
+  "es": "Etruria",
+  "en": "Etruria"
+ },
+ {
+  "es": "Roma",
+  "en": "Rome"
+ },
+ {
+  "es": "Sardena",
+  "en": "Sardinia"
+ },
+ {
+  "es": "Libia",
+  "en": "Libya"
+ },
+ {
+  "es": "Numidia",
+  "en": "Numidia"
+ },
+ {
+  "es": "Mauretania",
+  "en": "Mauretania"
+ },
+ {
+  "es": "Nubia",
+  "en": "Nubia"
+ },
+ {
+  "es": "Arabia",
+  "en": "Arabia"
+ },
+ {
+  "es": "Media",
+  "en": "Media"
+ },
+ {
+  "es": "Persia",
+  "en": "Persia"
+ },
+ {
+  "es": "Britania",
+  "en": "Britain"
+ },
+ {
+  "es": "Caledonia",
+  "en": "Caledonia"
+ },
+ {
+  "es": "Germania",
+  "en": "Germania"
+ },
+ {
+  "es": "Escandia",
+  "en": "Scandia"
+ },
+ {
+  "es": "monarquia",
+  "en": "monarchy"
+ },
+ {
+  "es": "republica",
+  "en": "republic"
+ },
+ {
+  "es": "teocracia",
+  "en": "theocracy"
+ },
+ {
+  "es": "Monarquia",
+  "en": "Monarchy"
+ },
+ {
+  "es": "Republica",
+  "en": "Republic"
+ },
+ {
+  "es": "Teocracia",
+  "en": "Theocracy"
+ },
+ {
+  "es": "Neolitico Tardio",
+  "en": "Late Neolithic"
+ },
+ {
+  "es": "Neolitico",
+  "en": "Neolithic"
+ },
+ {
+  "es": "Calcolitico",
+  "en": "Chalcolithic"
+ },
+ {
+  "es": "Edad del Bronce",
+  "en": "Bronze Age"
+ },
+ {
+  "es": "Edad del Hierro",
+  "en": "Iron Age"
+ },
+ {
+  "es": "Epoca Clasica",
+  "en": "Classical Age"
+ },
+ {
+  "es": "Bronce",
+  "en": "Bronze"
+ },
+ {
+  "es": "Hierro",
+  "en": "Iron"
+ },
+ {
+  "es": "Clasica",
+  "en": "Classical"
+ },
+ {
+  "es": "EL MUNDO",
+  "en": "THE WORLD"
+ },
+ {
+  "es": "Tierra conocida",
+  "en": "Known world"
+ },
+ {
+  "es": "Naciones vivas",
+  "en": "Living nations"
+ },
+ {
+  "es": "Provincias pobladas",
+  "en": "Populated provinces"
+ },
+ {
+  "es": "Territorios libres",
+  "en": "Unclaimed territories"
+ },
+ {
+  "es": "COMO JUGAR",
+  "en": "HOW TO PLAY"
+ },
+ {
+  "es": "Arrastra el globo para girarlo.",
+  "en": "Drag the globe to rotate it."
+ },
+ {
+  "es": "Rueda del raton para acercarte.",
+  "en": "Use the mouse wheel to zoom."
+ },
+ {
+  "es": "Haz clic en una provincia para verla.",
+  "en": "Click a province to inspect it."
+ },
+ {
+  "es": "Coloniza territorios vecinos y funda tu nacion.",
+  "en": "Colonize neighboring lands and found your nation."
+ },
+ {
+  "es": "F5 guarda, F9 carga, Espacio pausa.",
+  "en": "F5 saves, F9 loads, Space pauses."
+ },
+ {
+  "es": "Elige la provincia de destino  ·  Esc para cancelar",
+  "en": "Choose a destination province  ·  Esc to cancel"
+ },
+ {
+  "es": "Construir",
+  "en": "Build"
+ },
+ {
+  "es": "Reclutar",
+  "en": "Recruit"
+ },
+ {
+  "es": "Diplomacia",
+  "en": "Diplomacy"
+ },
+ {
+  "es": "Cronica",
+  "en": "Chronicle"
+ },
+ {
+  "es": "Tecnologias",
+  "en": "Technologies"
+ },
+ {
+  "es": "Puntos tecnologicos:",
+  "en": "Technology points:"
+ },
+ {
+  "es": "Tecnologia",
+  "en": "Technology"
+ },
+ {
+  "es": "Desbloqueada",
+  "en": "Unlocked"
+ },
+ {
+  "es": "Bloqueada",
+  "en": "Locked"
+ },
+ {
+  "es": "Agricultura",
+  "en": "Agriculture"
+ },
+ {
+  "es": "Militar",
+  "en": "Military"
+ },
+ {
+  "es": "Ceramica",
+  "en": "Pottery"
+ },
+ {
+  "es": "Riego",
+  "en": "Irrigation"
+ },
+ {
+  "es": "Rueda",
+  "en": "Wheel"
+ },
+ {
+  "es": "Escritura",
+  "en": "Writing"
+ },
+ {
+  "es": "Metalurgia del cobre",
+  "en": "Copper metallurgy"
+ },
+ {
+  "es": "Metalurgia del bronce",
+  "en": "Bronze metallurgy"
+ },
+ {
+  "es": "Metalurgia del hierro",
+  "en": "Iron metallurgy"
+ },
+ {
+  "es": "FUNDAR NACION",
+  "en": "FOUND NATION"
+ },
+ {
+  "es": "FUNDAR UNA NACION",
+  "en": "FOUND A NATION"
+ },
+ {
+  "es": "Necesitas 2 provincias, 60 oro, 5 de prestigio y 3 puntos tecnologicos.",
+  "en": "Requires 2 provinces, 60 gold, 5 prestige and 3 technology points."
+ },
+ {
+  "es": "Requisitos: 2 provincias, 60 oro, 5 de prestigio y 3 puntos tecnologicos.",
+  "en": "Requirements: 2 provinces, 60 gold, 5 prestige and 3 technology points."
+ },
+ {
+  "es": "Elige el nombre y el gobierno de tu pueblo.",
+  "en": "Choose the name and government of your people."
+ },
+ {
+  "es": "Tu cultura aun no tiene naciones historicas disponibles.",
+  "en": "Your culture has no historical nations available yet."
+ },
+ {
+  "es": "Nombre en uso",
+  "en": "Name already in use"
+ },
+ {
+  "es": "Fundar",
+  "en": "Found"
+ },
+ {
+  "es": "Subir",
+  "en": "Up"
+ },
+ {
+  "es": "Bajar",
+  "en": "Down"
+ },
+ {
+  "es": "Continuar",
+  "en": "Continue"
+ },
+ {
+  "es": "Nueva partida",
+  "en": "New game"
+ },
+ {
+  "es": "Entendido",
+  "en": "Understood"
+ },
+ {
+  "es": "Provincias",
+  "en": "Provinces"
+ },
+ {
+  "es": "Provincia",
+  "en": "Province"
+ },
+ {
+  "es": "Cultura",
+  "en": "Culture"
+ },
+ {
+  "es": "Gobierno",
+  "en": "Government"
+ },
+ {
+  "es": "Poblacion",
+  "en": "Population"
+ },
+ {
+  "es": "Desarrollo",
+  "en": "Development"
+ },
+ {
+  "es": "Terreno",
+  "en": "Terrain"
+ },
+ {
+  "es": "Recurso",
+  "en": "Resource"
+ },
+ {
+  "es": "Recursos",
+  "en": "Resources"
+ },
+ {
+  "es": "Ingresos",
+  "en": "Income"
+ },
+ {
+  "es": "Alimentos",
+  "en": "Food"
+ },
+ {
+  "es": "Alimento",
+  "en": "Food"
+ },
+ {
+  "es": "Oro",
+  "en": "Gold"
+ },
+ {
+  "es": "Madera",
+  "en": "Wood"
+ },
+ {
+  "es": "Piedra",
+  "en": "Stone"
+ },
+ {
+  "es": "Cobre",
+  "en": "Copper"
+ },
+ {
+  "es": "Prestigio",
+  "en": "Prestige"
+ },
+ {
+  "es": "Estabilidad",
+  "en": "Stability"
+ },
+ {
+  "es": "Legitimidad",
+  "en": "Legitimacy"
+ },
+ {
+  "es": "Lealtad",
+  "en": "Loyalty"
+ },
+ {
+  "es": "Descontento",
+  "en": "Unrest"
+ },
+ {
+  "es": "Manode obra",
+  "en": "Manpower"
+ },
+ {
+  "es": "Mano de obra",
+  "en": "Manpower"
+ },
+ {
+  "es": "Ejercito",
+  "en": "Army"
+ },
+ {
+  "es": "En paz",
+  "en": "At peace"
+ },
+ {
+  "es": "Guerra:",
+  "en": "War:"
+ },
+ {
+  "es": "Reclutar consejero (40 oro)",
+  "en": "Recruit adviser (40 gold)"
+ },
+ {
+  "es": "Ayuda y controles (F1)",
+  "en": "Help and controls (F1)"
+ },
+ {
+  "es": "Colonizar: 36 meses",
+  "en": "Colonize: 36 months"
+ },
+ {
+  "es": "Colonizacion:",
+  "en": "Colonization:"
+ },
+ {
+  "es": "Colonizacion",
+  "en": "Colonization"
+ },
+ {
+  "es": "Necesitas una provincia vecina, oro y ninguna expedicion activa.",
+  "en": "Requires a neighboring province, enough gold and no active expedition."
+ },
+ {
+  "es": "La expedicion tardara 36 meses. Solo puedes mantener una expedicion activa.",
+  "en": "The expedition takes 36 months. You can maintain only one active expedition."
+ },
+ {
+  "es": "Expedicion enviada a",
+  "en": "Expedition sent to"
+ },
+ {
+  "es": "inicia una expedicion de 36 meses hacia",
+  "en": "starts a 36-month expedition to"
+ },
+ {
+  "es": "funda un asentamiento en",
+  "en": "founds a settlement in"
+ },
+ {
+  "es": "Nuevo territorio",
+  "en": "New territory"
+ },
+ {
+  "es": "Asentamiento terminado en",
+  "en": "Settlement completed in"
+ },
+ {
+  "es": "Nacion fundada",
+  "en": "Nation founded"
+ },
+ {
+  "es": "Has fundado",
+  "en": "You have founded"
+ },
+ {
+  "es": "Tu nacion",
+  "en": "Your nation"
+ },
+ {
+  "es": "Ciudad-estado",
+  "en": "City-state"
+ },
+ {
+  "es": "ciudad-estado",
+  "en": "city-state"
+ },
+ {
+  "es": "Independiente",
+  "en": "Independent"
+ },
+ {
+  "es": "Independientes",
+  "en": "Independent peoples"
+ },
+ {
+  "es": "Sin propietario",
+  "en": "Unclaimed"
+ },
+ {
+  "es": "Sin gobernante",
+  "en": "No ruler"
+ },
+ {
+  "es": "Gobernante",
+  "en": "Ruler"
+ },
+ {
+  "es": "Consejeros",
+  "en": "Advisers"
+ },
+ {
+  "es": "Consejero",
+  "en": "Adviser"
+ },
+ {
+  "es": "Canciller",
+  "en": "Chancellor"
+ },
+ {
+  "es": "General",
+  "en": "General"
+ },
+ {
+  "es": "Sacerdote",
+  "en": "Priest"
+ },
+ {
+  "es": "Elecciones",
+  "en": "Elections"
+ },
+ {
+  "es": "Reelegir",
+  "en": "Re-elect"
+ },
+ {
+  "es": "Elegir",
+  "en": "Elect"
+ },
+ {
+  "es": "Proponer paz",
+  "en": "Offer peace"
+ },
+ {
+  "es": "Declarar guerra",
+  "en": "Declare war"
+ },
+ {
+  "es": "No hay naciones disponibles.",
+  "en": "No nations available."
+ },
+ {
+  "es": "Paz",
+  "en": "Peace"
+ },
+ {
+  "es": "Guerra",
+  "en": "War"
+ },
+ {
+  "es": "Construcciones",
+  "en": "Buildings"
+ },
+ {
+  "es": "Edificios",
+  "en": "Buildings"
+ },
+ {
+  "es": "Edificio",
+  "en": "Building"
+ },
+ {
+  "es": "Coste",
+  "en": "Cost"
+ },
+ {
+  "es": "Costes",
+  "en": "Costs"
+ },
+ {
+  "es": "Requisitos",
+  "en": "Requirements"
+ },
+ {
+  "es": "Disponible",
+  "en": "Available"
+ },
+ {
+  "es": "No disponible",
+  "en": "Unavailable"
+ },
+ {
+  "es": "Ya construido",
+  "en": "Already built"
+ },
+ {
+  "es": "Reclutamiento",
+  "en": "Recruitment"
+ },
+ {
+  "es": "Unidades",
+  "en": "Units"
+ },
+ {
+  "es": "Soldado",
+  "en": "Soldier"
+ },
+ {
+  "es": "Soldados",
+  "en": "Soldiers"
+ },
+ {
+  "es": "Lancero",
+  "en": "Spearman"
+ },
+ {
+  "es": "Lanceros",
+  "en": "Spearmen"
+ },
+ {
+  "es": "Jinete",
+  "en": "Horseman"
+ },
+ {
+  "es": "Jinetes",
+  "en": "Horsemen"
+ },
+ {
+  "es": "Barco",
+  "en": "Ship"
+ },
+ {
+  "es": "Barcos",
+  "en": "Ships"
+ },
+ {
+  "es": "Granja",
+  "en": "Farm"
+ },
+ {
+  "es": "Granero",
+  "en": "Granary"
+ },
+ {
+  "es": "Mercado",
+  "en": "Market"
+ },
+ {
+  "es": "Cuartel",
+  "en": "Barracks"
+ },
+ {
+  "es": "Templo",
+  "en": "Temple"
+ },
+ {
+  "es": "Puerto",
+  "en": "Harbor"
+ },
+ {
+  "es": "Muralla",
+  "en": "Wall"
+ },
+ {
+  "es": "Mina",
+  "en": "Mine"
+ },
+ {
+  "es": "Taller",
+  "en": "Workshop"
+ },
+ {
+  "es": "Trigo",
+  "en": "Wheat"
+ },
+ {
+  "es": "Cebada",
+  "en": "Barley"
+ },
+ {
+  "es": "Pescado",
+  "en": "Fish"
+ },
+ {
+  "es": "Ganado",
+  "en": "Livestock"
+ },
+ {
+  "es": "Estano",
+  "en": "Tin"
+ },
+ {
+  "es": "Plata",
+  "en": "Silver"
+ },
+ {
+  "es": "Sal",
+  "en": "Salt"
+ },
+ {
+  "es": "Obsidiana",
+  "en": "Obsidian"
+ },
+ {
+  "es": "Vino",
+  "en": "Wine"
+ },
+ {
+  "es": "Aceite",
+  "en": "Olive oil"
+ },
+ {
+  "es": "Lino",
+  "en": "Flax"
+ },
+ {
+  "es": "Incienso",
+  "en": "Incense"
+ },
+ {
+  "es": "Caballos",
+  "en": "Horses"
+ },
+ {
+  "es": "Arcilla",
+  "en": "Clay"
+ },
+ {
+  "es": "Lana",
+  "en": "Wool"
+ },
+ {
+  "es": "Papiro",
+  "en": "Papyrus"
+ },
+ {
+  "es": "Lapislazuli",
+  "en": "Lapis lazuli"
+ },
+ {
+  "es": "Cedro",
+  "en": "Cedar"
+ },
+ {
+  "es": "Valle fluvial",
+  "en": "River valley"
+ },
+ {
+  "es": "Llanura",
+  "en": "Plains"
+ },
+ {
+  "es": "Colinas",
+  "en": "Hills"
+ },
+ {
+  "es": "Montana",
+  "en": "Mountain"
+ },
+ {
+  "es": "Desierto",
+  "en": "Desert"
+ },
+ {
+  "es": "Estepa",
+  "en": "Steppe"
+ },
+ {
+  "es": "Bosque",
+  "en": "Forest"
+ },
+ {
+  "es": "Costa",
+  "en": "Coast"
+ },
+ {
+  "es": "Isla",
+  "en": "Island"
+ },
+ {
+  "es": "Oasis",
+  "en": "Oasis"
+ },
+ {
+  "es": "Marisma",
+  "en": "Marsh"
+ },
+ {
+  "es": "Enero",
+  "en": "January"
+ },
+ {
+  "es": "Febrero",
+  "en": "February"
+ },
+ {
+  "es": "Marzo",
+  "en": "March"
+ },
+ {
+  "es": "Abril",
+  "en": "April"
+ },
+ {
+  "es": "Mayo",
+  "en": "May"
+ },
+ {
+  "es": "Junio",
+  "en": "June"
+ },
+ {
+  "es": "Julio",
+  "en": "July"
+ },
+ {
+  "es": "Agosto",
+  "en": "August"
+ },
+ {
+  "es": "Septiembre",
+  "en": "September"
+ },
+ {
+  "es": "Octubre",
+  "en": "October"
+ },
+ {
+  "es": "Noviembre",
+  "en": "November"
+ },
+ {
+  "es": "Diciembre",
+  "en": "December"
+ },
+ {
+  "es": "Pausa",
+  "en": "Paused"
+ },
+ {
+  "es": "PAUSA",
+  "en": "PAUSED"
+ },
+ {
+  "es": "Velocidad",
+  "en": "Speed"
+ },
+ {
+  "es": "Victoria",
+  "en": "Victory"
+ },
+ {
+  "es": "Derrota",
+  "en": "Defeat"
+ },
+ {
+  "es": "Fin de la partida",
+  "en": "Game over"
+ },
+ {
+  "es": "Sin ejercitos",
+  "en": "No armies"
+ },
+ {
+  "es": "Sin edificios",
+  "en": "No buildings"
+ },
+ {
+  "es": "oro",
+  "en": "gold"
+ },
+ {
+  "es": "alim",
+  "en": "food"
+ },
+ {
+  "es": "alimento",
+  "en": "food"
+ },
+ {
+  "es": "madera",
+  "en": "wood"
+ },
+ {
+  "es": "piedra",
+  "en": "stone"
+ },
+ {
+  "es": "cobre",
+  "en": "copper"
+ },
+ {
+  "es": "prestigio",
+  "en": "prestige"
+ },
+ {
+  "es": "provincia",
+  "en": "province"
+ },
+ {
+  "es": "provincias",
+  "en": "provinces"
+ },
+ {
+  "es": "meses",
+  "en": "months"
+ },
+ {
+  "es": "a.C.",
+  "en": "BC"
+ },
+ {
+  "es": "d.C.",
+  "en": "AD"
+ },
+ {
+  "es": "anos",
+  "en": "years"
+ },
+ {
+  "es": "hombres",
+  "en": "men"
+ },
+ {
+  "es": "almas",
+  "en": "people"
+ },
+ {
+  "es": "mas...",
+  "en": "more..."
+ },
+ {
+  "es": "Marcha hacia",
+  "en": "Marching to"
+ },
+ {
+  "es": "No hay ruta practicable hasta",
+  "en": "No usable route to"
+ },
+ {
+  "es": "Tesoro: oro disponible",
+  "en": "Treasury: available gold"
+ },
+ {
+  "es": "Alimento almacenado",
+  "en": "Stored food"
+ },
+ {
+  "es": "Ingreso neto de oro por mes",
+  "en": "Net gold income per month"
+ },
+ {
+  "es": "Material almacenado",
+  "en": "Stored material"
+ },
+ {
+  "es": "Recluta ejercitos y conquista o defiende.",
+  "en": "Recruit armies to conquer or defend."
+ },
+ {
+  "es": "Los lideres envejecen y mueren para siempre.",
+  "en": "Leaders grow old and die permanently."
+ },
+ {
+  "es": "Republicas: elecciones y reeleccion.",
+  "en": "Republics: elections and re-election."
+ },
+ {
+  "es": "PROVINCIA",
+  "en": "PROVINCE"
+ },
+ {
+  "es": "Pueblos independientes",
+  "en": "Independent peoples"
+ },
+ {
+  "es": "EDIFICIOS",
+  "en": "BUILDINGS"
+ },
+ {
+  "es": "EJERCITOS",
+  "en": "ARMIES"
+ },
+ {
+  "es": "Sin guarnicion",
+  "en": "No garrison"
+ },
+ {
+  "es": "TU NACION",
+  "en": "YOUR NATION"
+ },
+ {
+  "es": "El consejo gobierna en interinidad.",
+  "en": "The council acts as interim government."
+ },
+ {
+  "es": "Nuevo consejero nombrado.",
+  "en": "New adviser appointed."
+ },
+ {
+  "es": "Elecciones pendientes",
+  "en": "Election pending"
+ },
+ {
+  "es": "ACONTECIMIENTO",
+  "en": "EVENT"
+ },
+ {
+  "es": "CONSTRUIR",
+  "en": "BUILD"
+ },
+ {
+  "es": "Selecciona una provincia propia.",
+  "en": "Select a province you own."
+ },
+ {
+  "es": "Construido",
+  "en": "Built"
+ },
+ {
+  "es": "construido en",
+  "en": "built in"
+ },
+ {
+  "es": "RECLUTAR EJERCITO",
+  "en": "RECRUIT ARMY"
+ },
+ {
+  "es": "reclutados en",
+  "en": "recruited in"
+ },
+ {
+  "es": "DIPLOMACIA",
+  "en": "DIPLOMACY"
+ },
+ {
+  "es": "En guerra",
+  "en": "At war"
+ },
+ {
+  "es": "rechaza la paz por ahora.",
+  "en": "rejects peace for now."
+ },
+ {
+  "es": "CRONICA DE LA HUMANIDAD",
+  "en": "CHRONICLE OF HUMANITY"
+ },
+ {
+  "es": "Ultimos acontecimientos",
+  "en": "Recent events"
+ },
+ {
+  "es": "Mas antiguo",
+  "en": "Older"
+ },
+ {
+  "es": "Mas reciente",
+  "en": "Newer"
+ },
+ {
+  "es": "ELECCIONES",
+  "en": "ELECTIONS"
+ },
+ {
+  "es": "El pueblo elige a su gobernante. La reeleccion es posible, pero nadie escapa al tiempo: los lideres envejecen y mueren, y no regresan.",
+  "en": "The people elect their ruler. Re-election is possible, but no one escapes time: leaders grow old and die, never to return."
+ },
+ {
+  "es": "Gobernante actual",
+  "en": "Current ruler"
+ },
+ {
+  "es": "Marcial",
+  "en": "Martial"
+ },
+ {
+  "es": "Diplo",
+  "en": "Diplomacy"
+ },
+ {
+  "es": "gobernara",
+  "en": "will rule"
+ },
+ {
+  "es": "La eleccion no puede posponerse.",
+  "en": "The election cannot be postponed."
+ },
+ {
+  "es": "AYUDA Y CONTROLES",
+  "en": "HELP AND CONTROLS"
+ },
+ {
+  "es": "EL GLOBO",
+  "en": "THE GLOBE"
+ },
+ {
+  "es": "Arrastra con el boton izquierdo para girar la Tierra. Usa la rueda para acercarte. El mapa completo es la Tierra; la partida comienza en Europa, Africa del Norte y Oriente Proximo.",
+  "en": "Drag with the left mouse button to rotate the Earth. Use the wheel to zoom. The map covers the Earth; the game begins in Europe, North Africa and the Near East."
+ },
+ {
+  "es": "ECONOMIA Y ERAS",
+  "en": "ECONOMY AND AGES"
+ },
+ {
+  "es": "Oro, alimento, madera, piedra y cobre sostienen tu pueblo. Construye granjas, minas, puertos y templos. La tecnologia te hara avanzar del Neolitico al Calcolitico, el Bronce, el Hierro y la Epoca Clasica. Cada era mejora la produccion y desbloquea unidades.",
+  "en": "Gold, food, wood, stone and copper sustain your people. Build farms, mines, harbors and temples. Technology takes you from the Neolithic through the Copper, Bronze and Iron Ages to Classical Antiquity. Each age improves production and unlocks units."
+ },
+ {
+  "es": "PUEBLOS Y LIDERES",
+  "en": "PEOPLES AND LEADERS"
+ },
+ {
+  "es": "Empiezas como una ciudad-estado historica. Coloniza provincias vecinas y funda una nacion (Egipto, Sumeria, Siria, Canaán...). Tus gobernantes y consejeros envejecen y mueren: jamas vuelven. En las republicas hay elecciones cada 8 anos y la reeleccion no detiene la edad.",
+  "en": "Start as an ancient community. Colonize neighboring provinces and found a nation (Egypt, Sumer, Syria, Canaan...). Rulers and advisers grow old and die permanently. Republics hold elections every eight years; re-election does not stop aging."
+ },
+ {
+  "es": "GUERRA",
+  "en": "WAR"
+ },
+ {
+  "es": "Recluta soldados, lanceros, jinetes (requieren caballos y la Edad del Bronce) y barcos (requieren un puerto). Selecciona un ejercito y haz clic en una provincia de destino. Las batallas se resuelven al llegar; el terreno y las murallas favorecen al defensor.",
+  "en": "Recruit soldiers, spearmen, horsemen (requiring horses and the Bronze Age) and ships (requiring a harbor). Select an army and click a destination province. Battles resolve upon arrival; terrain and walls favor the defender."
+ },
+ {
+  "es": "TECLAS",
+  "en": "KEYS"
+ },
+ {
+  "es": "Espacio: pausa   ·   1-4: velocidad   ·   Esc: cerrar   ·   F5: guardar   ·   F9: cargar   ·   F1: ayuda",
+  "en": "Space: pause   ·   1-4: speed   ·   Esc: close   ·   F5: save   ·   F9: load   ·   F1: help"
+ },
+ {
+  "es": "Solaris History · Open Source GPLv3 · Motor C++ y contenido Java · Texturas NASA Blue Marble",
+  "en": "Solaris History · Open Source GPLv3 · C++ engine and Java content tools · NASA Blue Marble textures"
+ },
+ {
+  "es": "FIN DE UNA ERA",
+  "en": "END OF AN AGE"
+ },
+ {
+  "es": "Tu nacion ha caido",
+  "en": "Your nation has fallen"
+ },
+ {
+  "es": "Las ciudades se desmoronan, los nombres se olvidan y la historia sigue sin ti. Puedes comenzar de nuevo en otra ciudad-estado.",
+  "en": "Cities crumble, names are forgotten and history goes on without you. You can start again with another people."
+ },
+ {
+  "es": "Reino desaparecido",
+  "en": "Fallen kingdom"
+ },
+ {
+  "es": "independiente",
+  "en": "independent"
+ },
+ {
+  "es": "Comienza la partida en el",
+  "en": "The game begins in"
+ },
+ {
+  "es": " da sus primeros pasos.",
+  "en": " takes its first steps."
+ },
+ {
+  "es": "Elige un territorio vecino y funda tu nacion cuando estes listo.",
+  "en": "Choose a neighboring territory and found your nation when you are ready."
+ },
+ {
+  "es": "es nombrado nuevo consejero.",
+  "en": "is appointed as a new adviser."
+ },
+ {
+  "es": "Eleccion en",
+  "en": "Election in"
+ },
+ {
+  "es": "asume el poder.",
+  "en": "takes power."
+ },
+ {
+  "es": "ha sido elegido gobernante de",
+  "en": "has been elected ruler of"
+ },
+ {
+  "es": "ha muerto a los",
+  "en": "has died at age"
+ },
+ {
+  "es": "sucede en el trono de",
+  "en": "succeeds to the throne of"
+ },
+ {
+  "es": "hereda el gobierno de",
+  "en": "inherits the government of"
+ },
+ {
+  "es": "ha muerto. Su puesto en el consejo queda vacante.",
+  "en": "has died. Their council seat is vacant."
+ },
+ {
+  "es": "declara la guerra a",
+  "en": "declares war on"
+ },
+ {
+  "es": "Has entrado en guerra contra",
+  "en": "You are now at war with"
+ },
+ {
+  "es": "Paz entre",
+  "en": "Peace between"
+ },
+ {
+  "es": "Se ha firmado la paz con",
+  "en": "Peace has been signed with"
+ },
+ {
+  "es": "bajo el gobierno de",
+  "en": "under the rule of"
+ },
+ {
+  "es": "su pueblo",
+  "en": "its people"
+ },
+ {
+  "es": "La historia de tu pueblo comienza ahora.",
+  "en": "The history of your people begins now."
+ },
+ {
+  "es": "entra en la",
+  "en": "enters the"
+ },
+ {
+  "es": "Nueva era",
+  "en": "New age"
+ },
+ {
+  "es": "Tu pueblo ha entrado en la",
+  "en": "Your people have entered the"
+ },
+ {
+  "es": "Nuevas unidades y edificios disponibles.",
+  "en": "New units and buildings are available."
+ },
+ {
+  "es": "se rebela y abandona",
+  "en": "rebels and leaves"
+ },
+ {
+  "es": "Has perdido",
+  "en": "You have lost"
+ },
+ {
+  "es": "por una rebelion.",
+  "en": "to a rebellion."
+ },
+ {
+  "es": "Nacion invalida",
+  "en": "Invalid nation"
+ },
+ {
+  "es": "No controlas esa provincia",
+  "en": "You do not control that province"
+ },
+ {
+  "es": "Unidad invalida",
+  "en": "Invalid unit"
+ },
+ {
+  "es": "Requiere",
+  "en": "Requires"
+ },
+ {
+  "es": "Necesitas caballos en tu territorio",
+  "en": "You need horses in your territory"
+ },
+ {
+  "es": "Solo en provincias costeras",
+  "en": "Only in coastal provinces"
+ },
+ {
+  "es": "Requiere un puerto",
+  "en": "Requires a harbor"
+ },
+ {
+  "es": "Poblacion insuficiente",
+  "en": "Insufficient population"
+ },
+ {
+  "es": "Oro insuficiente",
+  "en": "Insufficient gold"
+ },
+ {
+  "es": "Alimento insuficiente",
+  "en": "Insufficient food"
+ },
+ {
+  "es": "Madera insuficiente",
+  "en": "Insufficient wood"
+ },
+ {
+  "es": "Piedra insuficiente",
+  "en": "Insufficient stone"
+ },
+ {
+  "es": "Mano de obra insuficiente",
+  "en": "Insufficient manpower"
+ },
+ {
+  "es": "recluta",
+  "en": "recruits"
+ },
+ {
+  "es": "Edificio invalido",
+  "en": "Invalid building"
+ },
+ {
+  "es": "construye",
+  "en": "builds"
+ },
+ {
+  "es": "Batalla de",
+  "en": "Battle of"
+ },
+ {
+  "es": "vence a",
+  "en": "defeats"
+ },
+ {
+  "es": "las milicias locales",
+  "en": "the local militia"
+ },
+ {
+  "es": "Victoria en",
+  "en": "Victory at"
+ },
+ {
+  "es": "Bajas enemigas:",
+  "en": "Enemy casualties:"
+ },
+ {
+  "es": "es rechazado.",
+  "en": "is repelled."
+ },
+ {
+  "es": "Derrota en",
+  "en": "Defeat at"
+ },
+ {
+  "es": "Tus tropas se retiran.",
+  "en": "Your troops retreat."
+ },
+ {
+  "es": "La capital de",
+  "en": "The capital of"
+ },
+ {
+  "es": "se traslada a",
+  "en": "moves to"
+ },
+ {
+  "es": "ha sido destruida.",
+  "en": "has been destroyed."
+ },
+ {
+  "es": "Tu nacion ha caido. La historia continua sin ti.",
+  "en": "Your nation has fallen. History continues without you."
+ },
+ {
+  "es": "Una sequia golpea",
+  "en": "A drought strikes"
+ },
+ {
+  "es": "Alimento perdido.",
+  "en": "Food lost."
+ },
+ {
+  "es": "Excelente cosecha en",
+  "en": "Excellent harvest in"
+ },
+ {
+  "es": "La crecida del rio fertiliza",
+  "en": "The river flood fertilizes"
+ },
+ {
+  "es": "Un temblor de tierra sacude",
+  "en": "An earthquake shakes"
+ },
+ {
+  "es": "Estado latino historico independiente. Disponible a partir de",
+  "en": "Independent historical Latin state. Available from"
+ },
+ {
+  "es": "fecha aproximada o tradicional.",
+  "en": "approximate or traditional date."
+ },
+ {
+  "es": "Comunidades prehistoricas del Lacio. El nombre Latinos es una etiqueta de juego; Roma aun no existe.",
+  "en": "Prehistoric communities of Latium. Latins is a gameplay label; Rome does not exist yet."
+ },
+ {
+  "es": "Egipcio",
+  "en": "Egyptian"
+ },
+ {
+  "es": "Sumerio",
+  "en": "Sumerian"
+ },
+ {
+  "es": "Semita Oriental",
+  "en": "East Semitic"
+ },
+ {
+  "es": "Semita",
+  "en": "Semitic"
+ },
+ {
+  "es": "Anatolio Neolitico",
+  "en": "Neolithic Anatolian"
+ },
+ {
+  "es": "Anatolio",
+  "en": "Anatolian"
+ },
+ {
+  "es": "Egeo Neolitico",
+  "en": "Neolithic Aegean"
+ },
+ {
+  "es": "Egeo",
+  "en": "Aegean"
+ },
+ {
+  "es": "Nubio (Grupo A)",
+  "en": "Nubian (A-Group)"
+ },
+ {
+  "es": "Nubio",
+  "en": "Nubian"
+ },
+ {
+  "es": "Elamita",
+  "en": "Elamite"
+ },
+ {
+  "es": "Balcanico (Vinca)",
+  "en": "Balkan (Vinča)"
+ },
+ {
+  "es": "Danubiano (LBK)",
+  "en": "Danubian (LBK)"
+ },
+ {
+  "es": "Megalitico Atlantico",
+  "en": "Atlantic Megalithic"
+ },
+ {
+  "es": "Nordico Neolitico",
+  "en": "Neolithic Nordic"
+ },
+ {
+  "es": "Estepario (Yamnaya)",
+  "en": "Steppe (Yamnaya)"
+ },
+ {
+  "es": "Caucasico (Kura-Araxes)",
+  "en": "Caucasian (Kura-Araxes)"
+ },
+ {
+  "es": "Iranio de la Meseta",
+  "en": "Iranian plateau"
+ },
+ {
+  "es": "Bereber (Libio)",
+  "en": "Berber (Libyan)"
+ },
+ {
+  "es": "Arabigo Nomada",
+  "en": "Nomadic Arabian"
+ },
+ {
+  "es": "Iberico (Los Millares)",
+  "en": "Iberian (Los Millares)"
+ },
+ {
+  "es": "Sardo (Ozieri)",
+  "en": "Sardinian (Ozieri)"
+ },
+ {
+  "es": "Chipriota",
+  "en": "Cypriot"
+ },
+ {
+  "es": "Italico",
+  "en": "Italic"
+ },
+ {
+  "es": "Latino",
+  "en": "Latin"
+ },
+ {
+  "es": "Egipcios",
+  "en": "Egyptians"
+ },
+ {
+  "es": "Sumerios",
+  "en": "Sumerians"
+ },
+ {
+  "es": "Semitas",
+  "en": "Semitic peoples"
+ },
+ {
+  "es": "Anatolios",
+  "en": "Anatolians"
+ },
+ {
+  "es": "Egeos",
+  "en": "Aegeans"
+ },
+ {
+  "es": "Latinos",
+  "en": "Latins"
+ },
+ {
+  "es": "El Nilo dicta la vida: cosechas seguras, teocracia fuerte y un pueblo que venera a sus muertos.",
+  "en": "The Nile governs life: reliable harvests, strong theocracy and a people who revere their dead."
+ },
+ {
+  "es": "Guerreros del alto Nilo y maestros del arco; ricos en oro y ganado, pero encajonados entre desiertos.",
+  "en": "Warriors of the upper Nile and masters of the bow; rich in gold and cattle, surrounded by deserts."
+ },
+ {
+  "es": "Inventores de la ciudad y la escritura. Canales, templos y contabilidad antes que nadie.",
+  "en": "Pioneers of cities and writing. Canals, temples and accounting before anyone else."
+ },
+ {
+  "es": "Pastores y mercaderes de la media luna fertil; se adaptan a cualquier tierra y comercian con todos.",
+  "en": "Pastoralists and merchants of the Fertile Crescent; adaptable settlers who trade with everyone."
+ },
+ {
+  "es": "Montaneses de Susa y Anshan: arqueros temibles y una corte orgullosa de su independencia.",
+  "en": "Highlanders of Susa and Anshan: formidable archers and a court proud of its independence."
+ },
+ {
+  "es": "Los primeros urbanistas del mundo. Obsidiana, trigo y ganado en las mesetas de Anatolia.",
+  "en": "The earliest urban communities. Obsidian, wheat and cattle on the Anatolian plateaus."
+ },
+ {
+  "es": "Islas, viento y comercio. Marinos natos con ciudades abiertas al mar y a las ideas.",
+  "en": "Islands, wind and trade. Natural sailors with cities open to the sea and new ideas."
+ },
+ {
+  "es": "Metalurgicos pioneros del Danubio; ricos en cobre y oro, feroces defensores de sus valles.",
+  "en": "Pioneering Danubian metalworkers; rich in copper and gold, fierce defenders of their valleys."
+ },
+ {
+  "es": "Agricultores de las llanuras centrales. Aldeas grandes, campos de trigo y crecimiento constante.",
+  "en": "Farmers of the central plains. Large villages, wheat fields and steady growth."
+ },
+ {
+  "es": "Constructores de piedra y navegantes de cabotaje. Sociedades rituales muy cohesionadas.",
+  "en": "Stone builders and coastal sailors. Close-knit societies shaped by ritual."
+ },
+ {
+  "es": "Cazadores, pescadores y navegantes del Baltico y el Mar del Norte. Duros en invierno.",
+  "en": "Hunters, fishers and sailors of the Baltic and North Sea, hardened by winter."
+ },
+ {
+  "es": "Jinetes y pastores de la estepa pontica. Movilidad brutal y hambre de horizontes.",
+  "en": "Herders of the Pontic steppe. Great mobility and a hunger for distant horizons."
+ },
+ {
+  "es": "Metalurgicos de montana entre dos mares; artesanos del bronce y guardianes de los pasos.",
+  "en": "Mountain metalworkers between two seas; bronze artisans and guardians of the passes."
+ },
+ {
+  "es": "Gentes de oasis y mesetas altas; comercio caravanero y arqueros de montana.",
+  "en": "People of oases and high plateaus; caravan traders and mountain archers."
+ },
+ {
+  "es": "Senores del Magreb y del desierto; nomadas, jinetes y guias de caravanas.",
+  "en": "Peoples of the Maghreb and desert; nomads, riders and caravan guides."
+ },
+ {
+  "es": "Caravaneros y criadores del desierto arabigo. Conocen cada pozo y cada ruta.",
+  "en": "Caravan traders and herders of the Arabian desert. They know every well and route."
+ },
+ {
+  "es": "Aldeanos de colinas y llanuras italicas; comunidades rurales solidas y laboriosas.",
+  "en": "Villagers of the Italian hills and plains; strong, hardworking rural communities."
+ },
+ {
+  "es": "Metalurgicos del sureste iberico; cobre, murallas ciclopeas y fuerte sentido del clan.",
+  "en": "Metalworkers of southeastern Iberia; copper, massive walls and strong clan ties."
+ },
+ {
+  "es": "Islenos de la obsidiana y los nuragas; artesanos y pastores difíciles de someter.",
+  "en": "Islanders of obsidian and nuraghi; artisans and herders who resist conquest."
+ },
+ {
+  "es": "Puente entre oriente y occidente; cobre, vino y puertos abiertos a todas las flotas.",
+  "en": "A bridge between east and west; copper, wine and harbors open to every fleet."
+ },
+ {
+  "es": "El reino de las Dos Tierras, del Delta a Elefantina.",
+  "en": "The kingdom of the Two Lands, from the Delta to Elephantine."
+ },
+ {
+  "es": "La liga de las ciudades del sur mesopotamico.",
+  "en": "The league of southern Mesopotamian cities."
+ },
+ {
+  "es": "El imperio de los cuatro confines, bajo un solo rey.",
+  "en": "The empire of the four quarters under a single king."
+ },
+ {
+  "es": "La meseta y la llanura unidas por los arqueros de Susa.",
+  "en": "Plateau and plain united by the archers of Susa."
+ },
+ {
+  "es": "El corazon de las rutas entre Mesopotamia y el mar.",
+  "en": "The heart of the routes between Mesopotamia and the sea."
+ },
+ {
+  "es": "Ciudades del Jordan y de la costa, entre Egipto y Asia.",
+  "en": "Cities of the Jordan and the coast, between Egypt and Asia."
+ },
+ {
+  "es": "Cedro, purpura y puertos que llegan a todo el Mediterraneo.",
+  "en": "Cedar, purple dye and ports reaching across the Mediterranean."
+ },
+ {
+  "es": "El dios Assur y un ejercito que no retrocede.",
+  "en": "The god Ashur and an army that never retreats."
+ },
+ {
+  "es": "La puerta de los dioses y la ciudad de las leyes.",
+  "en": "The gate of the gods and the city of laws."
+ },
+ {
+  "es": "El reino de las mil divinidades y de los carros de guerra.",
+  "en": "The land of a thousand deities and war chariots."
+ },
+ {
+  "es": "Las ciudades libres del oeste anatolio.",
+  "en": "The free cities of western Anatolia."
+ },
+ {
+  "es": "La Ilios de las leyendas, guardiana de los estrechos.",
+  "en": "The legendary Ilios, guardian of the straits."
+ },
+ {
+  "es": "La talasocracia del laberinto y del toro sagrado.",
+  "en": "The sea power of the labyrinth and the sacred bull."
+ },
+ {
+  "es": "Los aqueos de la edad del bronce, ricos en oro y carros.",
+  "en": "Bronze Age Achaeans, rich in gold and chariots."
+ },
+ {
+  "es": "La ciudad de la colina y del aceite de oliva.",
+  "en": "The city of the hill and olive oil."
+ },
+ {
+  "es": "Los senores de los kurganes y de la estepa sin fin.",
+  "en": "Lords of the burial mounds and the endless steppe."
+ },
+ {
+  "es": "Oro, caballos y montanas entre el Danubio y el Egeo.",
+  "en": "Gold, horses and mountains between the Danube and the Aegean."
+ },
+ {
+  "es": "Las grandes aldeas de la cultura Cucuteni-Tripilia.",
+  "en": "The large villages of the Cucuteni-Trypillia culture."
+ },
+ {
+  "es": "La cultura del Danubio y de sus templos de barro.",
+  "en": "The culture of the Danube and its clay temples."
+ },
+ {
+  "es": "Cobre, fortalezas y clanes del sureste de Iberia.",
+  "en": "Copper, fortresses and clans of southeastern Iberia."
+ },
+ {
+  "es": "El reino del metal y de las rutas atlanticas.",
+  "en": "The kingdom of metal and Atlantic trade routes."
+ },
+ {
+  "es": "Pueblos del oeste iberico, pastores y guerreros.",
+  "en": "Peoples of western Iberia, herders and warriors."
+ },
+ {
+  "es": "Los senores del metal y de los ritos de Italia central.",
+  "en": "The metalworking and ritual communities of central Italy."
+ },
+ {
+  "es": "Los pueblos de la Sicilia del trigo y del vino.",
+  "en": "The peoples of Sicily, land of wheat and wine."
+ },
+ {
+  "es": "Obsidiana, nuragas y pastores de las montanas sardas.",
+  "en": "Obsidian, nuraghi and herders of the Sardinian mountains."
+ },
+ {
+  "es": "El reino del cobre de Chipre, entre Anatolia, Levante y Egipto.",
+  "en": "The copper kingdom of Cyprus, between Anatolia, the Levant and Egypt."
+ },
+ {
+  "es": "Las tribus libias entre el desierto y el mar.",
+  "en": "Libyan tribes between the desert and the sea."
+ },
+ {
+  "es": "Jinetes numidas, la mejor caballeria de Africa.",
+  "en": "Numidian horsemen, the finest cavalry in Africa."
+ },
+ {
+  "es": "El extremo occidental de Africa y las Columnas de Hercules.",
+  "en": "The western edge of Africa and the Pillars of Hercules."
+ },
+ {
+  "es": "El reino de Kerma, entre la primera y la tercera catarata.",
+  "en": "The kingdom of Kerma, between the first and third cataracts."
+ },
+ {
+  "es": "Los arqueros del sur y el oro del desierto.",
+  "en": "The archers of the south and the gold of the desert."
+ },
+ {
+  "es": "Las tribus del Hiyaz y las rutas de caravanas.",
+  "en": "The tribes of the Hejaz and the caravan routes."
+ },
+ {
+  "es": "El emporio del golfo, entre Mesopotamia y el Indo.",
+  "en": "The trading center of the Gulf, between Mesopotamia and the Indus."
+ },
+ {
+  "es": "Incienso, mirra y las montanas verdes del sur.",
+  "en": "Incense, myrrh and the green mountains of the south."
+ },
+ {
+  "es": "Fortalezas de montana en torno al lago Van.",
+  "en": "Mountain fortresses around Lake Van."
+ },
+ {
+  "es": "Los caballos de la meseta irania.",
+  "en": "The horses of the Iranian plateau."
+ },
+ {
+  "es": "La tierra de Anshan y de los grandes reyes.",
+  "en": "The land of Anshan and the great kings."
+ },
+ {
+  "es": "Las islas del estaño y de los circulos de piedra.",
+  "en": "The islands of tin and stone circles."
+ },
+ {
+  "es": "Las tierras altas del norte.",
+  "en": "The northern highlands."
+ },
+ {
+  "es": "Los bosques y marismas del norte.",
+  "en": "The forests and marshes of the north."
+ },
+ {
+  "es": "Los estrechos y las islas del norte.",
+  "en": "The northern straits and islands."
+ },
+ {
+  "es": "Estado latino historico independiente. Disponible a partir de 1200 a.C.; fecha aproximada o tradicional.",
+  "en": "Independent historical Latin state. Available from 1200 BC; approximate or traditional date."
+ },
+ {
+  "es": "Estado latino historico independiente. Disponible a partir de 1000 a.C.; fecha aproximada o tradicional.",
+  "en": "Independent historical Latin state. Available from 1000 BC; approximate or traditional date."
+ },
+ {
+  "es": "Estado latino historico independiente. Disponible a partir de 753 a.C.; fecha aproximada o tradicional.",
+  "en": "Independent historical Latin state. Available from 753 BC; traditional date."
+ },
+ {
+  "es": "Campos de regadio y graneros: +15% alimentos.",
+  "en": "Irrigated fields and granaries: +15% food."
+ },
+ {
+  "es": "Agua segura: +10% crecimiento de poblacion.",
+  "en": "Safe water: +10% population growth."
+ },
+ {
+  "es": "Muros de adobe o piedra: +30% defensa provincial.",
+  "en": "Mudbrick or stone walls: +30% provincial defense."
+ },
+ {
+  "es": "Carpinteria y herramientas: +20% madera.",
+  "en": "Woodworking and tools: +20% wood."
+ },
+ {
+  "es": "Extraccion de piedra: +20% piedra.",
+  "en": "Stone extraction: +20% stone."
+ },
+ {
+  "es": "Galerias de cobre: +25% cobre.",
+  "en": "Copper workings: +25% copper."
+ },
+ {
+  "es": "Ferias y rutas: +20% comercio.",
+  "en": "Fairs and trade routes: +20% trade."
+ },
+ {
+  "es": "Casa de los dioses: +6% estabilidad.",
+  "en": "House of the gods: +6% stability."
+ },
+ {
+  "es": "Contables y archivos: +18% tecnologia.",
+  "en": "Accountants and archives: +18% technology."
+ },
+ {
+  "es": "Muelle y astillero: +comercio, permite barcos.",
+  "en": "Wharf and shipyard: improves trade and enables ships."
+ },
+ {
+  "es": "Levas organizadas: +25% mano de obra.",
+  "en": "Organized levies: +25% manpower."
+ },
+ {
+  "es": "Rebanos y pastos: +8% alimentos.",
+  "en": "Flocks and pastures: +8% food."
+ },
+ {
+  "es": "Infanteria ligera de lanza corta y escudo de cuero. Barata y fiable.",
+  "en": "Light infantry with short spears and leather shields. Cheap and reliable."
+ },
+ {
+  "es": "Formacion cerrada de lanzas largas. Excelente contra jinetes y en colinas.",
+  "en": "A close formation of long spears. Excellent against cavalry and in hills."
+ },
+ {
+  "es": "Carros y jinetes de la estepa. Devastadores en campo abierto, fragiles en asedios.",
+  "en": "Chariots and steppe riders. Devastating in the open, vulnerable in sieges."
+ },
+ {
+  "es": "Galera de remos para comercio, desembarcos y control de las rutas maritimas.",
+  "en": "An oared galley for trade, landings and control of sea routes."
+ },
+ {
+  "es": "La ciudad del muro blanco, heredera de las tradiciones del Bajo y Alto Egipto.",
+  "en": "The city of the white wall, heir to the traditions of Lower and Upper Egypt."
+ },
+ {
+  "es": "La primera gran ciudad. Templos de adobe, canales y escritura cuneiforme.",
+  "en": "The first great city. Mudbrick temples, canals and cuneiform writing."
+ },
+ {
+  "es": "Milenios de vida urbana en la meseta de Konya; santuarios y obsidiana.",
+  "en": "Millennia of urban life on the Konya plateau; shrines and obsidian."
+ },
+ {
+  "es": "Una de las ciudades mas antiguas del mundo, junto al Jordan y sus manantiales.",
+  "en": "One of the oldest cities, beside the Jordan and its springs."
+ },
+ {
+  "es": "El control del estrecho de los Dardanelos vale mas que un reino.",
+  "en": "Control of the Dardanelles is worth more than a kingdom."
+ },
+ {
+  "es": "El laberinto de Creta: aceite, bronce y una flota que domina el Egeo.",
+  "en": "The labyrinth of Crete: oil, bronze and a fleet dominating the Aegean."
+ },
+ {
+  "es": "Puerto del golfo y ciudad de la luna.",
+  "en": "A Gulf port and city of the moon."
+ },
+ {
+  "es": "La puerta de las montanas elamitas.",
+  "en": "The gateway to the Elamite mountains."
+ },
+ {
+  "es": "Emporio del cedro y del comercio maritimo levantino.",
+  "en": "A center for cedar and Levantine sea trade."
+ },
+ {
+  "es": "Senora de las llanuras sirias y de la ruta de la plata.",
+  "en": "Mistress of the Syrian plains and the silver route."
+ },
+ {
+  "es": "Oro, cobre y necropolis principescas del Mar Negro.",
+  "en": "Gold, copper and princely burial grounds on the Black Sea."
+ },
+ {
+  "es": "Fortaleza del cobre en el sureste iberico.",
+  "en": "A copper fortress in southeastern Iberia."
+ },
+ {
+  "es": "Pozo",
+  "en": "Well"
+ },
+ {
+  "es": "Cantera",
+  "en": "Quarry"
+ },
+ {
+  "es": "Casa de escribas",
+  "en": "Scribes house"
+ },
+ {
+  "es": "Escribas",
+  "en": "Scribes"
+ },
+ {
+  "es": "Ganaderia",
+  "en": "Animal husbandry"
+ },
+ {
+  "es": "Ingreso",
+  "en": "Income"
+ },
+ {
+  "es": "y",
+  "en": "and"
+ },
+ {
+  "es": "Nace",
+  "en": "The birth of"
+ },
+ {
+  "es": "Granjas",
+  "en": "Farms"
+ },
+ {
+  "es": "Casa de Escribas",
+  "en": "Scribes House"
+ },
+ {
+  "es": "Administrador",
+  "en": "Administrator"
+ },
+ {
+  "es": "Diplomatico",
+  "en": "Diplomat"
+ },
+ {
+  "es": "Piadoso",
+  "en": "Pious"
+ },
+ {
+  "es": "Ambicioso",
+  "en": "Ambitious"
+ },
+ {
+  "es": "Cruel",
+  "en": "Cruel"
+ },
+ {
+  "es": "Sabio",
+  "en": "Wise"
+ },
+ {
+  "es": "Constructor",
+  "en": "Builder"
+ },
+ {
+  "es": "Enfermizo",
+  "en": "Sickly"
+ },
+ {
+  "es": "Robusto",
+  "en": "Robust"
+ },
+ {
+  "es": "Codicioso",
+  "en": "Greedy"
+ },
+ {
+  "es": "Carismatico",
+  "en": "Charismatic"
+ },
+ {
+  "es": "ingresos",
+  "en": "income"
+ },
+ {
+  "es": "fuerza militar",
+  "en": "military strength"
+ },
+ {
+  "es": "expansion",
+  "en": "expansion"
+ },
+ {
+  "es": "coste de edificios",
+  "en": "building costs"
+ },
+ {
+  "es": "anos de esperanza de vida",
+  "en": "years of life expectancy"
+ },
+ {
+  "es": "legitimidad",
+  "en": "legitimacy"
+ },
+ {
+  "es": "Imagenes de Wikimedia pendientes de descargar.",
+  "en": "Wikimedia images are awaiting download."
+ }
+]

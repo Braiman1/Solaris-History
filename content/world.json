@@ -214,16 +214,6 @@
     74
    ]
   },
-  "estaño": {
-   "name": "Estano",
-   "kind": "copper",
-   "value": 2.4,
-   "color": [
-    176,
-    186,
-    196
-   ]
-  },
   "oro": {
    "name": "Oro",
    "kind": "gold",
@@ -313,6 +303,66 @@
     116,
     82
    ]
+  },
+  "estano": {
+   "name": "Estano",
+   "kind": "copper",
+   "value": 2.4,
+   "color": [
+    176,
+    186,
+    196
+   ]
+  },
+  "arcilla": {
+   "name": "Arcilla",
+   "kind": "stone",
+   "value": 1.1,
+   "color": [
+    170,
+    110,
+    80
+   ]
+  },
+  "ceramica": {
+   "name": "Ceramica",
+   "kind": "trade",
+   "value": 1.5,
+   "color": [
+    186,
+    112,
+    70
+   ]
+  },
+  "lana": {
+   "name": "Lana",
+   "kind": "trade",
+   "value": 1.2,
+   "color": [
+    220,
+    212,
+    190
+   ]
+  },
+  "papiro": {
+   "name": "Papiro",
+   "kind": "trade",
+   "value": 1.7,
+   "color": [
+    180,
+    190,
+    105
+   ]
+  },
+  "lapislazuli": {
+   "name": "Lapislazuli",
+   "kind": "trade",
+   "value": 2.8,
+   "color": [
+    65,
+    90,
+    180
+   ]
   }
  },
  "provinces": [
@@ -335,7 +385,8 @@
     72,
     73,
     115,
-    143
+    143,
+    166
    ],
    "sea_adj": [],
    "buildings": [],
@@ -1099,7 +1150,8 @@
     47,
     69,
     77,
-    104
+    104,
+    171
    ],
    "sea_adj": [
     19,
@@ -1975,7 +2027,8 @@
     86,
     117,
     151,
-    158
+    158,
+    180
    ],
    "sea_adj": [
     28,
@@ -2337,7 +2390,8 @@
     72,
     103,
     131,
-    136
+    136,
+    164
    ],
    "sea_adj": [
     2,
@@ -2442,7 +2496,8 @@
    "coastal": true,
    "owner": 0,
    "adj": [
-    52
+    52,
+    182
    ],
    "sea_adj": [
     26,
@@ -2731,7 +2786,11 @@
     58,
     117,
     151,
-    158
+    158,
+    176,
+    177,
+    178,
+    179
    ],
    "sea_adj": [
     30,
@@ -2812,7 +2871,9 @@
    "region": "Egeo",
    "coastal": true,
    "owner": 0,
-   "adj": [],
+   "adj": [
+    173
+   ],
    "sea_adj": [
     16,
     91,
@@ -3242,7 +3303,8 @@
     35,
     54,
     133,
-    144
+    144,
+    175
    ],
    "sea_adj": [
     31,
@@ -3355,7 +3417,9 @@
     68,
     98,
     108,
-    156
+    156,
+    168,
+    169
    ],
    "sea_adj": [],
    "buildings": [],
@@ -3538,7 +3602,8 @@
    "coastal": true,
    "owner": 0,
    "adj": [
-    52
+    52,
+    181
    ],
    "sea_adj": [
     1,
@@ -3949,7 +4014,8 @@
     59,
     71,
     72,
-    103
+    103,
+    167
    ],
    "sea_adj": [
     9,
@@ -4010,7 +4076,8 @@
     35,
     54,
     105,
-    144
+    144,
+    174
    ],
    "sea_adj": [
     47,
@@ -4288,7 +4355,8 @@
     48,
     73,
     113,
-    115
+    115,
+    165
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4422,7 +4490,8 @@
     91,
     123,
     128,
-    157
+    157,
+    172
    ],
    "sea_adj": [
     16,
@@ -4600,7 +4669,8 @@
     110,
     134,
     152,
-    153
+    153,
+    170
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4837,11 +4907,432 @@
    "loyalty": 60.0,
    "occupied": false,
    "id": 163
+  },
+  {
+   "id": 164,
+   "name": "Delta Oriental",
+   "lon": 32.0,
+   "lat": 30.9,
+   "culture": "egipcio",
+   "region": "Egipto",
+   "terrain": "llanura",
+   "resource": "papiro",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    71
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 165,
+   "name": "Naqada",
+   "lon": 32.72,
+   "lat": 25.9,
+   "culture": "egipcio",
+   "region": "Egipto",
+   "terrain": "llanura",
+   "resource": "ceramica",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    143
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 166,
+   "name": "El Badari",
+   "lon": 31.4,
+   "lat": 26.99,
+   "culture": "egipcio",
+   "region": "Egipto",
+   "terrain": "llanura",
+   "resource": "lino",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    0
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 167,
+   "name": "Merimde",
+   "lon": 30.85,
+   "lat": 30.32,
+   "culture": "egipcio",
+   "region": "Egipto",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    131
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 168,
+   "name": "Tell Brak",
+   "lon": 41.06,
+   "lat": 36.67,
+   "culture": "semita",
+   "region": "Mesopotamia",
+   "terrain": "llanura",
+   "resource": "lana",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    109
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 169,
+   "name": "Tell Hamoukar",
+   "lon": 41.95,
+   "lat": 36.81,
+   "culture": "semita",
+   "region": "Mesopotamia",
+   "terrain": "llanura",
+   "resource": "ceramica",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    109
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 170,
+   "name": "Adab",
+   "lon": 45.62,
+   "lat": 31.93,
+   "culture": "sumerio",
+   "region": "Mesopotamia",
+   "terrain": "llanura",
+   "resource": "arcilla",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    154
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 171,
+   "name": "Hacilar",
+   "lon": 30.1,
+   "lat": 37.57,
+   "culture": "anatolio",
+   "region": "Anatolia",
+   "terrain": "llanura",
+   "resource": "ceramica",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    27
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 172,
+   "name": "Beycesultan",
+   "lon": 29.7,
+   "lat": 38.26,
+   "culture": "anatolio",
+   "region": "Anatolia",
+   "terrain": "llanura",
+   "resource": "lana",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    148
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 173,
+   "name": "Poliochni",
+   "lon": 25.34,
+   "lat": 39.85,
+   "culture": "egeo",
+   "region": "Egeo",
+   "terrain": "llanura",
+   "resource": "pescado",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    89
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 174,
+   "name": "Dimini",
+   "lon": 22.75,
+   "lat": 39.36,
+   "culture": "egeo",
+   "region": "Egeo",
+   "terrain": "llanura",
+   "resource": "cebada",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    133
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 175,
+   "name": "Lerna",
+   "lon": 22.75,
+   "lat": 37.55,
+   "culture": "egeo",
+   "region": "Egeo",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    105
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 176,
+   "name": "Aricia",
+   "lon": 12.67,
+   "lat": 41.72,
+   "culture": "italico",
+   "region": "Italia",
+   "terrain": "llanura",
+   "resource": "madera",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    86
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 177,
+   "name": "Lavinium",
+   "lon": 12.48,
+   "lat": 41.65,
+   "culture": "italico",
+   "region": "Italia",
+   "terrain": "llanura",
+   "resource": "sal",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    86,
+    183
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 178,
+   "name": "Tusculum",
+   "lon": 12.71,
+   "lat": 41.8,
+   "culture": "italico",
+   "region": "Italia",
+   "terrain": "llanura",
+   "resource": "piedra",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    86
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 179,
+   "name": "Alba Longa",
+   "lon": 12.65,
+   "lat": 41.75,
+   "culture": "italico",
+   "region": "Italia",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    86
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 180,
+   "name": "Cerveteri",
+   "lon": 12.1,
+   "lat": 42.0,
+   "culture": "italico",
+   "region": "Italia",
+   "terrain": "llanura",
+   "resource": "cobre",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    58
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 181,
+   "name": "Skara Brae",
+   "lon": -3.34,
+   "lat": 59.05,
+   "culture": "megalitico",
+   "region": "Britania",
+   "terrain": "llanura",
+   "resource": "pescado",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    116
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 182,
+   "name": "Newgrange",
+   "lon": -6.48,
+   "lat": 53.69,
+   "culture": "megalitico",
+   "region": "Irlanda",
+   "terrain": "llanura",
+   "resource": "piedra",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    75
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 183,
+   "name": "Colinas del Tiber",
+   "lon": 12.5,
+   "lat": 41.9,
+   "culture": "italico",
+   "region": "Italia",
+   "terrain": "llanura",
+   "resource": "arcilla",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    177
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
   }
  ],
  "city_states": [
   {
-   "name": "Menfis",
+   "name": "Los Egipcios",
    "prov": "Menfis",
    "culture": "egipcio",
    "gov": "teocracia",
@@ -4857,7 +5348,7 @@
    "is_city_state": true
   },
   {
-   "name": "Uruk",
+   "name": "Los Sumerios",
    "prov": "Uruk",
    "culture": "sumerio",
    "gov": "monarquia",
@@ -4873,7 +5364,7 @@
    "is_city_state": true
   },
   {
-   "name": "Catal Huyuk",
+   "name": "Los Anatolios",
    "prov": "Catalhoyuk",
    "culture": "anatolio",
    "gov": "teocracia",
@@ -4889,7 +5380,7 @@
    "is_city_state": true
   },
   {
-   "name": "Jerico",
+   "name": "Los Semitas",
    "prov": "Jerico",
    "culture": "semita",
    "gov": "monarquia",
@@ -4905,7 +5396,7 @@
    "is_city_state": true
   },
   {
-   "name": "Troya",
+   "name": "Los Anatolios",
    "prov": "Troya",
    "culture": "anatolio",
    "gov": "monarquia",
@@ -4921,7 +5412,7 @@
    "is_city_state": true
   },
   {
-   "name": "Knossos",
+   "name": "Los Egeos",
    "prov": "Knossos",
    "culture": "egeo",
    "gov": "teocracia",
@@ -5031,6 +5522,22 @@
    "id": 12,
    "capital": 96,
    "is_city_state": true
+  },
+  {
+   "id": 13,
+   "name": "Los Latinos",
+   "prov": "Lavinium",
+   "capital": 177,
+   "culture": "italico",
+   "gov": "monarquia",
+   "color": [
+    150,
+    65,
+    65
+   ],
+   "playable": true,
+   "is_city_state": true,
+   "desc": "Comunidades prehistoricas del Lacio. El nombre Latinos es una etiqueta de juego; Roma aun no existe."
   }
  ]
 }

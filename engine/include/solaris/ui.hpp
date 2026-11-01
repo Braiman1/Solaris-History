@@ -1,6 +1,7 @@
 // Solaris History - interfaz inmediata (paneles, botones, texto, retratos)
 #pragma once
 #include "gfx.hpp"
+#include "locale.hpp"
 #include "platform.hpp"
 #include <string>
 #include <vector>
@@ -54,7 +55,7 @@ struct UI {
     void text(const std::string& s, float x, float y, float scale, Color c, bool shadow = false);
     void textC(const std::string& s, float cx, float y, float scale, Color c, bool shadow = false);
     void textR(const std::string& s, float rx, float y, float scale, Color c, bool shadow = false);
-    float textW(const std::string& s, float scale) const { return G->font.width(s, scale); }
+    float textW(const std::string& s, float scale) const { return G->font.width(Locale::text(s), scale); }
     void textBlock(const std::string& s, float x, float y, float maxW, float scale, Color c,
                    float lineGap = 2.0f, int maxLines = 8);
     std::vector<std::string> wrap(const std::string& s, float maxW, float scale) const;

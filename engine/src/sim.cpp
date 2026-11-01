@@ -334,6 +334,10 @@ NationMods Sim::mods(int nid) const {
     m.expansion = cu.expansion * (1 + addExp);
     m.income = 1 + addIncome;
     m.build = 1 + addBuild;
+    for (const auto& t : C->technologies) if (n.tech >= t.points) {
+        m.farm += t.farm;
+        m.mil += t.military;
+    }
     m.legit = addLegit;
     return m;
 }
@@ -412,7 +416,7 @@ bool Sim::canFound(int nation) const {
     if (!n.alive || !n.isCityState) return false;
     int provinces = 0;
     for (auto& p : prov) if (p.owner == nation) ++provinces;
-    return provinces >= 2 && n.gold >= 60.0 && n.prestige >= 5.0f;
+    return provinces >= 2 && n.gold >= 60.0 && n.prestige >= 5.0f && n.tech >= 3.0f;
 }
 
 bool Sim::foundNation(int nation, int templateIndex) {
@@ -422,7 +426,7 @@ bool Sim::foundNation(int nation, int templateIndex) {
     const NationTemplate& t = C->nationTemplates[(size_t)templateIndex];
     Nation& n = nations[(size_t)nation];
     if (t.culture != n.culture) return false;
-    if (t.era > n.era) return false;
+    if (t.era > n.era || year < t.earliestYear) return false;
     for (auto& o : nations)
         if (o.alive && o.id != nation && o.name == t.name) return false;
 
@@ -449,7 +453,8 @@ bool Sim::foundNation(int nation, int templateIndex) {
 
 bool Sim::canColonize(int nation, int provId, float* costOut) const {
     if (nation <= 0 || !nationAlive(nation) || !validProvince(provId)) return false;
-    if (prov[(size_t)provId].owner != 0) return false;
+    if (prov[(size_t)provId].owner != 0 || prov[(size_t)provId].colonizer != 0) return false;
+    for (const auto& p : prov) if (p.colonizer == nation) return false;
     bool adjacent = false;
     for (auto& p : prov) {
         if (p.owner != nation) continue;
@@ -473,13 +478,11 @@ bool Sim::colonize(int nation, int provId) {
     Nation& n = nations[(size_t)nation];
     n.gold -= cost;
     Province& p = prov[(size_t)provId];
-    p.owner = nation;
-    p.pop *= 0.88f;
-    p.loyalty = 55;
-    p.unrest = 8;
-    addLog(n.name + " funda un asentamiento en " + pdef(provId).name + ".", 1);
+    p.colonizer = nation;
+    p.colonyMonths = 36;
+    addLog(n.name + " inicia una expedicion de 36 meses hacia " + pdef(provId).name + ".", 1);
     if (nation == player)
-        alert(nation, "Nuevo territorio", "Has fundado un asentamiento en " + pdef(provId).name + ".", 1);
+        alert(nation, "Colonizacion", "La expedicion tardara 36 meses. Solo puedes mantener una expedicion activa.", 1);
     return true;
 }
 
@@ -1005,7 +1008,7 @@ void Sim::aiNation(int nation) {
             std::vector<int> valid;
             for (int i = 0; i < (int)C->nationTemplates.size(); ++i) {
                 const auto& t = C->nationTemplates[(size_t)i];
-                if (t.culture != n.culture || t.era > n.era) continue;
+                if (t.culture != n.culture || t.era > n.era || year < t.earliestYear) continue;
                 bool used = false;
                 for (auto& o : nations) if (o.alive && o.id != nation && o.name == t.name) used = true;
                 if (!used) valid.push_back(i);
@@ -1146,6 +1149,22 @@ void Sim::step() {
         recomputeEconomy(i);
     }
 
+    for (auto& p : prov) {
+        if (!p.colonizer) continue;
+        if (p.owner != 0 || !nationAlive(p.colonizer)) {
+            p.colonizer = p.colonyMonths = 0;
+            continue;
+        }
+        if (--p.colonyMonths <= 0) {
+            p.owner = p.colonizer;
+            p.colonizer = 0;
+            p.pop *= 0.88f;
+            p.loyalty = 55;
+            p.unrest = 8;
+            addLog(nationName(p.owner) + " funda un asentamiento en " + pdef(p.def).name + ".", 1);
+            if (p.owner == player) alert(player, "Nuevo territorio", "Asentamiento terminado en " + pdef(p.def).name + ".", 1);
+        }
+    }
     processDeaths();
     moveArmies(*this);
 
@@ -1219,7 +1238,7 @@ void Sim::save(const std::string& path) const {
     if (!f) return;
     const char magic[4] = {'S', 'L', 'R', 'S'};
     fwrite(magic, 1, 4, f);
-    uint32_t ver = 1;
+    uint32_t ver = 2;
     wr(f, ver);
     int32_t y = year, mo = month, pl = player, na = nextArmyId, go = gameOver ? 1 : 0;
     wr(f, y); wr(f, mo); wr(f, pl); wr(f, na); wr(f, go);
@@ -1228,6 +1247,7 @@ void Sim::save(const std::string& path) const {
     uint32_t np = (uint32_t)prov.size();
     wr(f, np);
     for (auto& p : prov) {
+        wr(f, p.colonizer); wr(f, p.colonyMonths);
         wr(f, p.def); wr(f, p.owner); wr(f, p.pop); wr(f, p.loyalty); wr(f, p.unrest);
         uint8_t occ = p.occupied ? 1 : 0;
         wr(f, occ);
@@ -1280,17 +1300,19 @@ bool Sim::load(const std::string& path) {
     char magic[4];
     if (fread(magic, 1, 4, f) != 4 || memcmp(magic, "SLRS", 4) != 0) { fclose(f); return false; }
     uint32_t ver = 0;
-    if (!rd(f, ver) || ver != 1) { fclose(f); return false; }
+    if (!rd(f, ver) || (ver != 1 && ver != 2)) { fclose(f); return false; }
     int32_t y, mo, pl, na, go;
     if (!rd(f, y) || !rd(f, mo) || !rd(f, pl) || !rd(f, na) || !rd(f, go)) { fclose(f); return false; }
     year = y; month = mo; player = pl; nextArmyId = na; gameOver = go != 0;
     uint64_t seed; if (!rd(f, seed)) { fclose(f); return false; }
     rng.s = seed;
     uint32_t np = 0;
-    if (!rd(f, np) || np > 100000) { fclose(f); return false; }
+    if (!rd(f, np) || !C || np != C->provinces.size()) { fclose(f); return false; }
     prov.resize(np);
     for (auto& p : prov) {
         uint8_t occ = 0;
+        p.colonizer = p.colonyMonths = 0;
+        if (ver >= 2 && (!rd(f, p.colonizer) || !rd(f, p.colonyMonths) || p.colonyMonths < 0 || p.colonyMonths > 36)) { fclose(f); return false; }
         if (!rd(f, p.def) || !rd(f, p.owner) || !rd(f, p.pop) || !rd(f, p.loyalty) || !rd(f, p.unrest) || !rd(f, occ)) { fclose(f); return false; }
         p.occupied = occ != 0;
         uint32_t nb = 0; if (!rd(f, nb) || nb > 1000) { fclose(f); return false; }
@@ -1343,6 +1365,30 @@ bool Sim::load(const std::string& path) {
         if (!rd(f, e.year) || !rd(f, e.month) || !rd(f, e.kind) || !rdStr(f, e.text)) { fclose(f); return false; }
     }
     fclose(f);
+    // Reject saves from different content and malformed references before the GUI uses them.
+    auto validNation = [&](int id) { return id >= 0 && id < (int)nations.size(); };
+    if (!validNation(player) || player == 0 || month < 0 || month >= 12) return false;
+    for (size_t i=0;i<prov.size();++i) {
+        const auto& p=prov[i];
+        if (p.def != (int)i || !validNation(p.owner) || !validNation(p.colonizer)) return false;
+        if ((p.colonizer == 0) != (p.colonyMonths == 0)) return false;
+        if (p.colonizer && p.owner) return false;
+    }
+    for (size_t i=1;i<nations.size();++i) {
+        const auto& n=nations[i];
+        if (n.id != (int)i || !validProvince(n.capital) || n.era < 0 || n.era >= (int)C->eras.size()) return false;
+        if (C->cultureIndex.find(n.culture)==C->cultureIndex.end()) return false;
+        if (n.ruler < -1 || n.ruler >= (int)chars.size()) return false;
+        for(int id:n.charIds) if(id<0 || id>=(int)chars.size()) return false;
+        for(int id:n.wars) if(!validNation(id) || id==0) return false;
+    }
+    for (const auto& a:armies) {
+        if(!validNation(a.nation) || a.unit<0 || a.unit>=(int)C->units.size() || !validProvince(a.prov)) return false;
+        if(a.dest != -1 && !validProvince(a.dest)) return false;
+        if(a.inTransit() && (a.path.empty() || a.pathIdx+1>=a.path.size())) return false;
+        for(int id:a.path) if(!validProvince(id)) return false;
+    }
+    for (const auto& c:chars) if(!validNation(c.nation) || c.traitA<0 || c.traitB<0 || c.traitA>=(int)C->traits.size() || c.traitB>=(int)C->traits.size()) return false;
     alertPending = false;
     return true;
 }
