@@ -1,0 +1,16 @@
+{
+ "id": "dilmun",
+ "name": "Dilmun",
+ "capital": "Dilmun",
+ "color": [
+  58,
+  138,
+  154
+ ],
+ "gov": "republica",
+ "adj": "Dilmunita",
+ "desc": "El emporio del golfo, entre Mesopotamia y el Indo.",
+ "tag": "dil",
+ "culture_tag": "arabigo",
+ "religion_tag": "anc"
+}

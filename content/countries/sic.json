@@ -1,0 +1,16 @@
+{
+ "id": "sicanos",
+ "name": "Sicanos",
+ "capital": "Siracusa",
+ "color": [
+  168,
+  118,
+  62
+ ],
+ "gov": "monarquia",
+ "adj": "Sicano",
+ "desc": "Los pueblos de la Sicilia del trigo y del vino.",
+ "tag": "sic",
+ "culture_tag": "italico",
+ "religion_tag": "med"
+}

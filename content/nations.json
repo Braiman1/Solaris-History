@@ -11,7 +11,10 @@
   ],
   "gov": "monarquia",
   "adj": "Egipcio",
-  "desc": "El reino de las Dos Tierras, del Delta a Elefantina."
+  "desc": "El reino de las Dos Tierras, del Delta a Elefantina.",
+  "tag": "egi",
+  "culture_tag": "egipcio",
+  "religion_tag": "nil"
  },
  {
   "id": "sumeria",
@@ -25,7 +28,10 @@
   ],
   "gov": "republica",
   "adj": "Sumerio",
-  "desc": "La liga de las ciudades del sur mesopotamico."
+  "desc": "La liga de las ciudades del sur mesopotamico.",
+  "tag": "sum",
+  "culture_tag": "sumerio",
+  "religion_tag": "mes"
  },
  {
   "id": "acad",
@@ -39,7 +45,10 @@
   ],
   "gov": "monarquia",
   "adj": "Acadio",
-  "desc": "El imperio de los cuatro confines, bajo un solo rey."
+  "desc": "El imperio de los cuatro confines, bajo un solo rey.",
+  "tag": "aca",
+  "culture_tag": "semita",
+  "religion_tag": "mes"
  },
  {
   "id": "elam",
@@ -53,7 +62,10 @@
   ],
   "gov": "monarquia",
   "adj": "Elamita",
-  "desc": "La meseta y la llanura unidas por los arqueros de Susa."
+  "desc": "La meseta y la llanura unidas por los arqueros de Susa.",
+  "tag": "ela",
+  "culture_tag": "elamita",
+  "religion_tag": "mes"
  },
  {
   "id": "siria",
@@ -67,7 +79,10 @@
   ],
   "gov": "monarquia",
   "adj": "Sirio",
-  "desc": "El corazon de las rutas entre Mesopotamia y el mar."
+  "desc": "El corazon de las rutas entre Mesopotamia y el mar.",
+  "tag": "sir",
+  "culture_tag": "semita",
+  "religion_tag": "mes"
  },
  {
   "id": "canaan",
@@ -81,7 +96,10 @@
   ],
   "gov": "teocracia",
   "adj": "Cananeo",
-  "desc": "Ciudades del Jordan y de la costa, entre Egipto y Asia."
+  "desc": "Ciudades del Jordan y de la costa, entre Egipto y Asia.",
+  "tag": "can",
+  "culture_tag": "semita",
+  "religion_tag": "mes"
  },
  {
   "id": "fenicia",
@@ -95,7 +113,10 @@
   ],
   "gov": "republica",
   "adj": "Fenicio",
-  "desc": "Cedro, purpura y puertos que llegan a todo el Mediterraneo."
+  "desc": "Cedro, purpura y puertos que llegan a todo el Mediterraneo.",
+  "tag": "fen",
+  "culture_tag": "semita",
+  "religion_tag": "mes"
  },
  {
   "id": "asiria",
@@ -109,7 +130,10 @@
   ],
   "gov": "monarquia",
   "adj": "Asirio",
-  "desc": "El dios Assur y un ejercito que no retrocede."
+  "desc": "El dios Assur y un ejercito que no retrocede.",
+  "tag": "asi",
+  "culture_tag": "semita",
+  "religion_tag": "mes"
  },
  {
   "id": "babilonia",
@@ -123,7 +147,10 @@
   ],
   "gov": "monarquia",
   "adj": "Babilonio",
-  "desc": "La puerta de los dioses y la ciudad de las leyes."
+  "desc": "La puerta de los dioses y la ciudad de las leyes.",
+  "tag": "bab",
+  "culture_tag": "semita",
+  "religion_tag": "mes"
  },
  {
   "id": "hatti",
@@ -137,7 +164,10 @@
   ],
   "gov": "monarquia",
   "adj": "Hatti",
-  "desc": "El reino de las mil divinidades y de los carros de guerra."
+  "desc": "El reino de las mil divinidades y de los carros de guerra.",
+  "tag": "hat",
+  "culture_tag": "anatolio",
+  "religion_tag": "anc"
  },
  {
   "id": "arzawa",
@@ -151,7 +181,10 @@
   ],
   "gov": "monarquia",
   "adj": "Arzawano",
-  "desc": "Las ciudades libres del oeste anatolio."
+  "desc": "Las ciudades libres del oeste anatolio.",
+  "tag": "arz",
+  "culture_tag": "anatolio",
+  "religion_tag": "anc"
  },
  {
   "id": "wilusa",
@@ -165,7 +198,10 @@
   ],
   "gov": "monarquia",
   "adj": "Wilusano",
-  "desc": "La Ilios de las leyendas, guardiana de los estrechos."
+  "desc": "La Ilios de las leyendas, guardiana de los estrechos.",
+  "tag": "wil",
+  "culture_tag": "anatolio",
+  "religion_tag": "anc"
  },
  {
   "id": "creta",
@@ -179,7 +215,10 @@
   ],
   "gov": "teocracia",
   "adj": "Cretense",
-  "desc": "La talasocracia del laberinto y del toro sagrado."
+  "desc": "La talasocracia del laberinto y del toro sagrado.",
+  "tag": "cre",
+  "culture_tag": "egeo",
+  "religion_tag": "med"
  },
  {
   "id": "micenas",
@@ -193,7 +232,10 @@
   ],
   "gov": "monarquia",
   "adj": "Aqueo",
-  "desc": "Los aqueos de la edad del bronce, ricos en oro y carros."
+  "desc": "Los aqueos de la edad del bronce, ricos en oro y carros.",
+  "tag": "mic",
+  "culture_tag": "egeo",
+  "religion_tag": "med"
  },
  {
   "id": "atenas",
@@ -207,7 +249,10 @@
   ],
   "gov": "republica",
   "adj": "Ateniense",
-  "desc": "La ciudad de la colina y del aceite de oliva."
+  "desc": "La ciudad de la colina y del aceite de oliva.",
+  "tag": "ate",
+  "culture_tag": "egeo",
+  "religion_tag": "med"
  },
  {
   "id": "yamnaya",
@@ -221,7 +266,10 @@
   ],
   "gov": "monarquia",
   "adj": "Yamnaya",
-  "desc": "Los senores de los kurganes y de la estepa sin fin."
+  "desc": "Los senores de los kurganes y de la estepa sin fin.",
+  "tag": "yam",
+  "culture_tag": "estepario",
+  "religion_tag": "anc"
  },
  {
   "id": "tracia",
@@ -235,7 +283,10 @@
   ],
   "gov": "monarquia",
   "adj": "Tracio",
-  "desc": "Oro, caballos y montanas entre el Danubio y el Egeo."
+  "desc": "Oro, caballos y montanas entre el Danubio y el Egeo.",
+  "tag": "tra",
+  "culture_tag": "balcanico",
+  "religion_tag": "anc"
  },
  {
   "id": "dacia",
@@ -249,7 +300,10 @@
   ],
   "gov": "monarquia",
   "adj": "Dacio",
-  "desc": "Las grandes aldeas de la cultura Cucuteni-Tripilia."
+  "desc": "Las grandes aldeas de la cultura Cucuteni-Tripilia.",
+  "tag": "dac",
+  "culture_tag": "danubiano",
+  "religion_tag": "anc"
  },
  {
   "id": "vincha",
@@ -263,7 +317,10 @@
   ],
   "gov": "teocracia",
   "adj": "Vinchano",
-  "desc": "La cultura del Danubio y de sus templos de barro."
+  "desc": "La cultura del Danubio y de sus templos de barro.",
+  "tag": "vin",
+  "culture_tag": "balcanico",
+  "religion_tag": "anc"
  },
  {
   "id": "iberia",
@@ -277,7 +334,10 @@
   ],
   "gov": "monarquia",
   "adj": "Ibero",
-  "desc": "Cobre, fortalezas y clanes del sureste de Iberia."
+  "desc": "Cobre, fortalezas y clanes del sureste de Iberia.",
+  "tag": "ibe",
+  "culture_tag": "iberico",
+  "religion_tag": "nat"
  },
  {
   "id": "tartessos",
@@ -291,7 +351,10 @@
   ],
   "gov": "monarquia",
   "adj": "Tartesio",
-  "desc": "El reino del metal y de las rutas atlanticas."
+  "desc": "El reino del metal y de las rutas atlanticas.",
+  "tag": "tar",
+  "culture_tag": "iberico",
+  "religion_tag": "nat"
  },
  {
   "id": "lusitania",
@@ -305,7 +368,10 @@
   ],
   "gov": "republica",
   "adj": "Lusitano",
-  "desc": "Pueblos del oeste iberico, pastores y guerreros."
+  "desc": "Pueblos del oeste iberico, pastores y guerreros.",
+  "tag": "lus",
+  "culture_tag": "iberico",
+  "religion_tag": "nat"
  },
  {
   "id": "etruria",
@@ -320,7 +386,10 @@
   "gov": "republica",
   "adj": "Etrusco",
   "desc": "Los senores del metal y de los ritos de Italia central.",
-  "earliest_year": -900
+  "earliest_year": -900,
+  "tag": "etr",
+  "culture_tag": "italico",
+  "religion_tag": "med"
  },
  {
   "id": "sicanos",
@@ -334,7 +403,10 @@
   ],
   "gov": "monarquia",
   "adj": "Sicano",
-  "desc": "Los pueblos de la Sicilia del trigo y del vino."
+  "desc": "Los pueblos de la Sicilia del trigo y del vino.",
+  "tag": "sic",
+  "culture_tag": "italico",
+  "religion_tag": "med"
  },
  {
   "id": "sardena",
@@ -348,7 +420,10 @@
   ],
   "gov": "republica",
   "adj": "Sardo",
-  "desc": "Obsidiana, nuragas y pastores de las montanas sardas."
+  "desc": "Obsidiana, nuragas y pastores de las montanas sardas.",
+  "tag": "sar",
+  "culture_tag": "sardino",
+  "religion_tag": "med"
  },
  {
   "id": "alashiya",
@@ -363,7 +438,10 @@
   "gov": "monarquia",
   "adj": "Alashiyo",
   "desc": "El reino del cobre de Chipre, entre Anatolia, Levante y Egipto.",
-  "era": 2
+  "era": 2,
+  "tag": "ala",
+  "culture_tag": "chipriota",
+  "religion_tag": "med"
  },
  {
   "id": "libia",
@@ -377,7 +455,10 @@
   ],
   "gov": "monarquia",
   "adj": "Libico",
-  "desc": "Las tribus libias entre el desierto y el mar."
+  "desc": "Las tribus libias entre el desierto y el mar.",
+  "tag": "lib",
+  "culture_tag": "bereber",
+  "religion_tag": "anc"
  },
  {
   "id": "numidia",
@@ -391,7 +472,10 @@
   ],
   "gov": "monarquia",
   "adj": "Numida",
-  "desc": "Jinetes numidas, la mejor caballeria de Africa."
+  "desc": "Jinetes numidas, la mejor caballeria de Africa.",
+  "tag": "num",
+  "culture_tag": "bereber",
+  "religion_tag": "anc"
  },
  {
   "id": "mauretania",
@@ -405,7 +489,10 @@
   ],
   "gov": "monarquia",
   "adj": "Mauritano",
-  "desc": "El extremo occidental de Africa y las Columnas de Hercules."
+  "desc": "El extremo occidental de Africa y las Columnas de Hercules.",
+  "tag": "mau",
+  "culture_tag": "bereber",
+  "religion_tag": "anc"
  },
  {
   "id": "nubia",
@@ -419,7 +506,10 @@
   ],
   "gov": "monarquia",
   "adj": "Nubio",
-  "desc": "El reino de Kerma, entre la primera y la tercera catarata."
+  "desc": "El reino de Kerma, entre la primera y la tercera catarata.",
+  "tag": "nub",
+  "culture_tag": "nubio",
+  "religion_tag": "nil"
  },
  {
   "id": "kush",
@@ -433,7 +523,10 @@
   ],
   "gov": "teocracia",
   "adj": "Kushita",
-  "desc": "Los arqueros del sur y el oro del desierto."
+  "desc": "Los arqueros del sur y el oro del desierto.",
+  "tag": "kus",
+  "culture_tag": "nubio",
+  "religion_tag": "nil"
  },
  {
   "id": "arabia",
@@ -447,7 +540,10 @@
   ],
   "gov": "monarquia",
   "adj": "Arabigo",
-  "desc": "Las tribus del Hiyaz y las rutas de caravanas."
+  "desc": "Las tribus del Hiyaz y las rutas de caravanas.",
+  "tag": "ara",
+  "culture_tag": "arabigo",
+  "religion_tag": "anc"
  },
  {
   "id": "dilmun",
@@ -461,7 +557,10 @@
   ],
   "gov": "republica",
   "adj": "Dilmunita",
-  "desc": "El emporio del golfo, entre Mesopotamia y el Indo."
+  "desc": "El emporio del golfo, entre Mesopotamia y el Indo.",
+  "tag": "dil",
+  "culture_tag": "arabigo",
+  "religion_tag": "anc"
  },
  {
   "id": "saba",
@@ -475,7 +574,10 @@
   ],
   "gov": "monarquia",
   "adj": "Sabeo",
-  "desc": "Incienso, mirra y las montanas verdes del sur."
+  "desc": "Incienso, mirra y las montanas verdes del sur.",
+  "tag": "sab",
+  "culture_tag": "arabigo",
+  "religion_tag": "anc"
  },
  {
   "id": "urartu",
@@ -489,7 +591,10 @@
   ],
   "gov": "monarquia",
   "adj": "Urarteo",
-  "desc": "Fortalezas de montana en torno al lago Van."
+  "desc": "Fortalezas de montana en torno al lago Van.",
+  "tag": "ura",
+  "culture_tag": "caucasico",
+  "religion_tag": "anc"
  },
  {
   "id": "media",
@@ -503,7 +608,10 @@
   ],
   "gov": "monarquia",
   "adj": "Medo",
-  "desc": "Los caballos de la meseta irania."
+  "desc": "Los caballos de la meseta irania.",
+  "tag": "med",
+  "culture_tag": "iranio",
+  "religion_tag": "anc"
  },
  {
   "id": "persia",
@@ -518,7 +626,10 @@
   "gov": "monarquia",
   "adj": "Persa",
   "desc": "La tierra de Anshan y de los grandes reyes.",
-  "era": 2
+  "era": 2,
+  "tag": "per",
+  "culture_tag": "iranio",
+  "religion_tag": "anc"
  },
  {
   "id": "britania",
@@ -532,7 +643,10 @@
   ],
   "gov": "republica",
   "adj": "Britano",
-  "desc": "Las islas del estaño y de los circulos de piedra."
+  "desc": "Las islas del estaño y de los circulos de piedra.",
+  "tag": "bri",
+  "culture_tag": "megalitico",
+  "religion_tag": "nat"
  },
  {
   "id": "caledonia",
@@ -546,7 +660,10 @@
   ],
   "gov": "monarquia",
   "adj": "Caledonio",
-  "desc": "Las tierras altas del norte."
+  "desc": "Las tierras altas del norte.",
+  "tag": "cal",
+  "culture_tag": "megalitico",
+  "religion_tag": "nat"
  },
  {
   "id": "germania",
@@ -560,7 +677,10 @@
   ],
   "gov": "monarquia",
   "adj": "Germanico",
-  "desc": "Los bosques y marismas del norte."
+  "desc": "Los bosques y marismas del norte.",
+  "tag": "ger",
+  "culture_tag": "nordico",
+  "religion_tag": "nat"
  },
  {
   "id": "escandia",
@@ -574,7 +694,10 @@
   ],
   "gov": "monarquia",
   "adj": "Escandio",
-  "desc": "Los estrechos y las islas del norte."
+  "desc": "Los estrechos y las islas del norte.",
+  "tag": "esc",
+  "culture_tag": "nordico",
+  "religion_tag": "nat"
  },
  {
   "id": "alba_longa",
@@ -590,7 +713,10 @@
   "adj": "Latino",
   "era": 0,
   "earliest_year": -1200,
-  "desc": "Estado latino historico independiente. Disponible a partir de 1200 a.C.; fecha aproximada o tradicional."
+  "desc": "Estado latino historico independiente. Disponible a partir de 1200 a.C.; fecha aproximada o tradicional.",
+  "tag": "alb",
+  "culture_tag": "italico",
+  "religion_tag": "med"
  },
  {
   "id": "lavinium",
@@ -606,7 +732,10 @@
   "adj": "Latino",
   "era": 0,
   "earliest_year": -1200,
-  "desc": "Estado latino historico independiente. Disponible a partir de 1200 a.C.; fecha aproximada o tradicional."
+  "desc": "Estado latino historico independiente. Disponible a partir de 1200 a.C.; fecha aproximada o tradicional.",
+  "tag": "lav",
+  "culture_tag": "italico",
+  "religion_tag": "med"
  },
  {
   "id": "tusculum",
@@ -622,7 +751,10 @@
   "adj": "Latino",
   "era": 0,
   "earliest_year": -1000,
-  "desc": "Estado latino historico independiente. Disponible a partir de 1000 a.C.; fecha aproximada o tradicional."
+  "desc": "Estado latino historico independiente. Disponible a partir de 1000 a.C.; fecha aproximada o tradicional.",
+  "tag": "tus",
+  "culture_tag": "italico",
+  "religion_tag": "med"
  },
  {
   "id": "aricia",
@@ -638,7 +770,10 @@
   "adj": "Latino",
   "era": 0,
   "earliest_year": -1000,
-  "desc": "Estado latino historico independiente. Disponible a partir de 1000 a.C.; fecha aproximada o tradicional."
+  "desc": "Estado latino historico independiente. Disponible a partir de 1000 a.C.; fecha aproximada o tradicional.",
+  "tag": "ari",
+  "culture_tag": "italico",
+  "religion_tag": "med"
  },
  {
   "id": "roma",
@@ -654,6 +789,9 @@
   "adj": "Latino",
   "era": 0,
   "earliest_year": -753,
-  "desc": "Estado latino historico independiente. Disponible a partir de 753 a.C.; fecha aproximada o tradicional."
+  "desc": "Estado latino historico independiente. Disponible a partir de 753 a.C.; fecha aproximada o tradicional.",
+  "tag": "rom",
+  "culture_tag": "italico",
+  "religion_tag": "med"
  }
 ]

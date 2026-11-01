@@ -589,7 +589,7 @@ void Game::drawProvincePanel() {
         ui.rect(row, Color(16, 18, 21, 180));
         ui.outline(row, sim.nationColor(a.nation).withAlpha(100), 1);
         ui.icon(G.iconFor(a.unit), {row.x + 4, row.y + 3, 28, 28});
-        std::string un = a.unit >= 0 ? C.unit(a.unit).name : "?";
+        std::string un = a.unit >= 0 ? sim.unitName(a.nation,a.unit) : "?";
         ui.text(un, row.x + 38, row.y + 1, 0.28f, pal::text);
         ui.text(numStr(a.men, 0) + " hombres", row.x + 38, row.y + 17, 0.23f, pal::dim);
         bool selected = (selectedArmyId == a.id);
@@ -638,6 +638,7 @@ void Game::drawNationPanel() {
     float x = r.x + 16, wd = r.w - 32;
 
     ui.rect({r.x, r.y, r.w, 4}, n.color);
+    if(ui.smallButton("Gestion nacional",{r.x+16,r.y+85,170,20}))openModal(Modal::NationDetails);
     ui.text("TU NACION", x, r.y + 12, 0.24f, pal::faint);
     drawMedia(G.nationMedia(n,C),{r.x+r.w-78,r.y+12,62,62});
     ui.text(ellipsize(G.font, n.name, 0.52f, wd - 70), x, r.y + 30, 0.52f, pal::text);
@@ -902,6 +903,8 @@ void Game::drawModal() {
         case Modal::Diplomacy: drawDiplomacyModal(); break;
         case Modal::Chronicle: drawChronicleModal(); break;
         case Modal::Elections: drawElectionsModal(); break;
+        case Modal::NationDetails: drawNationDetails(); break;
+        case Modal::Negotiation: drawNegotiation(); break;
         case Modal::Resources: drawResourcesModal(); break;
         case Modal::Technology: drawTechnologyModal(); break;
         case Modal::Help: drawHelpModal(); break;
@@ -1021,15 +1024,17 @@ void Game::drawRecruitModal() {
     const Nation& n = sim.nations[(size_t)sim.player];
     ui.textR("Oro " + numStr(n.gold, 0) + "  ·  Mano de obra " + numStr(n.manpower, 1) + "k",
              r.x + r.w - 24, r.y + 68, 0.26f, pal::dim);
-    for (int k = 0; k < (int)C.units.size(); ++k) {
+    if(ui.wheel)modalScroll-=(int)ui.wheel;
+    modalScroll=std::clamp(modalScroll,0,std::max(0,(int)C.units.size()-4));
+    for (int k = modalScroll; k < std::min(modalScroll+4,(int)C.units.size()); ++k) {
         const UnitDef& u = C.unit(k);
         std::string why;
         bool can = sim.canRecruit(sim.player, selectedProvince, k, &why);
-        Rect row(r.x + 20, r.y + 96 + k * 100, r.w - 40, 92);
+        Rect row(r.x + 20, r.y + 96 + (k-modalScroll) * 100, r.w - 40, 92);
         ui.rect(row, Color(19, 21, 25, 220));
         ui.outline(row, can ? pal::borderSoft : Color(70, 66, 60, 100), 1);
         ui.icon(G.iconFor(k), {row.x + 10, row.y + 18, 56, 56});
-        ui.text(u.name, row.x + 78, row.y + 8, 0.40f, pal::text);
+        ui.text(sim.unitName(sim.player,(int)(&u-C.units.data())), row.x + 78, row.y + 8, 0.40f, pal::text);
         ui.text("Era: " + C.era(u.era).shortName + "  ·  " + std::to_string(u.men) + " hombres  ·  ATQ " +
                 numStr(u.atk, 0) + "  DEF " + numStr(u.defense, 0), row.x + 78, row.y + 34, 0.25f, pal::dim);
         ui.text(unitCosts(u), row.x + 78, row.y + 54, 0.25f, pal::goldDim);
@@ -1043,6 +1048,9 @@ void Game::drawRecruitModal() {
             ui.tooltip = why;
         }
     }
+    if(ui.smallButton("Subir",{r.x+24,r.y+r.h-36,90,26},modalScroll>0))--modalScroll;
+    if(ui.smallButton("Bajar",{r.x+124,r.y+r.h-36,90,26},modalScroll+4<(int)C.units.size()))++modalScroll;
+
 }
 
 void Game::drawDiplomacyModal() {
@@ -1079,10 +1087,11 @@ void Game::drawDiplomacyModal() {
         } else {
             ui.text("En paz", row.x + 60, row.y + 47, 0.23f, pal::faint);
         }
+        if(ui.smallButton("Negociar",{row.x+row.w-280,row.y+16,125,30})) {diplomacyTarget=o.id;openModal(Modal::Negotiation);}
         if (war) {
             if (ui.button("Proponer paz", {row.x + row.w - 142, row.y + 16, 128, 32}, true, pal::good, 0.26f)) {
-                if (sim.warMonths(sim.player, o.id) >= 6 || sim.nationArmyPower(o.id) < sim.nationArmyPower(sim.player) * 0.8f) {
-                    sim.makePeace(sim.player, o.id);
+                if (sim.diplomatic(sim.player,o.id,"peace")) {
+                    setStatus("Acuerdo realizado.");
                 } else {
                     setStatus(o.name + " rechaza la paz por ahora.");
                 }
@@ -1294,21 +1303,49 @@ void Game::drawLanguageFlag(Rect r, bool english) {
 void Game::drawTechnologyModal() {
     Rect r(P.w*0.5f-380, P.h*0.5f-280, 760, 560);
     drawModalFrame("Tecnologias", r);
-    const Nation& n = sim.nations[(size_t)sim.player];
-    ui.text("Puntos tecnologicos: " + numStr(n.tech, 1), r.x+24, r.y+60, 0.35f, pal::gold);
-    const int visible = 5;
-    if (ui.wheel != 0) modalScroll -= (int)ui.wheel;
-    modalScroll = std::clamp(modalScroll, 0, std::max(0, (int)C.technologies.size()-visible));
-    for (int k=0;k<visible && k+modalScroll<(int)C.technologies.size();++k) {
-        const auto& t = C.technologies[k+modalScroll];
-        float y=r.y+100+k*78;
-        drawMedia("tech_"+t.id,{r.x+24,y,60,60});
-        ui.text(t.name+" - "+numStr(t.points,0)+" pt",r.x+100,y,0.34f,pal::text);
-        ui.text(n.tech >= t.points ? "Desbloqueada" : "Bloqueada",r.x+100,y+23,0.27f,n.tech>=t.points?pal::good:pal::faint);
-        ui.text("Agricultura +"+numStr(t.farm*100,0)+"%   Militar +"+numStr(t.military*100,0)+"%",r.x+100,y+45,0.26f,pal::dim);
+    auto& n=sim.nations[sim.player];
+    const char* branches[]={"militar","economica","social"};
+    const char* labels[]={"Militar","Economica","Social"};
+    for(int j=0;j<3;++j)if(ui.tab(labels[j],{r.x+24+j*230.0f,r.y+58,220,30},technologyTab==j)){technologyTab=j;modalScroll=0;}
+    ui.text("Investigacion disponible: "+numStr(n.tech-n.spentTech,1),r.x+24,r.y+96,0.28f,pal::gold);
+    std::map<std::string,std::pair<int,int>> positions;
+    std::vector<int> list;
+    for(int i=0;i<(int)C.technologies.size();++i)if(C.technologies[i].branch==branches[technologyTab])list.push_back(i);
+    for(int pass=0;pass<(int)list.size()+1;++pass)for(int i:list) {
+        const auto& t=C.technologies[i];if(positions.count(t.id))continue;
+        bool local=false;for(int j:list)if(C.technologies[j].id==t.requires)local=true;
+        if(local&&!positions.count(t.requires))continue;
+        int depth=local?positions[t.requires].first+1:0;
+        int column=local?positions[t.requires].second:0;
+        for(const auto& p:positions)if(p.second.first==depth&&p.second.second==column)column=1;
+        positions[t.id]={depth,column};
     }
-    if(ui.smallButton("Subir",{r.x+24,r.y+r.h-40,90,28},modalScroll>0)) --modalScroll;
-    if(ui.smallButton("Bajar",{r.x+124,r.y+r.h-40,90,28},modalScroll+visible<(int)C.technologies.size())) ++modalScroll;
+    int maxDepth=0;for(const auto& p:positions)maxDepth=std::max(maxDepth,p.second.first);
+    if(ui.wheel)modalScroll-=(int)ui.wheel;
+    modalScroll=std::clamp(modalScroll,0,std::max(0,maxDepth-3));
+    for(int i:list) {
+        const auto& t=C.technologies[i];auto place=positions[t.id];int row=place.first-modalScroll;
+        if(row<0||row>=4)continue;
+        float x=r.x+24+place.second*352,y=r.y+130+row*86;
+        auto parent=positions.find(t.requires);
+        if(parent!=positions.end()&&parent->second.first>=modalScroll) {
+            float px=r.x+45+parent->second.second*352;
+            ui.rect({px,y-40,2,40},pal::goldDim);
+            ui.rect({std::min(px,x+22),y-5,std::fabs(px-x-22)+2,2},pal::goldDim);
+        }
+        ui.rect({x,y,336,72},pal::panelSoft);drawMedia("tech_"+t.id,{x+4,y+7,40,40});
+        bool known=sim.hasTech(sim.player,t.id);
+        ui.text(ellipsize(G.font,t.name,.27f,180),x+50,y+4,.27f,known?pal::good:pal::text);
+        ui.text(numStr(t.points,0)+" pt · "+yearLabel(t.year),x+50,y+25,.24f,pal::dim);
+        std::string required=t.requires.empty()?"Raiz":t.requires;
+        for(const auto& prior:C.technologies)if(prior.id==t.requires)required=prior.name;
+        ui.text(ellipsize(G.font,"Requiere: "+required,.23f,280),x+8,y+50,.23f,pal::dim);
+        bool ready=!known && sim.year>=t.year && n.tech-n.spentTech>=t.points && (t.requires.empty()||sim.hasTech(sim.player,t.requires));
+        if(ui.smallButton(known?"OK":"Investigar",{x+239,y+8,90,30},ready))sim.research(sim.player,i);
+    }
+    if(ui.smallButton("Subir",{r.x+24,r.y+r.h-38,90,28},modalScroll>0))--modalScroll;
+    if(ui.smallButton("Bajar",{r.x+124,r.y+r.h-38,90,28},modalScroll+3<maxDepth))++modalScroll;
+
 }
 
 void Game::drawResourcesModal() {
@@ -1332,4 +1369,51 @@ void Game::drawResourcesModal() {
     if(ui.smallButton("Bajar",{r.x+124,r.y+r.h-40,90,28},modalScroll+visible<(int)C.resources.size())) ++modalScroll;
 }
 
+
+void Game::drawNegotiation() {
+    Rect r(P.w*.5f-380,P.h*.5f-280,760,560);drawModalFrame("Diplomacia avanzada",r);
+    if(!sim.nationAlive(diplomacyTarget)){modal=Modal::None;return;}
+    const auto& o=sim.nations[diplomacyTarget];
+    drawMedia(G.nationMedia(o,C),{r.x+24,r.y+64,60,60});ui.text(o.name,r.x+100,r.y+70,.4f,pal::gold);
+    ui.text("Senor: "+sim.nationName(o.overlord),r.x+100,r.y+100,.26f,pal::dim);
+    const auto& allies=sim.nations[sim.player].allies;
+    ui.text(std::find(allies.begin(),allies.end(),o.id)!=allies.end()?"Alianza activa":"Sin alianza",r.x+100,r.y+125,.25f,pal::dim);
+    const char* labels[]={"Paz (6 meses de guerra)","Alianza (5 prestigio)","Romper alianza","Compartir 20 oro","Compartir 20 alimentos","Compartir 20 madera","Titere: 12 meses, 100 oro, fuerza x2","Anexar: titere 10 anos, 200 oro","Liberar titere","Compartir 20 piedra","Compartir 20 cobre"};
+    const char* actions[]={"peace","alliance","break","gold","food","wood","puppet","annex","release","stone","copper"};
+    for(int i=0;i<11;++i)if(ui.button(labels[i],{r.x+24+(i%2)*355.0f,r.y+150+(i/2)*64.0f,340,46},true,pal::gold,.27f))
+        setStatus(sim.diplomatic(sim.player,diplomacyTarget,actions[i])?"Acuerdo realizado.":"La propuesta no cumple los requisitos.");
+    if(statusTimer>0)ui.text(ellipsize(G.font,status,.26f,700),r.x+24,r.y+r.h-26,.26f,pal::gold);
+}
+void Game::drawNationDetails() {
+    Rect r(P.w*.5f-420,P.h*.5f-280,840,560);drawModalFrame("Gestion nacional",r);
+    const char* tabs[]={"Decisiones","Religion","Cultura","Militar","Consejeros"};
+    for(int i=0;i<5;++i)if(ui.tab(tabs[i],{r.x+16+i*162.0f,r.y+58,156,30},nationTab==i))nationTab=i;
+    auto& n=sim.nations[sim.player];float x=r.x+24,y=r.y+114;
+    if(nationTab==0) {
+        ui.text("40 oro por decision; espera de 5 anos.",x,y,.3f,pal::dim);
+        const char* names[]={"Festival: +10 estabilidad","Levas: +5 mano de obra, -5 estabilidad","Monarquia","Republica","Teocracia"};
+        const char* actions[]={"festival","levy","monarquia","republica","teocracia"};
+        for(int i=0;i<5;++i)if(ui.button(names[i],{x,y+44+i*64.0f,650,44}))setStatus(sim.decide(sim.player,actions[i])?"Acuerdo realizado.":"La propuesta no cumple los requisitos.");
+        if(statusTimer>0)ui.text(status,x,r.y+r.h-28,.26f,pal::gold);
+    } else if(nationTab==1) {
+        int i=0;for(const auto& rel:C.religions.array()) {
+            float yy=y+i++*74;drawMedia(rel["icon_media"].string(),{x,yy,52,52});
+            ui.text(rel["name"].string()+(n.religion==rel["tag"].string()?" *":""),x+66,yy,.32f,pal::text);
+            ui.text("Agricultura "+numStr(rel["farm"].number()*100,0)+"% · Militar "+numStr(rel["military"].number()*100,0)+"% · Estabilidad "+numStr(rel["stability"].number()*100,0)+"%",x+66,yy+27,.25f,pal::dim);
+            if(ui.smallButton("Adoptar",{r.x+r.w-130,yy,100,30},n.gold>=100 && sim.abs()-n.decisionAt>=60 && n.religion!=rel["tag"].string())){n.gold-=100;n.stability=clampf(n.stability-15,0,100);n.religion=rel["tag"].string();n.decisionAt=sim.abs();}
+        }
+        ui.text("Conversion: 100 oro, -15 estabilidad; 5 anos de espera.",x,r.y+r.h-38,.27f,pal::war);
+    } else if(nationTab==2) {
+        drawMedia("culture_"+n.culture,{x,y,96,96});
+        ui.text(C.culture(n.culture).name,x+120,y,.38f,pal::gold);
+        ui.textBlock(C.culture(n.culture).desc,x+120,y+50,620,.3f,pal::text);
+        ui.text("Agricultura "+numStr(C.culture(n.culture).farm*100,0)+"% · Militar "+numStr(C.culture(n.culture).mil*100,0)+"%",x,y+150,.3f,pal::dim);
+    } else if(nationTab==3) {
+        ui.text("Modernizar ejercitos: 20 oro por unidad; exige tecnologia.",x,y,.3f,pal::dim);
+        if(ui.button("Modernizar",{x,y+44,240,36}))for(int i=0;i<(int)sim.armies.size();++i)if(sim.armies[i].nation==sim.player)sim.upgradeArmy(i);
+        int row=0;for(const auto& a:sim.armies)if(a.nation==sim.player && row<8)ui.text(sim.unitName(sim.player,a.unit)+" · "+std::to_string(a.men),x,y+100+row++*30,.29f,pal::text);
+    } else {
+        int row=0;for(int id:n.charIds){const auto& ch=sim.chars[id];if(ch.alive && ch.role==1) {ui.portrait({x,y+row*95,64,64},ch,n.color,false);ui.text(ch.name+" · "+std::to_string(ch.age(sim.abs())),x+85,y+row++*95,.34f,pal::gold);}}
+    }
+}
 } // namespace sol

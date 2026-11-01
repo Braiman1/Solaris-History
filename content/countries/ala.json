@@ -1,0 +1,17 @@
+{
+ "id": "alashiya",
+ "name": "Alashiya",
+ "capital": "Kition",
+ "color": [
+  79,
+  111,
+  168
+ ],
+ "gov": "monarquia",
+ "adj": "Alashiyo",
+ "desc": "El reino del cobre de Chipre, entre Anatolia, Levante y Egipto.",
+ "era": 2,
+ "tag": "ala",
+ "culture_tag": "chipriota",
+ "religion_tag": "med"
+}

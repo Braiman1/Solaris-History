@@ -1,0 +1,16 @@
+{
+ "id": "escandia",
+ "name": "Escandia",
+ "capital": "Dinamarca",
+ "color": [
+  74,
+  122,
+  106
+ ],
+ "gov": "monarquia",
+ "adj": "Escandio",
+ "desc": "Los estrechos y las islas del norte.",
+ "tag": "esc",
+ "culture_tag": "nordico",
+ "religion_tag": "nat"
+}

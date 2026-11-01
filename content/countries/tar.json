@@ -1,0 +1,16 @@
+{
+ "id": "tartessos",
+ "name": "Tartessos",
+ "capital": "Valencina",
+ "color": [
+  192,
+  138,
+  46
+ ],
+ "gov": "monarquia",
+ "adj": "Tartesio",
+ "desc": "El reino del metal y de las rutas atlanticas.",
+ "tag": "tar",
+ "culture_tag": "iberico",
+ "religion_tag": "nat"
+}

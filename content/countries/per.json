@@ -1,0 +1,17 @@
+{
+ "id": "persia",
+ "name": "Persia",
+ "capital": "Anshan",
+ "color": [
+  106,
+  42,
+  90
+ ],
+ "gov": "monarquia",
+ "adj": "Persa",
+ "desc": "La tierra de Anshan y de los grandes reyes.",
+ "era": 2,
+ "tag": "per",
+ "culture_tag": "iranio",
+ "religion_tag": "anc"
+}

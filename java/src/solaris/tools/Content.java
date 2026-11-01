@@ -40,7 +40,11 @@ public final class Content {
         this.leaders = loadObject(dir.resolve("leaders.json"));
 
         for (Map<String, Object> t : loadList(dir.resolve("cultures.json"))) cultures.add(t);
-        for (Map<String, Object> t : loadList(dir.resolve("nations.json"))) nations.add(t);
+        for (Object tag : Json.arr(Json.parse(Files.readString(dir.resolve("countries/index.json"), StandardCharsets.UTF_8)))) {
+            Map<String,Object> country=loadObject(dir.resolve("countries/" + tag + ".json"));
+            country.put("culture",Json.str(country,"culture_tag"));
+            nations.add(country);
+        }
         for (Map<String, Object> t : loadList(dir.resolve("units.json"))) units.add(t);
         for (Map<String, Object> t : loadList(dir.resolve("buildings.json"))) buildings.add(t);
         for (Map<String, Object> t : loadList(dir.resolve("eras.json"))) eras.add(t);

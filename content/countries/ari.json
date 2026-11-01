@@ -1,0 +1,18 @@
+{
+ "id": "aricia",
+ "name": "Aricia",
+ "capital": "Aricia",
+ "color": [
+  155,
+  65,
+  65
+ ],
+ "gov": "monarquia",
+ "adj": "Latino",
+ "era": 0,
+ "earliest_year": -1000,
+ "desc": "Estado latino historico independiente. Disponible a partir de 1000 a.C.; fecha aproximada o tradicional.",
+ "tag": "ari",
+ "culture_tag": "italico",
+ "religion_tag": "med"
+}

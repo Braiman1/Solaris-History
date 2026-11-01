@@ -1,0 +1,16 @@
+{
+ "id": "dacia",
+ "name": "Dacia",
+ "capital": "Cucuteni",
+ "color": [
+  78,
+  122,
+  58
+ ],
+ "gov": "monarquia",
+ "adj": "Dacio",
+ "desc": "Las grandes aldeas de la cultura Cucuteni-Tripilia.",
+ "tag": "dac",
+ "culture_tag": "danubiano",
+ "religion_tag": "anc"
+}

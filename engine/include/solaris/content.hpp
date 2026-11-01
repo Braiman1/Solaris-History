@@ -9,6 +9,8 @@
 namespace sol {
 
 struct TechnologyDef {
+    std::string branch, requires;
+    int year = -3300;
     std::string id, name, desc;
     float points = 0, farm = 0, military = 0;
 };
@@ -67,6 +69,7 @@ struct TraitDef {
 
 struct NationTemplate {
     std::string id, name, culture, capitalName, gov, adj, desc;
+    std::string tag, religionTag;
     int earliestYear = -3300;
     int era = 0;
     Color color;
@@ -90,6 +93,7 @@ struct ProvinceDef {
 };
 
 struct Content {
+    Json strategy, religions, unitRules;
     std::string dir;
     int startYear = -3300;
     std::map<std::string, int> terrainIndex, resourceIndex, cultureIndex, unitIndex,

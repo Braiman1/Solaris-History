@@ -1,0 +1,16 @@
+{
+ "id": "acad",
+ "name": "Acad",
+ "capital": "Kish",
+ "color": [
+  155,
+  107,
+  58
+ ],
+ "gov": "monarquia",
+ "adj": "Acadio",
+ "desc": "El imperio de los cuatro confines, bajo un solo rey.",
+ "tag": "aca",
+ "culture_tag": "semita",
+ "religion_tag": "mes"
+}

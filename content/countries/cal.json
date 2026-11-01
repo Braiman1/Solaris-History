@@ -1,0 +1,16 @@
+{
+ "id": "caledonia",
+ "name": "Caledonia",
+ "capital": "Escocia",
+ "color": [
+  58,
+  90,
+  122
+ ],
+ "gov": "monarquia",
+ "adj": "Caledonio",
+ "desc": "Las tierras altas del norte.",
+ "tag": "cal",
+ "culture_tag": "megalitico",
+ "religion_tag": "nat"
+}

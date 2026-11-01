@@ -4454,5 +4454,1581 @@
  {
   "es": "TOMA",
   "en": "CAPTURES"
+ },
+ {
+  "es": "Gestion nacional",
+  "en": "National management"
+ },
+ {
+  "es": "Decisiones",
+  "en": "Decisions"
+ },
+ {
+  "es": "Religion",
+  "en": "Religion"
+ },
+ {
+  "es": "Economica",
+  "en": "Economic"
+ },
+ {
+  "es": "Social",
+  "en": "Social"
+ },
+ {
+  "es": "Diplomacia avanzada",
+  "en": "Advanced diplomacy"
+ },
+ {
+  "es": "Negociar",
+  "en": "Negotiate"
+ },
+ {
+  "es": "Investigar",
+  "en": "Research"
+ },
+ {
+  "es": "Investigacion disponible:",
+  "en": "Available research:"
+ },
+ {
+  "es": "Requiere:",
+  "en": "Requires:"
+ },
+ {
+  "es": "Raiz",
+  "en": "Root"
+ },
+ {
+  "es": "Tecnologia investigada.",
+  "en": "Technology researched."
+ },
+ {
+  "es": "Faltan puntos, fecha o requisito previo.",
+  "en": "Points, date or prerequisite missing."
+ },
+ {
+  "es": "Senor:",
+  "en": "Overlord:"
+ },
+ {
+  "es": "Paz (6 meses de guerra)",
+  "en": "Peace (6 months at war)"
+ },
+ {
+  "es": "Alianza (5 prestigio)",
+  "en": "Alliance (5 prestige)"
+ },
+ {
+  "es": "Romper alianza",
+  "en": "Break alliance"
+ },
+ {
+  "es": "Compartir 20 oro",
+  "en": "Share 20 gold"
+ },
+ {
+  "es": "Compartir 20 alimentos",
+  "en": "Share 20 food"
+ },
+ {
+  "es": "Compartir 20 madera",
+  "en": "Share 20 wood"
+ },
+ {
+  "es": "Titere: 12 meses, 100 oro, fuerza x2",
+  "en": "Puppet: 12 months, 100 gold, power x2"
+ },
+ {
+  "es": "Anexar: titere 10 anos, 200 oro",
+  "en": "Annex: puppet for 10 years, 200 gold"
+ },
+ {
+  "es": "Liberar titere",
+  "en": "Release puppet"
+ },
+ {
+  "es": "Acuerdo realizado.",
+  "en": "Agreement completed."
+ },
+ {
+  "es": "La propuesta no cumple los requisitos.",
+  "en": "The proposal does not meet the requirements."
+ },
+ {
+  "es": "40 oro por decision; espera de 5 anos.",
+  "en": "40 gold per decision; 5-year cooldown."
+ },
+ {
+  "es": "Festival: +10 estabilidad",
+  "en": "Festival: +10 stability"
+ },
+ {
+  "es": "Levas: +5 mano de obra, -5 estabilidad",
+  "en": "Levies: +5 manpower, -5 stability"
+ },
+ {
+  "es": "Adoptar",
+  "en": "Adopt"
+ },
+ {
+  "es": "Conversion: 100 oro, -15 estabilidad; 5 anos de espera.",
+  "en": "Conversion: 100 gold, -15 stability; 5-year cooldown."
+ },
+ {
+  "es": "Modernizar ejercitos: 20 oro por unidad; exige tecnologia.",
+  "en": "Upgrade armies: 20 gold per unit; technology required."
+ },
+ {
+  "es": "Modernizar",
+  "en": "Upgrade"
+ },
+ {
+  "es": "Falta tecnologia militar",
+  "en": "Military technology missing"
+ },
+ {
+  "es": "Culto del Nilo",
+  "en": "Nile cults"
+ },
+ {
+  "es": "Cultos mesopotamicos",
+  "en": "Mesopotamian cults"
+ },
+ {
+  "es": "Culto a los antepasados",
+  "en": "Ancestor worship"
+ },
+ {
+  "es": "Cultos de la naturaleza",
+  "en": "Nature cults"
+ },
+ {
+  "es": "Cultos mediterraneos",
+  "en": "Mediterranean cults"
+ },
+ {
+  "es": "Tradicion oral",
+  "en": "Oral tradition"
+ },
+ {
+  "es": "Templos",
+  "en": "Temples"
+ },
+ {
+  "es": "Codigos legales",
+  "en": "Legal codes"
+ },
+ {
+  "es": "Alfabeto",
+  "en": "Alphabet"
+ },
+ {
+  "es": "Filosofia",
+  "en": "Philosophy"
+ },
+ {
+  "es": "Administracion",
+  "en": "Administration"
+ },
+ {
+  "es": "Derecho clasico",
+  "en": "Classical law"
+ },
+ {
+  "es": "Arqueria",
+  "en": "Archery"
+ },
+ {
+  "es": "Carros de guerra",
+  "en": "War chariots"
+ },
+ {
+  "es": "Caballeria",
+  "en": "Cavalry"
+ },
+ {
+  "es": "Ejercitos profesionales",
+  "en": "Professional armies"
+ },
+ {
+  "es": "Poliorcetica",
+  "en": "Siegecraft"
+ },
+ {
+  "es": "Tactica clasica",
+  "en": "Classical tactics"
+ },
+ {
+  "es": "Navegacion a vela",
+  "en": "Sailing"
+ },
+ {
+  "es": "Rutas comerciales",
+  "en": "Trade routes"
+ },
+ {
+  "es": "Acuñacion",
+  "en": "Coinage"
+ },
+ {
+  "es": "Carreteras",
+  "en": "Roads"
+ },
+ {
+  "es": "Ingenieria",
+  "en": "Engineering"
+ },
+ {
+  "es": "Economia clasica",
+  "en": "Classical economy"
+ },
+ {
+  "es": "Guerrero de bronce",
+  "en": "Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro",
+  "en": "Iron infantry"
+ },
+ {
+  "es": "Infante profesional",
+  "en": "Professional infantry"
+ },
+ {
+  "es": "Arquero",
+  "en": "Archer"
+ },
+ {
+  "es": "Arquero compuesto",
+  "en": "Composite bowman"
+ },
+ {
+  "es": "Arquero profesional",
+  "en": "Professional archer"
+ },
+ {
+  "es": "Carro de guerra",
+  "en": "War chariot"
+ },
+ {
+  "es": "Jinete acorazado",
+  "en": "Armored horseman"
+ },
+ {
+  "es": "Galera",
+  "en": "Galley"
+ },
+ {
+  "es": "Birreme",
+  "en": "Bireme"
+ },
+ {
+  "es": "Trirreme",
+  "en": "Trireme"
+ },
+ {
+  "es": "Legionario",
+  "en": "Legionary"
+ },
+ {
+  "es": "Hoplita",
+  "en": "Hoplite"
+ },
+ {
+  "es": "del Nilo",
+  "en": "of the Nile"
+ },
+ {
+  "es": "Carro del faraon",
+  "en": "Pharaoh's chariot"
+ },
+ {
+  "es": "Trirreme romana",
+  "en": "Roman trireme"
+ },
+ {
+  "es": "Trirreme helenica",
+  "en": "Hellenic trireme"
+ },
+ {
+  "es": "Unidad evolucionada:",
+  "en": "Upgraded unit:"
+ },
+ {
+  "es": "Compartir 20 piedra",
+  "en": "Share 20 stone"
+ },
+ {
+  "es": "Compartir 20 cobre",
+  "en": "Share 20 copper"
+ },
+ {
+  "es": "Soldado del Nilo",
+  "en": "Egyptian Soldier"
+ },
+ {
+  "es": "Lancero del Nilo",
+  "en": "Egyptian Spearman"
+ },
+ {
+  "es": "Jinete del Nilo",
+  "en": "Egyptian Horseman"
+ },
+ {
+  "es": "Barco del Nilo",
+  "en": "Egyptian Ship"
+ },
+ {
+  "es": "Guerrero de bronce del Nilo",
+  "en": "Egyptian Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro del Nilo",
+  "en": "Egyptian Iron infantry"
+ },
+ {
+  "es": "Infante profesional del Nilo",
+  "en": "Egyptian Professional infantry"
+ },
+ {
+  "es": "Arquero del Nilo",
+  "en": "Egyptian Archer"
+ },
+ {
+  "es": "Arquero compuesto del Nilo",
+  "en": "Egyptian Composite bowman"
+ },
+ {
+  "es": "Arquero profesional del Nilo",
+  "en": "Egyptian Professional archer"
+ },
+ {
+  "es": "Caballeria del Nilo",
+  "en": "Egyptian Cavalry"
+ },
+ {
+  "es": "Jinete acorazado del Nilo",
+  "en": "Egyptian Armored horseman"
+ },
+ {
+  "es": "Galera del Nilo",
+  "en": "Egyptian Galley"
+ },
+ {
+  "es": "Birreme del Nilo",
+  "en": "Egyptian Bireme"
+ },
+ {
+  "es": "Trirreme del Nilo",
+  "en": "Egyptian Trireme"
+ },
+ {
+  "es": "Soldado Nubios",
+  "en": "Nubian Soldier"
+ },
+ {
+  "es": "Lancero Nubios",
+  "en": "Nubian Spearman"
+ },
+ {
+  "es": "Jinete Nubios",
+  "en": "Nubian Horseman"
+ },
+ {
+  "es": "Barco Nubios",
+  "en": "Nubian Ship"
+ },
+ {
+  "es": "Guerrero de bronce Nubios",
+  "en": "Nubian Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro Nubios",
+  "en": "Nubian Iron infantry"
+ },
+ {
+  "es": "Infante profesional Nubios",
+  "en": "Nubian Professional infantry"
+ },
+ {
+  "es": "Arquero Nubios",
+  "en": "Nubian Archer"
+ },
+ {
+  "es": "Arquero compuesto Nubios",
+  "en": "Nubian Composite bowman"
+ },
+ {
+  "es": "Arquero profesional Nubios",
+  "en": "Nubian Professional archer"
+ },
+ {
+  "es": "Carro de guerra Nubios",
+  "en": "Nubian War chariot"
+ },
+ {
+  "es": "Caballeria Nubios",
+  "en": "Nubian Cavalry"
+ },
+ {
+  "es": "Jinete acorazado Nubios",
+  "en": "Nubian Armored horseman"
+ },
+ {
+  "es": "Galera Nubios",
+  "en": "Nubian Galley"
+ },
+ {
+  "es": "Birreme Nubios",
+  "en": "Nubian Bireme"
+ },
+ {
+  "es": "Trirreme Nubios",
+  "en": "Nubian Trireme"
+ },
+ {
+  "es": "Soldado de Uruk",
+  "en": "Sumerian Soldier"
+ },
+ {
+  "es": "Lancero de Uruk",
+  "en": "Sumerian Spearman"
+ },
+ {
+  "es": "Jinete de Uruk",
+  "en": "Sumerian Horseman"
+ },
+ {
+  "es": "Barco de Uruk",
+  "en": "Sumerian Ship"
+ },
+ {
+  "es": "Guerrero de bronce de Uruk",
+  "en": "Sumerian Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro de Uruk",
+  "en": "Sumerian Iron infantry"
+ },
+ {
+  "es": "Infante profesional de Uruk",
+  "en": "Sumerian Professional infantry"
+ },
+ {
+  "es": "Arquero de Uruk",
+  "en": "Sumerian Archer"
+ },
+ {
+  "es": "Arquero compuesto de Uruk",
+  "en": "Sumerian Composite bowman"
+ },
+ {
+  "es": "Arquero profesional de Uruk",
+  "en": "Sumerian Professional archer"
+ },
+ {
+  "es": "Carro de guerra de Uruk",
+  "en": "Sumerian War chariot"
+ },
+ {
+  "es": "Caballeria de Uruk",
+  "en": "Sumerian Cavalry"
+ },
+ {
+  "es": "Jinete acorazado de Uruk",
+  "en": "Sumerian Armored horseman"
+ },
+ {
+  "es": "Galera de Uruk",
+  "en": "Sumerian Galley"
+ },
+ {
+  "es": "Birreme de Uruk",
+  "en": "Sumerian Bireme"
+ },
+ {
+  "es": "Trirreme de Uruk",
+  "en": "Sumerian Trireme"
+ },
+ {
+  "es": "Soldado del Levante",
+  "en": "Semitic Soldier"
+ },
+ {
+  "es": "Lancero del Levante",
+  "en": "Semitic Spearman"
+ },
+ {
+  "es": "Jinete del Levante",
+  "en": "Semitic Horseman"
+ },
+ {
+  "es": "Barco del Levante",
+  "en": "Semitic Ship"
+ },
+ {
+  "es": "Guerrero de bronce del Levante",
+  "en": "Semitic Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro del Levante",
+  "en": "Semitic Iron infantry"
+ },
+ {
+  "es": "Infante profesional del Levante",
+  "en": "Semitic Professional infantry"
+ },
+ {
+  "es": "Arquero del Levante",
+  "en": "Semitic Archer"
+ },
+ {
+  "es": "Arquero compuesto del Levante",
+  "en": "Semitic Composite bowman"
+ },
+ {
+  "es": "Arquero profesional del Levante",
+  "en": "Semitic Professional archer"
+ },
+ {
+  "es": "Carro de guerra del Levante",
+  "en": "Semitic War chariot"
+ },
+ {
+  "es": "Caballeria del Levante",
+  "en": "Semitic Cavalry"
+ },
+ {
+  "es": "Jinete acorazado del Levante",
+  "en": "Semitic Armored horseman"
+ },
+ {
+  "es": "Galera del Levante",
+  "en": "Semitic Galley"
+ },
+ {
+  "es": "Birreme del Levante",
+  "en": "Semitic Bireme"
+ },
+ {
+  "es": "Trirreme del Levante",
+  "en": "Semitic Trireme"
+ },
+ {
+  "es": "Soldado Elamitas",
+  "en": "Elamite Soldier"
+ },
+ {
+  "es": "Lancero Elamitas",
+  "en": "Elamite Spearman"
+ },
+ {
+  "es": "Jinete Elamitas",
+  "en": "Elamite Horseman"
+ },
+ {
+  "es": "Barco Elamitas",
+  "en": "Elamite Ship"
+ },
+ {
+  "es": "Guerrero de bronce Elamitas",
+  "en": "Elamite Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro Elamitas",
+  "en": "Elamite Iron infantry"
+ },
+ {
+  "es": "Infante profesional Elamitas",
+  "en": "Elamite Professional infantry"
+ },
+ {
+  "es": "Arquero Elamitas",
+  "en": "Elamite Archer"
+ },
+ {
+  "es": "Arquero compuesto Elamitas",
+  "en": "Elamite Composite bowman"
+ },
+ {
+  "es": "Arquero profesional Elamitas",
+  "en": "Elamite Professional archer"
+ },
+ {
+  "es": "Carro de guerra Elamitas",
+  "en": "Elamite War chariot"
+ },
+ {
+  "es": "Caballeria Elamitas",
+  "en": "Elamite Cavalry"
+ },
+ {
+  "es": "Jinete acorazado Elamitas",
+  "en": "Elamite Armored horseman"
+ },
+ {
+  "es": "Galera Elamitas",
+  "en": "Elamite Galley"
+ },
+ {
+  "es": "Birreme Elamitas",
+  "en": "Elamite Bireme"
+ },
+ {
+  "es": "Trirreme Elamitas",
+  "en": "Elamite Trireme"
+ },
+ {
+  "es": "Soldado anatolio",
+  "en": "Anatolian Soldier"
+ },
+ {
+  "es": "Lancero anatolio",
+  "en": "Anatolian Spearman"
+ },
+ {
+  "es": "Jinete anatolio",
+  "en": "Anatolian Horseman"
+ },
+ {
+  "es": "Barco anatolio",
+  "en": "Anatolian Ship"
+ },
+ {
+  "es": "Guerrero de bronce anatolio",
+  "en": "Anatolian Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro anatolio",
+  "en": "Anatolian Iron infantry"
+ },
+ {
+  "es": "Infante profesional anatolio",
+  "en": "Anatolian Professional infantry"
+ },
+ {
+  "es": "Arquero anatolio",
+  "en": "Anatolian Archer"
+ },
+ {
+  "es": "Arquero compuesto anatolio",
+  "en": "Anatolian Composite bowman"
+ },
+ {
+  "es": "Arquero profesional anatolio",
+  "en": "Anatolian Professional archer"
+ },
+ {
+  "es": "Carro de guerra anatolio",
+  "en": "Anatolian War chariot"
+ },
+ {
+  "es": "Caballeria anatolio",
+  "en": "Anatolian Cavalry"
+ },
+ {
+  "es": "Jinete acorazado anatolio",
+  "en": "Anatolian Armored horseman"
+ },
+ {
+  "es": "Galera anatolio",
+  "en": "Anatolian Galley"
+ },
+ {
+  "es": "Birreme anatolio",
+  "en": "Anatolian Bireme"
+ },
+ {
+  "es": "Trirreme anatolio",
+  "en": "Anatolian Trireme"
+ },
+ {
+  "es": "Soldado egeo",
+  "en": "Aegean Soldier"
+ },
+ {
+  "es": "Lancero egeo",
+  "en": "Aegean Spearman"
+ },
+ {
+  "es": "Jinete egeo",
+  "en": "Aegean Horseman"
+ },
+ {
+  "es": "Barco egeo",
+  "en": "Aegean Ship"
+ },
+ {
+  "es": "Guerrero de bronce egeo",
+  "en": "Aegean Bronze warrior"
+ },
+ {
+  "es": "Infante profesional egeo",
+  "en": "Aegean Professional infantry"
+ },
+ {
+  "es": "Arquero egeo",
+  "en": "Aegean Archer"
+ },
+ {
+  "es": "Arquero compuesto egeo",
+  "en": "Aegean Composite bowman"
+ },
+ {
+  "es": "Arquero profesional egeo",
+  "en": "Aegean Professional archer"
+ },
+ {
+  "es": "Carro de guerra egeo",
+  "en": "Aegean War chariot"
+ },
+ {
+  "es": "Caballeria egeo",
+  "en": "Aegean Cavalry"
+ },
+ {
+  "es": "Jinete acorazado egeo",
+  "en": "Aegean Armored horseman"
+ },
+ {
+  "es": "Galera egeo",
+  "en": "Aegean Galley"
+ },
+ {
+  "es": "Birreme egeo",
+  "en": "Aegean Bireme"
+ },
+ {
+  "es": "Soldado Balcanicos",
+  "en": "Balkan Soldier"
+ },
+ {
+  "es": "Lancero Balcanicos",
+  "en": "Balkan Spearman"
+ },
+ {
+  "es": "Jinete Balcanicos",
+  "en": "Balkan Horseman"
+ },
+ {
+  "es": "Barco Balcanicos",
+  "en": "Balkan Ship"
+ },
+ {
+  "es": "Guerrero de bronce Balcanicos",
+  "en": "Balkan Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro Balcanicos",
+  "en": "Balkan Iron infantry"
+ },
+ {
+  "es": "Infante profesional Balcanicos",
+  "en": "Balkan Professional infantry"
+ },
+ {
+  "es": "Arquero Balcanicos",
+  "en": "Balkan Archer"
+ },
+ {
+  "es": "Arquero compuesto Balcanicos",
+  "en": "Balkan Composite bowman"
+ },
+ {
+  "es": "Arquero profesional Balcanicos",
+  "en": "Balkan Professional archer"
+ },
+ {
+  "es": "Carro de guerra Balcanicos",
+  "en": "Balkan War chariot"
+ },
+ {
+  "es": "Caballeria Balcanicos",
+  "en": "Balkan Cavalry"
+ },
+ {
+  "es": "Jinete acorazado Balcanicos",
+  "en": "Balkan Armored horseman"
+ },
+ {
+  "es": "Galera Balcanicos",
+  "en": "Balkan Galley"
+ },
+ {
+  "es": "Birreme Balcanicos",
+  "en": "Balkan Bireme"
+ },
+ {
+  "es": "Trirreme Balcanicos",
+  "en": "Balkan Trireme"
+ },
+ {
+  "es": "Soldado Danubianos",
+  "en": "Danubian Soldier"
+ },
+ {
+  "es": "Lancero Danubianos",
+  "en": "Danubian Spearman"
+ },
+ {
+  "es": "Jinete Danubianos",
+  "en": "Danubian Horseman"
+ },
+ {
+  "es": "Barco Danubianos",
+  "en": "Danubian Ship"
+ },
+ {
+  "es": "Guerrero de bronce Danubianos",
+  "en": "Danubian Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro Danubianos",
+  "en": "Danubian Iron infantry"
+ },
+ {
+  "es": "Infante profesional Danubianos",
+  "en": "Danubian Professional infantry"
+ },
+ {
+  "es": "Arquero Danubianos",
+  "en": "Danubian Archer"
+ },
+ {
+  "es": "Arquero compuesto Danubianos",
+  "en": "Danubian Composite bowman"
+ },
+ {
+  "es": "Arquero profesional Danubianos",
+  "en": "Danubian Professional archer"
+ },
+ {
+  "es": "Carro de guerra Danubianos",
+  "en": "Danubian War chariot"
+ },
+ {
+  "es": "Caballeria Danubianos",
+  "en": "Danubian Cavalry"
+ },
+ {
+  "es": "Jinete acorazado Danubianos",
+  "en": "Danubian Armored horseman"
+ },
+ {
+  "es": "Galera Danubianos",
+  "en": "Danubian Galley"
+ },
+ {
+  "es": "Birreme Danubianos",
+  "en": "Danubian Bireme"
+ },
+ {
+  "es": "Trirreme Danubianos",
+  "en": "Danubian Trireme"
+ },
+ {
+  "es": "Soldado Megaliticos",
+  "en": "Megalithic Soldier"
+ },
+ {
+  "es": "Lancero Megaliticos",
+  "en": "Megalithic Spearman"
+ },
+ {
+  "es": "Jinete Megaliticos",
+  "en": "Megalithic Horseman"
+ },
+ {
+  "es": "Barco Megaliticos",
+  "en": "Megalithic Ship"
+ },
+ {
+  "es": "Guerrero de bronce Megaliticos",
+  "en": "Megalithic Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro Megaliticos",
+  "en": "Megalithic Iron infantry"
+ },
+ {
+  "es": "Infante profesional Megaliticos",
+  "en": "Megalithic Professional infantry"
+ },
+ {
+  "es": "Arquero Megaliticos",
+  "en": "Megalithic Archer"
+ },
+ {
+  "es": "Arquero compuesto Megaliticos",
+  "en": "Megalithic Composite bowman"
+ },
+ {
+  "es": "Arquero profesional Megaliticos",
+  "en": "Megalithic Professional archer"
+ },
+ {
+  "es": "Carro de guerra Megaliticos",
+  "en": "Megalithic War chariot"
+ },
+ {
+  "es": "Caballeria Megaliticos",
+  "en": "Megalithic Cavalry"
+ },
+ {
+  "es": "Jinete acorazado Megaliticos",
+  "en": "Megalithic Armored horseman"
+ },
+ {
+  "es": "Galera Megaliticos",
+  "en": "Megalithic Galley"
+ },
+ {
+  "es": "Birreme Megaliticos",
+  "en": "Megalithic Bireme"
+ },
+ {
+  "es": "Trirreme Megaliticos",
+  "en": "Megalithic Trireme"
+ },
+ {
+  "es": "Soldado Nordicos",
+  "en": "Nordic Soldier"
+ },
+ {
+  "es": "Lancero Nordicos",
+  "en": "Nordic Spearman"
+ },
+ {
+  "es": "Jinete Nordicos",
+  "en": "Nordic Horseman"
+ },
+ {
+  "es": "Barco Nordicos",
+  "en": "Nordic Ship"
+ },
+ {
+  "es": "Guerrero de bronce Nordicos",
+  "en": "Nordic Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro Nordicos",
+  "en": "Nordic Iron infantry"
+ },
+ {
+  "es": "Infante profesional Nordicos",
+  "en": "Nordic Professional infantry"
+ },
+ {
+  "es": "Arquero Nordicos",
+  "en": "Nordic Archer"
+ },
+ {
+  "es": "Arquero compuesto Nordicos",
+  "en": "Nordic Composite bowman"
+ },
+ {
+  "es": "Arquero profesional Nordicos",
+  "en": "Nordic Professional archer"
+ },
+ {
+  "es": "Carro de guerra Nordicos",
+  "en": "Nordic War chariot"
+ },
+ {
+  "es": "Caballeria Nordicos",
+  "en": "Nordic Cavalry"
+ },
+ {
+  "es": "Jinete acorazado Nordicos",
+  "en": "Nordic Armored horseman"
+ },
+ {
+  "es": "Galera Nordicos",
+  "en": "Nordic Galley"
+ },
+ {
+  "es": "Birreme Nordicos",
+  "en": "Nordic Bireme"
+ },
+ {
+  "es": "Trirreme Nordicos",
+  "en": "Nordic Trireme"
+ },
+ {
+  "es": "Soldado Esteparios",
+  "en": "Steppe Soldier"
+ },
+ {
+  "es": "Lancero Esteparios",
+  "en": "Steppe Spearman"
+ },
+ {
+  "es": "Jinete Esteparios",
+  "en": "Steppe Horseman"
+ },
+ {
+  "es": "Barco Esteparios",
+  "en": "Steppe Ship"
+ },
+ {
+  "es": "Guerrero de bronce Esteparios",
+  "en": "Steppe Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro Esteparios",
+  "en": "Steppe Iron infantry"
+ },
+ {
+  "es": "Infante profesional Esteparios",
+  "en": "Steppe Professional infantry"
+ },
+ {
+  "es": "Arquero Esteparios",
+  "en": "Steppe Archer"
+ },
+ {
+  "es": "Arquero compuesto Esteparios",
+  "en": "Steppe Composite bowman"
+ },
+ {
+  "es": "Arquero profesional Esteparios",
+  "en": "Steppe Professional archer"
+ },
+ {
+  "es": "Carro de guerra Esteparios",
+  "en": "Steppe War chariot"
+ },
+ {
+  "es": "Caballeria Esteparios",
+  "en": "Steppe Cavalry"
+ },
+ {
+  "es": "Jinete acorazado Esteparios",
+  "en": "Steppe Armored horseman"
+ },
+ {
+  "es": "Galera Esteparios",
+  "en": "Steppe Galley"
+ },
+ {
+  "es": "Birreme Esteparios",
+  "en": "Steppe Bireme"
+ },
+ {
+  "es": "Trirreme Esteparios",
+  "en": "Steppe Trireme"
+ },
+ {
+  "es": "Soldado Caucasicos",
+  "en": "Caucasian Soldier"
+ },
+ {
+  "es": "Lancero Caucasicos",
+  "en": "Caucasian Spearman"
+ },
+ {
+  "es": "Jinete Caucasicos",
+  "en": "Caucasian Horseman"
+ },
+ {
+  "es": "Barco Caucasicos",
+  "en": "Caucasian Ship"
+ },
+ {
+  "es": "Guerrero de bronce Caucasicos",
+  "en": "Caucasian Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro Caucasicos",
+  "en": "Caucasian Iron infantry"
+ },
+ {
+  "es": "Infante profesional Caucasicos",
+  "en": "Caucasian Professional infantry"
+ },
+ {
+  "es": "Arquero Caucasicos",
+  "en": "Caucasian Archer"
+ },
+ {
+  "es": "Arquero compuesto Caucasicos",
+  "en": "Caucasian Composite bowman"
+ },
+ {
+  "es": "Arquero profesional Caucasicos",
+  "en": "Caucasian Professional archer"
+ },
+ {
+  "es": "Carro de guerra Caucasicos",
+  "en": "Caucasian War chariot"
+ },
+ {
+  "es": "Caballeria Caucasicos",
+  "en": "Caucasian Cavalry"
+ },
+ {
+  "es": "Jinete acorazado Caucasicos",
+  "en": "Caucasian Armored horseman"
+ },
+ {
+  "es": "Galera Caucasicos",
+  "en": "Caucasian Galley"
+ },
+ {
+  "es": "Birreme Caucasicos",
+  "en": "Caucasian Bireme"
+ },
+ {
+  "es": "Trirreme Caucasicos",
+  "en": "Caucasian Trireme"
+ },
+ {
+  "es": "Soldado Iranios",
+  "en": "Iranian Soldier"
+ },
+ {
+  "es": "Lancero Iranios",
+  "en": "Iranian Spearman"
+ },
+ {
+  "es": "Jinete Iranios",
+  "en": "Iranian Horseman"
+ },
+ {
+  "es": "Barco Iranios",
+  "en": "Iranian Ship"
+ },
+ {
+  "es": "Guerrero de bronce Iranios",
+  "en": "Iranian Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro Iranios",
+  "en": "Iranian Iron infantry"
+ },
+ {
+  "es": "Infante profesional Iranios",
+  "en": "Iranian Professional infantry"
+ },
+ {
+  "es": "Arquero Iranios",
+  "en": "Iranian Archer"
+ },
+ {
+  "es": "Arquero compuesto Iranios",
+  "en": "Iranian Composite bowman"
+ },
+ {
+  "es": "Arquero profesional Iranios",
+  "en": "Iranian Professional archer"
+ },
+ {
+  "es": "Carro de guerra Iranios",
+  "en": "Iranian War chariot"
+ },
+ {
+  "es": "Caballeria Iranios",
+  "en": "Iranian Cavalry"
+ },
+ {
+  "es": "Jinete acorazado Iranios",
+  "en": "Iranian Armored horseman"
+ },
+ {
+  "es": "Galera Iranios",
+  "en": "Iranian Galley"
+ },
+ {
+  "es": "Birreme Iranios",
+  "en": "Iranian Bireme"
+ },
+ {
+  "es": "Trirreme Iranios",
+  "en": "Iranian Trireme"
+ },
+ {
+  "es": "Soldado Bereberes",
+  "en": "Berber Soldier"
+ },
+ {
+  "es": "Lancero Bereberes",
+  "en": "Berber Spearman"
+ },
+ {
+  "es": "Jinete Bereberes",
+  "en": "Berber Horseman"
+ },
+ {
+  "es": "Barco Bereberes",
+  "en": "Berber Ship"
+ },
+ {
+  "es": "Guerrero de bronce Bereberes",
+  "en": "Berber Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro Bereberes",
+  "en": "Berber Iron infantry"
+ },
+ {
+  "es": "Infante profesional Bereberes",
+  "en": "Berber Professional infantry"
+ },
+ {
+  "es": "Arquero Bereberes",
+  "en": "Berber Archer"
+ },
+ {
+  "es": "Arquero compuesto Bereberes",
+  "en": "Berber Composite bowman"
+ },
+ {
+  "es": "Arquero profesional Bereberes",
+  "en": "Berber Professional archer"
+ },
+ {
+  "es": "Carro de guerra Bereberes",
+  "en": "Berber War chariot"
+ },
+ {
+  "es": "Caballeria Bereberes",
+  "en": "Berber Cavalry"
+ },
+ {
+  "es": "Jinete acorazado Bereberes",
+  "en": "Berber Armored horseman"
+ },
+ {
+  "es": "Galera Bereberes",
+  "en": "Berber Galley"
+ },
+ {
+  "es": "Birreme Bereberes",
+  "en": "Berber Bireme"
+ },
+ {
+  "es": "Trirreme Bereberes",
+  "en": "Berber Trireme"
+ },
+ {
+  "es": "Soldado Arabigos",
+  "en": "Arabian Soldier"
+ },
+ {
+  "es": "Lancero Arabigos",
+  "en": "Arabian Spearman"
+ },
+ {
+  "es": "Jinete Arabigos",
+  "en": "Arabian Horseman"
+ },
+ {
+  "es": "Barco Arabigos",
+  "en": "Arabian Ship"
+ },
+ {
+  "es": "Guerrero de bronce Arabigos",
+  "en": "Arabian Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro Arabigos",
+  "en": "Arabian Iron infantry"
+ },
+ {
+  "es": "Infante profesional Arabigos",
+  "en": "Arabian Professional infantry"
+ },
+ {
+  "es": "Arquero Arabigos",
+  "en": "Arabian Archer"
+ },
+ {
+  "es": "Arquero compuesto Arabigos",
+  "en": "Arabian Composite bowman"
+ },
+ {
+  "es": "Arquero profesional Arabigos",
+  "en": "Arabian Professional archer"
+ },
+ {
+  "es": "Carro de guerra Arabigos",
+  "en": "Arabian War chariot"
+ },
+ {
+  "es": "Caballeria Arabigos",
+  "en": "Arabian Cavalry"
+ },
+ {
+  "es": "Jinete acorazado Arabigos",
+  "en": "Arabian Armored horseman"
+ },
+ {
+  "es": "Galera Arabigos",
+  "en": "Arabian Galley"
+ },
+ {
+  "es": "Birreme Arabigos",
+  "en": "Arabian Bireme"
+ },
+ {
+  "es": "Trirreme Arabigos",
+  "en": "Arabian Trireme"
+ },
+ {
+  "es": "Soldado latino",
+  "en": "Latin Soldier"
+ },
+ {
+  "es": "Lancero latino",
+  "en": "Latin Spearman"
+ },
+ {
+  "es": "Jinete latino",
+  "en": "Latin Horseman"
+ },
+ {
+  "es": "Barco latino",
+  "en": "Latin Ship"
+ },
+ {
+  "es": "Guerrero de bronce latino",
+  "en": "Latin Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro latino",
+  "en": "Latin Iron infantry"
+ },
+ {
+  "es": "Arquero latino",
+  "en": "Latin Archer"
+ },
+ {
+  "es": "Arquero compuesto latino",
+  "en": "Latin Composite bowman"
+ },
+ {
+  "es": "Arquero profesional latino",
+  "en": "Latin Professional archer"
+ },
+ {
+  "es": "Carro de guerra latino",
+  "en": "Latin War chariot"
+ },
+ {
+  "es": "Caballeria latino",
+  "en": "Latin Cavalry"
+ },
+ {
+  "es": "Equites",
+  "en": "Latin Armored horseman"
+ },
+ {
+  "es": "Galera latino",
+  "en": "Latin Galley"
+ },
+ {
+  "es": "Birreme latino",
+  "en": "Latin Bireme"
+ },
+ {
+  "es": "Soldado Ibericos",
+  "en": "Iberian Soldier"
+ },
+ {
+  "es": "Lancero Ibericos",
+  "en": "Iberian Spearman"
+ },
+ {
+  "es": "Jinete Ibericos",
+  "en": "Iberian Horseman"
+ },
+ {
+  "es": "Barco Ibericos",
+  "en": "Iberian Ship"
+ },
+ {
+  "es": "Guerrero de bronce Ibericos",
+  "en": "Iberian Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro Ibericos",
+  "en": "Iberian Iron infantry"
+ },
+ {
+  "es": "Infante profesional Ibericos",
+  "en": "Iberian Professional infantry"
+ },
+ {
+  "es": "Arquero Ibericos",
+  "en": "Iberian Archer"
+ },
+ {
+  "es": "Arquero compuesto Ibericos",
+  "en": "Iberian Composite bowman"
+ },
+ {
+  "es": "Arquero profesional Ibericos",
+  "en": "Iberian Professional archer"
+ },
+ {
+  "es": "Carro de guerra Ibericos",
+  "en": "Iberian War chariot"
+ },
+ {
+  "es": "Caballeria Ibericos",
+  "en": "Iberian Cavalry"
+ },
+ {
+  "es": "Jinete acorazado Ibericos",
+  "en": "Iberian Armored horseman"
+ },
+ {
+  "es": "Galera Ibericos",
+  "en": "Iberian Galley"
+ },
+ {
+  "es": "Birreme Ibericos",
+  "en": "Iberian Bireme"
+ },
+ {
+  "es": "Trirreme Ibericos",
+  "en": "Iberian Trireme"
+ },
+ {
+  "es": "Soldado Sardos",
+  "en": "Sardinian Soldier"
+ },
+ {
+  "es": "Lancero Sardos",
+  "en": "Sardinian Spearman"
+ },
+ {
+  "es": "Jinete Sardos",
+  "en": "Sardinian Horseman"
+ },
+ {
+  "es": "Barco Sardos",
+  "en": "Sardinian Ship"
+ },
+ {
+  "es": "Guerrero de bronce Sardos",
+  "en": "Sardinian Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro Sardos",
+  "en": "Sardinian Iron infantry"
+ },
+ {
+  "es": "Infante profesional Sardos",
+  "en": "Sardinian Professional infantry"
+ },
+ {
+  "es": "Arquero Sardos",
+  "en": "Sardinian Archer"
+ },
+ {
+  "es": "Arquero compuesto Sardos",
+  "en": "Sardinian Composite bowman"
+ },
+ {
+  "es": "Arquero profesional Sardos",
+  "en": "Sardinian Professional archer"
+ },
+ {
+  "es": "Carro de guerra Sardos",
+  "en": "Sardinian War chariot"
+ },
+ {
+  "es": "Caballeria Sardos",
+  "en": "Sardinian Cavalry"
+ },
+ {
+  "es": "Jinete acorazado Sardos",
+  "en": "Sardinian Armored horseman"
+ },
+ {
+  "es": "Galera Sardos",
+  "en": "Sardinian Galley"
+ },
+ {
+  "es": "Birreme Sardos",
+  "en": "Sardinian Bireme"
+ },
+ {
+  "es": "Trirreme Sardos",
+  "en": "Sardinian Trireme"
+ },
+ {
+  "es": "Soldado Chipriotas",
+  "en": "Cypriot Soldier"
+ },
+ {
+  "es": "Lancero Chipriotas",
+  "en": "Cypriot Spearman"
+ },
+ {
+  "es": "Jinete Chipriotas",
+  "en": "Cypriot Horseman"
+ },
+ {
+  "es": "Barco Chipriotas",
+  "en": "Cypriot Ship"
+ },
+ {
+  "es": "Guerrero de bronce Chipriotas",
+  "en": "Cypriot Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro Chipriotas",
+  "en": "Cypriot Iron infantry"
+ },
+ {
+  "es": "Infante profesional Chipriotas",
+  "en": "Cypriot Professional infantry"
+ },
+ {
+  "es": "Arquero Chipriotas",
+  "en": "Cypriot Archer"
+ },
+ {
+  "es": "Arquero compuesto Chipriotas",
+  "en": "Cypriot Composite bowman"
+ },
+ {
+  "es": "Arquero profesional Chipriotas",
+  "en": "Cypriot Professional archer"
+ },
+ {
+  "es": "Carro de guerra Chipriotas",
+  "en": "Cypriot War chariot"
+ },
+ {
+  "es": "Caballeria Chipriotas",
+  "en": "Cypriot Cavalry"
+ },
+ {
+  "es": "Jinete acorazado Chipriotas",
+  "en": "Cypriot Armored horseman"
+ },
+ {
+  "es": "Galera Chipriotas",
+  "en": "Cypriot Galley"
+ },
+ {
+  "es": "Birreme Chipriotas",
+  "en": "Cypriot Bireme"
+ },
+ {
+  "es": "Trirreme Chipriotas",
+  "en": "Cypriot Trireme"
+ },
+ {
+  "es": "Alianza activa",
+  "en": "Active alliance"
+ },
+ {
+  "es": "Sin alianza",
+  "en": "No alliance"
  }
 ]

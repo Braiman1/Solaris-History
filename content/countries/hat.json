@@ -1,0 +1,16 @@
+{
+ "id": "hatti",
+ "name": "Hatti",
+ "capital": "Hattusa",
+ "color": [
+  138,
+  59,
+  46
+ ],
+ "gov": "monarquia",
+ "adj": "Hatti",
+ "desc": "El reino de las mil divinidades y de los carros de guerra.",
+ "tag": "hat",
+ "culture_tag": "anatolio",
+ "religion_tag": "anc"
+}

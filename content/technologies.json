@@ -6,7 +6,10 @@
   "farm": 0.05,
   "military": 0,
   "wikipedia": "Agriculture",
-  "desc": "Se desbloquea automaticamente al alcanzar 1 puntos tecnologicos."
+  "desc": "Se desbloquea automaticamente al alcanzar 1 puntos tecnologicos.",
+  "branch": "economica",
+  "requires": "",
+  "year": -3300
  },
  {
   "id": "ceramica",
@@ -15,7 +18,10 @@
   "farm": 0,
   "military": 0,
   "wikipedia": "Pottery",
-  "desc": "Se desbloquea automaticamente al alcanzar 3 puntos tecnologicos."
+  "desc": "Se desbloquea automaticamente al alcanzar 3 puntos tecnologicos.",
+  "branch": "economica",
+  "requires": "agricultura",
+  "year": -3300
  },
  {
   "id": "riego",
@@ -24,7 +30,10 @@
   "farm": 0.1,
   "military": 0,
   "wikipedia": "Irrigation",
-  "desc": "Se desbloquea automaticamente al alcanzar 12 puntos tecnologicos."
+  "desc": "Se desbloquea automaticamente al alcanzar 12 puntos tecnologicos.",
+  "branch": "economica",
+  "requires": "ceramica",
+  "year": -3300
  },
  {
   "id": "rueda",
@@ -33,7 +42,10 @@
   "farm": 0,
   "military": 0.04,
   "wikipedia": "Wheel",
-  "desc": "Se desbloquea automaticamente al alcanzar 30 puntos tecnologicos."
+  "desc": "Se desbloquea automaticamente al alcanzar 30 puntos tecnologicos.",
+  "branch": "militar",
+  "requires": "",
+  "year": -3300
  },
  {
   "id": "escritura",
@@ -42,7 +54,10 @@
   "farm": 0,
   "military": 0,
   "wikipedia": "Writing",
-  "desc": "Se desbloquea automaticamente al alcanzar 60 puntos tecnologicos."
+  "desc": "Se desbloquea automaticamente al alcanzar 60 puntos tecnologicos.",
+  "branch": "social",
+  "requires": "tradicion",
+  "year": -3300
  },
  {
   "id": "cobre",
@@ -51,7 +66,10 @@
   "farm": 0,
   "military": 0.08,
   "wikipedia": "Copper metallurgy in Africa",
-  "desc": "Se desbloquea automaticamente al alcanzar 120 puntos tecnologicos."
+  "desc": "Se desbloquea automaticamente al alcanzar 120 puntos tecnologicos.",
+  "branch": "militar",
+  "requires": "rueda",
+  "year": -3300
  },
  {
   "id": "bronce",
@@ -60,7 +78,10 @@
   "farm": 0,
   "military": 0.12,
   "wikipedia": "Bronze Age",
-  "desc": "Se desbloquea automaticamente al alcanzar 420 puntos tecnologicos."
+  "desc": "Se desbloquea automaticamente al alcanzar 420 puntos tecnologicos.",
+  "branch": "militar",
+  "requires": "cobre",
+  "year": -3300
  },
  {
   "id": "hierro",
@@ -69,6 +90,199 @@
   "farm": 0,
   "military": 0.15,
   "wikipedia": "Iron Age",
-  "desc": "Se desbloquea automaticamente al alcanzar 950 puntos tecnologicos."
+  "desc": "Se desbloquea automaticamente al alcanzar 950 puntos tecnologicos.",
+  "branch": "militar",
+  "requires": "bronce",
+  "year": -1200
+ },
+ {
+  "id": "arco",
+  "name": "Arqueria",
+  "points": 35,
+  "year": -3300,
+  "branch": "militar",
+  "requires": "cobre",
+  "farm": 0,
+  "military": 0.04
+ },
+ {
+  "id": "carros",
+  "name": "Carros de guerra",
+  "points": 160,
+  "year": -2000,
+  "branch": "militar",
+  "requires": "arco",
+  "farm": 0,
+  "military": 0.04
+ },
+ {
+  "id": "caballeria",
+  "name": "Caballeria",
+  "points": 350,
+  "year": -900,
+  "branch": "militar",
+  "requires": "carros",
+  "farm": 0,
+  "military": 0.04
+ },
+ {
+  "id": "legion",
+  "name": "Ejercitos profesionales",
+  "points": 600,
+  "year": -300,
+  "branch": "militar",
+  "requires": "caballeria",
+  "farm": 0,
+  "military": 0.04
+ },
+ {
+  "id": "poliorcetica",
+  "name": "Poliorcetica",
+  "points": 900,
+  "year": -100,
+  "branch": "militar",
+  "requires": "legion",
+  "farm": 0,
+  "military": 0.04
+ },
+ {
+  "id": "tactica_clasica",
+  "name": "Tactica clasica",
+  "points": 1200,
+  "year": 0,
+  "branch": "militar",
+  "requires": "poliorcetica",
+  "farm": 0,
+  "military": 0.04
+ },
+ {
+  "id": "vela",
+  "name": "Navegacion a vela",
+  "points": 30,
+  "year": -3000,
+  "branch": "economica",
+  "requires": "riego",
+  "farm": 0.025,
+  "military": 0
+ },
+ {
+  "id": "comercio",
+  "name": "Rutas comerciales",
+  "points": 100,
+  "year": -2000,
+  "branch": "economica",
+  "requires": "vela",
+  "farm": 0.025,
+  "military": 0
+ },
+ {
+  "id": "moneda",
+  "name": "Acuñacion",
+  "points": 250,
+  "year": -600,
+  "branch": "economica",
+  "requires": "comercio",
+  "farm": 0.025,
+  "military": 0
+ },
+ {
+  "id": "carreteras",
+  "name": "Carreteras",
+  "points": 450,
+  "year": -400,
+  "branch": "economica",
+  "requires": "moneda",
+  "farm": 0.025,
+  "military": 0
+ },
+ {
+  "id": "ingenieria",
+  "name": "Ingenieria",
+  "points": 800,
+  "year": -100,
+  "branch": "economica",
+  "requires": "carreteras",
+  "farm": 0.025,
+  "military": 0
+ },
+ {
+  "id": "economia_clasica",
+  "name": "Economia clasica",
+  "points": 1200,
+  "year": 0,
+  "branch": "economica",
+  "requires": "ingenieria",
+  "farm": 0.025,
+  "military": 0
+ },
+ {
+  "id": "tradicion",
+  "name": "Tradicion oral",
+  "points": 1,
+  "year": -3300,
+  "branch": "social",
+  "requires": "",
+  "farm": 0,
+  "military": 0
+ },
+ {
+  "id": "templos",
+  "name": "Templos",
+  "points": 20,
+  "year": -3000,
+  "branch": "social",
+  "requires": "tradicion",
+  "farm": 0,
+  "military": 0
+ },
+ {
+  "id": "leyes",
+  "name": "Codigos legales",
+  "points": 100,
+  "year": -2000,
+  "branch": "social",
+  "requires": "templos",
+  "farm": 0,
+  "military": 0
+ },
+ {
+  "id": "alfabeto",
+  "name": "Alfabeto",
+  "points": 250,
+  "year": -1000,
+  "branch": "social",
+  "requires": "leyes",
+  "farm": 0,
+  "military": 0
+ },
+ {
+  "id": "filosofia",
+  "name": "Filosofia",
+  "points": 500,
+  "year": -500,
+  "branch": "social",
+  "requires": "alfabeto",
+  "farm": 0,
+  "military": 0
+ },
+ {
+  "id": "administracion",
+  "name": "Administracion",
+  "points": 800,
+  "year": -200,
+  "branch": "social",
+  "requires": "filosofia",
+  "farm": 0,
+  "military": 0
+ },
+ {
+  "id": "derecho",
+  "name": "Derecho clasico",
+  "points": 1200,
+  "year": 0,
+  "branch": "social",
+  "requires": "administracion",
+  "farm": 0,
+  "military": 0
  }
 ]

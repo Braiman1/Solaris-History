@@ -55,12 +55,16 @@ bool Content::load(const std::string& contentDir) {
     if (!loadJson("buildings.json", jBuildings)) return false;
     if (!loadJson("eras.json", jEras)) return false;
     if (!loadJson("leaders.json", jLeaders)) return false;
-    if (!loadJson("nations.json", jNations)) return false;
 
+
+    strategy=Json::parse(readTextFile(joinPath(dir,"strategy.json")));
+    religions=Json::parse(readTextFile(joinPath(dir,"religions.json")));
+    unitRules=jUnits;
     Json techs = Json::parse(readTextFile(joinPath(dir, "technologies.json")));
     if (!techs.isArray() || techs.size() == 0) return false;
     for (const auto& j : techs.array()) {
         TechnologyDef t;
+        t.branch=j["branch"].string(); t.requires=j["requires"].string(); t.year=j["year"].integer(-3300);
         t.id = j["id"].string(); t.name = j["name"].string(); t.desc = j["desc"].string();
         t.points = (float)j["points"].number(); t.farm = (float)j["farm"].number(); t.military = (float)j["military"].number();
         technologies.push_back(t);
@@ -221,11 +225,16 @@ bool Content::load(const std::string& contentDir) {
         traits.push_back(d);
     }
 
-    for (auto& j : jNations.array()) {
+    Json countryIndex=Json::parse(readTextFile(joinPath(dir,"countries/index.json")));
+    if (!countryIndex.isArray()) return false;
+    for (auto& tag : countryIndex.array()) {
+        Json j=Json::parse(readTextFile(joinPath(dir,"countries/"+tag.string()+".json")));
+        if (!j.isObject()) return false;
         NationTemplate d;
         d.id = j["id"].string();
         d.name = j["name"].string(d.id);
-        d.culture = j["culture"].string();
+        d.culture = j["culture_tag"].string(j["culture"].string());
+        d.tag=j["tag"].string(); d.religionTag=j["religion_tag"].string();
         d.capitalName = j["capital"].string();
         d.earliestYear = j["earliest_year"].integer(-3300);
         d.gov = j["gov"].string("monarquia");

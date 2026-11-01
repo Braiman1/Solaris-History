@@ -1,0 +1,16 @@
+{
+ "id": "kush",
+ "name": "Kush",
+ "capital": "Kerma",
+ "color": [
+  74,
+  107,
+  58
+ ],
+ "gov": "teocracia",
+ "adj": "Kushita",
+ "desc": "Los arqueros del sur y el oro del desierto.",
+ "tag": "kus",
+ "culture_tag": "nubio",
+ "religion_tag": "nil"
+}

@@ -1,0 +1,16 @@
+{
+ "id": "tracia",
+ "name": "Tracia",
+ "capital": "Varna",
+ "color": [
+  150,
+  110,
+  50
+ ],
+ "gov": "monarquia",
+ "adj": "Tracio",
+ "desc": "Oro, caballos y montanas entre el Danubio y el Egeo.",
+ "tag": "tra",
+ "culture_tag": "balcanico",
+ "religion_tag": "anc"
+}

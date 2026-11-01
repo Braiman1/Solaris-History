@@ -1,0 +1,16 @@
+{
+ "id": "urartu",
+ "name": "Urartu",
+ "capital": "Van",
+ "color": [
+  74,
+  90,
+  138
+ ],
+ "gov": "monarquia",
+ "adj": "Urarteo",
+ "desc": "Fortalezas de montana en torno al lago Van.",
+ "tag": "ura",
+ "culture_tag": "caucasico",
+ "religion_tag": "anc"
+}

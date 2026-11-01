@@ -1,0 +1,16 @@
+{
+ "id": "lusitania",
+ "name": "Lusitania",
+ "capital": "Lisboa",
+ "color": [
+  122,
+  138,
+  58
+ ],
+ "gov": "republica",
+ "adj": "Lusitano",
+ "desc": "Pueblos del oeste iberico, pastores y guerreros.",
+ "tag": "lus",
+ "culture_tag": "iberico",
+ "religion_tag": "nat"
+}

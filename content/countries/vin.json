@@ -1,0 +1,16 @@
+{
+ "id": "vincha",
+ "name": "Vincha",
+ "capital": "Vinca",
+ "color": [
+  160,
+  82,
+  45
+ ],
+ "gov": "teocracia",
+ "adj": "Vinchano",
+ "desc": "La cultura del Danubio y de sus templos de barro.",
+ "tag": "vin",
+ "culture_tag": "balcanico",
+ "religion_tag": "anc"
+}

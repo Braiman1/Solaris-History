@@ -1,0 +1,18 @@
+{
+ "id": "alba_longa",
+ "name": "Alba Longa",
+ "capital": "Alba Longa",
+ "color": [
+  155,
+  65,
+  65
+ ],
+ "gov": "monarquia",
+ "adj": "Latino",
+ "era": 0,
+ "earliest_year": -1200,
+ "desc": "Estado latino historico independiente. Disponible a partir de 1200 a.C.; fecha aproximada o tradicional.",
+ "tag": "alb",
+ "culture_tag": "italico",
+ "religion_tag": "med"
+}

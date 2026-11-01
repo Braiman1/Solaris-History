@@ -1,0 +1,16 @@
+{
+ "id": "asiria",
+ "name": "Asiria",
+ "capital": "Assur",
+ "color": [
+  124,
+  127,
+  138
+ ],
+ "gov": "monarquia",
+ "adj": "Asirio",
+ "desc": "El dios Assur y un ejercito que no retrocede.",
+ "tag": "asi",
+ "culture_tag": "semita",
+ "religion_tag": "mes"
+}

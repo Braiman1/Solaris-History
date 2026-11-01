@@ -1,0 +1,16 @@
+{
+ "id": "fenicia",
+ "name": "Fenicia",
+ "capital": "Biblos",
+ "color": [
+  58,
+  126,
+  154
+ ],
+ "gov": "republica",
+ "adj": "Fenicio",
+ "desc": "Cedro, purpura y puertos que llegan a todo el Mediterraneo.",
+ "tag": "fen",
+ "culture_tag": "semita",
+ "religion_tag": "mes"
+}

@@ -1,0 +1,16 @@
+{
+ "id": "yamnaya",
+ "name": "Yamnaya",
+ "capital": "Estepa Pontica",
+ "color": [
+  110,
+  127,
+  62
+ ],
+ "gov": "monarquia",
+ "adj": "Yamnaya",
+ "desc": "Los senores de los kurganes y de la estepa sin fin.",
+ "tag": "yam",
+ "culture_tag": "estepario",
+ "religion_tag": "anc"
+}

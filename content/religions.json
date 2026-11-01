@@ -1,0 +1,47 @@
+[
+ {
+  "tag": "nil",
+  "name": "Culto del Nilo",
+  "icon": "☥",
+  "farm": 0.08,
+  "military": -0.03,
+  "stability": 0.04,
+  "icon_media": "nation_egipto"
+ },
+ {
+  "tag": "mes",
+  "name": "Cultos mesopotamicos",
+  "icon": "★",
+  "farm": 0.04,
+  "military": 0.04,
+  "stability": -0.03,
+  "icon_media": "nation_babilonia"
+ },
+ {
+  "tag": "anc",
+  "name": "Culto a los antepasados",
+  "icon": "○",
+  "farm": -0.03,
+  "military": 0.06,
+  "stability": 0.05,
+  "icon_media": "culture_balcanico"
+ },
+ {
+  "tag": "nat",
+  "name": "Cultos de la naturaleza",
+  "icon": "☀",
+  "farm": 0.1,
+  "military": -0.04,
+  "stability": 0.02,
+  "icon_media": "culture_megalitico"
+ },
+ {
+  "tag": "med",
+  "name": "Cultos mediterraneos",
+  "icon": "⚓",
+  "farm": -0.02,
+  "military": 0.03,
+  "stability": 0.03,
+  "icon_media": "nation_creta"
+ }
+]

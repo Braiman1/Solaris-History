@@ -340,7 +340,8 @@ void PoliticalMap::sync(const Sim& sim, int selected) {
         h *= 1099511628211ull;
     }
     for (auto& n : sim.nations) {
-        h ^= (uint64_t)n.color.r | ((uint64_t)n.color.g << 8) | ((uint64_t)n.color.b << 16) | ((uint64_t)n.alive << 24);
+        Color tone=sim.nationColor(n.id);
+        h ^= (uint64_t)tone.r | ((uint64_t)tone.g << 8) | ((uint64_t)tone.b << 16) | ((uint64_t)n.alive << 24);
         h *= 1099511628211ull;
     }
     if (h == checksum) return;

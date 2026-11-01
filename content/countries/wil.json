@@ -1,0 +1,16 @@
+{
+ "id": "wilusa",
+ "name": "Wilusa",
+ "capital": "Troya",
+ "color": [
+  201,
+  123,
+  60
+ ],
+ "gov": "monarquia",
+ "adj": "Wilusano",
+ "desc": "La Ilios de las leyendas, guardiana de los estrechos.",
+ "tag": "wil",
+ "culture_tag": "anatolio",
+ "religion_tag": "anc"
+}

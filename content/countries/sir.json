@@ -1,0 +1,16 @@
+{
+ "id": "siria",
+ "name": "Siria",
+ "capital": "Ebla",
+ "color": [
+  196,
+  107,
+  74
+ ],
+ "gov": "monarquia",
+ "adj": "Sirio",
+ "desc": "El corazon de las rutas entre Mesopotamia y el mar.",
+ "tag": "sir",
+ "culture_tag": "semita",
+ "religion_tag": "mes"
+}

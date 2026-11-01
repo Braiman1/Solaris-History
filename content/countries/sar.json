@@ -1,0 +1,16 @@
+{
+ "id": "sardena",
+ "name": "Sardena",
+ "capital": "Cerdana",
+ "color": [
+  90,
+  122,
+  138
+ ],
+ "gov": "republica",
+ "adj": "Sardo",
+ "desc": "Obsidiana, nuragas y pastores de las montanas sardas.",
+ "tag": "sar",
+ "culture_tag": "sardino",
+ "religion_tag": "med"
+}

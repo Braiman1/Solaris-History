@@ -688,5 +688,128 @@
   "kind": "modern_flag",
   "note": "Modern national flag used only to select the interface language.",
   "note_es": "Bandera moderna utilizada solo para elegir el idioma de la interfaz."
+ },
+ {
+  "id": "tech_arco",
+  "article": "Iron Age",
+  "author_override": "Sandstein",
+  "author_source": "https://commons.wikimedia.org/wiki/File:HMB_Keltengrab_Münsingen-Rain_Grab_91.jpg"
+ },
+ {
+  "id": "tech_carros",
+  "article": "Iron Age",
+  "author_override": "Sandstein",
+  "author_source": "https://commons.wikimedia.org/wiki/File:HMB_Keltengrab_Münsingen-Rain_Grab_91.jpg"
+ },
+ {
+  "id": "tech_caballeria",
+  "article": "Iron Age",
+  "author_override": "Sandstein",
+  "author_source": "https://commons.wikimedia.org/wiki/File:HMB_Keltengrab_Münsingen-Rain_Grab_91.jpg"
+ },
+ {
+  "id": "tech_legion",
+  "article": "Iron Age",
+  "author_override": "Sandstein",
+  "author_source": "https://commons.wikimedia.org/wiki/File:HMB_Keltengrab_Münsingen-Rain_Grab_91.jpg"
+ },
+ {
+  "id": "tech_poliorcetica",
+  "article": "Iron Age",
+  "author_override": "Sandstein",
+  "author_source": "https://commons.wikimedia.org/wiki/File:HMB_Keltengrab_Münsingen-Rain_Grab_91.jpg"
+ },
+ {
+  "id": "tech_tactica_clasica",
+  "article": "Iron Age",
+  "author_override": "Sandstein",
+  "author_source": "https://commons.wikimedia.org/wiki/File:HMB_Keltengrab_Münsingen-Rain_Grab_91.jpg"
+ },
+ {
+  "id": "tech_vela",
+  "article": "Pottery"
+ },
+ {
+  "id": "tech_comercio",
+  "article": "Pottery"
+ },
+ {
+  "id": "tech_moneda",
+  "article": "Pottery"
+ },
+ {
+  "id": "tech_carreteras",
+  "article": "Pottery"
+ },
+ {
+  "id": "tech_ingenieria",
+  "article": "Pottery"
+ },
+ {
+  "id": "tech_economia_clasica",
+  "article": "Pottery"
+ },
+ {
+  "id": "tech_tradicion",
+  "article": "Writing",
+  "file": "P1150884 Louvre Uruk III tablette écriture précunéiforme AO19936 rwk.jpg",
+  "note_es": "Tablilla de escritura precuneiforme de Uruk III conservada en el Louvre.",
+  "note": "A proto-cuneiform tablet from Uruk III in the Louvre.",
+  "author_override": "Mbzt",
+  "author_source": "https://commons.wikimedia.org/wiki/File:P1150884_Louvre_Uruk_III_tablette_%C3%A9criture_pr%C3%A9cun%C3%A9iforme_AO19936_rwk.jpg"
+ },
+ {
+  "id": "tech_templos",
+  "article": "Writing",
+  "file": "P1150884 Louvre Uruk III tablette écriture précunéiforme AO19936 rwk.jpg",
+  "note_es": "Tablilla de escritura precuneiforme de Uruk III conservada en el Louvre.",
+  "note": "A proto-cuneiform tablet from Uruk III in the Louvre.",
+  "author_override": "Mbzt",
+  "author_source": "https://commons.wikimedia.org/wiki/File:P1150884_Louvre_Uruk_III_tablette_%C3%A9criture_pr%C3%A9cun%C3%A9iforme_AO19936_rwk.jpg"
+ },
+ {
+  "id": "tech_leyes",
+  "article": "Writing",
+  "file": "P1150884 Louvre Uruk III tablette écriture précunéiforme AO19936 rwk.jpg",
+  "note_es": "Tablilla de escritura precuneiforme de Uruk III conservada en el Louvre.",
+  "note": "A proto-cuneiform tablet from Uruk III in the Louvre.",
+  "author_override": "Mbzt",
+  "author_source": "https://commons.wikimedia.org/wiki/File:P1150884_Louvre_Uruk_III_tablette_%C3%A9criture_pr%C3%A9cun%C3%A9iforme_AO19936_rwk.jpg"
+ },
+ {
+  "id": "tech_alfabeto",
+  "article": "Writing",
+  "file": "P1150884 Louvre Uruk III tablette écriture précunéiforme AO19936 rwk.jpg",
+  "note_es": "Tablilla de escritura precuneiforme de Uruk III conservada en el Louvre.",
+  "note": "A proto-cuneiform tablet from Uruk III in the Louvre.",
+  "author_override": "Mbzt",
+  "author_source": "https://commons.wikimedia.org/wiki/File:P1150884_Louvre_Uruk_III_tablette_%C3%A9criture_pr%C3%A9cun%C3%A9iforme_AO19936_rwk.jpg"
+ },
+ {
+  "id": "tech_filosofia",
+  "article": "Writing",
+  "file": "P1150884 Louvre Uruk III tablette écriture précunéiforme AO19936 rwk.jpg",
+  "note_es": "Tablilla de escritura precuneiforme de Uruk III conservada en el Louvre.",
+  "note": "A proto-cuneiform tablet from Uruk III in the Louvre.",
+  "author_override": "Mbzt",
+  "author_source": "https://commons.wikimedia.org/wiki/File:P1150884_Louvre_Uruk_III_tablette_%C3%A9criture_pr%C3%A9cun%C3%A9iforme_AO19936_rwk.jpg"
+ },
+ {
+  "id": "tech_administracion",
+  "article": "Writing",
+  "file": "P1150884 Louvre Uruk III tablette écriture précunéiforme AO19936 rwk.jpg",
+  "note_es": "Tablilla de escritura precuneiforme de Uruk III conservada en el Louvre.",
+  "note": "A proto-cuneiform tablet from Uruk III in the Louvre.",
+  "author_override": "Mbzt",
+  "author_source": "https://commons.wikimedia.org/wiki/File:P1150884_Louvre_Uruk_III_tablette_%C3%A9criture_pr%C3%A9cun%C3%A9iforme_AO19936_rwk.jpg"
+ },
+ {
+  "id": "tech_derecho",
+  "article": "Writing",
+  "file": "P1150884 Louvre Uruk III tablette écriture précunéiforme AO19936 rwk.jpg",
+  "note_es": "Tablilla de escritura precuneiforme de Uruk III conservada en el Louvre.",
+  "note": "A proto-cuneiform tablet from Uruk III in the Louvre.",
+  "author_override": "Mbzt",
+  "author_source": "https://commons.wikimedia.org/wiki/File:P1150884_Louvre_Uruk_III_tablette_%C3%A9criture_pr%C3%A9cun%C3%A9iforme_AO19936_rwk.jpg"
  }
 ]

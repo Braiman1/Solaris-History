@@ -1,0 +1,16 @@
+{
+ "id": "iberia",
+ "name": "Iberia",
+ "capital": "Los Millares",
+ "color": [
+  176,
+  106,
+  58
+ ],
+ "gov": "monarquia",
+ "adj": "Ibero",
+ "desc": "Cobre, fortalezas y clanes del sureste de Iberia.",
+ "tag": "ibe",
+ "culture_tag": "iberico",
+ "religion_tag": "nat"
+}

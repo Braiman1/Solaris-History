@@ -26,7 +26,9 @@ std::string Sim::nationAdj(int id) const {
 }
 Color Sim::nationColor(int id) const {
     if (id <= 0 || id >= (int)nations.size()) return Color(130, 120, 100);
-    return nations[(size_t)id].color;
+    const auto& n=nations[(size_t)id]; Color c=n.color;
+    float shade=n.gov=="teocracia"?1.15f:n.gov=="republica"?0.85f:1.0f;
+    return Color((int)clampf(c.r*shade,0,255),(int)clampf(c.g*shade,0,255),(int)clampf(c.b*shade,0,255));
 }
 Color Sim::provinceMapColor(int id) const {
     if (!validProvince(id)) return Color(100, 100, 100);
@@ -74,6 +76,7 @@ void Sim::init(const Content& content, int cityStateIndex) {
         n.name = cs.name;
         n.adj = cs.name;
         n.culture = cs.culture;
+        n.religion=C->strategy["religion_by_culture"][n.culture].string("anc");
         n.gov = cs.gov;
         n.color = cs.color;
         n.capital = cs.capital;
@@ -334,9 +337,14 @@ NationMods Sim::mods(int nid) const {
     m.expansion = cu.expansion * (1 + addExp);
     m.income = 1 + addIncome;
     m.build = 1 + addBuild;
-    for (const auto& t : C->technologies) if (n.tech >= t.points) {
+    for (const auto& t : C->technologies) if (hasTech(nid,t.id)) {
         m.farm += t.farm;
         m.mil += t.military;
+        if(t.branch=="social"){m.stab+=.02f;m.tech+=.01f;}
+        if(t.branch=="economica"){m.trade+=.015f;m.income+=.01f;}
+    }
+    for (const auto& rel:C->religions.array()) if(rel["tag"].string()==n.religion) {
+        m.farm+=(float)rel["farm"].number();m.mil+=(float)rel["military"].number();m.stab+=(float)rel["stability"].number();
     }
     m.legit = addLegit;
     return m;
@@ -386,12 +394,17 @@ int Sim::warMonths(int a, int b) const {
 
 void Sim::declareWar(int a, int b) {
     if (a <= 0 || b <= 0 || a == b || !nationAlive(a) || !nationAlive(b) || atWar(a, b)) return;
+    if(nations[a].overlord || nations[b].overlord==a) return;
+    if(std::find(nations[a].allies.begin(),nations[a].allies.end(),b)!=nations[a].allies.end()) return;
     nations[(size_t)a].wars.push_back(b);
     nations[(size_t)b].wars.push_back(a);
     warStart[(long long)warKey(a, b)] = abs();
     nations[(size_t)a].stability = clampf(nations[(size_t)a].stability - 2, 0, 100);
     nations[(size_t)b].stability = clampf(nations[(size_t)b].stability - 2, 0, 100);
     addLog(nations[(size_t)a].name + " declara la guerra a " + nations[(size_t)b].name + ".", 3);
+    auto defenders=nations[b].allies;
+    if(nations[b].overlord)defenders.push_back(nations[b].overlord);
+    for(int ally:defenders)if(ally!=a && nationAlive(ally) && !atWar(ally,a))declareWar(ally,a);
     if (a == player || b == player)
         alert(player, "Guerra", "Has entrado en guerra contra " + nationName(a == player ? b : a) + ".", 2);
 }
@@ -430,7 +443,7 @@ bool Sim::foundNation(int nation, int templateIndex) {
     for (auto& o : nations)
         if (o.alive && o.id != nation && o.name == t.name) return false;
 
-    n.name = t.name;
+    n.name = t.name; n.countryTag=t.tag; n.religion=t.religionTag;
     n.adj = t.adj;
     n.color = t.color;
     n.gov = t.gov;
@@ -565,7 +578,7 @@ void Sim::recomputeEconomy(int nation) {
     n.tech += techGain;
 
     // estabilidad y legitimidad
-    float targetStab = 55.0f + n.legitimacy * 0.15f;
+    float targetStab = 55.0f + n.legitimacy * 0.15f + (m.stab-1)*100;
     targetStab += buildingMod(n.capital, 7) * 100.0f;
     if (!n.wars.empty()) targetStab -= 8.0f;
     if (n.lastFood < 0) targetStab -= 12.0f;
@@ -643,6 +656,7 @@ bool Sim::canRecruit(int nation, int provId, int unitIdx, std::string* why) cons
     if (unitIdx < 0 || unitIdx >= (int)C->units.size()) return fail("Unidad invalida");
     const UnitDef& u = C->unit(unitIdx);
     const Nation& n = nations[(size_t)nation];
+    for(const auto& rule:C->unitRules.array()) if(rule["id"].string()==u.id && !rule["requires_tech"].string().empty() && !hasTech(nation,rule["requires_tech"].string()))return fail("Falta tecnologia militar");
     if (n.era < u.era) return fail("Requiere " + C->era(u.era).name);
     if (u.requires == "caballos") {
         bool horses = false;
@@ -1168,6 +1182,14 @@ void Sim::step() {
     processDeaths();
     moveArmies(*this);
 
+    for(auto& n:nations)if(nationAlive(n.id)) {
+        if(n.overlord && !nationAlive(n.overlord))n.overlord=0;
+        if(n.overlord && nationAlive(n.overlord)) {double tribute=std::clamp(n.gold,0.0,2.0);n.gold-=tribute;nations[n.overlord].gold+=tribute;}
+        if(!n.player) {
+            for(int i=0;i<(int)C->technologies.size();++i)if(research(n.id,i))break;
+            if(n.gold>100)for(int i=0;i<(int)armies.size();++i)if(armies[i].nation==n.id && upgradeArmy(i))break;
+        }
+    }
     // eventos historicos para el jugador
     if (nationAlive(player) && rng.f() < 0.012f) {
         std::vector<int> own;
@@ -1238,7 +1260,7 @@ void Sim::save(const std::string& path) const {
     if (!f) return;
     const char magic[4] = {'S', 'L', 'R', 'S'};
     fwrite(magic, 1, 4, f);
-    uint32_t ver = 2;
+    uint32_t ver = 3;
     wr(f, ver);
     int32_t y = year, mo = month, pl = player, na = nextArmyId, go = gameOver ? 1 : 0;
     wr(f, y); wr(f, mo); wr(f, pl); wr(f, na); wr(f, go);
@@ -1268,6 +1290,9 @@ void Sim::save(const std::string& path) const {
         for (int x : n.charIds) wr(f, x);
         uint32_t nw = (uint32_t)n.wars.size(); wr(f, nw);
         for (int x : n.wars) wr(f, x);
+        wr(f,n.overlord);wr(f,n.subjectSince);wr(f,n.decisionAt);wr(f,n.spentTech);wrStr(f,n.religion);wrStr(f,n.countryTag);
+        uint32_t count=(uint32_t)n.allies.size();wr(f,count);for(int x:n.allies)wr(f,x);
+        count=(uint32_t)n.discoveries.size();wr(f,count);for(const auto& x:n.discoveries)wrStr(f,x);
     }
     uint32_t nch = (uint32_t)chars.size();
     wr(f, nch);
@@ -1300,7 +1325,7 @@ bool Sim::load(const std::string& path) {
     char magic[4];
     if (fread(magic, 1, 4, f) != 4 || memcmp(magic, "SLRS", 4) != 0) { fclose(f); return false; }
     uint32_t ver = 0;
-    if (!rd(f, ver) || (ver != 1 && ver != 2)) { fclose(f); return false; }
+    if (!rd(f, ver) || (ver < 1 || ver > 3)) { fclose(f); return false; }
     int32_t y, mo, pl, na, go;
     if (!rd(f, y) || !rd(f, mo) || !rd(f, pl) || !rd(f, na) || !rd(f, go)) { fclose(f); return false; }
     year = y; month = mo; player = pl; nextArmyId = na; gameOver = go != 0;
@@ -1336,6 +1361,16 @@ bool Sim::load(const std::string& path) {
         uint32_t nw = 0; if (!rd(f, nw) || nw > 1000) { fclose(f); return false; }
         n.wars.resize(nw);
         for (auto& x : n.wars) if (!rd(f, x)) { fclose(f); return false; }
+        n.allies.clear();n.discoveries.clear();n.overlord=0;n.subjectSince=0;n.decisionAt=-1000000;n.spentTech=0;
+        n.religion=C->strategy["religion_by_culture"][n.culture].string("anc");n.countryTag.clear();
+        for(const auto& country:C->nationTemplates)if(country.name==n.name)n.countryTag=country.tag;
+        if(ver>=3) {
+            uint32_t count=0;
+            if(!rd(f,n.overlord)||!rd(f,n.subjectSince)||!rd(f,n.decisionAt)||!rd(f,n.spentTech)||!rdStr(f,n.religion)||!rdStr(f,n.countryTag)||!rd(f,count)||count>10000){fclose(f);return false;}
+            n.allies.resize(count);for(auto& x:n.allies)if(!rd(f,x)){fclose(f);return false;}
+            if(!rd(f,count)||count>1000){fclose(f);return false;}
+            n.discoveries.resize(count);for(auto& x:n.discoveries)if(!rdStr(f,x)){fclose(f);return false;}
+        } else for(const auto& t:C->technologies) if(n.tech>=t.points)n.discoveries.push_back(t.id);
     }
     uint32_t nch = 0;
     if (!rd(f, nch) || nch > 100000) { fclose(f); return false; }
@@ -1365,6 +1400,10 @@ bool Sim::load(const std::string& path) {
         if (!rd(f, e.year) || !rd(f, e.month) || !rd(f, e.kind) || !rdStr(f, e.text)) { fclose(f); return false; }
     }
     fclose(f);
+    for(const auto& n:nations) {
+        if(n.overlord<0 || n.overlord>=(int)nations.size() || (n.id>0 && n.overlord==n.id))return false;
+        for(int ally:n.allies) if(ally<=0 || ally>=(int)nations.size() || ally==n.id)return false;
+    }
     // Reject saves from different content and malformed references before the GUI uses them.
     auto validNation = [&](int id) { return id >= 0 && id < (int)nations.size(); };
     if (!validNation(player) || player == 0 || month < 0 || month >= 12) return false;
@@ -1393,4 +1432,73 @@ bool Sim::load(const std::string& path) {
     return true;
 }
 
+
+bool Sim::hasTech(int nation,const std::string& id) const {
+    if(!nationAlive(nation))return false;
+    const auto& v=nations[nation].discoveries;return std::find(v.begin(),v.end(),id)!=v.end();
+}
+bool Sim::research(int nation,int index) {
+    if(!nationAlive(nation)||index<0||index>=(int)C->technologies.size())return false;
+    auto& n=nations[nation];const auto& t=C->technologies[index];
+    if(hasTech(nation,t.id)||year<t.year||n.tech-n.spentTech<t.points||(!t.requires.empty()&&!hasTech(nation,t.requires)))return false;
+    n.spentTech+=t.points;n.discoveries.push_back(t.id);return true;
+}
+bool Sim::diplomatic(int a,int b,const std::string& action) {
+    if(a==b||!nationAlive(a)||!nationAlive(b))return false;
+    auto& me=nations[a];auto& other=nations[b];
+    auto allied=[&]{return std::find(me.allies.begin(),me.allies.end(),b)!=me.allies.end();};
+    if(action=="peace") {if(!atWar(a,b)||warMonths(a,b)<6)return false;makePeace(a,b);return true;}
+    if(action=="alliance") {
+        if(atWar(a,b)||me.overlord||other.overlord||allied()||me.prestige<5)return false;
+        me.allies.push_back(b);other.allies.push_back(a);me.prestige-=5;return true;
+    }
+    if(action=="break") {
+        if(!allied())return false;
+        me.allies.erase(std::remove(me.allies.begin(),me.allies.end(),b),me.allies.end());
+        other.allies.erase(std::remove(other.allies.begin(),other.allies.end(),a),other.allies.end());me.prestige-=5;return true;
+    }
+    if(action=="gold"||action=="food"||action=="wood"||action=="stone"||action=="copper") {
+        if(atWar(a,b))return false;
+        double* from=action=="gold"?&me.gold:action=="food"?&me.food:action=="wood"?&me.wood:action=="stone"?&me.stone:&me.copper;
+        double* to=action=="gold"?&other.gold:action=="food"?&other.food:action=="wood"?&other.wood:action=="stone"?&other.stone:&other.copper;
+        if(*from<20)return false;*from-=20;*to+=20;return true;
+    }
+    if(action=="puppet") {
+        if(!atWar(a,b)||other.overlord||me.overlord||nationArmyPower(a)<nationArmyPower(b)*2||me.gold<100||warMonths(a,b)<12)return false;
+        makePeace(a,b);other.overlord=a;other.subjectSince=abs();me.gold-=100;return true;
+    }
+    if(action=="annex") {
+        if(other.overlord!=a||abs()-other.subjectSince<120||me.gold<200||me.stability<60||b==player)return false;
+        me.gold-=200;me.stability-=10;
+        for(auto& p:prov)if(p.owner==b)p.owner=a;
+        for(auto& army:armies)if(army.nation==b)army.nation=a;
+        for(auto& p:prov)if(p.colonizer==b)p.colonizer=a;
+        auto wars=other.wars;for(int enemy:wars)makePeace(b,enemy);
+        for(auto& n:nations) {n.allies.erase(std::remove(n.allies.begin(),n.allies.end(),b),n.allies.end());if(n.overlord==b)n.overlord=a;}
+        other.alive=false;other.overlord=0;return true;
+    }
+    if(action=="release") {if(other.overlord!=a)return false;other.overlord=0;return true;}
+    return false;
+}
+bool Sim::decide(int nation,const std::string& action) {
+    if(!nationAlive(nation))return false;auto& n=nations[nation];
+    if(abs()-n.decisionAt<60||n.gold<40)return false;
+    if(action=="festival")n.stability=clampf(n.stability+10,0,100);
+    else if(action=="levy") {n.manpower+=5;n.stability=clampf(n.stability-5,0,100);}
+    else if(action=="monarquia"||action=="republica"||action=="teocracia") {if(n.gov==action)return false;n.gov=action;n.electionAt=C->gov(action).election>0?abs()+C->gov(action).election*12:0;n.stability=clampf(n.stability-10,0,100);}
+    else return false;
+    n.gold-=40;n.decisionAt=abs();return true;
+}
+std::string Sim::unitName(int nation,int unit) const {
+    if(unit<0||unit>=(int)C->units.size())return "?";
+    return C->strategy["unit_names"][nations[nation].culture][C->units[unit].id].string(C->units[unit].name);
+}
+bool Sim::upgradeArmy(int index) {
+    if(index<0||index>=(int)armies.size())return false;auto& a=armies[index];if(a.inTransit())return false;
+    auto& n=nations[a.nation];std::string next;
+    for(const auto& u:C->unitRules.array())if(u["id"].string()==C->units[a.unit].id)next=u["upgrade"].string();
+    int target=C->findUnit(next);if(target<0||n.gold<20)return false;
+    for(const auto& u:C->unitRules.array())if(u["id"].string()==next&&!hasTech(a.nation,u["requires_tech"].string()))return false;
+    n.gold-=20;a.unit=target;return true;
+}
 } // namespace sol

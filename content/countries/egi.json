@@ -1,0 +1,16 @@
+{
+ "id": "egipto",
+ "name": "Egipto",
+ "capital": "Menfis",
+ "color": [
+  212,
+  175,
+  55
+ ],
+ "gov": "monarquia",
+ "adj": "Egipcio",
+ "desc": "El reino de las Dos Tierras, del Delta a Elefantina.",
+ "tag": "egi",
+ "culture_tag": "egipcio",
+ "religion_tag": "nil"
+}

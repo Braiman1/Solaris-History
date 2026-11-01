@@ -1,0 +1,16 @@
+{
+ "id": "arabia",
+ "name": "Arabia",
+ "capital": "Hiyaz",
+ "color": [
+  176,
+  138,
+  90
+ ],
+ "gov": "monarquia",
+ "adj": "Arabigo",
+ "desc": "Las tribus del Hiyaz y las rutas de caravanas.",
+ "tag": "ara",
+ "culture_tag": "arabigo",
+ "religion_tag": "anc"
+}

@@ -1,0 +1,16 @@
+{
+ "id": "libia",
+ "name": "Libia",
+ "capital": "Cirenaica",
+ "color": [
+  160,
+  138,
+  74
+ ],
+ "gov": "monarquia",
+ "adj": "Libico",
+ "desc": "Las tribus libias entre el desierto y el mar.",
+ "tag": "lib",
+ "culture_tag": "bereber",
+ "religion_tag": "anc"
+}

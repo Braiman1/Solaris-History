@@ -1,0 +1,16 @@
+{
+ "id": "numidia",
+ "name": "Numidia",
+ "capital": "Numidia",
+ "color": [
+  176,
+  146,
+  74
+ ],
+ "gov": "monarquia",
+ "adj": "Numida",
+ "desc": "Jinetes numidas, la mejor caballeria de Africa.",
+ "tag": "num",
+ "culture_tag": "bereber",
+ "religion_tag": "anc"
+}

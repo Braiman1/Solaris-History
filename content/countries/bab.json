@@ -1,0 +1,16 @@
+{
+ "id": "babilonia",
+ "name": "Babilonia",
+ "capital": "Babilonia",
+ "color": [
+  177,
+  85,
+  60
+ ],
+ "gov": "monarquia",
+ "adj": "Babilonio",
+ "desc": "La puerta de los dioses y la ciudad de las leyes.",
+ "tag": "bab",
+ "culture_tag": "semita",
+ "religion_tag": "mes"
+}

@@ -1,0 +1,16 @@
+{
+ "id": "canaan",
+ "name": "Canaan",
+ "capital": "Jerico",
+ "color": [
+  62,
+  142,
+  90
+ ],
+ "gov": "teocracia",
+ "adj": "Cananeo",
+ "desc": "Ciudades del Jordan y de la costa, entre Egipto y Asia.",
+ "tag": "can",
+ "culture_tag": "semita",
+ "religion_tag": "mes"
+}

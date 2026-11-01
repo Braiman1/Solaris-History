@@ -1,0 +1,16 @@
+{
+ "id": "mauretania",
+ "name": "Mauretania",
+ "capital": "Marruecos",
+ "color": [
+  154,
+  106,
+  42
+ ],
+ "gov": "monarquia",
+ "adj": "Mauritano",
+ "desc": "El extremo occidental de Africa y las Columnas de Hercules.",
+ "tag": "mau",
+ "culture_tag": "bereber",
+ "religion_tag": "anc"
+}

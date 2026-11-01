@@ -295,5 +295,62 @@
   },
   {
     "id": "tech_rueda"
+  },
+  {
+    "id": "tech_arco"
+  },
+  {
+    "id": "tech_carros"
+  },
+  {
+    "id": "tech_caballeria"
+  },
+  {
+    "id": "tech_legion"
+  },
+  {
+    "id": "tech_poliorcetica"
+  },
+  {
+    "id": "tech_tactica_clasica"
+  },
+  {
+    "id": "tech_vela"
+  },
+  {
+    "id": "tech_comercio"
+  },
+  {
+    "id": "tech_moneda"
+  },
+  {
+    "id": "tech_carreteras"
+  },
+  {
+    "id": "tech_ingenieria"
+  },
+  {
+    "id": "tech_economia_clasica"
+  },
+  {
+    "id": "tech_tradicion"
+  },
+  {
+    "id": "tech_templos"
+  },
+  {
+    "id": "tech_leyes"
+  },
+  {
+    "id": "tech_alfabeto"
+  },
+  {
+    "id": "tech_filosofia"
+  },
+  {
+    "id": "tech_administracion"
+  },
+  {
+    "id": "tech_derecho"
   }
 ]

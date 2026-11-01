@@ -46,6 +46,7 @@ int main() {
     sim.init(C, 0);
     float farmBefore=sim.mods(sim.player).farm;
     sim.nations[sim.player].tech=1;
+    check(sim.research(sim.player,0), "investigacion manual de agricultura");
     check(sim.mods(sim.player).farm>farmBefore, "la tecnologia agricola mejora la produccion");
     sim.nations[sim.player].tech=0;
     const int player = sim.player;
@@ -170,6 +171,9 @@ int main() {
     latin.year=-753;
     check(latin.foundNation(lp,rome), "Roma disponible desde su fecha tradicional");
 
+    // La prueba economica usa una red de alianzas para aislarla de conquistas de la IA.
+    sim.nations[player].prestige=1000;
+    for(int other=1;other<(int)sim.nations.size();++other)if(other!=player && sim.nationAlive(other)){sim.makePeace(player,other);sim.diplomatic(player,other,"alliance");}
     // economia a largo plazo
     n.gov = "monarquia";
     n.electionAt = 0;

@@ -1,0 +1,16 @@
+{
+ "id": "media",
+ "name": "Media",
+ "capital": "Rayy",
+ "color": [
+  90,
+  74,
+  138
+ ],
+ "gov": "monarquia",
+ "adj": "Medo",
+ "desc": "Los caballos de la meseta irania.",
+ "tag": "med",
+ "culture_tag": "iranio",
+ "religion_tag": "anc"
+}

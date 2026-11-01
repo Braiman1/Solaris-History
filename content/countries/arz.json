@@ -1,0 +1,16 @@
+{
+ "id": "arzawa",
+ "name": "Arzawa",
+ "capital": "Efeso",
+ "color": [
+  168,
+  92,
+  62
+ ],
+ "gov": "monarquia",
+ "adj": "Arzawano",
+ "desc": "Las ciudades libres del oeste anatolio.",
+ "tag": "arz",
+ "culture_tag": "anatolio",
+ "religion_tag": "anc"
+}

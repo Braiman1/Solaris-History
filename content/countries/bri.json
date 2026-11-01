@@ -1,0 +1,16 @@
+{
+ "id": "britania",
+ "name": "Britania",
+ "capital": "Wessex",
+ "color": [
+  90,
+  110,
+  122
+ ],
+ "gov": "republica",
+ "adj": "Britano",
+ "desc": "Las islas del estaño y de los circulos de piedra.",
+ "tag": "bri",
+ "culture_tag": "megalitico",
+ "religion_tag": "nat"
+}

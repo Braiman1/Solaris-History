@@ -25,6 +25,11 @@ struct NationMods {
 
 struct Nation {
     int id = 0;
+    int overlord=0, subjectSince=0, decisionAt=-1000000;
+    float spentTech=0;
+    std::string religion, countryTag;
+    std::vector<int> allies;
+    std::vector<std::string> discoveries;
     std::string name, adj, culture, gov;
     Color color;
     bool isCityState = true, player = false, alive = true;
@@ -107,6 +112,12 @@ struct Sim {
     NationMods mods(int nation) const;
     float buildingMod(int provId, int which) const; // 0 food,1 growth,2 defense,3 wood,4 stone,5 copper,6 trade,7 stab,8 legit,9 tech,10 naval,11 manpower
 
+    bool hasTech(int nation,const std::string& id) const;
+    bool research(int nation,int tech);
+    bool diplomatic(int a,int b,const std::string& action);
+    bool decide(int nation,const std::string& action);
+    std::string unitName(int nation,int unit) const;
+    bool upgradeArmy(int army);
     bool atWar(int a, int b) const;
     void declareWar(int a, int b);
     void makePeace(int a, int b);

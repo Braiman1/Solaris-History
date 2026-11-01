@@ -1,0 +1,17 @@
+{
+ "id": "etruria",
+ "name": "Etruria",
+ "capital": "Etruria",
+ "color": [
+  139,
+  90,
+  139
+ ],
+ "gov": "republica",
+ "adj": "Etrusco",
+ "desc": "Los senores del metal y de los ritos de Italia central.",
+ "earliest_year": -900,
+ "tag": "etr",
+ "culture_tag": "italico",
+ "religion_tag": "med"
+}

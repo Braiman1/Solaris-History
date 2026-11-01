@@ -1,0 +1,16 @@
+{
+ "id": "nubia",
+ "name": "Nubia",
+ "capital": "Kerma",
+ "color": [
+  107,
+  74,
+  42
+ ],
+ "gov": "monarquia",
+ "adj": "Nubio",
+ "desc": "El reino de Kerma, entre la primera y la tercera catarata.",
+ "tag": "nub",
+ "culture_tag": "nubio",
+ "religion_tag": "nil"
+}

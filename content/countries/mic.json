@@ -1,0 +1,16 @@
+{
+ "id": "micenas",
+ "name": "Micenas",
+ "capital": "Micenas",
+ "color": [
+  107,
+  76,
+  154
+ ],
+ "gov": "monarquia",
+ "adj": "Aqueo",
+ "desc": "Los aqueos de la edad del bronce, ricos en oro y carros.",
+ "tag": "mic",
+ "culture_tag": "egeo",
+ "religion_tag": "med"
+}

@@ -1,0 +1,16 @@
+{
+ "id": "atenas",
+ "name": "Atenas",
+ "capital": "Atenas",
+ "color": [
+  62,
+  127,
+  168
+ ],
+ "gov": "republica",
+ "adj": "Ateniense",
+ "desc": "La ciudad de la colina y del aceite de oliva.",
+ "tag": "ate",
+ "culture_tag": "egeo",
+ "religion_tag": "med"
+}

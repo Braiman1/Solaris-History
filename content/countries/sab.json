@@ -1,0 +1,16 @@
+{
+ "id": "saba",
+ "name": "Saba",
+ "capital": "Yemen",
+ "color": [
+  160,
+  82,
+  45
+ ],
+ "gov": "monarquia",
+ "adj": "Sabeo",
+ "desc": "Incienso, mirra y las montanas verdes del sur.",
+ "tag": "sab",
+ "culture_tag": "arabigo",
+ "religion_tag": "anc"
+}

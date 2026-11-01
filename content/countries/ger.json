@@ -1,0 +1,16 @@
+{
+ "id": "germania",
+ "name": "Germania",
+ "capital": "Alemania Norte",
+ "color": [
+  90,
+  106,
+  74
+ ],
+ "gov": "monarquia",
+ "adj": "Germanico",
+ "desc": "Los bosques y marismas del norte.",
+ "tag": "ger",
+ "culture_tag": "nordico",
+ "religion_tag": "nat"
+}

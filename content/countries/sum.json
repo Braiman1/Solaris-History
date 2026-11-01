@@ -1,0 +1,16 @@
+{
+ "id": "sumeria",
+ "name": "Sumeria",
+ "capital": "Uruk",
+ "color": [
+  46,
+  139,
+  139
+ ],
+ "gov": "republica",
+ "adj": "Sumerio",
+ "desc": "La liga de las ciudades del sur mesopotamico.",
+ "tag": "sum",
+ "culture_tag": "sumerio",
+ "religion_tag": "mes"
+}

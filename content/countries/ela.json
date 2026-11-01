@@ -1,0 +1,16 @@
+{
+ "id": "elam",
+ "name": "Elam",
+ "capital": "Susa",
+ "color": [
+  122,
+  79,
+  160
+ ],
+ "gov": "monarquia",
+ "adj": "Elamita",
+ "desc": "La meseta y la llanura unidas por los arqueros de Susa.",
+ "tag": "ela",
+ "culture_tag": "elamita",
+ "religion_tag": "mes"
+}

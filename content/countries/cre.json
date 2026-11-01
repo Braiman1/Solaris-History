@@ -1,0 +1,16 @@
+{
+ "id": "creta",
+ "name": "Creta",
+ "capital": "Knossos",
+ "color": [
+  47,
+  111,
+  158
+ ],
+ "gov": "teocracia",
+ "adj": "Cretense",
+ "desc": "La talasocracia del laberinto y del toro sagrado.",
+ "tag": "cre",
+ "culture_tag": "egeo",
+ "religion_tag": "med"
+}
