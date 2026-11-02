@@ -15,6 +15,12 @@ struct TechnologyDef {
     float points = 0, farm = 0, military = 0;
 };
 
+struct BiomeDef {
+    std::string id, name;
+    float food=1, defense=1, move=1;
+    Color color;
+};
+
 struct TerrainDef {
     std::string id, name;
     float food = 1, defense = 1, move = 1;
@@ -85,11 +91,11 @@ struct CityStateDef {
 
 struct ProvinceDef {
     int id = 0;
-    std::string name, region, terrainId, resourceId, cultureId;
+    std::string name, region, terrainId, resourceId, cultureId, biomeId, continent;
     float lat = 0, lon = 0, pop = 1;
     int dev = 1;
     bool coastal = false;
-    std::vector<int> adj, seaAdj;
+    std::vector<int> adj, seaAdj, exploreSeaAdj;
 };
 
 struct Content {
@@ -98,6 +104,9 @@ struct Content {
     int startYear = -3300;
     std::map<std::string, int> terrainIndex, resourceIndex, cultureIndex, unitIndex,
                                buildingIndex, govIndex, traitIndex;
+    std::vector<BiomeDef> biomes;
+    std::map<std::string,int> biomeIndex;
+    const BiomeDef& biomeOfProvince(int id) const { return biomes.at(biomeIndex.at(province(id).biomeId)); }
     std::vector<TerrainDef> terrains;
     std::vector<ResourceDef> resources;
     std::vector<CultureDef> cultures;

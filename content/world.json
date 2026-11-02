@@ -7,7 +7,8 @@
   "playable_regions": [
    "Europa",
    "Africa del Norte",
-   "Oriente Proximo"
+   "Oriente Proximo",
+   "Asia Central"
   ]
  },
  "terrains": {
@@ -390,7 +391,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 0
+   "id": 0,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Alemania Norte",
@@ -404,12 +408,27 @@
    "region": "Nordico",
    "coastal": false,
    "owner": 0,
-   "adj": [],
+   "adj": [
+    299,
+    300,
+    301,
+    302,
+    303,
+    305,
+    306,
+    308,
+    309,
+    320,
+    322
+   ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 1
+   "id": 1,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Alepo",
@@ -430,13 +449,19 @@
     67,
     126,
     142,
-    150
+    150,
+    370,
+    371,
+    372
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 2
+   "id": 2,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Alfold",
@@ -459,7 +484,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 3
+   "id": 3,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Alsacia",
@@ -478,13 +506,17 @@
     208,
     209,
     210,
-    211
+    211,
+    310
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 4
+   "id": 4,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Amida",
@@ -510,7 +542,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 5
+   "id": 5,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Amon",
@@ -532,13 +567,26 @@
     76,
     138,
     250,
-    251
+    251,
+    365,
+    366,
+    367,
+    368,
+    369,
+    483,
+    485,
+    486,
+    487,
+    488
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 6
+   "id": 6,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Anglia",
@@ -566,7 +614,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 7
+   "id": 7,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Anshan",
@@ -581,13 +632,17 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    121
+    121,
+    394
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 8
+   "id": 8,
+   "continent": "Asia",
+   "biome": "alpino",
+   "explore_sea_adj": []
   },
   {
    "name": "Antalya",
@@ -610,7 +665,14 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 9
+   "id": 9,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    82,
+    118,
+    255
+   ]
   },
   {
    "name": "Apulia",
@@ -632,7 +694,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 10
+   "id": 10,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Aquitania",
@@ -658,7 +723,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 11
+   "id": 11,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Argel",
@@ -673,13 +741,24 @@
    "coastal": true,
    "owner": 0,
    "adj": [
-    96
+    96,
+    264,
+    265,
+    266,
+    291
    ],
-   "sea_adj": [],
+   "sea_adj": [
+    263
+   ],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 12
+   "id": 12,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": [
+    263
+   ]
   },
   {
    "name": "Arslantepe",
@@ -696,13 +775,17 @@
    "adj": [
     5,
     29,
-    65
+    65,
+    372
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 13
+   "id": 13,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Arwad",
@@ -721,7 +804,9 @@
     40,
     44,
     67,
-    126
+    126,
+    370,
+    371
    ],
    "sea_adj": [
     19,
@@ -730,7 +815,16 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 14
+   "id": 14,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    19,
+    82,
+    104,
+    118,
+    150
+   ]
   },
   {
    "name": "Assur",
@@ -747,13 +841,19 @@
    "adj": [
     49,
     109,
-    169
+    169,
+    375,
+    376,
+    377
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 15
+   "id": 15,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Atenas",
@@ -776,7 +876,20 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 16
+   "id": 16,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    31,
+    47,
+    83,
+    89,
+    128,
+    148,
+    173,
+    254,
+    255
+   ]
   },
   {
    "name": "Babilonia",
@@ -799,13 +912,18 @@
     137,
     152,
     154,
-    170
+    170,
+    374,
+    375
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 17
+   "id": 17,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Belgica",
@@ -826,13 +944,18 @@
     205,
     206,
     207,
-    208
+    208,
+    304,
+    321
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 18
+   "id": 18,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Biblos",
@@ -853,7 +976,10 @@
     70,
     126,
     138,
-    250
+    250,
+    368,
+    369,
+    371
    ],
    "sea_adj": [
     14
@@ -861,7 +987,17 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 19
+   "id": 19,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    14,
+    82,
+    104,
+    118,
+    150,
+    483
+   ]
   },
   {
    "name": "Bohemia",
@@ -879,13 +1015,19 @@
     107,
     135,
     161,
-    214
+    214,
+    312,
+    313,
+    314
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 20
+   "id": 20,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Borgona",
@@ -914,7 +1056,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 21
+   "id": 21,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Bretana",
@@ -937,7 +1082,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 22
+   "id": 22,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Buto",
@@ -957,13 +1105,19 @@
     103,
     131,
     164,
-    167
+    167,
+    479,
+    480,
+    481
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 23
+   "id": 23,
+   "continent": "Africa",
+   "biome": "humedal",
+   "explore_sea_adj": []
   },
   {
    "name": "Butrinto",
@@ -982,7 +1136,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 24
+   "id": 24,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Calabria",
@@ -1003,7 +1160,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 25
+   "id": 25,
+   "continent": "Europa",
+   "biome": "alpino",
+   "explore_sea_adj": []
   },
   {
    "name": "Cantabria",
@@ -1017,12 +1177,22 @@
    "region": "Atlantico",
    "coastal": false,
    "owner": 0,
-   "adj": [],
+   "adj": [
+    272,
+    276,
+    279,
+    280,
+    281,
+    282
+   ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 26
+   "id": 26,
+   "continent": "Europa",
+   "biome": "alpino",
+   "explore_sea_adj": []
   },
   {
    "name": "Catalhoyuk",
@@ -1044,7 +1214,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 27
+   "id": 27,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Cataluna",
@@ -1060,13 +1233,21 @@
    "owner": 0,
    "adj": [
     122,
-    194
+    194,
+    283,
+    284,
+    285,
+    286,
+    287
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 28
+   "id": 28,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Cayonu",
@@ -1085,13 +1266,17 @@
     13,
     65,
     108,
-    168
+    168,
+    372
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 29
+   "id": 29,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Cerdana",
@@ -1110,7 +1295,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 30
+   "id": 30,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Chania",
@@ -1136,7 +1324,14 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 31
+   "id": 31,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    16,
+    47,
+    128
+   ]
   },
   {
    "name": "Cirenaica",
@@ -1155,7 +1350,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 32
+   "id": 32,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Colchis",
@@ -1174,7 +1372,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 33
+   "id": 33,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Corcega",
@@ -1193,7 +1394,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 34
+   "id": 34,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Corinto",
@@ -1219,7 +1423,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 35
+   "id": 35,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Crimea",
@@ -1238,7 +1445,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 36
+   "id": 36,
+   "continent": "Europa",
+   "biome": "estepa",
+   "explore_sea_adj": []
   },
   {
    "name": "Cucuteni",
@@ -1259,7 +1469,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 37
+   "id": 37,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Cumas",
@@ -1282,7 +1495,12 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 38
+   "id": 38,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    139
+   ]
   },
   {
    "name": "Dalmacia",
@@ -1301,7 +1519,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 39
+   "id": 39,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Damasco",
@@ -1326,13 +1547,21 @@
     138,
     142,
     250,
-    251
+    251,
+    368,
+    369,
+    370,
+    371,
+    487
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 40
+   "id": 40,
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
   },
   {
    "name": "Desierto Occidental",
@@ -1351,7 +1580,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 41
+   "id": 41,
+   "continent": "Africa",
+   "biome": "desierto",
+   "explore_sea_adj": []
   },
   {
    "name": "Dilmun",
@@ -1365,12 +1597,20 @@
    "region": "Arabia",
    "coastal": true,
    "owner": 0,
-   "adj": [],
+   "adj": [
+    378,
+    379,
+    381,
+    383
+   ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 42
+   "id": 42,
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
   },
   {
    "name": "Dinamarca",
@@ -1385,13 +1625,21 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    51
+    51,
+    323,
+    324,
+    325,
+    326,
+    328
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 43
+   "id": 43,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Ebla",
@@ -1412,13 +1660,19 @@
     67,
     126,
     142,
-    150
+    150,
+    370,
+    371,
+    372
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 44
+   "id": 44,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Edfu",
@@ -1443,7 +1697,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 45
+   "id": 45,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Edom",
@@ -1464,13 +1721,26 @@
     136,
     138,
     250,
-    251
+    251,
+    365,
+    366,
+    367,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 46
+   "id": 46,
+   "continent": "Asia",
+   "biome": "alpino",
+   "explore_sea_adj": []
   },
   {
    "name": "Efeso",
@@ -1486,13 +1756,24 @@
    "owner": 0,
    "adj": [
     128,
-    172
+    172,
+    504
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 47
+   "id": 47,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    16,
+    31,
+    83,
+    89,
+    254,
+    255
+   ]
   },
   {
    "name": "Elefantina",
@@ -1516,7 +1797,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 48
+   "id": 48,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Erbil",
@@ -1534,13 +1818,19 @@
     15,
     68,
     109,
-    169
+    169,
+    375,
+    376,
+    377
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 49
+   "id": 49,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Eridu",
@@ -1564,13 +1854,17 @@
     152,
     153,
     154,
-    170
+    170,
+    374
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 50
+   "id": 50,
+   "continent": "Asia",
+   "biome": "humedal",
+   "explore_sea_adj": []
   },
   {
    "name": "Escania",
@@ -1585,13 +1879,19 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    43
+    43,
+    327,
+    328,
+    329
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 51
+   "id": 51,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Escocia",
@@ -1607,13 +1907,24 @@
    "owner": 0,
    "adj": [
     248,
-    249
+    249,
+    489,
+    490,
+    491,
+    492,
+    493,
+    495,
+    496,
+    497
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 52
+   "id": 52,
+   "continent": "Europa",
+   "biome": "alpino",
+   "explore_sea_adj": []
   },
   {
    "name": "Eshnunna",
@@ -1632,13 +1943,19 @@
     81,
     110,
     137,
-    170
+    170,
+    374,
+    375,
+    377
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 53
+   "id": 53,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Esparta",
@@ -1662,7 +1979,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 54
+   "id": 54,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Este de Polonia",
@@ -1676,12 +1996,17 @@
    "region": "Nordico",
    "coastal": false,
    "owner": 0,
-   "adj": [],
+   "adj": [
+    318
+   ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 55
+   "id": 55,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Estepa Pontica",
@@ -1700,7 +2025,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 56
+   "id": 56,
+   "continent": "Europa",
+   "biome": "estepa",
+   "explore_sea_adj": []
   },
   {
    "name": "Estonia",
@@ -1715,13 +2043,21 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    92
+    92,
+    347,
+    348,
+    349,
+    350,
+    351
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 57
+   "id": 57,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Etruria",
@@ -1749,7 +2085,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 58
+   "id": 58,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Fayum",
@@ -1770,13 +2109,17 @@
     103,
     131,
     164,
-    167
+    167,
+    481
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 59
+   "id": 59,
+   "continent": "Africa",
+   "biome": "desierto",
+   "explore_sea_adj": []
   },
   {
    "name": "Festos",
@@ -1802,7 +2145,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 60
+   "id": 60,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Fezzan",
@@ -1821,7 +2167,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 61
+   "id": 61,
+   "continent": "Africa",
+   "biome": "desierto",
+   "explore_sea_adj": []
   },
   {
    "name": "Gales",
@@ -1849,7 +2198,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 62
+   "id": 62,
+   "continent": "Europa",
+   "biome": "alpino",
+   "explore_sea_adj": []
   },
   {
    "name": "Galicia",
@@ -1863,12 +2215,21 @@
    "region": "Atlantico",
    "coastal": false,
    "owner": 0,
-   "adj": [],
+   "adj": [
+    256,
+    257,
+    277,
+    278,
+    279
+   ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 63
+   "id": 63,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Gaz",
@@ -1889,13 +2250,32 @@
     76,
     138,
     250,
-    251
+    251,
+    365,
+    367,
+    368,
+    369,
+    482,
+    483,
+    485,
+    486,
+    487,
+    488
    ],
-   "sea_adj": [],
+   "sea_adj": [
+    366
+   ],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 64
+   "id": 64,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    82,
+    118,
+    366
+   ]
   },
   {
    "name": "Gobekli Tepe",
@@ -1915,13 +2295,17 @@
     13,
     29,
     108,
-    168
+    168,
+    372
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 65
+   "id": 65,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Gorgan",
@@ -1936,13 +2320,18 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    145
+    145,
+    402,
+    403
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 66
+   "id": 66,
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
   },
   {
    "name": "Hama",
@@ -1964,13 +2353,19 @@
     44,
     126,
     142,
-    150
+    150,
+    370,
+    371,
+    372
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 67
+   "id": 67,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Hasanlu",
@@ -1993,7 +2388,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 68
+   "id": 68,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Hattusa",
@@ -2014,7 +2412,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 69
+   "id": 69,
+   "continent": "Asia",
+   "biome": "alpino",
+   "explore_sea_adj": []
   },
   {
    "name": "Hazor",
@@ -2037,13 +2438,22 @@
     126,
     138,
     250,
-    251
+    251,
+    365,
+    366,
+    367,
+    368,
+    369,
+    487
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 70
+   "id": 70,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Heliopolis",
@@ -2064,13 +2474,19 @@
     103,
     131,
     164,
-    167
+    167,
+    479,
+    480,
+    481
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 71
+   "id": 71,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Heracleopolis",
@@ -2089,13 +2505,17 @@
     71,
     103,
     166,
-    167
+    167,
+    481
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 72
+   "id": 72,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Hieracompolis",
@@ -2120,7 +2540,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 73
+   "id": 73,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Hiyaz",
@@ -2139,7 +2562,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 74
+   "id": 74,
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
   },
   {
    "name": "Irlanda",
@@ -2165,7 +2591,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 75
+   "id": 75,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Jerico",
@@ -2187,13 +2616,26 @@
     70,
     138,
     250,
-    251
+    251,
+    365,
+    366,
+    367,
+    368,
+    369,
+    483,
+    485,
+    486,
+    487,
+    488
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 76
+   "id": 76,
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
   },
   {
    "name": "Kanesh",
@@ -2214,7 +2656,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 77
+   "id": 77,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Kerma",
@@ -2233,7 +2678,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 78
+   "id": 78,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Kerman",
@@ -2247,12 +2695,17 @@
    "region": "Iran",
    "coastal": false,
    "owner": 0,
-   "adj": [],
+   "adj": [
+    395
+   ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 79
+   "id": 79,
+   "continent": "Asia",
+   "biome": "alpino",
+   "explore_sea_adj": []
   },
   {
    "name": "Kiev",
@@ -2273,7 +2726,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 80
+   "id": 80,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Kish",
@@ -2299,13 +2755,18 @@
     152,
     153,
     154,
-    170
+    170,
+    374,
+    375
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 81
+   "id": 81,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Kition",
@@ -2326,7 +2787,20 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 82
+   "id": 82,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": [
+    9,
+    14,
+    19,
+    64,
+    104,
+    150,
+    366,
+    367,
+    483
+   ]
   },
   {
    "name": "Knossos",
@@ -2352,7 +2826,14 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 83
+   "id": 83,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    16,
+    47,
+    128
+   ]
   },
   {
    "name": "Kura-Araxes",
@@ -2371,7 +2852,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 84
+   "id": 84,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Kuwait",
@@ -2386,13 +2870,17 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    99
+    99,
+    380
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 85
+   "id": 85,
+   "continent": "Asia",
+   "biome": "humedal",
+   "explore_sea_adj": []
   },
   {
    "name": "Lacio",
@@ -2420,7 +2908,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 86
+   "id": 86,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Lagash",
@@ -2445,13 +2936,17 @@
     152,
     153,
     154,
-    170
+    170,
+    374
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 87
+   "id": 87,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Larsa",
@@ -2476,13 +2971,17 @@
     152,
     153,
     154,
-    170
+    170,
+    374
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 88
+   "id": 88,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Lemnos",
@@ -2505,7 +3004,14 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 89
+   "id": 89,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    16,
+    47,
+    148
+   ]
   },
   {
    "name": "Leptis",
@@ -2524,7 +3030,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 90
+   "id": 90,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Lesbos",
@@ -2539,13 +3048,19 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    148
+    148,
+    502,
+    503,
+    504
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 91
+   "id": 91,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Letonia",
@@ -2561,13 +3076,21 @@
    "owner": 0,
    "adj": [
     57,
-    95
+    95,
+    349,
+    350,
+    351,
+    352,
+    353
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 92
+   "id": 92,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Limousin",
@@ -2595,7 +3118,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 93
+   "id": 93,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Lisboa",
@@ -2609,12 +3135,20 @@
    "region": "Iberia",
    "coastal": false,
    "owner": 0,
-   "adj": [],
+   "adj": [
+    258,
+    259,
+    260,
+    268
+   ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 94
+   "id": 94,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Lituania",
@@ -2629,13 +3163,21 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    92
+    92,
+    351,
+    353,
+    354,
+    355,
+    356
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 95
+   "id": 95,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Los Millares",
@@ -2650,13 +3192,19 @@
    "coastal": false,
    "owner": 12,
    "adj": [
-    12
+    12,
+    263,
+    264,
+    265
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 96
+   "id": 96,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Magan",
@@ -2670,12 +3218,19 @@
    "region": "Arabia",
    "coastal": false,
    "owner": 0,
-   "adj": [],
+   "adj": [
+    385,
+    386,
+    387
+   ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 97
+   "id": 97,
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
   },
   {
    "name": "Mari",
@@ -2690,13 +3245,18 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    108
+    108,
+    373,
+    376
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 98
+   "id": 98,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Marismas del Sur",
@@ -2718,13 +3278,17 @@
     140,
     152,
     153,
-    154
+    154,
+    380
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 99
+   "id": 99,
+   "continent": "Asia",
+   "biome": "humedal",
+   "explore_sea_adj": []
   },
   {
    "name": "Marmarica",
@@ -2743,7 +3307,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 100
+   "id": 100,
+   "continent": "Africa",
+   "biome": "desierto",
+   "explore_sea_adj": []
   },
   {
    "name": "Marruecos",
@@ -2762,7 +3329,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 101
+   "id": 101,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Maykop",
@@ -2781,7 +3351,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 102
+   "id": 102,
+   "continent": "Asia",
+   "biome": "alpino",
+   "explore_sea_adj": []
   },
   {
    "name": "Menfis",
@@ -2802,13 +3375,19 @@
     72,
     131,
     164,
-    167
+    167,
+    479,
+    480,
+    481
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 103
+   "id": 103,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Mersin",
@@ -2829,7 +3408,16 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 104
+   "id": 104,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    14,
+    19,
+    82,
+    118,
+    150
+   ]
   },
   {
    "name": "Micenas",
@@ -2855,7 +3443,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 105
+   "id": 105,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Moldavia",
@@ -2877,7 +3468,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 106
+   "id": 106,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Moravia",
@@ -2896,13 +3490,18 @@
     135,
     161,
     215,
-    216
+    216,
+    314,
+    319
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 107
+   "id": 107,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Nagar",
@@ -2922,13 +3521,18 @@
     65,
     98,
     168,
-    169
+    169,
+    372,
+    373
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 108
+   "id": 108,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Ninive",
@@ -2947,13 +3551,18 @@
     49,
     68,
     168,
-    169
+    169,
+    376,
+    377
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 109
+   "id": 109,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Nippur",
@@ -2979,13 +3588,17 @@
     152,
     153,
     154,
-    170
+    170,
+    374
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 110
+   "id": 110,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Normandia",
@@ -3012,7 +3625,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 111
+   "id": 111,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Noruega Sur",
@@ -3026,12 +3642,18 @@
    "region": "Nordico",
    "coastal": true,
    "owner": 0,
-   "adj": [],
+   "adj": [
+    339,
+    340
+   ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 112
+   "id": 112,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Nubia",
@@ -3050,7 +3672,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 113
+   "id": 113,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Numidia",
@@ -3069,7 +3694,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 114
+   "id": 114,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Oasis de Jarga",
@@ -3092,7 +3720,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 115
+   "id": 115,
+   "continent": "Africa",
+   "biome": "desierto",
+   "explore_sea_adj": []
   },
   {
    "name": "Orcadas",
@@ -3107,13 +3738,18 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    181
+    181,
+    491,
+    494
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 116
+   "id": 116,
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
   },
   {
    "name": "Padania",
@@ -3135,7 +3771,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 117
+   "id": 117,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Pafos",
@@ -3156,7 +3795,20 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 118
+   "id": 118,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": [
+    9,
+    14,
+    19,
+    64,
+    104,
+    128,
+    366,
+    367,
+    483
+   ]
   },
   {
    "name": "Paises Bajos",
@@ -3172,13 +3824,21 @@
    "owner": 0,
    "adj": [
     18,
-    207
+    207,
+    303,
+    304,
+    305,
+    320,
+    321
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 119
+   "id": 119,
+   "continent": "Europa",
+   "biome": "humedal",
+   "explore_sea_adj": []
   },
   {
    "name": "Paris",
@@ -3209,7 +3869,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 120
+   "id": 120,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Persepolis",
@@ -3224,13 +3887,17 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    8
+    8,
+    394
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 121
+   "id": 121,
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
   },
   {
    "name": "Pirineos",
@@ -3246,13 +3913,22 @@
    "owner": 0,
    "adj": [
     28,
-    194
+    194,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 122
+   "id": 122,
+   "continent": "Europa",
+   "biome": "alpino",
+   "explore_sea_adj": []
   },
   {
    "name": "Plovdiv",
@@ -3268,13 +3944,18 @@
    "owner": 0,
    "adj": [
     223,
-    224
+    224,
+    499,
+    500
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 123
+   "id": 123,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Polonia",
@@ -3289,13 +3970,21 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    135
+    135,
+    314,
+    315,
+    316,
+    317,
+    318
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 124
+   "id": 124,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Provenza",
@@ -3314,7 +4003,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 125
+   "id": 125,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Qadesh",
@@ -3337,13 +4029,19 @@
     67,
     70,
     142,
-    150
+    150,
+    369,
+    370,
+    371
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 126
+   "id": 126,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Rayy",
@@ -3358,13 +4056,19 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    146
+    146,
+    388,
+    391,
+    403
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 127
+   "id": 127,
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
   },
   {
    "name": "Rodas",
@@ -3385,7 +4089,17 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 128
+   "id": 128,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    16,
+    31,
+    83,
+    118,
+    254,
+    255
+   ]
   },
   {
    "name": "Sahara Argelino",
@@ -3404,7 +4118,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 129
+   "id": 129,
+   "continent": "Africa",
+   "biome": "desierto",
+   "explore_sea_adj": []
   },
   {
    "name": "Sahara Egipcio",
@@ -3423,7 +4140,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 130
+   "id": 130,
+   "continent": "Africa",
+   "biome": "desierto",
+   "explore_sea_adj": []
   },
   {
    "name": "Sais",
@@ -3443,13 +4163,19 @@
     71,
     103,
     164,
-    167
+    167,
+    479,
+    480,
+    481
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 131
+   "id": 131,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Segesta",
@@ -3468,7 +4194,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 132
+   "id": 132,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Sesklo",
@@ -3494,7 +4223,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 133
+   "id": 133,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Shuruppak",
@@ -3519,13 +4251,17 @@
     152,
     153,
     154,
-    170
+    170,
+    374
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 134
+   "id": 134,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Silesia",
@@ -3542,13 +4278,18 @@
    "adj": [
     20,
     107,
-    124
+    124,
+    314,
+    315
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 135
+   "id": 135,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Sinai",
@@ -3563,13 +4304,24 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    46
+    46,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    488
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 136
+   "id": 136,
+   "continent": "Africa",
+   "biome": "alpino",
+   "explore_sea_adj": []
   },
   {
    "name": "Sippar",
@@ -3590,13 +4342,18 @@
     110,
     134,
     152,
-    170
+    170,
+    374,
+    375
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 137
+   "id": 137,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Siquem",
@@ -3619,13 +4376,24 @@
     70,
     76,
     250,
-    251
+    251,
+    365,
+    366,
+    367,
+    368,
+    369,
+    485,
+    487,
+    488
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 138
+   "id": 138,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Siracusa",
@@ -3644,7 +4412,12 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 139
+   "id": 139,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    38
+   ]
   },
   {
    "name": "Susa",
@@ -3666,7 +4439,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 140
+   "id": 140,
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
   },
   {
    "name": "Tabriz",
@@ -3687,7 +4463,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 141
+   "id": 141,
+   "continent": "Asia",
+   "biome": "alpino",
+   "explore_sea_adj": []
   },
   {
    "name": "Tadmor",
@@ -3706,13 +4485,19 @@
     40,
     44,
     67,
-    126
+    126,
+    370,
+    371,
+    373
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 142
+   "id": 142,
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
   },
   {
    "name": "Tebas",
@@ -3739,7 +4524,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 143
+   "id": 143,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Tebas Griega",
@@ -3766,7 +4554,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 144
+   "id": 144,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Tepe Hissar",
@@ -3781,13 +4572,18 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    66
+    66,
+    402,
+    403
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 145
+   "id": 145,
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
   },
   {
    "name": "Tepe Sialk",
@@ -3802,13 +4598,18 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    127
+    127,
+    391,
+    392
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 146
+   "id": 146,
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
   },
   {
    "name": "Tripilia",
@@ -3830,7 +4631,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 147
+   "id": 147,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Troya",
@@ -3845,7 +4649,10 @@
    "coastal": true,
    "owner": 5,
    "adj": [
-    91
+    91,
+    502,
+    503,
+    504
    ],
    "sea_adj": [
     89,
@@ -3854,7 +4661,14 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 148
+   "id": 148,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    16,
+    89,
+    173
+   ]
   },
   {
    "name": "Tunez",
@@ -3873,7 +4687,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 149
+   "id": 149,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Ugarit",
@@ -3891,7 +4708,8 @@
     2,
     44,
     67,
-    126
+    126,
+    371
    ],
    "sea_adj": [
     14
@@ -3899,7 +4717,15 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 150
+   "id": 150,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    14,
+    19,
+    82,
+    104
+   ]
   },
   {
    "name": "Umbria",
@@ -3928,7 +4754,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 151
+   "id": 151,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Umma",
@@ -3954,13 +4783,17 @@
     137,
     153,
     154,
-    170
+    170,
+    374
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 152
+   "id": 152,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Ur",
@@ -3984,13 +4817,17 @@
     134,
     152,
     154,
-    170
+    170,
+    374
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 153
+   "id": 153,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Uruk",
@@ -4015,13 +4852,17 @@
     134,
     152,
     153,
-    170
+    170,
+    374
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 154
+   "id": 154,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Valencina",
@@ -4035,12 +4876,27 @@
    "region": "Iberia",
    "coastal": false,
    "owner": 0,
-   "adj": [],
+   "adj": [
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269
+   ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 155
+   "id": 155,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Van",
@@ -4059,7 +4915,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 156
+   "id": 156,
+   "continent": "Asia",
+   "biome": "alpino",
+   "explore_sea_adj": []
   },
   {
    "name": "Varna",
@@ -4075,13 +4934,18 @@
    "owner": 11,
    "adj": [
     225,
-    226
+    226,
+    500,
+    501
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 157
+   "id": 157,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Venecia",
@@ -4102,7 +4966,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 158
+   "id": 158,
+   "continent": "Europa",
+   "biome": "humedal",
+   "explore_sea_adj": []
   },
   {
    "name": "Vinca",
@@ -4119,13 +4986,17 @@
    "adj": [
     219,
     220,
-    222
+    222,
+    498
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 159
+   "id": 159,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "name": "Volga",
@@ -4144,7 +5015,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 160
+   "id": 160,
+   "continent": "Europa",
+   "biome": "estepa",
+   "explore_sea_adj": []
   },
   {
    "name": "Wachau",
@@ -4169,7 +5043,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 161
+   "id": 161,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "name": "Wessex",
@@ -4198,7 +5075,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 162
+   "id": 162,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "name": "Yemen",
@@ -4217,7 +5097,10 @@
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
-   "id": 163
+   "id": 163,
+   "continent": "Asia",
+   "biome": "alpino",
+   "explore_sea_adj": []
   },
   {
    "id": 164,
@@ -4238,12 +5121,20 @@
     71,
     103,
     131,
-    167
+    167,
+    479,
+    480,
+    481,
+    482,
+    483
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 165,
@@ -4269,7 +5160,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 166,
@@ -4294,7 +5188,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 167,
@@ -4316,12 +5213,18 @@
     72,
     103,
     131,
-    164
+    164,
+    479,
+    480,
+    481
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Africa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 168,
@@ -4342,12 +5245,17 @@
     65,
     108,
     109,
-    169
+    169,
+    373,
+    376
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 169,
@@ -4368,12 +5276,16 @@
     49,
     108,
     109,
-    168
+    168,
+    376
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 170,
@@ -4400,12 +5312,16 @@
     137,
     152,
     153,
-    154
+    154,
+    374
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 171,
@@ -4427,7 +5343,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 172,
@@ -4445,12 +5364,17 @@
    "adj": [
     9,
     47,
-    171
+    171,
+    504,
+    505
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 173,
@@ -4473,7 +5397,13 @@
    ],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    16,
+    148
+   ]
   },
   {
    "id": 174,
@@ -4499,7 +5429,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 175,
@@ -4525,7 +5458,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 176,
@@ -4553,7 +5489,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 177,
@@ -4581,7 +5520,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 178,
@@ -4610,7 +5552,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 179,
@@ -4638,7 +5583,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 180,
@@ -4667,7 +5615,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 181,
@@ -4683,12 +5634,18 @@
    "coastal": true,
    "owner": 0,
    "adj": [
-    116
+    116,
+    491
    ],
-   "sea_adj": [],
+   "sea_adj": [
+    494
+   ],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
   },
   {
    "id": 182,
@@ -4714,7 +5671,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "id": 183,
@@ -4742,7 +5702,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 184,
@@ -4773,7 +5736,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 185,
@@ -4804,7 +5770,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 186,
@@ -4833,7 +5802,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 187,
@@ -4860,7 +5832,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 188,
@@ -4891,7 +5866,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 189,
@@ -4922,7 +5900,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 190,
@@ -4953,7 +5934,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 191,
@@ -4983,7 +5967,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 192,
@@ -5011,7 +5998,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 193,
@@ -5037,7 +6027,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 194,
@@ -5057,12 +6050,16 @@
     28,
     93,
     122,
-    195
+    195,
+    286
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 195,
@@ -5088,7 +6085,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 196,
@@ -5113,7 +6113,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 197,
@@ -5137,7 +6140,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 198,
@@ -5160,7 +6166,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 199,
@@ -5188,7 +6197,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 200,
@@ -5214,7 +6226,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 201,
@@ -5241,7 +6256,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 202,
@@ -5269,7 +6287,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 203,
@@ -5298,7 +6319,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 204,
@@ -5328,7 +6352,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 205,
@@ -5354,7 +6381,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 206,
@@ -5378,12 +6408,16 @@
     204,
     205,
     207,
-    208
+    208,
+    321
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 207,
@@ -5403,12 +6437,18 @@
     119,
     190,
     206,
-    208
+    208,
+    304,
+    305,
+    321
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 208,
@@ -5429,12 +6469,18 @@
     190,
     206,
     207,
-    209
+    209,
+    304,
+    305,
+    310
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 209,
@@ -5454,12 +6500,16 @@
     191,
     208,
     210,
-    211
+    211,
+    310
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 210,
@@ -5484,7 +6534,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 211,
@@ -5512,7 +6565,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 212,
@@ -5540,7 +6596,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 213,
@@ -5561,7 +6620,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 214,
@@ -5585,7 +6647,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 215,
@@ -5610,7 +6675,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 216,
@@ -5635,7 +6703,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 217,
@@ -5659,7 +6730,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 218,
@@ -5683,7 +6757,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 219,
@@ -5702,12 +6779,16 @@
     159,
     218,
     220,
-    222
+    222,
+    498
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 220,
@@ -5730,7 +6811,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 221,
@@ -5752,7 +6836,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 222,
@@ -5771,12 +6858,17 @@
     159,
     219,
     221,
-    223
+    223,
+    498,
+    499
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 223,
@@ -5795,12 +6887,18 @@
     123,
     221,
     222,
-    224
+    224,
+    498,
+    499,
+    500
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 224,
@@ -5817,12 +6915,17 @@
    "owner": 0,
    "adj": [
     123,
-    223
+    223,
+    499,
+    500
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 225,
@@ -5839,12 +6942,17 @@
    "owner": 0,
    "adj": [
     157,
-    226
+    226,
+    500,
+    501
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 226,
@@ -5861,12 +6969,16 @@
    "owner": 0,
    "adj": [
     157,
-    225
+    225,
+    501
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 227,
@@ -5884,12 +6996,16 @@
    "adj": [
     228,
     229,
-    230
+    230,
+    498
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 228,
@@ -5907,12 +7023,16 @@
    "adj": [
     227,
     229,
-    230
+    230,
+    498
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 229,
@@ -5935,7 +7055,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 230,
@@ -5958,7 +7081,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 231,
@@ -5986,7 +7112,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 232,
@@ -6016,7 +7145,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 233,
@@ -6048,7 +7180,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 234,
@@ -6080,7 +7215,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 235,
@@ -6107,7 +7245,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 236,
@@ -6132,7 +7273,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
   },
   {
    "id": 237,
@@ -6162,7 +7306,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "id": 238,
@@ -6183,12 +7330,17 @@
     237,
     239,
     240,
-    241
+    241,
+    495,
+    496
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "id": 239,
@@ -6209,12 +7361,18 @@
     238,
     240,
     241,
-    242
+    242,
+    495,
+    496,
+    497
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "id": 240,
@@ -6244,7 +7402,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "id": 241,
@@ -6276,7 +7437,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "id": 242,
@@ -6303,7 +7467,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "id": 243,
@@ -6329,7 +7496,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "id": 244,
@@ -6355,7 +7525,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "id": 245,
@@ -6381,7 +7554,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "id": 246,
@@ -6407,7 +7583,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "id": 247,
@@ -6433,7 +7612,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "id": 248,
@@ -6450,12 +7632,21 @@
    "owner": 0,
    "adj": [
     52,
-    249
+    249,
+    489,
+    490,
+    491,
+    492,
+    496,
+    497
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "id": 249,
@@ -6472,12 +7663,22 @@
    "owner": 0,
    "adj": [
     52,
-    248
+    248,
+    489,
+    490,
+    491,
+    492,
+    495,
+    496,
+    497
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
   },
   {
    "id": 250,
@@ -6501,12 +7702,23 @@
     70,
     76,
     138,
-    251
+    251,
+    365,
+    366,
+    367,
+    368,
+    369,
+    485,
+    487,
+    488
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 251,
@@ -6529,12 +7741,25 @@
     70,
     76,
     138,
-    250
+    250,
+    365,
+    366,
+    367,
+    368,
+    369,
+    483,
+    485,
+    486,
+    487,
+    488
    ],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 252,
@@ -6560,7 +7785,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 253,
@@ -6586,7 +7814,10 @@
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
   },
   {
    "id": 254,
@@ -6613,7 +7844,14 @@
    ],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    16,
+    47,
+    128
+   ]
   },
   {
    "id": 255,
@@ -6640,7 +7878,6525 @@
    ],
    "buildings": [],
    "loyalty": 60.0,
-   "occupied": false
+   "occupied": false,
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    9,
+    16,
+    47,
+    128
+   ]
+  },
+  {
+   "id": 256,
+   "name": "Braga",
+   "lon": -8.42,
+   "lat": 41.55,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    63,
+    257,
+    258,
+    275,
+    277,
+    278
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 257,
+   "name": "Porto",
+   "lon": -8.61,
+   "lat": 41.15,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    63,
+    256,
+    258,
+    277,
+    278
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 258,
+   "name": "Coimbra",
+   "lon": -8.43,
+   "lat": 40.21,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    94,
+    256,
+    257,
+    259,
+    268,
+    269
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 259,
+   "name": "Evora",
+   "lon": -7.91,
+   "lat": 38.57,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    94,
+    155,
+    258,
+    260,
+    261,
+    268,
+    269
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 260,
+   "name": "Faro",
+   "lon": -7.93,
+   "lat": 37.02,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "colina",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    94,
+    155,
+    259,
+    261,
+    267,
+    268
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    262
+   ]
+  },
+  {
+   "id": 261,
+   "name": "Huelva",
+   "lon": -6.94,
+   "lat": 37.26,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    155,
+    259,
+    260,
+    266,
+    267,
+    268
+   ],
+   "sea_adj": [
+    262
+   ],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 262,
+   "name": "Cadiz",
+   "lon": -6.29,
+   "lat": 36.53,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    155,
+    263,
+    266,
+    267
+   ],
+   "sea_adj": [
+    261
+   ],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    260
+   ]
+  },
+  {
+   "id": 263,
+   "name": "Malaga",
+   "lon": -4.42,
+   "lat": 36.72,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    96,
+    155,
+    262,
+    264,
+    265,
+    266,
+    267
+   ],
+   "sea_adj": [
+    12
+   ],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    12
+   ]
+  },
+  {
+   "id": 264,
+   "name": "Granada",
+   "lon": -3.6,
+   "lat": 37.18,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    12,
+    96,
+    155,
+    263,
+    265,
+    266,
+    267,
+    295
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 265,
+   "name": "Jaen",
+   "lon": -3.79,
+   "lat": 37.77,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "colina",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    12,
+    96,
+    155,
+    263,
+    264,
+    266,
+    267,
+    292,
+    295
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 266,
+   "name": "Cordoba",
+   "lon": -4.78,
+   "lat": 37.88,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    12,
+    155,
+    261,
+    262,
+    263,
+    264,
+    265,
+    267,
+    268,
+    269,
+    295
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 267,
+   "name": "Carmona",
+   "lon": -5.64,
+   "lat": 37.47,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    155,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    268,
+    295
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 268,
+   "name": "Badajoz",
+   "lon": -6.97,
+   "lat": 38.88,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    94,
+    155,
+    258,
+    259,
+    260,
+    261,
+    266,
+    267,
+    269,
+    271
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 269,
+   "name": "Caceres",
+   "lon": -6.37,
+   "lat": 39.47,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    155,
+    258,
+    259,
+    266,
+    268,
+    270,
+    271,
+    274,
+    295
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 270,
+   "name": "Toledo",
+   "lon": -4.03,
+   "lat": 39.86,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "colina",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    269,
+    271,
+    273,
+    274,
+    292,
+    294,
+    295
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 271,
+   "name": "Talavera",
+   "lon": -4.83,
+   "lat": 39.96,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    268,
+    269,
+    270,
+    273,
+    274,
+    275,
+    295
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 272,
+   "name": "Numancia",
+   "lon": -2.44,
+   "lat": 41.81,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    26,
+    273,
+    280,
+    281,
+    282,
+    283,
+    293,
+    294
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 273,
+   "name": "Segovia",
+   "lon": -4.12,
+   "lat": 40.95,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    270,
+    271,
+    272,
+    274,
+    275,
+    276,
+    294,
+    295
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 274,
+   "name": "Salamanca",
+   "lon": -5.66,
+   "lat": 40.97,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    269,
+    270,
+    271,
+    273,
+    275,
+    276
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 275,
+   "name": "Zamora",
+   "lon": -5.75,
+   "lat": 41.5,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "colina",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    256,
+    271,
+    273,
+    274,
+    276,
+    277,
+    279
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 276,
+   "name": "Leon",
+   "lon": -5.57,
+   "lat": 42.6,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    26,
+    273,
+    274,
+    275,
+    277,
+    279,
+    280
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 277,
+   "name": "Lugo",
+   "lon": -7.56,
+   "lat": 43.01,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    63,
+    256,
+    257,
+    275,
+    276,
+    278,
+    279
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 278,
+   "name": "Castro de Barona",
+   "lon": -9.03,
+   "lat": 42.69,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    63,
+    256,
+    257,
+    277
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 279,
+   "name": "Oviedo",
+   "lon": -5.85,
+   "lat": 43.36,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    26,
+    63,
+    275,
+    276,
+    277
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 280,
+   "name": "Santander",
+   "lon": -3.81,
+   "lat": 43.46,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "colina",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    26,
+    272,
+    276,
+    281,
+    282
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 281,
+   "name": "Bilbao",
+   "lon": -2.93,
+   "lat": 43.26,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    26,
+    272,
+    280,
+    282
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 282,
+   "name": "Pamplona",
+   "lon": -1.64,
+   "lat": 42.82,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    26,
+    122,
+    272,
+    280,
+    281,
+    283
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 283,
+   "name": "Zaragoza",
+   "lon": -0.88,
+   "lat": 41.65,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    28,
+    122,
+    272,
+    282,
+    284,
+    285,
+    287,
+    289,
+    293,
+    294
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 284,
+   "name": "Lleida",
+   "lon": 0.62,
+   "lat": 41.62,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    28,
+    122,
+    283,
+    285,
+    286,
+    287,
+    293
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 285,
+   "name": "Tarragona",
+   "lon": 1.25,
+   "lat": 41.12,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "colina",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    28,
+    122,
+    283,
+    284,
+    286,
+    287,
+    289,
+    293
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    290,
+    291,
+    296,
+    297,
+    298
+   ]
+  },
+  {
+   "id": 286,
+   "name": "Girona",
+   "lon": 2.82,
+   "lat": 41.98,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    28,
+    122,
+    194,
+    284,
+    285
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 287,
+   "name": "Tortosa",
+   "lon": 0.52,
+   "lat": 40.81,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    28,
+    122,
+    283,
+    284,
+    285,
+    288,
+    289,
+    293
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 288,
+   "name": "Valencia",
+   "lon": -0.38,
+   "lat": 39.47,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    287,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 289,
+   "name": "Sagunto",
+   "lon": -0.28,
+   "lat": 39.68,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    283,
+    285,
+    287,
+    288,
+    290,
+    292,
+    293,
+    294
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    296,
+    297,
+    298
+   ]
+  },
+  {
+   "id": 290,
+   "name": "Alicante",
+   "lon": -0.48,
+   "lat": 38.35,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "colina",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    288,
+    289,
+    291,
+    292
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    285,
+    296,
+    297,
+    298
+   ]
+  },
+  {
+   "id": 291,
+   "name": "Cartagena",
+   "lon": -0.98,
+   "lat": 37.6,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    12,
+    288,
+    290,
+    292
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    285,
+    296,
+    298
+   ]
+  },
+  {
+   "id": 292,
+   "name": "Albacete",
+   "lon": -1.86,
+   "lat": 38.99,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    265,
+    270,
+    288,
+    289,
+    290,
+    291,
+    293,
+    294,
+    295
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 293,
+   "name": "Teruel",
+   "lon": -1.11,
+   "lat": 40.34,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    272,
+    283,
+    284,
+    285,
+    287,
+    288,
+    289,
+    292,
+    294
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 294,
+   "name": "Cuenca",
+   "lon": -2.13,
+   "lat": 40.07,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    270,
+    272,
+    273,
+    283,
+    288,
+    289,
+    292,
+    293,
+    295
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 295,
+   "name": "Ciudad Real",
+   "lon": -3.93,
+   "lat": 38.98,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "colina",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    264,
+    265,
+    266,
+    267,
+    269,
+    270,
+    271,
+    273,
+    292,
+    294
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 296,
+   "name": "Palma",
+   "lon": 2.65,
+   "lat": 39.57,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [],
+   "sea_adj": [
+    297,
+    298
+   ],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    285,
+    289,
+    290,
+    291,
+    298
+   ]
+  },
+  {
+   "id": 297,
+   "name": "Menorca",
+   "lon": 4.26,
+   "lat": 39.89,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [],
+   "sea_adj": [
+    296
+   ],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    285,
+    289,
+    290,
+    298
+   ]
+  },
+  {
+   "id": 298,
+   "name": "Ibiza",
+   "lon": 1.43,
+   "lat": 38.91,
+   "region": "Iberia",
+   "culture": "iberico",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [],
+   "sea_adj": [
+    296
+   ],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    285,
+    289,
+    290,
+    291,
+    296,
+    297
+   ]
+  },
+  {
+   "id": 299,
+   "name": "Hamburgo",
+   "lon": 9.99,
+   "lat": 53.55,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    1,
+    300,
+    301,
+    302,
+    303,
+    306,
+    308,
+    309,
+    322,
+    323
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 300,
+   "name": "Bremen",
+   "lon": 8.8,
+   "lat": 53.08,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "colina",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    1,
+    299,
+    301,
+    302,
+    303,
+    305,
+    306,
+    309,
+    320,
+    322
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 301,
+   "name": "Luneburgo",
+   "lon": 10.41,
+   "lat": 53.25,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    1,
+    299,
+    300,
+    302,
+    303,
+    306,
+    307,
+    308,
+    309,
+    322
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 302,
+   "name": "Hannover",
+   "lon": 9.73,
+   "lat": 52.37,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    1,
+    299,
+    300,
+    301,
+    303,
+    305,
+    306,
+    309,
+    311,
+    312,
+    322
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 303,
+   "name": "Osnabruck",
+   "lon": 8.05,
+   "lat": 52.28,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    1,
+    119,
+    299,
+    300,
+    301,
+    302,
+    304,
+    305,
+    320,
+    321
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 304,
+   "name": "Colonia",
+   "lon": 6.96,
+   "lat": 50.94,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    18,
+    119,
+    207,
+    208,
+    303,
+    305,
+    310,
+    321
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 305,
+   "name": "Dortmund",
+   "lon": 7.47,
+   "lat": 51.51,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "colina",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    1,
+    119,
+    207,
+    208,
+    300,
+    302,
+    303,
+    304,
+    310,
+    320,
+    321
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 306,
+   "name": "Magdeburgo",
+   "lon": 11.63,
+   "lat": 52.12,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    1,
+    299,
+    300,
+    301,
+    302,
+    307,
+    308,
+    309,
+    311,
+    312,
+    313
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 307,
+   "name": "Berlin",
+   "lon": 13.4,
+   "lat": 52.52,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    301,
+    306,
+    308,
+    309,
+    312,
+    313
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 308,
+   "name": "Rostock",
+   "lon": 12.14,
+   "lat": 54.09,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    1,
+    299,
+    301,
+    306,
+    307,
+    309
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 309,
+   "name": "Schwerin",
+   "lon": 11.41,
+   "lat": 53.63,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    1,
+    299,
+    300,
+    301,
+    302,
+    306,
+    307,
+    308,
+    322
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 310,
+   "name": "Frankfurt",
+   "lon": 8.68,
+   "lat": 50.11,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "colina",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    4,
+    208,
+    209,
+    304,
+    305,
+    311
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 311,
+   "name": "Erfurt",
+   "lon": 11.03,
+   "lat": 50.98,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    302,
+    306,
+    310,
+    312,
+    313
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 312,
+   "name": "Leipzig",
+   "lon": 12.37,
+   "lat": 51.34,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    20,
+    302,
+    306,
+    307,
+    311,
+    313
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 313,
+   "name": "Dresde",
+   "lon": 13.74,
+   "lat": 51.05,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    20,
+    306,
+    307,
+    311,
+    312
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 314,
+   "name": "Breslavia",
+   "lon": 17.04,
+   "lat": 51.11,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    20,
+    107,
+    124,
+    135,
+    315
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 315,
+   "name": "Poznan",
+   "lon": 16.93,
+   "lat": 52.41,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "colina",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    124,
+    135,
+    314,
+    317
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 316,
+   "name": "Gdansk",
+   "lon": 18.65,
+   "lat": 54.35,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    124,
+    317
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": [
+    336,
+    352,
+    356
+   ]
+  },
+  {
+   "id": 317,
+   "name": "Torun",
+   "lon": 18.6,
+   "lat": 53.01,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    124,
+    315,
+    316,
+    318
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 318,
+   "name": "Varsovia",
+   "lon": 21.01,
+   "lat": 52.23,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    55,
+    124,
+    317
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 319,
+   "name": "Cracovia",
+   "lon": 19.94,
+   "lat": 50.06,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "llanura",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    107
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 320,
+   "name": "Groningen",
+   "lon": 6.57,
+   "lat": 53.22,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "colina",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    1,
+    119,
+    300,
+    303,
+    305,
+    321
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 321,
+   "name": "Utrecht",
+   "lon": 5.12,
+   "lat": 52.09,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    18,
+    119,
+    206,
+    207,
+    303,
+    304,
+    305,
+    320
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 322,
+   "name": "Kiel",
+   "lon": 10.12,
+   "lat": 54.32,
+   "region": "Germania",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    1,
+    299,
+    300,
+    301,
+    302,
+    309,
+    323,
+    324
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 323,
+   "name": "Ribe",
+   "lon": 8.76,
+   "lat": 55.33,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    43,
+    299,
+    322,
+    324,
+    325,
+    326,
+    327
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 324,
+   "name": "Jelling",
+   "lon": 9.42,
+   "lat": 55.75,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    43,
+    322,
+    323,
+    325,
+    326
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 325,
+   "name": "Aarhus",
+   "lon": 10.2,
+   "lat": 56.16,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "colina",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    43,
+    323,
+    324,
+    326
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 326,
+   "name": "Aalborg",
+   "lon": 9.92,
+   "lat": 57.05,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    43,
+    323,
+    324,
+    325
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 327,
+   "name": "Roskilde",
+   "lon": 12.08,
+   "lat": 55.64,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    51,
+    323,
+    328,
+    329
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 328,
+   "name": "Lund",
+   "lon": 13.19,
+   "lat": 55.7,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    43,
+    51,
+    327,
+    329
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 329,
+   "name": "Halmstad",
+   "lon": 12.86,
+   "lat": 56.67,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    51,
+    327,
+    328,
+    330,
+    331
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 330,
+   "name": "Gotemburgo",
+   "lon": 11.97,
+   "lat": 57.71,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "colina",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    329,
+    331,
+    338
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 331,
+   "name": "Skara",
+   "lon": 13.44,
+   "lat": 58.39,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    329,
+    330,
+    332,
+    334,
+    335
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 332,
+   "name": "Norrkoping",
+   "lon": 16.18,
+   "lat": 58.59,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    331,
+    333,
+    334,
+    335
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 333,
+   "name": "Uppsala",
+   "lon": 17.64,
+   "lat": 59.86,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    332,
+    334,
+    335
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 334,
+   "name": "Orebro",
+   "lon": 15.21,
+   "lat": 59.27,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    331,
+    332,
+    333,
+    335
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 335,
+   "name": "Vasteras",
+   "lon": 16.54,
+   "lat": 59.61,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "colina",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    331,
+    332,
+    333,
+    334
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 336,
+   "name": "Visby",
+   "lon": 18.29,
+   "lat": 57.63,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": [
+    316,
+    348,
+    351,
+    352,
+    356
+   ]
+  },
+  {
+   "id": 337,
+   "name": "Oslo",
+   "lon": 10.75,
+   "lat": 59.91,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    338,
+    342,
+    343
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 338,
+   "name": "Sarpsborg",
+   "lon": 11.11,
+   "lat": 59.28,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    330,
+    337,
+    342,
+    343
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 339,
+   "name": "Kristiansand",
+   "lon": 8.0,
+   "lat": 58.15,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    112,
+    340
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 340,
+   "name": "Stavanger",
+   "lon": 5.73,
+   "lat": 58.97,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "colina",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    112,
+    339,
+    341
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 341,
+   "name": "Bergen",
+   "lon": 5.32,
+   "lat": 60.39,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    340
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 342,
+   "name": "Hamar",
+   "lon": 11.07,
+   "lat": 60.79,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    337,
+    338,
+    343
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 343,
+   "name": "Lillehammer",
+   "lon": 10.47,
+   "lat": 61.12,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    337,
+    338,
+    342
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 344,
+   "name": "Trondheim",
+   "lon": 10.4,
+   "lat": 63.43,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    471
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 345,
+   "name": "Bodo",
+   "lon": 14.4,
+   "lat": 67.28,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "colina",
+   "resource": "ganado",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    472,
+    473,
+    474
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "tundra",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 346,
+   "name": "Tromso",
+   "lon": 18.96,
+   "lat": 69.65,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "llanura",
+   "resource": "ganado",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    474
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "tundra",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 347,
+   "name": "Narva",
+   "lon": 28.19,
+   "lat": 59.38,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    57,
+    348
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 348,
+   "name": "Tallin",
+   "lon": 24.75,
+   "lat": 59.44,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    57,
+    347,
+    349,
+    350
+   ],
+   "sea_adj": [
+    358
+   ],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": [
+    336,
+    358
+   ]
+  },
+  {
+   "id": 349,
+   "name": "Tartu",
+   "lon": 26.73,
+   "lat": 58.38,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    57,
+    92,
+    348,
+    350,
+    351
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 350,
+   "name": "Parnu",
+   "lon": 24.5,
+   "lat": 58.39,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "colina",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    57,
+    92,
+    348,
+    349
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 351,
+   "name": "Riga",
+   "lon": 24.11,
+   "lat": 56.95,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    57,
+    92,
+    95,
+    349,
+    352,
+    353
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": [
+    336
+   ]
+  },
+  {
+   "id": 352,
+   "name": "Liepaja",
+   "lon": 21.01,
+   "lat": 56.5,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "bosque",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    92,
+    351,
+    356
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": [
+    316,
+    336
+   ]
+  },
+  {
+   "id": 353,
+   "name": "Daugavpils",
+   "lon": 26.54,
+   "lat": 55.87,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    92,
+    95,
+    351,
+    354,
+    355
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 354,
+   "name": "Vilna",
+   "lon": 25.28,
+   "lat": 54.69,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    95,
+    353,
+    355
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 355,
+   "name": "Kaunas",
+   "lon": 23.9,
+   "lat": 54.9,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "colina",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    95,
+    353,
+    354,
+    356
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 356,
+   "name": "Klaipeda",
+   "lon": 21.14,
+   "lat": 55.71,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    95,
+    352,
+    355
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": [
+    316,
+    336
+   ]
+  },
+  {
+   "id": 357,
+   "name": "Turku",
+   "lon": 22.27,
+   "lat": 60.45,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "bosque",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    358,
+    359,
+    360
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 358,
+   "name": "Helsinki",
+   "lon": 24.94,
+   "lat": 60.17,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    357,
+    359,
+    360
+   ],
+   "sea_adj": [
+    348
+   ],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": [
+    348
+   ]
+  },
+  {
+   "id": 359,
+   "name": "Tampere",
+   "lon": 23.76,
+   "lat": 61.5,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    357,
+    358,
+    360,
+    475
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 360,
+   "name": "Lahti",
+   "lon": 25.66,
+   "lat": 60.98,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "colina",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    357,
+    358,
+    359,
+    361,
+    475
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 361,
+   "name": "Savonlinna",
+   "lon": 28.88,
+   "lat": 61.87,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    360,
+    475,
+    476
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 362,
+   "name": "Oulu",
+   "lon": 25.47,
+   "lat": 65.01,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    363,
+    477
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 363,
+   "name": "Rovaniemi",
+   "lon": 25.73,
+   "lat": 66.5,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "llanura",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    362,
+    478
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "tundra",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 364,
+   "name": "Inari",
+   "lon": 27.03,
+   "lat": 68.91,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "llanura",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    478
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "tundra",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 365,
+   "name": "Hebron",
+   "lon": 35.1,
+   "lat": 31.53,
+   "region": "Levante",
+   "culture": "semita",
+   "terrain": "colina",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    6,
+    46,
+    64,
+    70,
+    76,
+    138,
+    250,
+    251,
+    366,
+    367,
+    368,
+    369,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 366,
+   "name": "Gaza",
+   "lon": 34.45,
+   "lat": 31.5,
+   "region": "Levante",
+   "culture": "semita",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    6,
+    46,
+    70,
+    76,
+    138,
+    250,
+    251,
+    365,
+    367,
+    368,
+    369,
+    482,
+    483,
+    485,
+    486,
+    487,
+    488
+   ],
+   "sea_adj": [
+    64
+   ],
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    64,
+    82,
+    118
+   ]
+  },
+  {
+   "id": 367,
+   "name": "Ascalon",
+   "lon": 34.57,
+   "lat": 31.67,
+   "region": "Levante",
+   "culture": "semita",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    6,
+    46,
+    64,
+    70,
+    76,
+    138,
+    250,
+    251,
+    365,
+    366,
+    368,
+    369,
+    482,
+    485,
+    486,
+    487,
+    488
+   ],
+   "sea_adj": [
+    483
+   ],
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": [
+    82,
+    118
+   ]
+  },
+  {
+   "id": 368,
+   "name": "Megido",
+   "lon": 35.18,
+   "lat": 32.58,
+   "region": "Levante",
+   "culture": "semita",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    6,
+    19,
+    40,
+    64,
+    70,
+    76,
+    138,
+    250,
+    251,
+    365,
+    366,
+    367,
+    369,
+    487,
+    488
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 369,
+   "name": "Bosra",
+   "lon": 36.48,
+   "lat": 32.52,
+   "region": "Levante",
+   "culture": "semita",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    6,
+    19,
+    40,
+    64,
+    70,
+    76,
+    126,
+    138,
+    250,
+    251,
+    365,
+    366,
+    367,
+    368,
+    487
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 370,
+   "name": "Palmira",
+   "lon": 38.27,
+   "lat": 34.55,
+   "region": "Levante",
+   "culture": "semita",
+   "terrain": "colina",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    2,
+    14,
+    40,
+    44,
+    67,
+    126,
+    142,
+    371,
+    373
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 371,
+   "name": "Qatna",
+   "lon": 36.87,
+   "lat": 34.84,
+   "region": "Levante",
+   "culture": "semita",
+   "terrain": "llanura",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    2,
+    14,
+    19,
+    40,
+    44,
+    67,
+    126,
+    142,
+    150,
+    370
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 372,
+   "name": "Carquemis",
+   "lon": 38.0,
+   "lat": 36.83,
+   "region": "Levante",
+   "culture": "semita",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    2,
+    13,
+    29,
+    44,
+    65,
+    67,
+    108
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 373,
+   "name": "Terqa",
+   "lon": 40.56,
+   "lat": 34.92,
+   "region": "Levante",
+   "culture": "semita",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    98,
+    108,
+    142,
+    168,
+    370,
+    376
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 374,
+   "name": "Isin",
+   "lon": 45.28,
+   "lat": 31.92,
+   "region": "Mesopotamia",
+   "culture": "sumerio",
+   "terrain": "llanura",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    17,
+    50,
+    53,
+    81,
+    87,
+    88,
+    110,
+    134,
+    137,
+    152,
+    153,
+    154,
+    170
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 375,
+   "name": "Samarra",
+   "lon": 43.88,
+   "lat": 34.2,
+   "region": "Mesopotamia",
+   "culture": "sumerio",
+   "terrain": "colina",
+   "resource": "trigo",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    15,
+    17,
+    49,
+    53,
+    81,
+    137,
+    376,
+    377
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 376,
+   "name": "Hatra",
+   "lon": 42.72,
+   "lat": 35.59,
+   "region": "Mesopotamia",
+   "culture": "sumerio",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    15,
+    49,
+    98,
+    109,
+    168,
+    169,
+    373,
+    375,
+    377
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 377,
+   "name": "Nuzi",
+   "lon": 44.27,
+   "lat": 35.17,
+   "region": "Mesopotamia",
+   "culture": "sumerio",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    15,
+    49,
+    53,
+    109,
+    375,
+    376
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 378,
+   "name": "Qalat al Bahrain",
+   "lon": 50.52,
+   "lat": 26.23,
+   "region": "Golfo Persico",
+   "culture": "dilmun",
+   "terrain": "desierto",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    42,
+    379,
+    381,
+    382,
+    383
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 379,
+   "name": "Saar",
+   "lon": 50.48,
+   "lat": 26.2,
+   "region": "Golfo Persico",
+   "culture": "dilmun",
+   "terrain": "desierto",
+   "resource": "sal",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    42,
+    378,
+    381,
+    382,
+    383
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 380,
+   "name": "Failaka",
+   "lon": 48.34,
+   "lat": 29.44,
+   "region": "Golfo Persico",
+   "culture": "dilmun",
+   "terrain": "colina",
+   "resource": "sal",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    85,
+    99
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 381,
+   "name": "Tarut",
+   "lon": 50.08,
+   "lat": 26.57,
+   "region": "Golfo Persico",
+   "culture": "dilmun",
+   "terrain": "desierto",
+   "resource": "sal",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    42,
+    378,
+    379,
+    382,
+    383
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 382,
+   "name": "Hofuf",
+   "lon": 49.59,
+   "lat": 25.36,
+   "region": "Golfo Persico",
+   "culture": "dilmun",
+   "terrain": "desierto",
+   "resource": "sal",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    378,
+    379,
+    381,
+    383
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 383,
+   "name": "Dhahran",
+   "lon": 50.1,
+   "lat": 26.29,
+   "region": "Golfo Persico",
+   "culture": "dilmun",
+   "terrain": "desierto",
+   "resource": "sal",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    42,
+    378,
+    379,
+    381,
+    382
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 384,
+   "name": "Umm an Nar",
+   "lon": 54.5,
+   "lat": 24.44,
+   "region": "Golfo Persico",
+   "culture": "dilmun",
+   "terrain": "desierto",
+   "resource": "sal",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    385
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 385,
+   "name": "Hili",
+   "lon": 55.76,
+   "lat": 24.29,
+   "region": "Golfo Persico",
+   "culture": "dilmun",
+   "terrain": "colina",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    97,
+    384,
+    386,
+    387
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 386,
+   "name": "Bat",
+   "lon": 56.74,
+   "lat": 23.27,
+   "region": "Golfo Persico",
+   "culture": "dilmun",
+   "terrain": "desierto",
+   "resource": "sal",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    97,
+    385,
+    387
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 387,
+   "name": "Sohar",
+   "lon": 56.74,
+   "lat": 24.35,
+   "region": "Golfo Persico",
+   "culture": "dilmun",
+   "terrain": "desierto",
+   "resource": "sal",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    97,
+    385,
+    386
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 388,
+   "name": "Qazvin",
+   "lon": 50.0,
+   "lat": 36.27,
+   "region": "Iran",
+   "culture": "iranio",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    127,
+    389
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 389,
+   "name": "Hamadan",
+   "lon": 48.52,
+   "lat": 34.8,
+   "region": "Iran",
+   "culture": "iranio",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    388,
+    390
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 390,
+   "name": "Kermanshah",
+   "lon": 47.07,
+   "lat": 34.31,
+   "region": "Iran",
+   "culture": "iranio",
+   "terrain": "colina",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    389
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 391,
+   "name": "Kashan",
+   "lon": 51.44,
+   "lat": 33.98,
+   "region": "Iran",
+   "culture": "iranio",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    127,
+    146,
+    392
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 392,
+   "name": "Isfahan",
+   "lon": 51.68,
+   "lat": 32.65,
+   "region": "Iran",
+   "culture": "iranio",
+   "terrain": "estepa",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    146,
+    391
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 393,
+   "name": "Yazd",
+   "lon": 54.37,
+   "lat": 31.9,
+   "region": "Iran",
+   "culture": "iranio",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 394,
+   "name": "Shiraz",
+   "lon": 52.58,
+   "lat": 29.59,
+   "region": "Iran",
+   "culture": "iranio",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    8,
+    121
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 395,
+   "name": "Jiroft",
+   "lon": 57.74,
+   "lat": 28.68,
+   "region": "Iran",
+   "culture": "iranio",
+   "terrain": "colina",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    79
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 396,
+   "name": "Shahr-e Sukhteh",
+   "lon": 61.33,
+   "lat": 30.6,
+   "region": "Iran",
+   "culture": "iranio",
+   "terrain": "estepa",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    397
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 397,
+   "name": "Zahedan",
+   "lon": 60.86,
+   "lat": 29.5,
+   "region": "Iran",
+   "culture": "iranio",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    396
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 398,
+   "name": "Nishapur",
+   "lon": 58.79,
+   "lat": 36.21,
+   "region": "Iran",
+   "culture": "iranio",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    399,
+    400,
+    401,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 399,
+   "name": "Sabzevar",
+   "lon": 57.68,
+   "lat": 36.21,
+   "region": "Iran",
+   "culture": "iranio",
+   "terrain": "estepa",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    398,
+    400,
+    401,
+    404,
+    407,
+    408
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 400,
+   "name": "Mashhad",
+   "lon": 59.62,
+   "lat": 36.3,
+   "region": "Iran",
+   "culture": "iranio",
+   "terrain": "colina",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    398,
+    399,
+    404,
+    405,
+    406,
+    408,
+    409,
+    410,
+    411
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 401,
+   "name": "Bojnurd",
+   "lon": 57.33,
+   "lat": 37.47,
+   "region": "Iran",
+   "culture": "iranio",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    398,
+    399,
+    404,
+    405,
+    407,
+    408
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 402,
+   "name": "Damghan",
+   "lon": 54.35,
+   "lat": 36.17,
+   "region": "Iran",
+   "culture": "iranio",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    66,
+    145,
+    403
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 403,
+   "name": "Semnan",
+   "lon": 53.39,
+   "lat": 35.57,
+   "region": "Iran",
+   "culture": "iranio",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    66,
+    127,
+    145,
+    402
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 404,
+   "name": "Anau",
+   "lon": 58.53,
+   "lat": 37.9,
+   "region": "Kopet Dag",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    398,
+    399,
+    400,
+    401,
+    405,
+    406,
+    407,
+    408,
+    409,
+    411
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 405,
+   "name": "Namazga Tepe",
+   "lon": 59.15,
+   "lat": 37.92,
+   "region": "Kopet Dag",
+   "culture": "namazga",
+   "terrain": "colina",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    398,
+    400,
+    401,
+    404,
+    406,
+    407,
+    408,
+    409,
+    411
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 406,
+   "name": "Altyn Depe",
+   "lon": 60.47,
+   "lat": 36.86,
+   "region": "Kopet Dag",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    398,
+    400,
+    404,
+    405,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 407,
+   "name": "Djeitun",
+   "lon": 58.33,
+   "lat": 38.12,
+   "region": "Kopet Dag",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    398,
+    399,
+    401,
+    404,
+    405,
+    408,
+    409,
+    411
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 408,
+   "name": "Abiverd",
+   "lon": 59.58,
+   "lat": 37.28,
+   "region": "Kopet Dag",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    398,
+    399,
+    400,
+    401,
+    404,
+    405,
+    406,
+    407,
+    409,
+    410,
+    411,
+    415
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 409,
+   "name": "Dushak",
+   "lon": 60.04,
+   "lat": 37.19,
+   "region": "Kopet Dag",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    398,
+    400,
+    404,
+    405,
+    406,
+    407,
+    408,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 410,
+   "name": "Serakhs",
+   "lon": 61.17,
+   "lat": 36.54,
+   "region": "Kopet Dag",
+   "culture": "namazga",
+   "terrain": "colina",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    398,
+    400,
+    406,
+    408,
+    409,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 411,
+   "name": "Tejen",
+   "lon": 60.51,
+   "lat": 37.38,
+   "region": "Kopet Dag",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    398,
+    400,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 412,
+   "name": "Merv",
+   "lon": 62.18,
+   "lat": 37.66,
+   "region": "Margiana",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    406,
+    409,
+    410,
+    411,
+    413,
+    414,
+    415,
+    416,
+    417,
+    444
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 413,
+   "name": "Gonur",
+   "lon": 62.02,
+   "lat": 38.21,
+   "region": "Margiana",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    406,
+    409,
+    410,
+    411,
+    412,
+    414,
+    415,
+    416,
+    417,
+    444
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 414,
+   "name": "Togolok",
+   "lon": 62.14,
+   "lat": 37.98,
+   "region": "Margiana",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    406,
+    409,
+    410,
+    411,
+    412,
+    413,
+    415,
+    416,
+    417,
+    444
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 415,
+   "name": "Mary",
+   "lon": 61.83,
+   "lat": 37.6,
+   "region": "Margiana",
+   "culture": "namazga",
+   "terrain": "colina",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    406,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    416,
+    417,
+    444
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 416,
+   "name": "Yoloten",
+   "lon": 62.36,
+   "lat": 37.3,
+   "region": "Margiana",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    406,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    417,
+    444
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 417,
+   "name": "Bayramaly",
+   "lon": 62.17,
+   "lat": 37.62,
+   "region": "Margiana",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    406,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    444
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 418,
+   "name": "Balkh",
+   "lon": 66.9,
+   "lat": 36.76,
+   "region": "Bactria",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    420,
+    421,
+    425,
+    426,
+    427
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 419,
+   "name": "Shortugai",
+   "lon": 69.41,
+   "lat": 37.3,
+   "region": "Bactria",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    420,
+    421,
+    422,
+    423
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 420,
+   "name": "Termez",
+   "lon": 67.28,
+   "lat": 37.22,
+   "region": "Bactria",
+   "culture": "namazga",
+   "terrain": "colina",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    418,
+    419,
+    421,
+    422,
+    423,
+    426,
+    427,
+    431
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 421,
+   "name": "Kunduz",
+   "lon": 68.87,
+   "lat": 36.73,
+   "region": "Bactria",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    418,
+    419,
+    420,
+    422,
+    423
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 422,
+   "name": "Dushanbe",
+   "lon": 68.79,
+   "lat": 38.56,
+   "region": "Bactria",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    419,
+    420,
+    421,
+    423,
+    428,
+    430,
+    431,
+    433,
+    435
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 423,
+   "name": "Hisor",
+   "lon": 68.55,
+   "lat": 38.53,
+   "region": "Bactria",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    419,
+    420,
+    421,
+    422,
+    428,
+    430,
+    431,
+    433,
+    435
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 424,
+   "name": "Herat",
+   "lon": 62.2,
+   "lat": 34.35,
+   "region": "Bactria",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 425,
+   "name": "Maymana",
+   "lon": 64.77,
+   "lat": 35.92,
+   "region": "Bactria",
+   "culture": "namazga",
+   "terrain": "colina",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    418,
+    426,
+    427
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 426,
+   "name": "Andkhoy",
+   "lon": 65.12,
+   "lat": 36.95,
+   "region": "Bactria",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    418,
+    420,
+    425,
+    427
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 427,
+   "name": "Shibirghan",
+   "lon": 65.75,
+   "lat": 36.67,
+   "region": "Bactria",
+   "culture": "namazga",
+   "terrain": "estepa",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    418,
+    420,
+    425,
+    426
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 428,
+   "name": "Samarcanda",
+   "lon": 66.97,
+   "lat": 39.65,
+   "region": "Sogdiana",
+   "culture": "kelteminar",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    422,
+    423,
+    429,
+    430,
+    431,
+    432,
+    433
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 429,
+   "name": "Bujara",
+   "lon": 64.42,
+   "lat": 39.77,
+   "region": "Sogdiana",
+   "culture": "kelteminar",
+   "terrain": "estepa",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    428,
+    431,
+    432,
+    443,
+    444
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 430,
+   "name": "Panjakent",
+   "lon": 67.61,
+   "lat": 39.5,
+   "region": "Sogdiana",
+   "culture": "kelteminar",
+   "terrain": "colina",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    422,
+    423,
+    428,
+    431,
+    432,
+    433,
+    435
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 431,
+   "name": "Shahrisabz",
+   "lon": 66.83,
+   "lat": 39.06,
+   "region": "Sogdiana",
+   "culture": "kelteminar",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    420,
+    422,
+    423,
+    428,
+    429,
+    430,
+    432,
+    433
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 432,
+   "name": "Navoi",
+   "lon": 65.38,
+   "lat": 40.09,
+   "region": "Sogdiana",
+   "culture": "kelteminar",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    428,
+    429,
+    430,
+    431,
+    433,
+    444
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 433,
+   "name": "Jizzakh",
+   "lon": 67.84,
+   "lat": 40.12,
+   "region": "Sogdiana",
+   "culture": "kelteminar",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    422,
+    423,
+    428,
+    430,
+    431,
+    432,
+    434,
+    435
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 434,
+   "name": "Tashkent",
+   "lon": 69.24,
+   "lat": 41.3,
+   "region": "Sogdiana",
+   "culture": "kelteminar",
+   "terrain": "estepa",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    433,
+    435,
+    436,
+    456
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 435,
+   "name": "Khujand",
+   "lon": 69.62,
+   "lat": 40.28,
+   "region": "Sogdiana",
+   "culture": "kelteminar",
+   "terrain": "colina",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    422,
+    423,
+    430,
+    433,
+    434,
+    436,
+    437
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 436,
+   "name": "Kokand",
+   "lon": 70.94,
+   "lat": 40.53,
+   "region": "Sogdiana",
+   "culture": "kelteminar",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    434,
+    435,
+    437
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 437,
+   "name": "Fergana",
+   "lon": 71.78,
+   "lat": 40.39,
+   "region": "Sogdiana",
+   "culture": "kelteminar",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    435,
+    436
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 438,
+   "name": "Khiva",
+   "lon": 60.36,
+   "lat": 41.38,
+   "region": "Corasmia",
+   "culture": "kelteminar",
+   "terrain": "desierto",
+   "resource": "sal",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    439,
+    440,
+    441,
+    442,
+    443
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 439,
+   "name": "Urgench",
+   "lon": 60.63,
+   "lat": 41.55,
+   "region": "Corasmia",
+   "culture": "kelteminar",
+   "terrain": "desierto",
+   "resource": "sal",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    438,
+    440,
+    441,
+    442,
+    443
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 440,
+   "name": "Nukus",
+   "lon": 59.61,
+   "lat": 42.46,
+   "region": "Corasmia",
+   "culture": "kelteminar",
+   "terrain": "colina",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    438,
+    439,
+    441,
+    442
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 441,
+   "name": "Ayaz Kala",
+   "lon": 61.03,
+   "lat": 42.01,
+   "region": "Corasmia",
+   "culture": "kelteminar",
+   "terrain": "desierto",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    438,
+    439,
+    440,
+    442,
+    443
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 442,
+   "name": "Kunya Urgench",
+   "lon": 59.16,
+   "lat": 42.32,
+   "region": "Corasmia",
+   "culture": "kelteminar",
+   "terrain": "desierto",
+   "resource": "sal",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    438,
+    439,
+    440,
+    441
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 443,
+   "name": "Dargan",
+   "lon": 62.0,
+   "lat": 40.48,
+   "region": "Corasmia",
+   "culture": "kelteminar",
+   "terrain": "desierto",
+   "resource": "sal",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    429,
+    438,
+    439,
+    441,
+    444
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 444,
+   "name": "Turkmenabat",
+   "lon": 63.58,
+   "lat": 39.08,
+   "region": "Corasmia",
+   "culture": "kelteminar",
+   "terrain": "desierto",
+   "resource": "sal",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    429,
+    432,
+    443
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "desierto",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 445,
+   "name": "Botai",
+   "lon": 67.65,
+   "lat": 53.3,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "colina",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    446,
+    447,
+    506,
+    508
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 446,
+   "name": "Kokshetau",
+   "lon": 69.38,
+   "lat": 53.28,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    445,
+    447,
+    506,
+    507
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 447,
+   "name": "Petropavl",
+   "lon": 69.16,
+   "lat": 54.88,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    445,
+    446
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 448,
+   "name": "Kostanay",
+   "lon": 63.62,
+   "lat": 53.22,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "estepa",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 449,
+   "name": "Torgai",
+   "lon": 63.5,
+   "lat": 49.63,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 450,
+   "name": "Astana",
+   "lon": 71.43,
+   "lat": 51.17,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "colina",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    451,
+    506,
+    507,
+    509
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 451,
+   "name": "Karaganda",
+   "lon": 73.09,
+   "lat": 49.8,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "estepa",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    450,
+    509
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 452,
+   "name": "Zhezkazgan",
+   "lon": 67.71,
+   "lat": 47.8,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 453,
+   "name": "Pavlodar",
+   "lon": 76.97,
+   "lat": 52.29,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    454,
+    510
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 454,
+   "name": "Ekibastuz",
+   "lon": 75.32,
+   "lat": 51.72,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    453,
+    509
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 455,
+   "name": "Turkestan",
+   "lon": 68.27,
+   "lat": 43.3,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "colina",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    456
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 456,
+   "name": "Shymkent",
+   "lon": 69.59,
+   "lat": 42.32,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    434,
+    455,
+    457
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 457,
+   "name": "Taraz",
+   "lon": 71.37,
+   "lat": 42.9,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    456
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 458,
+   "name": "Bishkek",
+   "lon": 74.61,
+   "lat": 42.87,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    459,
+    460
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 459,
+   "name": "Almaty",
+   "lon": 76.89,
+   "lat": 43.24,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    458,
+    460
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 460,
+   "name": "Issyk Kul",
+   "lon": 77.1,
+   "lat": 42.45,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "colina",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    458,
+    459
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 461,
+   "name": "Afanasievo",
+   "lon": 91.3,
+   "lat": 53.9,
+   "region": "Altai",
+   "culture": "afanasievo",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    462,
+    463,
+    514
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 462,
+   "name": "Abakan",
+   "lon": 91.44,
+   "lat": 53.72,
+   "region": "Altai",
+   "culture": "afanasievo",
+   "terrain": "estepa",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    461,
+    463,
+    514
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 463,
+   "name": "Minusinsk",
+   "lon": 91.69,
+   "lat": 53.71,
+   "region": "Altai",
+   "culture": "afanasievo",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    461,
+    462,
+    514
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 464,
+   "name": "Gorno Altaysk",
+   "lon": 85.96,
+   "lat": 51.96,
+   "region": "Altai",
+   "culture": "afanasievo",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    465,
+    466,
+    512,
+    513
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 465,
+   "name": "Biysk",
+   "lon": 85.21,
+   "lat": 52.54,
+   "region": "Altai",
+   "culture": "afanasievo",
+   "terrain": "colina",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    464,
+    466,
+    512,
+    513
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 466,
+   "name": "Barnaul",
+   "lon": 83.77,
+   "lat": 53.35,
+   "region": "Altai",
+   "culture": "afanasievo",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    464,
+    465
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 467,
+   "name": "Ust Kamenogorsk",
+   "lon": 82.61,
+   "lat": 49.95,
+   "region": "Altai",
+   "culture": "afanasievo",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    468,
+    511,
+    512
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 468,
+   "name": "Semey",
+   "lon": 80.23,
+   "lat": 50.41,
+   "region": "Altai",
+   "culture": "afanasievo",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    467,
+    510
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 469,
+   "name": "Zaysan",
+   "lon": 84.87,
+   "lat": 47.47,
+   "region": "Altai",
+   "culture": "afanasievo",
+   "terrain": "estepa",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 470,
+   "name": "Kosh Agach",
+   "lon": 88.67,
+   "lat": 50.0,
+   "region": "Altai",
+   "culture": "afanasievo",
+   "terrain": "colina",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 471,
+   "name": "Namsos",
+   "lon": 11.49,
+   "lat": 64.47,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    344,
+    472
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 472,
+   "name": "Mosjoen",
+   "lon": 13.2,
+   "lat": 65.84,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    345,
+    471,
+    473
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 473,
+   "name": "Mo i Rana",
+   "lon": 14.14,
+   "lat": 66.3,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "llanura",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    345,
+    472
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "tundra",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 474,
+   "name": "Narvik",
+   "lon": 17.43,
+   "lat": 68.44,
+   "region": "Escandinavia",
+   "culture": "nordico",
+   "terrain": "llanura",
+   "resource": "ganado",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    345,
+    346
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "tundra",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 475,
+   "name": "Jyvaskyla",
+   "lon": 25.75,
+   "lat": 62.24,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "colina",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    359,
+    360,
+    361,
+    476
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 476,
+   "name": "Kuopio",
+   "lon": 27.68,
+   "lat": 62.89,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "bosque",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    361,
+    475,
+    477
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 477,
+   "name": "Kajaani",
+   "lon": 27.73,
+   "lat": 64.22,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    362,
+    476
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "taiga",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 478,
+   "name": "Sodankyla",
+   "lon": 26.59,
+   "lat": 67.42,
+   "region": "Baltico",
+   "culture": "narva",
+   "terrain": "llanura",
+   "resource": "ganado",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    363,
+    364
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "tundra",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 479,
+   "name": "Pelusium",
+   "lon": 32.54,
+   "lat": 31.04,
+   "region": "Sinai",
+   "culture": "semita",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    23,
+    71,
+    103,
+    131,
+    164,
+    167,
+    480,
+    481,
+    482,
+    483,
+    488
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 480,
+   "name": "Qantara",
+   "lon": 32.31,
+   "lat": 30.85,
+   "region": "Sinai",
+   "culture": "semita",
+   "terrain": "colina",
+   "resource": "trigo",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    23,
+    71,
+    103,
+    131,
+    136,
+    164,
+    167,
+    479,
+    481,
+    482,
+    483
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 481,
+   "name": "Suez",
+   "lon": 32.55,
+   "lat": 29.97,
+   "region": "Sinai",
+   "culture": "semita",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    23,
+    59,
+    71,
+    72,
+    103,
+    131,
+    136,
+    164,
+    167,
+    479,
+    480,
+    482,
+    483
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 482,
+   "name": "Nakhl",
+   "lon": 33.74,
+   "lat": 29.9,
+   "region": "Sinai",
+   "culture": "semita",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    46,
+    64,
+    136,
+    164,
+    365,
+    366,
+    367,
+    479,
+    480,
+    481,
+    483,
+    484,
+    485,
+    486,
+    488
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 483,
+   "name": "Arish",
+   "lon": 33.8,
+   "lat": 31.13,
+   "region": "Sinai",
+   "culture": "semita",
+   "terrain": "llanura",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    6,
+    46,
+    64,
+    76,
+    136,
+    164,
+    251,
+    365,
+    366,
+    479,
+    480,
+    481,
+    482,
+    484,
+    485,
+    486,
+    487,
+    488
+   ],
+   "sea_adj": [
+    367
+   ],
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": [
+    19,
+    82,
+    118
+   ]
+  },
+  {
+   "id": 484,
+   "name": "Aqaba",
+   "lon": 35.0,
+   "lat": 29.53,
+   "region": "Sinai",
+   "culture": "semita",
+   "terrain": "llanura",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    46,
+    136,
+    365,
+    482,
+    483,
+    485,
+    486,
+    488
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 485,
+   "name": "Petra",
+   "lon": 35.44,
+   "lat": 30.33,
+   "region": "Sinai",
+   "culture": "semita",
+   "terrain": "colina",
+   "resource": "trigo",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    6,
+    46,
+    64,
+    76,
+    136,
+    138,
+    250,
+    251,
+    365,
+    366,
+    367,
+    482,
+    483,
+    484,
+    486,
+    487,
+    488
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 486,
+   "name": "Maan",
+   "lon": 35.73,
+   "lat": 30.2,
+   "region": "Sinai",
+   "culture": "semita",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    6,
+    46,
+    64,
+    76,
+    136,
+    251,
+    365,
+    366,
+    367,
+    482,
+    483,
+    484,
+    485,
+    487,
+    488
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 487,
+   "name": "Amman",
+   "lon": 35.91,
+   "lat": 31.95,
+   "region": "Sinai",
+   "culture": "semita",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    6,
+    40,
+    46,
+    64,
+    70,
+    76,
+    138,
+    250,
+    251,
+    365,
+    366,
+    367,
+    368,
+    369,
+    483,
+    485,
+    486,
+    488
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 488,
+   "name": "Negev",
+   "lon": 34.8,
+   "lat": 30.85,
+   "region": "Sinai",
+   "culture": "semita",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    6,
+    46,
+    64,
+    76,
+    136,
+    138,
+    250,
+    251,
+    365,
+    366,
+    367,
+    368,
+    479,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "pradera",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 489,
+   "name": "Stirling",
+   "lon": -3.94,
+   "lat": 56.12,
+   "region": "Caledonia",
+   "culture": "megalitico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    52,
+    248,
+    249,
+    490,
+    491,
+    492,
+    493,
+    495,
+    496,
+    497
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 490,
+   "name": "Dunkeld",
+   "lon": -3.59,
+   "lat": 56.56,
+   "region": "Caledonia",
+   "culture": "megalitico",
+   "terrain": "colina",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    52,
+    248,
+    249,
+    489,
+    491,
+    492,
+    493,
+    495,
+    496,
+    497
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 491,
+   "name": "Inverness",
+   "lon": -4.22,
+   "lat": 57.48,
+   "region": "Caledonia",
+   "culture": "megalitico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    52,
+    116,
+    181,
+    248,
+    249,
+    489,
+    490,
+    492,
+    493,
+    494
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 492,
+   "name": "Elgin",
+   "lon": -3.31,
+   "lat": 57.65,
+   "region": "Caledonia",
+   "culture": "megalitico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    52,
+    248,
+    249,
+    489,
+    490,
+    491,
+    493
+   ],
+   "sea_adj": [
+    494
+   ],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 493,
+   "name": "Aberdeen",
+   "lon": -2.09,
+   "lat": 57.15,
+   "region": "Caledonia",
+   "culture": "megalitico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    52,
+    489,
+    490,
+    491,
+    492
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 494,
+   "name": "Thurso",
+   "lon": -3.53,
+   "lat": 58.59,
+   "region": "Caledonia",
+   "culture": "megalitico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": true,
+   "adj": [
+    116,
+    491
+   ],
+   "sea_adj": [
+    181,
+    492
+   ],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 495,
+   "name": "Vindolanda",
+   "lon": -2.36,
+   "lat": 54.99,
+   "region": "Caledonia",
+   "culture": "megalitico",
+   "terrain": "colina",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    52,
+    238,
+    239,
+    249,
+    489,
+    490,
+    496,
+    497
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 496,
+   "name": "Carlisle",
+   "lon": -2.94,
+   "lat": 54.9,
+   "region": "Caledonia",
+   "culture": "megalitico",
+   "terrain": "bosque",
+   "resource": "madera",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    52,
+    238,
+    239,
+    248,
+    249,
+    489,
+    490,
+    495,
+    497
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 497,
+   "name": "Trimontium",
+   "lon": -2.72,
+   "lat": 55.6,
+   "region": "Caledonia",
+   "culture": "megalitico",
+   "terrain": "bosque",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    52,
+    239,
+    248,
+    249,
+    489,
+    490,
+    495,
+    496
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "bosque",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 498,
+   "name": "Drobeta",
+   "lon": 22.66,
+   "lat": 44.63,
+   "region": "Dacia",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    159,
+    219,
+    222,
+    223,
+    227,
+    228,
+    499
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 499,
+   "name": "Oescus",
+   "lon": 24.47,
+   "lat": 43.7,
+   "region": "Dacia",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    123,
+    222,
+    223,
+    224,
+    498,
+    500
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 500,
+   "name": "Nicopolis",
+   "lon": 25.59,
+   "lat": 43.22,
+   "region": "Dacia",
+   "culture": "danubiano",
+   "terrain": "colina",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    123,
+    157,
+    223,
+    224,
+    225,
+    499,
+    501
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 501,
+   "name": "Durostorum",
+   "lon": 27.27,
+   "lat": 44.11,
+   "region": "Dacia",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    157,
+    225,
+    226,
+    500
+   ],
+   "sea_adj": [],
+   "continent": "Europa",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 502,
+   "name": "Biga",
+   "lon": 27.24,
+   "lat": 40.23,
+   "region": "Anatolia",
+   "culture": "anatolio",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    91,
+    148,
+    503,
+    504,
+    505
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 503,
+   "name": "Canakkale",
+   "lon": 26.4,
+   "lat": 40.15,
+   "region": "Anatolia",
+   "culture": "anatolio",
+   "terrain": "llanura",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    91,
+    148,
+    502,
+    504
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 504,
+   "name": "Balikesir",
+   "lon": 27.88,
+   "lat": 39.65,
+   "region": "Anatolia",
+   "culture": "anatolio",
+   "terrain": "llanura",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    47,
+    91,
+    148,
+    172,
+    502,
+    503,
+    505
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 505,
+   "name": "Bursa",
+   "lon": 29.06,
+   "lat": 40.18,
+   "region": "Anatolia",
+   "culture": "anatolio",
+   "terrain": "colina",
+   "resource": "aceite",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    172,
+    502,
+    504
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "mediterraneo",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 506,
+   "name": "Atbasar",
+   "lon": 68.36,
+   "lat": 51.82,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "estepa",
+   "resource": "lana",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    445,
+    446,
+    450,
+    507,
+    508
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 507,
+   "name": "Akkol",
+   "lon": 70.94,
+   "lat": 52.0,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    446,
+    450,
+    506,
+    509
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 508,
+   "name": "Esil",
+   "lon": 66.4,
+   "lat": 51.95,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    445,
+    506
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 509,
+   "name": "Ereymentau",
+   "lon": 73.1,
+   "lat": 51.6,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    450,
+    451,
+    454,
+    507
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 510,
+   "name": "Kurchatov",
+   "lon": 78.54,
+   "lat": 50.76,
+   "region": "Estepa Central",
+   "culture": "botai",
+   "terrain": "colina",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    453,
+    468
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 511,
+   "name": "Ridder",
+   "lon": 83.5,
+   "lat": 50.34,
+   "region": "Altai",
+   "culture": "afanasievo",
+   "terrain": "estepa",
+   "resource": "cobre",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    467,
+    512
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 512,
+   "name": "Ust Kan",
+   "lon": 84.76,
+   "lat": 50.93,
+   "region": "Altai",
+   "culture": "afanasievo",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    464,
+    465,
+    467,
+    511
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 513,
+   "name": "Tashtagol",
+   "lon": 87.89,
+   "lat": 52.76,
+   "region": "Altai",
+   "culture": "afanasievo",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    464,
+    465,
+    514
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
+  },
+  {
+   "id": 514,
+   "name": "Abaza",
+   "lon": 90.1,
+   "lat": 52.65,
+   "region": "Altai",
+   "culture": "afanasievo",
+   "terrain": "estepa",
+   "resource": "caballos",
+   "pop": 2.5,
+   "dev": 1,
+   "coastal": false,
+   "adj": [
+    461,
+    462,
+    463,
+    513
+   ],
+   "sea_adj": [],
+   "continent": "Asia",
+   "biome": "estepa",
+   "explore_sea_adj": []
   }
  ],
  "city_states": [
@@ -7043,6 +14799,321 @@
    "playable": true,
    "is_city_state": true,
    "desc": "Comunidades tribales regionales; las etiquetas de pueblos posteriores son una abstraccion de juego."
+  },
+  {
+   "id": 26,
+   "name": "Tribus del noroeste iberico",
+   "capital": 278,
+   "prov": "Castro de Barona",
+   "culture": "iberico",
+   "gov": "monarquia",
+   "color": [
+    176,
+    106,
+    58
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 27,
+   "name": "Tribus de la Meseta",
+   "capital": 272,
+   "prov": "Numancia",
+   "culture": "iberico",
+   "gov": "monarquia",
+   "color": [
+    176,
+    106,
+    58
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 28,
+   "name": "Tribus del Tajo",
+   "capital": 270,
+   "prov": "Toledo",
+   "culture": "iberico",
+   "gov": "monarquia",
+   "color": [
+    176,
+    106,
+    58
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 29,
+   "name": "Tribus del levante iberico",
+   "capital": 289,
+   "prov": "Sagunto",
+   "culture": "iberico",
+   "gov": "monarquia",
+   "color": [
+    176,
+    106,
+    58
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 30,
+   "name": "Comunidades del Guadalquivir",
+   "capital": 267,
+   "prov": "Carmona",
+   "culture": "iberico",
+   "gov": "monarquia",
+   "color": [
+    176,
+    106,
+    58
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 31,
+   "name": "Tribus del bajo Rin",
+   "capital": 321,
+   "prov": "Utrecht",
+   "culture": "nordico",
+   "gov": "monarquia",
+   "color": [
+    90,
+    106,
+    74
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 32,
+   "name": "Tribus del Elba",
+   "capital": 306,
+   "prov": "Magdeburgo",
+   "culture": "nordico",
+   "gov": "monarquia",
+   "color": [
+    90,
+    106,
+    74
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 33,
+   "name": "Tribus del Vistula",
+   "capital": 317,
+   "prov": "Torun",
+   "culture": "nordico",
+   "gov": "monarquia",
+   "color": [
+    90,
+    106,
+    74
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 34,
+   "name": "Tribus de Jutlandia",
+   "capital": 324,
+   "prov": "Jelling",
+   "culture": "nordico",
+   "gov": "monarquia",
+   "color": [
+    90,
+    106,
+    74
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 35,
+   "name": "Tribus de Svealand",
+   "capital": 333,
+   "prov": "Uppsala",
+   "culture": "nordico",
+   "gov": "monarquia",
+   "color": [
+    90,
+    106,
+    74
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 36,
+   "name": "Tribus de Noruega",
+   "capital": 342,
+   "prov": "Hamar",
+   "culture": "nordico",
+   "gov": "monarquia",
+   "color": [
+    90,
+    106,
+    74
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 37,
+   "name": "Comunidades de Narva",
+   "capital": 347,
+   "prov": "Narva",
+   "culture": "narva",
+   "gov": "monarquia",
+   "color": [
+    90,
+    106,
+    74
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 38,
+   "name": "Comunidades de Finlandia",
+   "capital": 360,
+   "prov": "Lahti",
+   "culture": "narva",
+   "gov": "monarquia",
+   "color": [
+    90,
+    106,
+    74
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 39,
+   "name": "Comunidades de Dilmun",
+   "capital": 378,
+   "prov": "Qalat al Bahrain",
+   "culture": "dilmun",
+   "gov": "monarquia",
+   "color": [
+    176,
+    138,
+    90
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 40,
+   "name": "Comunidades de Namazga",
+   "capital": 405,
+   "prov": "Namazga Tepe",
+   "culture": "namazga",
+   "gov": "monarquia",
+   "color": [
+    90,
+    74,
+    138
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 41,
+   "name": "Comunidades de Margiana",
+   "capital": 413,
+   "prov": "Gonur",
+   "culture": "namazga",
+   "gov": "monarquia",
+   "color": [
+    90,
+    74,
+    138
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 42,
+   "name": "Comunidades de Bactria",
+   "capital": 418,
+   "prov": "Balkh",
+   "culture": "namazga",
+   "gov": "monarquia",
+   "color": [
+    90,
+    74,
+    138
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 43,
+   "name": "Comunidades de Sogdiana",
+   "capital": 428,
+   "prov": "Samarcanda",
+   "culture": "kelteminar",
+   "gov": "monarquia",
+   "color": [
+    110,
+    127,
+    62
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 44,
+   "name": "Comunidades de Corasmia",
+   "capital": 441,
+   "prov": "Ayaz Kala",
+   "culture": "kelteminar",
+   "gov": "monarquia",
+   "color": [
+    110,
+    127,
+    62
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 45,
+   "name": "Tribus de Botai",
+   "capital": 445,
+   "prov": "Botai",
+   "culture": "botai",
+   "gov": "monarquia",
+   "color": [
+    110,
+    127,
+    62
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
+  },
+  {
+   "id": 46,
+   "name": "Tribus del Altai",
+   "capital": 461,
+   "prov": "Afanasievo",
+   "culture": "afanasievo",
+   "gov": "monarquia",
+   "color": [
+    110,
+    127,
+    62
+   ],
+   "playable": true,
+   "desc": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C."
   }
  ]
 }

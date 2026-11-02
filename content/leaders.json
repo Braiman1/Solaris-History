@@ -521,6 +521,126 @@
     "Nantosuelta",
     "Andarta"
    ]
+  ],
+  "narva": [
+   [
+    "Haldan",
+    "Skjold",
+    "Frodi",
+    "Halfdan",
+    "Ragnar",
+    "Bjorn",
+    "Ingjald",
+    "Godfred"
+   ],
+   [
+    "Sigrid",
+    "Thyra",
+    "Gudrun",
+    "Astrid",
+    "Skadi",
+    "Hilda"
+   ]
+  ],
+  "dilmun": [
+   [
+    "Yatha",
+    "Karib",
+    "Shamir",
+    "Abkarib",
+    "Amir",
+    "Hassan",
+    "Wahb",
+    "Ilum"
+   ],
+   [
+    "Bilqis",
+    "Shams",
+    "Layla",
+    "Hind",
+    "Zabibe",
+    "Ishara"
+   ]
+  ],
+  "namazga": [
+   [
+    "Achaemenes",
+    "Teispes",
+    "Cambyses",
+    "Darius",
+    "Arsames",
+    "Cyrus",
+    "Phraortes",
+    "Deioces"
+   ],
+   [
+    "Atossa",
+    "Cassandane",
+    "Roxana",
+    "Artystone",
+    "Amestris",
+    "Parysatis"
+   ]
+  ],
+  "kelteminar": [
+   [
+    "Wiro",
+    "Deiwos",
+    "Perkuno",
+    "Aryo",
+    "Skandho",
+    "Yemo",
+    "Manu",
+    "Kurgan"
+   ],
+   [
+    "Dana",
+    "Saraswati",
+    "Priya",
+    "Usha",
+    "Anahita",
+    "Arma"
+   ]
+  ],
+  "botai": [
+   [
+    "Wiro",
+    "Deiwos",
+    "Perkuno",
+    "Aryo",
+    "Skandho",
+    "Yemo",
+    "Manu",
+    "Kurgan"
+   ],
+   [
+    "Dana",
+    "Saraswati",
+    "Priya",
+    "Usha",
+    "Anahita",
+    "Arma"
+   ]
+  ],
+  "afanasievo": [
+   [
+    "Wiro",
+    "Deiwos",
+    "Perkuno",
+    "Aryo",
+    "Skandho",
+    "Yemo",
+    "Manu",
+    "Kurgan"
+   ],
+   [
+    "Dana",
+    "Saraswati",
+    "Priya",
+    "Usha",
+    "Anahita",
+    "Arma"
+   ]
   ]
  },
  "governments": {

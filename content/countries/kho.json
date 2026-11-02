@@ -1,0 +1,19 @@
+{
+ "tag": "kho",
+ "id": "corasmia",
+ "name": "Corasmia",
+ "culture_tag": "kelteminar",
+ "religion_tag": "nat",
+ "capital": "Ayaz Kala",
+ "required_province": "Ayaz Kala",
+ "earliest_year": -600,
+ "era": 0,
+ "gov": "monarquia",
+ "color": [
+  110,
+  127,
+  62
+ ],
+ "adj": "Corasmia",
+ "desc": "Formacion regional historica con fecha aproximada. Su cultura inicial representa continuidad geografica de juego, no descendencia etnica directa."
+}

@@ -1,392 +1,425 @@
 [
-  {
-    "id": "culture_anatolio"
-  },
-  {
-    "id": "culture_arabigo"
-  },
-  {
-    "id": "culture_balcanico"
-  },
-  {
-    "id": "culture_bereber"
-  },
-  {
-    "id": "culture_caucasico"
-  },
-  {
-    "id": "culture_celta"
-  },
-  {
-    "id": "culture_chipriota"
-  },
-  {
-    "id": "culture_danubiano"
-  },
-  {
-    "id": "culture_egeo"
-  },
-  {
-    "id": "culture_egipcio"
-  },
-  {
-    "id": "culture_elamita"
-  },
-  {
-    "id": "culture_estepario"
-  },
-  {
-    "id": "culture_iberico"
-  },
-  {
-    "id": "culture_iranio"
-  },
-  {
-    "id": "culture_italico"
-  },
-  {
-    "id": "culture_megalitico"
-  },
-  {
-    "id": "culture_nordico"
-  },
-  {
-    "id": "culture_nubio"
-  },
-  {
-    "id": "culture_sardino"
-  },
-  {
-    "id": "culture_semita"
-  },
-  {
-    "id": "culture_sumerio"
-  },
-  {
-    "id": "flag_en"
-  },
-  {
-    "id": "flag_es"
-  },
-  {
-    "id": "moon"
-  },
-  {
-    "id": "nation_acad"
-  },
-  {
-    "id": "nation_alashiya"
-  },
-  {
-    "id": "nation_alba_longa"
-  },
-  {
-    "id": "nation_arabia"
-  },
-  {
-    "id": "nation_aricia"
-  },
-  {
-    "id": "nation_armorica"
-  },
-  {
-    "id": "nation_arvernos"
-  },
-  {
-    "id": "nation_arzawa"
-  },
-  {
-    "id": "nation_asiria"
-  },
-  {
-    "id": "nation_atenas"
-  },
-  {
-    "id": "nation_babilonia"
-  },
-  {
-    "id": "nation_belgas"
-  },
-  {
-    "id": "nation_boyos"
-  },
-  {
-    "id": "nation_britania"
-  },
-  {
-    "id": "nation_caledonia"
-  },
-  {
-    "id": "nation_canaan"
-  },
-  {
-    "id": "nation_catuvellaunos"
-  },
-  {
-    "id": "nation_creta"
-  },
-  {
-    "id": "nation_dacia"
-  },
-  {
-    "id": "nation_dilmun"
-  },
-  {
-    "id": "nation_eduos"
-  },
-  {
-    "id": "nation_egipto"
-  },
-  {
-    "id": "nation_elam"
-  },
-  {
-    "id": "nation_escandia"
-  },
-  {
-    "id": "nation_etruria"
-  },
-  {
-    "id": "nation_fenicia"
-  },
-  {
-    "id": "nation_germania"
-  },
-  {
-    "id": "nation_hatti"
-  },
-  {
-    "id": "nation_helvecios"
-  },
-  {
-    "id": "nation_iberia"
-  },
-  {
-    "id": "nation_israel"
-  },
-  {
-    "id": "nation_kush"
-  },
-  {
-    "id": "nation_lavinium"
-  },
-  {
-    "id": "nation_libia"
-  },
-  {
-    "id": "nation_lusitania"
-  },
-  {
-    "id": "nation_mauretania"
-  },
-  {
-    "id": "nation_media"
-  },
-  {
-    "id": "nation_micenas"
-  },
-  {
-    "id": "nation_nubia"
-  },
-  {
-    "id": "nation_numidia"
-  },
-  {
-    "id": "nation_persia"
-  },
-  {
-    "id": "nation_roma"
-  },
-  {
-    "id": "nation_saba"
-  },
-  {
-    "id": "nation_sardena"
-  },
-  {
-    "id": "nation_sicanos"
-  },
-  {
-    "id": "nation_siria"
-  },
-  {
-    "id": "nation_sumeria"
-  },
-  {
-    "id": "nation_tartessos"
-  },
-  {
-    "id": "nation_tracia"
-  },
-  {
-    "id": "nation_tusculum"
-  },
-  {
-    "id": "nation_urartu"
-  },
-  {
-    "id": "nation_vincha"
-  },
-  {
-    "id": "nation_wilusa"
-  },
-  {
-    "id": "nation_yamnaya"
-  },
-  {
-    "id": "religion_chr"
-  },
-  {
-    "id": "religion_jud"
-  },
-  {
-    "id": "resource_aceite"
-  },
-  {
-    "id": "resource_arcilla"
-  },
-  {
-    "id": "resource_caballos"
-  },
-  {
-    "id": "resource_cebada"
-  },
-  {
-    "id": "resource_cedro"
-  },
-  {
-    "id": "resource_ceramica"
-  },
-  {
-    "id": "resource_cobre"
-  },
-  {
-    "id": "resource_estano"
-  },
-  {
-    "id": "resource_ganado"
-  },
-  {
-    "id": "resource_incienso"
-  },
-  {
-    "id": "resource_lana"
-  },
-  {
-    "id": "resource_lapislazuli"
-  },
-  {
-    "id": "resource_lino"
-  },
-  {
-    "id": "resource_madera"
-  },
-  {
-    "id": "resource_obsidiana"
-  },
-  {
-    "id": "resource_oro"
-  },
-  {
-    "id": "resource_papiro"
-  },
-  {
-    "id": "resource_pescado"
-  },
-  {
-    "id": "resource_piedra"
-  },
-  {
-    "id": "resource_plata"
-  },
-  {
-    "id": "resource_sal"
-  },
-  {
-    "id": "resource_trigo"
-  },
-  {
-    "id": "resource_vino"
-  },
-  {
-    "id": "tech_administracion"
-  },
-  {
-    "id": "tech_agricultura"
-  },
-  {
-    "id": "tech_alfabeto"
-  },
-  {
-    "id": "tech_arco"
-  },
-  {
-    "id": "tech_bronce"
-  },
-  {
-    "id": "tech_caballeria"
-  },
-  {
-    "id": "tech_carreteras"
-  },
-  {
-    "id": "tech_carros"
-  },
-  {
-    "id": "tech_ceramica"
-  },
-  {
-    "id": "tech_cobre"
-  },
-  {
-    "id": "tech_comercio"
-  },
-  {
-    "id": "tech_derecho"
-  },
-  {
-    "id": "tech_economia_clasica"
-  },
-  {
-    "id": "tech_escritura"
-  },
-  {
-    "id": "tech_filosofia"
-  },
-  {
-    "id": "tech_hierro"
-  },
-  {
-    "id": "tech_ingenieria"
-  },
-  {
-    "id": "tech_legion"
-  },
-  {
-    "id": "tech_leyes"
-  },
-  {
-    "id": "tech_moneda"
-  },
-  {
-    "id": "tech_poliorcetica"
-  },
-  {
-    "id": "tech_riego"
-  },
-  {
-    "id": "tech_rueda"
-  },
-  {
-    "id": "tech_tactica_clasica"
-  },
-  {
-    "id": "tech_templos"
-  },
-  {
-    "id": "tech_tradicion"
-  },
-  {
-    "id": "tech_vela"
-  }
+ {
+  "id": "culture_anatolio"
+ },
+ {
+  "id": "culture_arabigo"
+ },
+ {
+  "id": "culture_balcanico"
+ },
+ {
+  "id": "culture_bereber"
+ },
+ {
+  "id": "culture_caucasico"
+ },
+ {
+  "id": "culture_celta"
+ },
+ {
+  "id": "culture_chipriota"
+ },
+ {
+  "id": "culture_danubiano"
+ },
+ {
+  "id": "culture_egeo"
+ },
+ {
+  "id": "culture_egipcio"
+ },
+ {
+  "id": "culture_elamita"
+ },
+ {
+  "id": "culture_estepario"
+ },
+ {
+  "id": "culture_iberico"
+ },
+ {
+  "id": "culture_iranio"
+ },
+ {
+  "id": "culture_italico"
+ },
+ {
+  "id": "culture_megalitico"
+ },
+ {
+  "id": "culture_nordico"
+ },
+ {
+  "id": "culture_nubio"
+ },
+ {
+  "id": "culture_sardino"
+ },
+ {
+  "id": "culture_semita"
+ },
+ {
+  "id": "culture_sumerio"
+ },
+ {
+  "id": "flag_en"
+ },
+ {
+  "id": "flag_es"
+ },
+ {
+  "id": "moon"
+ },
+ {
+  "id": "nation_acad"
+ },
+ {
+  "id": "nation_alashiya"
+ },
+ {
+  "id": "nation_alba_longa"
+ },
+ {
+  "id": "nation_arabia"
+ },
+ {
+  "id": "nation_aricia"
+ },
+ {
+  "id": "nation_armorica"
+ },
+ {
+  "id": "nation_arvernos"
+ },
+ {
+  "id": "nation_arzawa"
+ },
+ {
+  "id": "nation_asiria"
+ },
+ {
+  "id": "nation_atenas"
+ },
+ {
+  "id": "nation_babilonia"
+ },
+ {
+  "id": "nation_belgas"
+ },
+ {
+  "id": "nation_boyos"
+ },
+ {
+  "id": "nation_britania"
+ },
+ {
+  "id": "nation_caledonia"
+ },
+ {
+  "id": "nation_canaan"
+ },
+ {
+  "id": "nation_catuvellaunos"
+ },
+ {
+  "id": "nation_creta"
+ },
+ {
+  "id": "nation_dacia"
+ },
+ {
+  "id": "nation_dilmun"
+ },
+ {
+  "id": "nation_eduos"
+ },
+ {
+  "id": "nation_egipto"
+ },
+ {
+  "id": "nation_elam"
+ },
+ {
+  "id": "nation_escandia"
+ },
+ {
+  "id": "nation_etruria"
+ },
+ {
+  "id": "nation_fenicia"
+ },
+ {
+  "id": "nation_germania"
+ },
+ {
+  "id": "nation_hatti"
+ },
+ {
+  "id": "nation_helvecios"
+ },
+ {
+  "id": "nation_iberia"
+ },
+ {
+  "id": "nation_israel"
+ },
+ {
+  "id": "nation_kush"
+ },
+ {
+  "id": "nation_lavinium"
+ },
+ {
+  "id": "nation_libia"
+ },
+ {
+  "id": "nation_lusitania"
+ },
+ {
+  "id": "nation_mauretania"
+ },
+ {
+  "id": "nation_media"
+ },
+ {
+  "id": "nation_micenas"
+ },
+ {
+  "id": "nation_nubia"
+ },
+ {
+  "id": "nation_numidia"
+ },
+ {
+  "id": "nation_persia"
+ },
+ {
+  "id": "nation_roma"
+ },
+ {
+  "id": "nation_saba"
+ },
+ {
+  "id": "nation_sardena"
+ },
+ {
+  "id": "nation_sicanos"
+ },
+ {
+  "id": "nation_siria"
+ },
+ {
+  "id": "nation_sumeria"
+ },
+ {
+  "id": "nation_tartessos"
+ },
+ {
+  "id": "nation_tracia"
+ },
+ {
+  "id": "nation_tusculum"
+ },
+ {
+  "id": "nation_urartu"
+ },
+ {
+  "id": "nation_vincha"
+ },
+ {
+  "id": "nation_wilusa"
+ },
+ {
+  "id": "nation_yamnaya"
+ },
+ {
+  "id": "religion_chr"
+ },
+ {
+  "id": "religion_jud"
+ },
+ {
+  "id": "resource_aceite"
+ },
+ {
+  "id": "resource_arcilla"
+ },
+ {
+  "id": "resource_caballos"
+ },
+ {
+  "id": "resource_cebada"
+ },
+ {
+  "id": "resource_cedro"
+ },
+ {
+  "id": "resource_ceramica"
+ },
+ {
+  "id": "resource_cobre"
+ },
+ {
+  "id": "resource_estano"
+ },
+ {
+  "id": "resource_ganado"
+ },
+ {
+  "id": "resource_incienso"
+ },
+ {
+  "id": "resource_lana"
+ },
+ {
+  "id": "resource_lapislazuli"
+ },
+ {
+  "id": "resource_lino"
+ },
+ {
+  "id": "resource_madera"
+ },
+ {
+  "id": "resource_obsidiana"
+ },
+ {
+  "id": "resource_oro"
+ },
+ {
+  "id": "resource_papiro"
+ },
+ {
+  "id": "resource_pescado"
+ },
+ {
+  "id": "resource_piedra"
+ },
+ {
+  "id": "resource_plata"
+ },
+ {
+  "id": "resource_sal"
+ },
+ {
+  "id": "resource_trigo"
+ },
+ {
+  "id": "resource_vino"
+ },
+ {
+  "id": "tech_administracion"
+ },
+ {
+  "id": "tech_agricultura"
+ },
+ {
+  "id": "tech_alfabeto"
+ },
+ {
+  "id": "tech_arco"
+ },
+ {
+  "id": "tech_bronce"
+ },
+ {
+  "id": "tech_caballeria"
+ },
+ {
+  "id": "tech_carreteras"
+ },
+ {
+  "id": "tech_carros"
+ },
+ {
+  "id": "tech_ceramica"
+ },
+ {
+  "id": "tech_cobre"
+ },
+ {
+  "id": "tech_comercio"
+ },
+ {
+  "id": "tech_derecho"
+ },
+ {
+  "id": "tech_economia_clasica"
+ },
+ {
+  "id": "tech_escritura"
+ },
+ {
+  "id": "tech_filosofia"
+ },
+ {
+  "id": "tech_hierro"
+ },
+ {
+  "id": "tech_ingenieria"
+ },
+ {
+  "id": "tech_legion"
+ },
+ {
+  "id": "tech_leyes"
+ },
+ {
+  "id": "tech_moneda"
+ },
+ {
+  "id": "tech_poliorcetica"
+ },
+ {
+  "id": "tech_riego"
+ },
+ {
+  "id": "tech_rueda"
+ },
+ {
+  "id": "tech_tactica_clasica"
+ },
+ {
+  "id": "tech_templos"
+ },
+ {
+  "id": "tech_tradicion"
+ },
+ {
+  "id": "tech_vela"
+ },
+ {
+  "id": "culture_narva"
+ },
+ {
+  "id": "culture_dilmun"
+ },
+ {
+  "id": "culture_namazga"
+ },
+ {
+  "id": "culture_kelteminar"
+ },
+ {
+  "id": "culture_botai"
+ },
+ {
+  "id": "culture_afanasievo"
+ },
+ {
+  "id": "nation_margiana"
+ },
+ {
+  "id": "nation_corasmia"
+ },
+ {
+  "id": "nation_bactria"
+ },
+ {
+  "id": "nation_sogdiana"
+ },
+ {
+  "id": "nation_suevos"
+ }
 ]

@@ -1,16 +1,19 @@
 {
+ "tag": "dil",
  "id": "dilmun",
  "name": "Dilmun",
- "capital": "Dilmun",
+ "culture_tag": "dilmun",
+ "religion_tag": "anc",
+ "capital": "Qalat al Bahrain",
+ "required_province": "Qalat al Bahrain",
+ "earliest_year": -3000,
+ "era": 0,
+ "gov": "monarquia",
  "color": [
-  58,
+  176,
   138,
-  154
+  90
  ],
- "gov": "republica",
- "adj": "Dilmunita",
- "desc": "El emporio del golfo, entre Mesopotamia y el Indo.",
- "tag": "dil",
- "culture_tag": "arabigo",
- "religion_tag": "anc"
+ "adj": "Dilmun",
+ "desc": "Formacion regional historica con fecha aproximada. Su cultura inicial representa continuidad geografica de juego, no descendencia etnica directa."
 }

@@ -905,5 +905,93 @@
   "kind": "religious_symbol",
   "note_es": "Simbolo representativo de la tradicion cristiana; su uso grafico no adelanta su fecha de aparicion.",
   "note": "Conventional religious identifier; the game separately gates the appearance of this tradition."
+ },
+ {
+  "id": "culture_narva",
+  "article": "Funnelbeaker culture",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "0854 Ein Krug aus Bronocice, 3.550 v. Chr..JPG",
+  "note_es": "Ilustracion regional compartida con culture_nordico. No es una bandera ni prueba de descendencia directa.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "culture_dilmun",
+  "article": "Pre-Islamic Arabia",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Anthropomorphic stele at National Museum of Korea 01.jpg",
+  "note_es": "Ilustracion regional compartida con culture_arabigo. No es una bandera ni prueba de descendencia directa.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "culture_namazga",
+  "article": "Tepe Sialk",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Céramiques de Tepe Sialk - musée du Louvre.jpg",
+  "note_es": "Ilustracion regional compartida con culture_iranio. No es una bandera ni prueba de descendencia directa.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "culture_kelteminar",
+  "article": "Yamnaya culture",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Yamnaya pottery of the Azov-Black Sea steppes.png",
+  "note_es": "Ilustracion regional compartida con culture_estepario. No es una bandera ni prueba de descendencia directa.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "culture_botai",
+  "article": "Yamnaya culture",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Yamnaya pottery of the Azov-Black Sea steppes.png",
+  "note_es": "Ilustracion regional compartida con culture_estepario. No es una bandera ni prueba de descendencia directa.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "culture_afanasievo",
+  "article": "Yamnaya culture",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Yamnaya pottery of the Azov-Black Sea steppes.png",
+  "note_es": "Ilustracion regional compartida con culture_estepario. No es una bandera ni prueba de descendencia directa.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "nation_margiana",
+  "article": "Tepe Sialk",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Céramiques de Tepe Sialk - musée du Louvre.jpg",
+  "note_es": "Ilustracion regional compartida con culture_iranio. No es una bandera ni prueba de descendencia directa.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "nation_corasmia",
+  "article": "Yamnaya culture",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Yamnaya pottery of the Azov-Black Sea steppes.png",
+  "note_es": "Ilustracion regional compartida con culture_estepario. No es una bandera ni prueba de descendencia directa.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "nation_bactria",
+  "article": "Tepe Sialk",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Céramiques de Tepe Sialk - musée du Louvre.jpg",
+  "note_es": "Ilustracion regional compartida con culture_iranio. No es una bandera ni prueba de descendencia directa.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "nation_sogdiana",
+  "article": "Yamnaya culture",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Yamnaya pottery of the Azov-Black Sea steppes.png",
+  "note_es": "Ilustracion regional compartida con culture_estepario. No es una bandera ni prueba de descendencia directa.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "nation_suevos",
+  "article": "Funnelbeaker culture",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "0854 Ein Krug aus Bronocice, 3.550 v. Chr..JPG",
+  "note_es": "Ilustracion regional compartida con culture_nordico. No es una bandera ni prueba de descendencia directa.",
+  "kind": "historical_illustration"
  }
 ]

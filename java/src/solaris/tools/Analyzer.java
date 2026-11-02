@@ -237,7 +237,7 @@ public final class Analyzer {
     public static void exportCsv(Content c, Path outDir) throws IOException {
         Files.createDirectories(outDir);
         List<String> provinces = new ArrayList<>();
-        provinces.add("id,name,region,terrain,resource,culture,lat,lon,pop,dev,coastal,adj_count,sea_adj_count");
+        provinces.add("id,name,region,terrain,resource,culture,lat,lon,pop,dev,coastal,adj_count,sea_adj_count,biome,continent,explore_sea_adj_count");
         for (Map<String, Object> p : c.provinces) {
             provinces.add(String.join(",", csv(Json.integer(p, "id", 0)), csv(Json.str(p, "name")),
                     csv(Json.str(p, "region")), csv(Json.str(p, "terrain")), csv(Json.str(p, "resource")),
@@ -245,7 +245,8 @@ public final class Analyzer {
                     String.format(Locale.ROOT, "%.4f", Json.number(p, "lon", 0)),
                     String.format(Locale.ROOT, "%.2f", Json.number(p, "pop", 0)),
                     String.valueOf(Json.integer(p, "dev", 1)), String.valueOf(Json.bool(p, "coastal", false)),
-                    String.valueOf(Json.list(p, "adj").size()), String.valueOf(Json.list(p, "sea_adj").size())));
+                    String.valueOf(Json.list(p, "adj").size()), String.valueOf(Json.list(p, "sea_adj").size()),
+                    csv(Json.str(p,"biome")),csv(Json.str(p,"continent")),String.valueOf(Json.list(p,"explore_sea_adj").size())));
         }
         writeLines(outDir.resolve("provinces.csv"), provinces);
 

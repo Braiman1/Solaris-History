@@ -130,7 +130,8 @@ int Game::pickProvince(float mx, float my) const {
     Vec3 hit = o + d * t;
     float lat, lon;
     dirToLatLon(normalize(hit), lat, lon);
-    return G.map.pick(lat, lon);
+    int id=G.map.pick(lat, lon);
+    return sim.knowsProvince(sim.player,id)?id:-1;
 }
 
 void Game::handleKeys() {
@@ -275,7 +276,7 @@ void Game::update(double dt) {
 // ---------------------------------------------------------------------------
 void Game::render() {
     if (screen == Screen::Menu) {
-        G.map.sync(sim, -1);
+        G.map.sync(sim, -1, true);
         G.drawGlobe(sim, -1, time, P.w, P.h);
         ui.begin(P, G);
         drawMenu();
@@ -513,17 +514,17 @@ void Game::drawProvincePanel() {
     float x = r.x + 16;
     float wd = r.w - 32;
 
-    if (selectedProvince < 0 || !sim.validProvince(selectedProvince)) {
+    if (selectedProvince < 0 || !sim.knowsProvince(sim.player,selectedProvince)) {
         ui.text("EL MUNDO", x, r.y + 12, 0.28f, pal::gold);
         ui.text("Tierra conocida", x, r.y + 38, 0.48f, pal::text);
         ui.divider(x, r.y + 68, wd);
         int nations = 0, owned = 0, indep = 0;
-        for (auto& n : sim.nations) if (n.alive) ++nations;
-        for (auto& p : sim.prov) { if (p.owner > 0) ++owned; else ++indep; }
-        ui.text("Naciones vivas", x, r.y + 82, 0.30f, pal::dim);
-        ui.textR(std::to_string(nations - 1), x + wd, r.y + 82, 0.32f, pal::text);
-        ui.text("Provincias pobladas", x, r.y + 106, 0.30f, pal::dim);
-        ui.textR(std::to_string(sim.prov.size()), x + wd, r.y + 106, 0.32f, pal::text);
+        for (auto& n : sim.nations) if (n.alive && sim.knowsNation(sim.player,n.id)) ++nations;
+        for (auto& p : sim.prov) if(sim.knowsProvince(sim.player,p.def)) { if (p.owner > 0) ++owned; else ++indep; }
+        ui.text("Naciones conocidas", x, r.y + 82, 0.30f, pal::dim);
+        ui.textR(std::to_string(nations), x + wd, r.y + 82, 0.32f, pal::text);
+        ui.text("Provincias descubiertas", x, r.y + 106, 0.30f, pal::dim);
+        ui.textR(std::to_string(sim.knownCount(sim.player)), x + wd, r.y + 106, 0.32f, pal::text);
         ui.text("Territorios libres", x, r.y + 130, 0.30f, pal::dim);
         ui.textR(std::to_string(indep), x + wd, r.y + 130, 0.32f, pal::text);
         ui.divider(x, r.y + 158, wd);
@@ -562,15 +563,20 @@ void Game::drawProvincePanel() {
     ui.text(ellipsize(G.font, owner, 0.34f, wd - 20), x + 16, r.y + 103, 0.34f, pv.owner == sim.player ? pal::gold : pal::text);
     ui.text("Cultura: " + cu.shortName+" · "+numStr(pv.assimilation*100,0)+"%", x, r.y + 132, 0.28f, pal::dim);
     ui.text("Recurso: " + res.name, x, r.y + 154, 0.28f, pal::dim);
+    const auto& biome=C.biomeOfProvince(selectedProvince);
+    ui.rect({x,r.y+178,7,7},biome.color);
+    ui.text("Bioma: "+biome.name,x+13,r.y+174,.25f,pal::dim);
+    if(ui.hover({x,r.y+172,wd,20}))ui.tooltip=biome.name+" · "+pd.continent+" · Alimento x"+numStr(biome.food,2)+" · Defensa x"+numStr(biome.defense,2)+" · Movimiento x"+numStr(biome.move,2);
 
-    ui.text("Poblacion", x, r.y + 182, 0.26f, pal::faint);
-    ui.text(numStr(pv.pop, 1) + "k", x, r.y + 200, 0.40f, pal::text);
-    ui.text("Desarrollo", x + 118, r.y + 182, 0.26f, pal::faint);
-    ui.text(std::to_string(pd.dev), x + 118, r.y + 200, 0.40f, pal::text);
-    ui.text("Lealtad", x + 214, r.y + 182, 0.26f, pal::faint);
-    ui.text(numStr(pv.loyalty, 0) + "%", x + 214, r.y + 200, 0.40f, pv.loyalty > 60 ? pal::good : (pv.loyalty < 30 ? pal::bad : pal::war));
 
-    ui.bar({x, r.y + 236, wd, 7}, pv.loyalty / 100.0f, pv.loyalty > 60 ? pal::good : (pv.loyalty < 30 ? pal::bad : pal::war));
+    ui.text("Poblacion", x, r.y + 196, 0.26f, pal::faint);
+    ui.text(numStr(pv.pop, 1) + "k", x, r.y + 214, 0.40f, pal::text);
+    ui.text("Desarrollo", x + 118, r.y + 196, 0.26f, pal::faint);
+    ui.text(std::to_string(pd.dev), x + 118, r.y + 214, 0.40f, pal::text);
+    ui.text("Lealtad", x + 214, r.y + 196, 0.26f, pal::faint);
+    ui.text(numStr(pv.loyalty, 0) + "%", x + 214, r.y + 214, 0.40f, pv.loyalty > 60 ? pal::good : (pv.loyalty < 30 ? pal::bad : pal::war));
+
+    ui.bar({x, r.y + 244, wd, 7}, pv.loyalty / 100.0f, pv.loyalty > 60 ? pal::good : (pv.loyalty < 30 ? pal::bad : pal::war));
 
     ui.text("EDIFICIOS", x, r.y + 256, 0.26f, pal::faint);
     std::string bld;
@@ -616,8 +622,8 @@ void Game::drawProvincePanel() {
 
         const Province& colony = sim.province(selectedProvince);
         if (colony.colonizer) ui.text("Colonizacion: " + std::to_string(colony.colonyMonths) + " meses", x, by - 24, 0.28f, pal::gold);
-        std::string label = "Colonizar: "+std::to_string(sim.colonyDuration(sim.player,selectedProvince)/12)+" anos (" + numStr(cost, 0) + " oro)";
         bool canAfford = sim.canColonize(sim.player, selectedProvince, &cost);
+        std::string label = "Colonizar: "+std::to_string(sim.colonyDuration(sim.player,selectedProvince)/12)+" anos (" + numStr(cost, 0) + " oro)";
         if (ui.button(label, {x, by + 38, wd, 30}, canAfford, pal::good, 0.28f)) {
             if (sim.colonize(sim.player, selectedProvince)) setStatus("Expedicion enviada a " + pd.name + ".");
         }
@@ -740,7 +746,8 @@ void Game::drawNationPanel() {
         setStatus("Nuevo consejero nombrado.");
     }
     by += 34;
-    if (ui.button("Ayuda y controles (F1)", {x, by, wd, 26}, true, pal::goldDim, 0.26f)) openModal(Modal::Help);
+    if (ui.button("Exploracion", {x, by, (wd-8)/2, 26}, true, pal::goldDim, 0.26f)) openModal(Modal::Exploration);
+    if (ui.button("Ayuda (F1)", {x+(wd+8)/2, by, (wd-8)/2, 26}, true, pal::goldDim, 0.26f)) openModal(Modal::Help);
 
     if (sim.livingRuler(sim.player) < 0 && C.gov(n.gov).election > 0 && !n.isCityState) {
         ui.text("Elecciones pendientes", x, r.y + r.h - 18, 0.24f, pal::war);
@@ -811,7 +818,7 @@ void Game::drawMarkers() {
     struct Group { int prov = 0, nation = 0, unit = 0, men = 0, n = 0; };
     std::map<long long, Group> groups;
     for (auto& a : sim.armies) {
-        if (a.men <= 0) continue;
+        if (a.men <= 0 || !sim.knowsProvince(sim.player,a.prov)) continue;
         bool show = a.nation == sim.player || sim.atWar(sim.player, a.nation) || G.cam.dist < 2.55f;
         if (!show) continue;
         long long key = ((long long)a.prov << 20) | a.nation;
@@ -851,10 +858,18 @@ void Game::drawMarkers() {
         }
     }
 
+    for(const auto& e:sim.explorers)if(e.nation==sim.player) {
+        const auto& pd=sim.pdef(e.province);float sx=0,sy=0;bool front=false;
+        if(G.project(latLonToDir(pd.lat,pd.lon)*1.025f,P.w,P.h,sx,sy,front)&&front) {
+            ui.rect({sx-6,sy-6,12,12},pal::gold);
+            ui.textC(e.naval?"Mar":"Tierra",sx,sy-25,.23f,pal::gold,true);
+        }
+    }
+
     // capitales y nombres de nacion
     std::vector<Rect> used;
     for (auto& n : sim.nations) {
-        if (!n.alive || n.id == 0 || n.capital < 0) continue;
+        if (!n.alive || n.id == 0 || !sim.knowsProvince(sim.player,n.capital)) continue;
         const ProvinceDef& pd = sim.pdef(n.capital);
         Vec3 p = latLonToDir(pd.lat, pd.lon) * 1.012f;
         float sx, sy;
@@ -906,6 +921,7 @@ void Game::drawModal() {
         case Modal::Elections: drawElectionsModal(); break;
         case Modal::NationDetails: drawNationDetails(); break;
         case Modal::Negotiation: drawNegotiation(); break;
+        case Modal::Exploration: drawExplorationModal(); break;
         case Modal::Resources: drawResourcesModal(); break;
         case Modal::Technology: drawTechnologyModal(); break;
         case Modal::Help: drawHelpModal(); break;
@@ -1063,11 +1079,12 @@ void Game::drawDiplomacyModal() {
     std::vector<Item> items;
     Vec3 capDir = latLonToDir(sim.pdef(me.capital).lat, sim.pdef(me.capital).lon);
     for (auto& n : sim.nations) {
-        if (!n.alive || n.id == 0 || n.id == sim.player) continue;
+        if (!n.alive || n.id == 0 || n.id == sim.player || !sim.knowsNation(sim.player,n.id)) continue;
         Vec3 d = latLonToDir(sim.pdef(n.capital).lat, sim.pdef(n.capital).lon);
         float ang = std::acos(clampf(dot(capDir, d), -1, 1));
         items.push_back({n.id, ang});
     }
+    if(items.empty())ui.text("No hay contactos. Envia exploradores para conocer otros pueblos.",r.x+24,r.y+65,.27f,pal::dim);
     std::sort(items.begin(), items.end(), [](const Item& a, const Item& b) { return a.dist < b.dist; });
     int visible = 6;
     for (int k = 0; k < visible; ++k) {
@@ -1076,14 +1093,14 @@ void Game::drawDiplomacyModal() {
         const Nation& o = sim.nations[(size_t)items[(size_t)idx].id];
         bool war = sim.atWar(sim.player, o.id);
         int provs = 0;
-        for (auto& p : sim.prov) if (p.owner == o.id) ++provs;
+        for (auto& p : sim.prov) if (p.owner == o.id && sim.knowsProvince(sim.player,p.def)) ++provs;
         Rect row(r.x + 20, r.y + 92 + k * 72, r.w - 40, 64);
         ui.rect(row, Color(19, 21, 25, 220));
         ui.outline(row, war ? pal::bad.withAlpha(110) : pal::borderSoft, 1);
         drawMedia(G.nationMedia(o,C),{row.x+8,row.y+12,40,40});
         ui.text(o.name, row.x + 60, row.y + 6, 0.38f, pal::text);
         ui.text((o.isCityState ? "Ciudad-estado" : C.gov(o.gov).name) + "  ·  " + std::to_string(provs) +
-                " prov.  ·  " + numStr(sim.nationArmyPower(o.id), 1) + " fuerza", row.x + 60, row.y + 32, 0.24f, pal::dim);
+                " prov. conocidas  ·  Relaciones: " + std::to_string(sim.relation(sim.player,o.id)), row.x + 60, row.y + 32, 0.24f, pal::dim);
         if (war) {
             ui.text("En guerra (" + std::to_string(sim.warMonths(sim.player, o.id)) + " meses)", row.x + 60, row.y + 47, 0.23f, pal::bad);
         } else {
@@ -1190,7 +1207,7 @@ void Game::drawHelpModal() {
     float x = r.x + 28, y = r.y + 68, wd = r.w - 56;
     ui.text("EL GLOBO", x, y, 0.28f, pal::gold);
     ui.textBlock("Arrastra con el boton izquierdo para girar la Tierra. Usa la rueda para acercarte. "
-                 "El mapa completo es la Tierra; la partida comienza en Europa, Africa del Norte y Oriente Proximo.",
+                 "Los territorios sin descubrir estan ocultos. Usa Exploracion para enviar exploradores o pide mapas mediante diplomacia con relacion 60.",
                  x, y + 22, wd, 0.28f, pal::text, 1, 3);
     y += 88;
     ui.text("ECONOMIA Y ERAS", x, y, 0.28f, pal::gold);
@@ -1373,19 +1390,53 @@ void Game::drawResourcesModal() {
 
 
 void Game::drawNegotiation() {
-    Rect r(P.w*.5f-380,P.h*.5f-280,760,560);drawModalFrame("Diplomacia avanzada",r);
-    if(!sim.nationAlive(diplomacyTarget)){modal=Modal::None;return;}
+    Rect r(P.w*.5f-380,P.h*.5f-280,760,620);drawModalFrame("Diplomacia avanzada",r);
+    if(!sim.nationAlive(diplomacyTarget)||!sim.knowsNation(sim.player,diplomacyTarget)){modal=Modal::None;return;}
     const auto& o=sim.nations[diplomacyTarget];
     drawMedia(G.nationMedia(o,C),{r.x+24,r.y+64,60,60});ui.text(o.name,r.x+100,r.y+70,.4f,pal::gold);
     ui.text("Senor: "+sim.nationName(o.overlord),r.x+100,r.y+100,.26f,pal::dim);
     const auto& allies=sim.nations[sim.player].allies;
     ui.text(std::find(allies.begin(),allies.end(),o.id)!=allies.end()?"Alianza activa":"Sin alianza",r.x+100,r.y+125,.25f,pal::dim);
-    const char* labels[]={"Paz (6 meses de guerra)","Alianza (5 prestigio)","Romper alianza","Compartir 20 oro","Compartir 20 alimentos","Compartir 20 madera","Titere: 12 meses, 100 oro, fuerza x2","Anexar: titere 10 anos, 200 oro","Liberar titere","Compartir 20 piedra","Compartir 20 cobre","Ayudar tribu: 100 oro, 10 anos"};
-    const char* actions[]={"peace","alliance","break","gold","food","wood","puppet","annex","release","stone","copper","civilize"};
-    for(int i=0;i<12;++i)if(ui.button(labels[i],{r.x+24+(i%2)*355.0f,r.y+150+(i/2)*64.0f,340,46},true,pal::gold,.27f))
+    ui.text("Relaciones: "+std::to_string(sim.relation(sim.player,o.id))+" / 100",r.x+450,r.y+100,.30f,pal::gold);
+    const char* labels[]={"Paz (6 meses de guerra)","Alianza (5 prestigio)","Romper alianza","Compartir 20 oro","Compartir 20 alimentos","Compartir 20 madera","Titere: 12 meses, 100 oro, fuerza x2","Anexar: titere 10 anos, 200 oro","Liberar titere","Compartir 20 piedra","Compartir 20 cobre","Ayudar tribu: 100 oro, 10 anos","Mejorar relaciones (30 oro)","Pedir mapas (25 oro, relacion 60)","Dar mapas (relacion 60)"};
+    const char* actions[]={"peace","alliance","break","gold","food","wood","puppet","annex","release","stone","copper","civilize","improve","request_maps","share_maps"};
+    for(int i=0;i<15;++i)if(ui.button(labels[i],{r.x+24+(i%2)*355.0f,r.y+150+(i/2)*53.0f,340,42},true,pal::gold,.27f))
         setStatus(sim.diplomatic(sim.player,diplomacyTarget,actions[i])?"Acuerdo realizado.":"La propuesta no cumple los requisitos.");
+    ui.textBlock("Los mapas exigen paz y relacion 60. Mejorar relaciones: una vez al ano.",r.x+380,r.y+526,340,.25f,pal::dim,1,3);
     if(statusTimer>0)ui.text(ellipsize(G.font,status,.26f,700),r.x+24,r.y+r.h-26,.26f,pal::gold);
 }
+void Game::drawExplorationModal() {
+    Rect r(P.w*.5f-410,P.h*.5f-270,820,540);drawModalFrame("Exploracion",r);
+    ui.text("Provincias descubiertas: "+std::to_string(sim.knownCount(sim.player))+" / "+std::to_string(sim.prov.size()),r.x+24,r.y+65,.34f,pal::gold);
+    ui.textBlock("Los exploradores recorren las fronteras del mapa conocido durante hasta 36 meses. No conquistan ni colonizan.",r.x+24,r.y+100,r.w-48,.29f,pal::dim,1,2);
+    int source=sim.validProvince(selectedProvince)&&sim.prov[selectedProvince].owner==sim.player?selectedProvince:sim.nations[sim.player].capital;
+    int port=-1;
+    if(sim.pdef(source).coastal&&C.hasBuilding(sim.prov[source].buildings,"puerto"))port=source;
+    else for(const auto& p:sim.prov)if(p.owner==sim.player&&sim.pdef(p.def).coastal&&C.hasBuilding(p.buildings,"puerto")){port=p.def;break;}
+    for(int mode=0;mode<2;++mode) {
+        float x=r.x+24+mode*390.f,y=r.y+162;bool naval=mode==1;int from=naval?port:source;
+        ui.rect({x,y,372,155},Color(20,24,30,230));ui.outline({x,y,372,155},pal::borderSoft,1);
+        ui.text(naval?"Exploracion maritima":"Exploracion terrestre",x+14,y+12,.33f,pal::gold);
+        ui.text("Salida: "+(from>=0?sim.provName(from):std::string("Sin puerto")),x+14,y+44,.28f,pal::dim);
+        ui.text(naval?"80 oro, 20 alimento, 20 madera":"40 oro, 10 alimento",x+14,y+72,.27f,pal::dim);
+        if(ui.button("Enviar exploradores",{x+14,y+103,344,36},sim.canExplore(sim.player,from,naval),pal::gold,.29f))
+            setStatus(sim.explore(sim.player,from,naval)?"Expedicion de exploracion enviada.":"No hay rutas de exploracion disponibles.");
+    }
+    ui.text("Mar: exige Navegacion a vela y un puerto costero. Tierra: selecciona una provincia propia para elegir la salida.",r.x+24,r.y+330,.25f,pal::dim);
+    int row=0;
+    for(const auto& e:sim.explorers)if(e.nation==sim.player) {
+        ui.text(std::string(e.naval?"Mar":"Tierra")+" · "+sim.provName(e.province)+" · "+std::to_string(e.monthsLeft)+" meses restantes",r.x+24,r.y+370+row*34,.30f,pal::gold);
+        if(ui.smallButton("Retirar",{r.x+r.w-120,r.y+366+row*34,92,28})) {
+            bool mode=e.naval;
+            sim.explorers.erase(std::remove_if(sim.explorers.begin(),sim.explorers.end(),[&](const Explorer& other){return other.nation==sim.player&&other.naval==mode;}),sim.explorers.end());
+            break;
+        }
+        ++row;
+    }
+    if(row==0)ui.text("Sin expediciones activas.",r.x+24,r.y+370,.29f,pal::dim);
+    if(statusTimer>0)ui.text(ellipsize(G.font,status,.27f,r.w-48),r.x+24,r.y+r.h-42,.27f,pal::gold);
+}
+
 void Game::drawNationDetails() {
     Rect r(P.w*.5f-420,P.h*.5f-280,840,560);drawModalFrame("Gestion nacional",r);
     const char* tabs[]={"Decisiones","Religion","Cultura","Militar","Consejeros","Leyes"};

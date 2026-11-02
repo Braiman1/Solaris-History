@@ -21,6 +21,7 @@ public final class Content {
     public final List<Map<String, Object>> units = new ArrayList<>();
     public final List<Map<String, Object>> buildings = new ArrayList<>();
     public final List<Map<String, Object>> eras = new ArrayList<>();
+    public final Map<String, Map<String, Object>> biomes = new LinkedHashMap<>();
     public final Map<String, Map<String, Object>> terrains = new LinkedHashMap<>();
     public final Map<String, Map<String, Object>> resources = new LinkedHashMap<>();
     public final Map<String, Map<String, Object>> governments = new LinkedHashMap<>();
@@ -39,6 +40,7 @@ public final class Content {
         this.world = loadObject(dir.resolve("world.json"));
         this.leaders = loadObject(dir.resolve("leaders.json"));
 
+        for (Map<String, Object> b : loadList(dir.resolve("biomes.json"))) biomes.put(Json.str(b,"id"),b);
         for (Map<String, Object> t : loadList(dir.resolve("cultures.json"))) cultures.add(t);
         for (Object tag : Json.arr(Json.parse(Files.readString(dir.resolve("countries/index.json"), StandardCharsets.UTF_8)))) {
             Map<String,Object> country=loadObject(dir.resolve("countries/" + tag + ".json"));

@@ -60,13 +60,15 @@ struct PoliticalMap {
     std::vector<Vec3> coastVerts;
     GLuint tex = 0;
     GLuint borderList = 0, coastList = 0;
+    std::vector<std::pair<int,int>> borderProvinces, coastProvinces;
+    bool preview=false;
     uint64_t checksum = 0;
 
     bool build(const Content& content, const std::string& contentDir);
     void paint(const Sim& sim, int selected);
     void upload();
-    void buildDisplayLists();
-    void sync(const Sim& sim, int selected);
+    void buildDisplayLists(const Sim* sim=nullptr);
+    void sync(const Sim& sim, int selected, bool worldPreview=false);
     int pick(float lat, float lon) const;
     int pixelAt(float lat, float lon) const;
 };

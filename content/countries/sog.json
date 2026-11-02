@@ -1,0 +1,19 @@
+{
+ "tag": "sog",
+ "id": "sogdiana",
+ "name": "Sogdiana",
+ "culture_tag": "kelteminar",
+ "religion_tag": "nat",
+ "capital": "Samarcanda",
+ "required_province": "Samarcanda",
+ "earliest_year": -600,
+ "era": 0,
+ "gov": "monarquia",
+ "color": [
+  110,
+  127,
+  62
+ ],
+ "adj": "Sogdiana",
+ "desc": "Formacion regional historica con fecha aproximada. Su cultura inicial representa continuidad geografica de juego, no descendencia etnica directa."
+}

@@ -1,0 +1,19 @@
+{
+ "tag": "mar",
+ "id": "margiana",
+ "name": "Margiana",
+ "culture_tag": "namazga",
+ "religion_tag": "anc",
+ "capital": "Gonur",
+ "required_province": "Gonur",
+ "earliest_year": -2000,
+ "era": 0,
+ "gov": "monarquia",
+ "color": [
+  90,
+  74,
+  138
+ ],
+ "adj": "Margiana",
+ "desc": "Formacion regional historica con fecha aproximada. Su cultura inicial representa continuidad geografica de juego, no descendencia etnica directa."
+}

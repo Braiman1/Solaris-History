@@ -225,6 +225,7 @@ bool PoliticalMap::build(const Content& content, const std::string& contentDir) 
     // bordes y costas
     borderVerts.clear();
     coastVerts.clear();
+    borderProvinces.clear();coastProvinces.clear();
     auto toPoint = [&](float lat, float lon, float r = 1.0035f) {
         Vec3 d = latLonToDir(lat, lon);
         return d * r;
@@ -244,6 +245,7 @@ bool PoliticalMap::build(const Content& content, const std::string& contentDir) 
                 bool coast = (a >= 0 && !land[(size_t)y * W + xr]) || (b >= 0 && !land[i]);
                 auto& list = coast ? coastVerts : borderVerts;
                 list.push_back(p1); list.push_back(p2);
+                (coast?coastProvinces:borderProvinces).push_back({a,b});
             }
             // abajo
             if (y + 1 < H) {
@@ -255,6 +257,7 @@ bool PoliticalMap::build(const Content& content, const std::string& contentDir) 
                     bool coast = (a >= 0 && !land[(size_t)(y + 1) * W + x]) || (c >= 0 && !land[i]);
                     auto& list = coast ? coastVerts : borderVerts;
                     list.push_back(p1); list.push_back(p2);
+                    (coast?coastProvinces:borderProvinces).push_back({a,c});
                 }
             }
         }
@@ -291,6 +294,10 @@ void PoliticalMap::paint(const Sim& sim, int selected) {
             size_t i = (size_t)y * W + x;
             size_t o = i * 4;
             int pid = provAt[i];
+            if(!preview && land[i] && !sim.knowsProvince(sim.player,pid)) {
+                pixels[o]=15;pixels[o+1]=22;pixels[o+2]=31;pixels[o+3]=255;
+                continue;
+            }
             if (pid < 0 || !land[i]) {
                 pixels[o + 3] = 0;
                 continue;
@@ -318,25 +325,34 @@ void PoliticalMap::upload() {
     glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, W, H, GL_RGBA, GL_UNSIGNED_BYTE, pixels.data());
 }
 
-void PoliticalMap::buildDisplayLists() {
+void PoliticalMap::buildDisplayLists(const Sim* sim) {
     if (!borderList) borderList = glGenLists(1);
     glNewList(borderList, GL_COMPILE);
     glBegin(GL_LINES);
-    for (auto& v : borderVerts) glVertex3f(v.x, v.y, v.z);
+    for(size_t i=0;i<borderProvinces.size();++i) {
+        auto ids=borderProvinces[i];
+        if(sim&&!preview && !(sim->knowsProvince(sim->player,ids.first)&&sim->knowsProvince(sim->player,ids.second)))continue;
+        for(int j=0;j<2;++j){const auto& v=borderVerts[i*2+j];glVertex3f(v.x,v.y,v.z);}
+    }
     glEnd();
     glEndList();
     if (!coastList) coastList = glGenLists(1);
     glNewList(coastList, GL_COMPILE);
     glBegin(GL_LINES);
-    for (auto& v : coastVerts) glVertex3f(v.x, v.y, v.z);
+    for(size_t i=0;i<coastProvinces.size();++i) {
+        auto ids=coastProvinces[i];
+        if(sim&&!preview && !(sim->knowsProvince(sim->player,ids.first)||sim->knowsProvince(sim->player,ids.second)))continue;
+        for(int j=0;j<2;++j){const auto& v=coastVerts[i*2+j];glVertex3f(v.x,v.y,v.z);}
+    }
     glEnd();
     glEndList();
 }
 
-void PoliticalMap::sync(const Sim& sim, int selected) {
-    uint64_t h = 1469598103934665603ull ^ (uint64_t)(selected + 1);
+void PoliticalMap::sync(const Sim& sim, int selected, bool worldPreview) {
+    preview=worldPreview;
+    uint64_t h = 1469598103934665603ull ^ (uint64_t)(selected + 1) ^ ((uint64_t)sim.player<<32) ^ (preview?1ull<<63:0);
     for (auto& p : sim.prov) {
-        h ^= (uint64_t)(p.owner + 3);
+        h ^= (uint64_t)(p.owner + 3) | ((uint64_t)sim.knowsProvince(sim.player,p.def)<<32);
         h *= 1099511628211ull;
     }
     for (auto& n : sim.nations) {
@@ -348,6 +364,7 @@ void PoliticalMap::sync(const Sim& sim, int selected) {
     checksum = h;
     paint(sim, selected);
     upload();
+    buildDisplayLists(&sim);
 }
 
 // ---------------------------------------------------------------------------
@@ -490,7 +507,7 @@ GLuint Gfx::iconFor(int unitIdx) const {
 }
 
 void Gfx::drawSelection(const Sim& sim, int selected, float time) {
-    if (selected < 0 || selected >= (int)sim.prov.size()) return;
+    if (selected < 0 || selected >= (int)sim.prov.size() || !sim.knowsProvince(sim.player,selected)) return;
     const ProvinceDef& pd = sim.pdef(selected);
     Vec3 dir = latLonToDir(pd.lat, pd.lon);
     Vec3 north(0, 1, 0);
@@ -572,10 +589,8 @@ void Gfx::drawGlobe(const Sim& sim, int selected, float time, int width, int hei
     if(showMoon) {
         glEnable(GL_NORMALIZE);
         glDisable(GL_TEXTURE_2D);
-        // Keep the decorative Moon visible above the map, outside the side panels.
-        float depth=1.5f,tanHalf=std::tan(22.f*DEG);
-        Vec3 moonPos=cam.pos()+cam.forward()*depth+cam.right()*(.44f*depth*tanHalf*width/std::max(1,height))+cam.up()*(.72f*depth*tanHalf);
-        glPushMatrix();glTranslatef(moonPos.x,moonPos.y,moonPos.z);glScalef(.055f,.055f,.055f);
+        Vec3 moonPos=lunarPosition(time);
+        glPushMatrix();glTranslatef(moonPos.x,moonPos.y,moonPos.z);glScalef(.085f,.085f,.085f);
         if(moon.id){glEnable(GL_TEXTURE_2D);glBindTexture(GL_TEXTURE_2D,moon.id);}
         glColor4ub(145,145,145,255);glCallList(sphereList);glPopMatrix();
         glEnable(GL_TEXTURE_2D);glColor4ub(255,255,255,255);

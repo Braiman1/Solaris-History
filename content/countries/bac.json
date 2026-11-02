@@ -1,0 +1,19 @@
+{
+ "tag": "bac",
+ "id": "bactria",
+ "name": "Bactria",
+ "culture_tag": "namazga",
+ "religion_tag": "anc",
+ "capital": "Balkh",
+ "required_province": "Balkh",
+ "earliest_year": -600,
+ "era": 0,
+ "gov": "monarquia",
+ "color": [
+  90,
+  74,
+  138
+ ],
+ "adj": "Bactria",
+ "desc": "Formacion regional historica con fecha aproximada. Su cultura inicial representa continuidad geografica de juego, no descendencia etnica directa."
+}

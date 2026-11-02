@@ -29,9 +29,9 @@ int main() {
         return 1;
     }
     std::printf("Contenido: %s\n", dir.c_str());
-    check(C.provinces.size() == 256, "256 provincias cargadas");
-    check(C.cityStates.size() == 25, "25 grupos iniciales cargados");
-    check(C.nationTemplates.size() == 54, "54 naciones fundables cargadas");
+    check(C.provinces.size() == 515, "515 provincias cargadas");
+    check(C.cityStates.size() == 46, "46 grupos iniciales cargados");
+    check(C.nationTemplates.size() == 59, "59 naciones fundables cargadas");
 
     check(Locale::load(dir+"/locales.json"), "catalogo bilingue cargado");
     Locale::english=true;
@@ -67,7 +67,7 @@ int main() {
     check(target >= 0, "existe una provincia vecina libre");
     sim.nations[(size_t)player].gold = 500;
     sim.nations[(size_t)player].prestige = 1000;
-    for(int other=1;other<(int)sim.nations.size();++other)if(other!=player)sim.diplomatic(player,other,"alliance");
+    for(int other=1;other<(int)sim.nations.size();++other)if(other!=player){sim.revealArea(player,sim.nations[other].capital,0);sim.diplomatic(player,other,"alliance");}
     check(sim.canColonize(player, target), "se puede colonizar el vecino");
     check(sim.colonize(player, target), "colonizacion ejecutada");
     check(sim.prov[(size_t)target].owner == 0, "la expedicion no concede territorio instantaneo");

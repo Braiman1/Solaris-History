@@ -1,4 +1,4 @@
-// Solaris History - simulacion del mundo (tiempo real por meses)
+// Solaris History - simulacion del mundo (meses; dias desde 300 a.C.)
 #pragma once
 #include "content.hpp"
 #include <map>
@@ -33,6 +33,7 @@ struct Nation {
     int overlord=0, subjectSince=0, decisionAt=-1000000;
     float spentTech=0;
     std::string religion, countryTag;
+    std::vector<uint8_t> knownProvinces;
     std::vector<int> allies;
     std::vector<std::string> discoveries;
     std::string name, adj, culture, gov;
@@ -82,8 +83,27 @@ struct LogEntry {
     int kind = 0; // 0 info, 1 bien, 2 mal, 3 guerra, 4 era
 };
 
+struct Explorer {
+    int nation=0, province=-1, target=-1, monthsLeft=36, travelLeft=0;
+    bool naval=false;
+};
+
 struct Sim {
     const Content* C = nullptr;
+    std::vector<Explorer> explorers;
+    std::map<long long,int> relations, diplomacyAt;
+    bool knowsProvince(int nation,int province) const;
+    bool knowsNation(int nation,int other) const;
+    void revealArea(int nation,int center,float radius=225);
+    void initializeKnowledge();
+    void observeTerritory();
+    int relation(int a,int b) const;
+    int nextExplorationStep(const Explorer& expedition) const;
+    bool canExplore(int nation,int source,bool naval) const;
+    bool explore(int nation,int source,bool naval);
+    void explorationTick();
+    bool exchangeMaps(int receiver,int giver);
+    int knownCount(int nation) const;
     int day=1;
     bool judaismAppeared=false, judaismLost=false, christianRoot=false, rootChecked=false;
     struct Rebellion {int province, owner;std::string cause;};
@@ -173,7 +193,7 @@ struct Sim {
     void aiTurn();
 
     // eventos / alertas
-    void addLog(const std::string& text, int kind = 0);
+    void addLog(const std::string& text, int kind = 0, int sourceNation=0, int place=-1);
     void alert(int nation, const std::string& title, const std::string& text, int kind = 0);
 
     float provinceIncome(int provId, float* foodOut = nullptr) const;

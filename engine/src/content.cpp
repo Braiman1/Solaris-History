@@ -69,6 +69,12 @@ bool Content::load(const std::string& contentDir) {
         t.points = (float)j["points"].number(); t.farm = (float)j["farm"].number(); t.military = (float)j["military"].number();
         technologies.push_back(t);
     }
+    Json biomeData;
+    if(!loadJson("biomes.json",biomeData) || !biomeData.isArray() || biomeData.size()==0)return false;
+    for(const auto& b:biomeData.array()) {
+        BiomeDef d;d.id=b["id"].string();d.name=b["name"].string();d.food=(float)b["food"].number(1);d.defense=(float)b["defense"].number(1);d.move=(float)b["move"].number(1);d.color=readColor(b["color"]);
+        biomeIndex[d.id]=(int)biomes.size();biomes.push_back(d);
+    }
     startYear = jWorld["meta"]["start_year"].integer(-3300);
 
     // Los objetos de terreno/recurso se leen mediante la lista de claves conocidas.
@@ -264,6 +270,8 @@ bool Content::load(const std::string& contentDir) {
         d.id = j["id"].integer();
         d.name = j["name"].string();
         d.region = j["region"].string();
+        d.biomeId=j["biome"].string();d.continent=j["continent"].string();
+        if(!biomeIndex.count(d.biomeId))return false;
         d.terrainId = j["terrain"].string("llanura");
         d.resourceId = j["resource"].string("trigo");
         d.cultureId = j["culture"].string("semita");
@@ -274,6 +282,7 @@ bool Content::load(const std::string& contentDir) {
         d.coastal = j["coastal"].boolean(false);
         for (auto& k : j["adj"].array()) d.adj.push_back(k.integer());
         for (auto& k : j["sea_adj"].array()) d.seaAdj.push_back(k.integer());
+        for(const auto& k:j["explore_sea_adj"].array())d.exploreSeaAdj.push_back(k.integer());
         provinces.push_back(d);
     }
     // ordenar por id y comprobar

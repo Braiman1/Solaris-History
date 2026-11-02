@@ -460,5 +460,137 @@
    "expansion": 1.0
   },
   "tag": "celta"
+ },
+ {
+  "id": "narva",
+  "name": "Narva y comunidades del Baltico",
+  "short": "Balticos",
+  "color": [
+   90,
+   106,
+   74
+  ],
+  "desc": "Agrupacion regional de comunidades antiguas; una abstraccion de juego, no una genealogia etnica unica.",
+  "mods": {
+   "farm": 0.9,
+   "growth": 1.0,
+   "tech": 0.95,
+   "trade": 1.0,
+   "mil": 1.05,
+   "stab": 1.0,
+   "naval": 1.2,
+   "expansion": 1.05
+  },
+  "tag": "narva"
+ },
+ {
+  "id": "dilmun",
+  "name": "Dilmun y comunidades del Golfo",
+  "short": "Dilmunitas",
+  "color": [
+   176,
+   138,
+   90
+  ],
+  "desc": "Agrupacion regional de comunidades antiguas; una abstraccion de juego, no una genealogia etnica unica.",
+  "mods": {
+   "farm": 0.7,
+   "growth": 1.0,
+   "tech": 0.85,
+   "trade": 1.2,
+   "mil": 1.05,
+   "stab": 0.9,
+   "naval": 0.8,
+   "expansion": 1.15
+  },
+  "tag": "dilmun"
+ },
+ {
+  "id": "namazga",
+  "name": "Namazga y comunidades del Oxus",
+  "short": "Oxus",
+  "color": [
+   90,
+   74,
+   138
+  ],
+  "desc": "Agrupacion regional de comunidades antiguas; una abstraccion de juego, no una genealogia etnica unica.",
+  "mods": {
+   "farm": 0.85,
+   "growth": 0.95,
+   "tech": 1.05,
+   "trade": 1.1,
+   "mil": 1.05,
+   "stab": 1.0,
+   "naval": 0.5,
+   "expansion": 1.05
+  },
+  "tag": "namazga"
+ },
+ {
+  "id": "kelteminar",
+  "name": "Kelteminar y comunidades del Aral",
+  "short": "Aral",
+  "color": [
+   110,
+   127,
+   62
+  ],
+  "desc": "Agrupacion regional de comunidades antiguas; una abstraccion de juego, no una genealogia etnica unica.",
+  "mods": {
+   "farm": 0.7,
+   "growth": 1.0,
+   "tech": 0.9,
+   "trade": 0.9,
+   "mil": 1.3,
+   "stab": 0.9,
+   "naval": 0.5,
+   "expansion": 1.25
+  },
+  "tag": "kelteminar"
+ },
+ {
+  "id": "botai",
+  "name": "Botai y comunidades de la estepa central",
+  "short": "Botai",
+  "color": [
+   110,
+   127,
+   62
+  ],
+  "desc": "Agrupacion regional de comunidades antiguas; una abstraccion de juego, no una genealogia etnica unica.",
+  "mods": {
+   "farm": 0.7,
+   "growth": 1.0,
+   "tech": 0.9,
+   "trade": 0.9,
+   "mil": 1.3,
+   "stab": 0.9,
+   "naval": 0.5,
+   "expansion": 1.25
+  },
+  "tag": "botai"
+ },
+ {
+  "id": "afanasievo",
+  "name": "Afanasievo y comunidades del Altai",
+  "short": "Altai",
+  "color": [
+   110,
+   127,
+   62
+  ],
+  "desc": "Agrupacion regional de comunidades antiguas; una abstraccion de juego, no una genealogia etnica unica.",
+  "mods": {
+   "farm": 0.7,
+   "growth": 1.0,
+   "tech": 0.9,
+   "trade": 0.9,
+   "mil": 1.3,
+   "stab": 0.9,
+   "naval": 0.5,
+   "expansion": 1.25
+  },
+  "tag": "afanasievo"
  }
 ]

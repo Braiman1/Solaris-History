@@ -84,7 +84,7 @@ void Sim::historicalTick() {
             if(!nationAlive(n.sponsor)||atWar(i,n.sponsor)){n.sponsor=0;n.education=0;}
             else if(++n.education>=120) {
                 n.culture=nations[n.sponsor].countryTag=="rom"?"italico":nations[n.sponsor].culture;
-                n.tech+=3;n.statecraft=true;n.sponsor=0;addLog(n.name+" adopta la cultura de su patrocinador.",1);
+                n.tech+=3;n.statecraft=true;n.sponsor=0;addLog(n.name+" adopta la cultura de su patrocinador.",1, n.id);
             }
         }
         if(!n.player&&n.religion=="jud"&&year>=0) {
@@ -125,7 +125,7 @@ void Sim::processRebellions() {
         Army army;army.id=nextArmyId++;army.nation=rebel;army.unit=C->findUnit("soldado");army.men=400;army.prov=p.def;armies.push_back(army);
         declareWar(rebel,event.owner);
         std::string cause=event.cause=="religion"?"religiosa":event.cause=="ideology"?"ideologica":event.cause=="hunger"?"hambre":"independencia";
-        addLog(pdef(p.def).name+" · Rebelion: "+cause,2);
+        addLog(pdef(p.def).name+" · Rebelion: "+cause,2, rebel, p.def);
     }
     pendingRebellions.clear();
 }

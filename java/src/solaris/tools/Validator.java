@@ -33,6 +33,11 @@ public final class Validator {
 
     public static Result validate(Content c) {
         Result r = new Result();
+        if(c.biomes.isEmpty())r.error("biomes.json esta vacio");
+        for(var entry:c.biomes.entrySet()) {
+            var biome=entry.getValue();
+            for(String stat:List.of("food","defense","move"))if(Json.number(biome,stat,0)<=0)r.error("Bioma '"+entry.getKey()+"': modificador invalido "+stat);
+        }
         validateProvinces(c, r);
         validateCultures(c, r);
         validateUnits(c, r);
@@ -70,6 +75,8 @@ public final class Validator {
             double lon = Json.number(p, "lon", 999);
             if (lat < -90 || lat > 90) r.error("Provincia '" + name + "': latitud fuera de rango (" + lat + ")");
             if (lon < -180 || lon > 180) r.error("Provincia '" + name + "': longitud fuera de rango (" + lon + ")");
+            if(!c.biomes.containsKey(Json.str(p,"biome")))r.error("Provincia '"+name+"': bioma desconocido");
+            if(!Set.of("Europa","Africa","Asia").contains(Json.str(p,"continent")))r.error("Provincia '"+name+"': continente desconocido");
             String terrain = Json.str(p, "terrain");
             String resource = Json.str(p, "resource");
             String culture = Json.str(p, "culture");
@@ -83,13 +90,13 @@ public final class Validator {
         for (Map<String, Object> p : c.provinces) {
             int id = Json.integer(p, "id", -1);
             String name = Json.str(p, "name", "?");
-            checkAdj(c, r, p, id, name, false);
-            checkAdj(c, r, p, id, name, true);
+            checkAdj(c, r, p, id, name, "adj");
+            checkAdj(c, r, p, id, name, "sea_adj");
+            checkAdj(c, r, p, id, name, "explore_sea_adj");
         }
     }
 
-    private static void checkAdj(Content c, Result r, Map<String, Object> p, int id, String name, boolean sea) {
-        String key = sea ? "sea_adj" : "adj";
+    private static void checkAdj(Content c, Result r, Map<String, Object> p, int id, String name, String key) {
         Set<Integer> seen = new HashSet<>();
         for (Object o : Json.list(p, key)) {
             if (!(o instanceof Number n)) {

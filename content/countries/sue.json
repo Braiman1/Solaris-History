@@ -1,0 +1,19 @@
+{
+ "tag": "sue",
+ "id": "suevos",
+ "name": "Suevos",
+ "culture_tag": "nordico",
+ "religion_tag": "nat",
+ "capital": "Magdeburgo",
+ "required_province": "Magdeburgo",
+ "earliest_year": -100,
+ "era": 0,
+ "gov": "monarquia",
+ "color": [
+  90,
+  106,
+  74
+ ],
+ "adj": "Suevos",
+ "desc": "Formacion regional historica con fecha aproximada. Su cultura inicial representa continuidad geografica de juego, no descendencia etnica directa."
+}

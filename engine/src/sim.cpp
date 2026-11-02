@@ -42,6 +42,7 @@ Color Sim::provinceMapColor(int id) const {
 // ---------------------------------------------------------------------------
 void Sim::init(const Content& content, int cityStateIndex) {
     C = &content;
+    explorers.clear();relations.clear();diplomacyAt.clear();
     day=1;judaismAppeared=judaismLost=christianRoot=rootChecked=false;pendingRebellions.clear();
     year = C->startYear;
     month = 0;
@@ -114,6 +115,7 @@ void Sim::init(const Content& content, int cityStateIndex) {
     if (player < 1 || player >= (int)nations.size()) player = 1;
     nations[(size_t)player].player = true;
 
+    initializeKnowledge();
     addLog("Comienza la partida en el " + yearLabel(year) + ". " +
            nations[(size_t)player].name + " da sus primeros pasos.", 4);
     addLog("Elige un territorio vecino y funda tu nacion cuando estes listo.", 0);
@@ -229,7 +231,7 @@ void Sim::holdElection(int nation, int chosenChar) {
     n.legitimacy = clampf(n.legitimacy + 4.0f, 0, 100);
     const GovDef& g = C->gov(n.gov);
     n.electionAt = abs() + n.electionYears * 12;
-    addLog("Eleccion en " + n.name + ": " + chars[(size_t)chosen].name + " asume el poder.", 1);
+    addLog("Eleccion en " + n.name + ": " + chars[(size_t)chosen].name + " asume el poder.", 1, nation);
     if (nation == player) alert(nation, "Elecciones", chars[(size_t)chosen].name + " ha sido elegido gobernante de " + n.name + ".", 1);
 }
 
@@ -407,9 +409,11 @@ void Sim::declareWar(int a, int b) {
     nations[(size_t)a].wars.push_back(b);
     nations[(size_t)b].wars.push_back(a);
     warStart[(long long)warKey(a, b)] = abs();
+    relations[(long long)warKey(a,b)]=-100;
+    revealArea(a,nations[b].capital,0);revealArea(b,nations[a].capital,0);
     nations[(size_t)a].stability = clampf(nations[(size_t)a].stability - 2, 0, 100);
     nations[(size_t)b].stability = clampf(nations[(size_t)b].stability - 2, 0, 100);
-    addLog(nations[(size_t)a].name + " declara la guerra a " + nations[(size_t)b].name + ".", 3);
+    addLog(nations[(size_t)a].name + " declara la guerra a " + nations[(size_t)b].name + ".", 3, a);
     auto defenders=nations[b].allies;
     if(nations[b].overlord)defenders.push_back(nations[b].overlord);
     for(int ally:defenders)if(ally!=a && nationAlive(ally) && !atWar(ally,a))declareWar(ally,a);
@@ -423,7 +427,7 @@ void Sim::makePeace(int a, int b) {
     removeAll(nations[(size_t)a].wars, b);
     removeAll(nations[(size_t)b].wars, a);
     warStart.erase((long long)warKey(a, b));
-    addLog("Paz entre " + nations[(size_t)a].name + " y " + nations[(size_t)b].name + ".", 1);
+    addLog("Paz entre " + nations[(size_t)a].name + " y " + nations[(size_t)b].name + ".", 1, a);
     if (a == player || b == player)
         alert(player, "Paz", "Se ha firmado la paz con " + nationName(a == player ? b : a) + ".", 1);
 }
@@ -473,7 +477,7 @@ bool Sim::foundNation(int nation, int templateIndex) {
     if (g.election > 0) n.electionAt = abs() + n.electionYears * 12;
     else n.electionAt = 0;
     addLog("Nace " + n.name + " (" + g.name + ") bajo el gobierno de " +
-           (livingRuler(nation) >= 0 ? chars[(size_t)livingRuler(nation)].name : "su pueblo") + ".", 4);
+           (livingRuler(nation) >= 0 ? chars[(size_t)livingRuler(nation)].name : "su pueblo") + ".", 4, nation);
     if (nation == player) {
         alert(nation, "Nacion fundada", "Has fundado " + n.name + ". La historia de tu pueblo comienza ahora.", 1);
     }
@@ -482,6 +486,7 @@ bool Sim::foundNation(int nation, int templateIndex) {
 
 bool Sim::canColonize(int nation, int provId, float* costOut) const {
     if (nation <= 0 || !nationAlive(nation) || !validProvince(provId)) return false;
+    if(!knowsProvince(nation,provId))return false;
     if (prov[(size_t)provId].owner != 0 || prov[(size_t)provId].colonizer != 0) return false;
     for (const auto& p : prov) if (p.colonizer == nation) return false;
     const Nation& n=nations[nation];
@@ -501,7 +506,7 @@ bool Sim::colonize(int nation, int provId) {
     Province& p = prov[(size_t)provId];
     p.colonizer = nation;
     p.colonyMonths = colonyDuration(nation,provId);n.food-=30;
-    addLog(n.name + " inicia una expedicion hacia " + pdef(provId).name + ".", 1);
+    addLog(n.name + " inicia una expedicion hacia " + pdef(provId).name + ".", 1, n.id);
     if (nation == player)
         alert(nation, "Colonizacion", "La expedicion requiere entre 15 y 25 anos, y despues hay 5 anos de espera.", 1);
     return true;
@@ -529,7 +534,7 @@ float Sim::provinceIncome(int provId, float* foodOut) const {
     float loyaltyF = 0.55f + p.loyalty / 220.0f;
     float eraF = C->era(n.era).prod;
     if (foodOut)
-        *foodOut = p.pop * 0.50f * t.food * m.farm * (1 + buildingMod(provId, 0)) * eraF * stabilityF;
+        *foodOut = p.pop * 0.50f * t.food * C->biomeOfProvince(provId).food * m.farm * (1 + buildingMod(provId, 0)) * eraF * stabilityF;
     float gold = (p.pop * pd.dev * 0.38f + r.value * 1.7f) *
                  (1 + buildingMod(provId, 6)) * m.trade * m.income * eraF * stabilityF * loyaltyF;
     return gold;
@@ -618,7 +623,7 @@ void Sim::recomputeEconomy(int nation) {
     while (n.era + 1 < (int)C->eras.size() && n.tech >= C->eras[(size_t)n.era + 1].tech) {
         ++n.era;
         n.prestige += 10;
-        addLog(n.name + " entra en la " + C->era(n.era).name + ".", 4);
+        addLog(n.name + " entra en la " + C->era(n.era).name + ".", 4, n.id);
         if (nation == player)
             alert(nation, "Nueva era", "Tu pueblo ha entrado en la " + C->era(n.era).name + ". Nuevas unidades y edificios disponibles.", 4);
     }
@@ -716,7 +721,7 @@ bool Sim::recruit(int nation, int provId, int unitIdx) {
     a.morale = 1.0f;
     a.prov = provId;
     armies.push_back(a);
-    addLog(n.name + " recluta " + u.plural + " en " + pdef(provId).name + ".", 1);
+    addLog(n.name + " recluta " + u.plural + " en " + pdef(provId).name + ".", 1, n.id);
     return true;
 }
 
@@ -749,7 +754,7 @@ bool Sim::build(int nation, int provId, int buildingIdx) {
     n.wood -= buildCost(nation, buildingIdx, b.wood);
     n.stone -= buildCost(nation, buildingIdx, b.stone);
     prov[(size_t)provId].buildings.push_back(b.id);
-    addLog(n.name + " construye " + b.name + " en " + pdef(provId).name + ".", 1);
+    addLog(n.name + " construye " + b.name + " en " + pdef(provId).name + ".", 1, n.id);
     return true;
 }
 
@@ -780,7 +785,7 @@ int Sim::armiesIn(int provId) const {
 static float legCost(const Content& C, int unitIdx, int from, int to, bool naval) {
     const ProvinceDef& pd = C.province(to);
     const TerrainDef& t = C.terrainOfProvince(to);
-    float mult = t.move;
+    float mult = t.move*C.biomeOfProvince(to).move;
     bool isSea = false;
     for (int x : C.province(from).seaAdj) if (x == to) isSea = true;
     if (isSea) mult = naval ? 1.2f : 2.4f;
@@ -794,6 +799,7 @@ bool Sim::findPath(int armyId, int destId, std::vector<int>& path, float& cost) 
     if (!validProvince(destId) || !validProvince(a.prov)) return false;
     if (destId == a.prov) { path.clear(); cost = 0; return true; }
     const UnitDef& u = C->unit(a.unit);
+    if(!knowsProvince(a.nation,destId))return false;
     bool naval = u.naval;
     bool hasPort = C->hasBuilding(prov[(size_t)a.prov].buildings, "puerto");
 
@@ -812,6 +818,7 @@ bool Sim::findPath(int armyId, int destId, std::vector<int>& path, float& cost) 
         done[(size_t)best] = true;
         const ProvinceDef& pd = pdef(best);
         auto relax = [&](int to) {
+            if(!knowsProvince(a.nation,to))return;
             float c = legCost(*C, a.unit, best, to, naval);
             float nd = dist[(size_t)best] + c;
             if (nd < dist[(size_t)to]) { dist[(size_t)to] = nd; prev[(size_t)to] = best; }
@@ -875,7 +882,7 @@ void Sim::battle(int provId, int attackerNation) {
             defenders.push_back(i);
         }
     }
-    float fort = 1.0f + buildingMod(provId, 2) + (terr.defense - 1.0f);
+    float fort = (terr.defense + buildingMod(provId, 2))*C->biomeOfProvince(provId).defense;
     defPower *= std::max(1.0f, fort);
     if (defenderNation == 0) {
         defPower += p.pop * (0.55f + pdef(provId).dev * 0.18f) * (0.7f + terr.defense * 0.4f);
@@ -912,7 +919,7 @@ void Sim::battle(int provId, int attackerNation) {
         int lost = 0;
         for (int i : defenders) lost += armies[(size_t)i].men;
         addLog("Batalla de " + pdef(provId).name + ": " + nationName(attackerNation) + " vence a " +
-               (defenderNation == 0 ? std::string("las milicias locales") : nationName(defenderNation)) + ".", 3);
+               (defenderNation == 0 ? std::string("las milicias locales") : nationName(defenderNation)) + ".", 3, attackerNation, provId);
         if (attackerNation == player || defenderNation == player)
             alert(player, "Batalla", "Victoria en " + pdef(provId).name + ". Bajas enemigas: " + intStr(lost) + ".", 3);
         capture(provId, attackerNation);
@@ -921,7 +928,7 @@ void Sim::battle(int provId, int attackerNation) {
     } else {
         applyLosses(attackers, 0.58f);
         applyLosses(defenders, 0.24f * ratio);
-        addLog("Batalla de " + pdef(provId).name + ": " + nationName(attackerNation) + " es rechazado.", 3);
+        addLog("Batalla de " + pdef(provId).name + ": " + nationName(attackerNation) + " es rechazado.", 3, attackerNation, provId);
         if (attackerNation == player || defenderNation == player)
             alert(player, "Batalla", "Derrota en " + pdef(provId).name + ". Tus tropas se retiran.", 2);
         // retirada del atacante
@@ -954,7 +961,7 @@ void Sim::capture(int provId, int nation) {
     p.unrest = 25;
     p.pop = std::max(0.4f, p.pop * 0.90f);
     nations[(size_t)nation].prestige += 5;
-    addLog(nationName(nation) + " toma " + pdef(provId).name + ".", 3);
+    addLog(nationName(nation) + " toma " + pdef(provId).name + ".", 3, nation, provId);
 
     if (old > 0 && nationAlive(old)) {
         Nation& o = nations[(size_t)old];
@@ -967,7 +974,7 @@ void Sim::capture(int provId, int nation) {
             } else {
                 o.alive = false;
                 o.wars.clear();
-                addLog(o.name + " ha sido destruida.", 3);
+                addLog(o.name + " ha sido destruida.", 3, old);
                 if (old == player) {
                     alert(player, "Fin de la partida", "Tu nacion ha caido. La historia continua sin ti.", 2);
                     gameOver = true;
@@ -979,7 +986,7 @@ void Sim::capture(int provId, int nation) {
         for (auto& q : prov) if (q.owner == old) { any = true; break; }
         if (!any && o.alive) {
             o.alive = false;
-            addLog(o.name + " ha sido destruida.", 3);
+            addLog(o.name + " ha sido destruida.", 3, old);
             if (old == player) { alert(player, "Fin de la partida", "Tu nacion ha caido.", 2); gameOver = true; }
         }
         if (!o.alive) {
@@ -1153,7 +1160,9 @@ void Sim::aiTurn() {
 // ---------------------------------------------------------------------------
 // eventos
 // ---------------------------------------------------------------------------
-void Sim::addLog(const std::string& text, int kind) {
+void Sim::addLog(const std::string& text, int kind, int sourceNation, int place) {
+    if(sourceNation>0 && sourceNation!=player && !knowsNation(player,sourceNation))return;
+    if(place>=0 && !knowsProvince(player,place))return;
     LogEntry e;
     e.year = year;
     e.month = month;
@@ -1179,6 +1188,7 @@ void Sim::step() {
     bool daily=year>=-300;
     if(daily) {
         moveArmies(*this,1.f/daysInMonth());
+        observeTerritory();
         if(++day<=daysInMonth())return;
         day=1;
     }
@@ -1206,12 +1216,14 @@ void Sim::step() {
             p.pop *= 0.88f;
             p.loyalty = 55;
             p.unrest = 8;
-            addLog(nationName(p.owner) + " funda un asentamiento en " + pdef(p.def).name + ".", 1);
+            addLog(nationName(p.owner) + " funda un asentamiento en " + pdef(p.def).name + ".", 1, p.owner, p.def);
             if (p.owner == player) alert(player, "Nuevo territorio", "Asentamiento terminado en " + pdef(p.def).name + ".", 1);
         }
     }
     processDeaths();
     if(!daily)moveArmies(*this);
+    observeTerritory();
+    explorationTick();
     historicalTick();
 
     for(auto& n:nations)if(nationAlive(n.id)) {
@@ -1292,7 +1304,7 @@ void Sim::save(const std::string& path) const {
     if (!f) return;
     const char magic[4] = {'S', 'L', 'R', 'S'};
     fwrite(magic, 1, 4, f);
-    uint32_t ver = 4;
+    uint32_t ver = 5;
     wr(f, ver);
     int32_t y = year, mo = month, pl = player, na = nextArmyId, go = gameOver ? 1 : 0;
     wr(f, y); wr(f, mo); wr(f, pl); wr(f, na); wr(f, go);
@@ -1328,6 +1340,7 @@ void Sim::save(const std::string& path) const {
         uint32_t count=(uint32_t)n.allies.size();wr(f,count);for(int x:n.allies)wr(f,x);
         count=(uint32_t)n.discoveries.size();wr(f,count);for(const auto& x:n.discoveries)wrStr(f,x);
         wr(f,n.electionYears);wr(f,n.nextColonyAt);wr(f,n.sponsor);wr(f,n.education);wr(f,n.coexist);wr(f,n.absolutePower);wr(f,n.statecraft);
+        count=(uint32_t)prov.size();wr(f,count);for(uint32_t id=0;id<count;++id){uint8_t known=knowsProvince(n.id,(int)id)?1:0;wr(f,known);}
     }
     uint32_t nch = (uint32_t)chars.size();
     wr(f, nch);
@@ -1352,6 +1365,10 @@ void Sim::save(const std::string& path) const {
         wr(f, e.year); wr(f, e.month); wr(f, e.kind); wrStr(f, e.text);
     }
     wr(f,day);wr(f,judaismAppeared);wr(f,judaismLost);wr(f,christianRoot);wr(f,rootChecked);
+    uint32_t count=(uint32_t)relations.size();wr(f,count);for(const auto& entry:relations){wr(f,entry.first);wr(f,entry.second);}
+    count=(uint32_t)diplomacyAt.size();wr(f,count);for(const auto& entry:diplomacyAt){wr(f,entry.first);wr(f,entry.second);}
+    count=(uint32_t)explorers.size();wr(f,count);for(const auto& e:explorers){wr(f,e.nation);wr(f,e.province);wr(f,e.target);wr(f,e.monthsLeft);wr(f,e.travelLeft);wr(f,e.naval);}
+
     fclose(f);
 }
 
@@ -1361,14 +1378,14 @@ bool Sim::load(const std::string& path) {
     char magic[4];
     if (fread(magic, 1, 4, f) != 4 || memcmp(magic, "SLRS", 4) != 0) { fclose(f); return false; }
     uint32_t ver = 0;
-    if (!rd(f, ver) || (ver < 1 || ver > 4)) { fclose(f); return false; }
+    if (!rd(f, ver) || (ver < 1 || ver > 5)) { fclose(f); return false; }
     int32_t y, mo, pl, na, go;
     if (!rd(f, y) || !rd(f, mo) || !rd(f, pl) || !rd(f, na) || !rd(f, go)) { fclose(f); return false; }
     year = y; month = mo; player = pl; nextArmyId = na; gameOver = go != 0;
     uint64_t seed; if (!rd(f, seed)) { fclose(f); return false; }
     rng.s = seed;
     uint32_t np = 0;
-    if (!rd(f, np) || !C || np==0 || np>C->provinces.size() || (ver>=4 && np!=C->provinces.size())) { fclose(f); return false; }
+    if (!rd(f, np) || !C || np==0 || np>C->provinces.size() || (ver>=5 && np!=C->provinces.size())) { fclose(f); return false; }
     prov.resize(np);
     for (auto& p : prov) {
         uint8_t occ = 0;
@@ -1401,7 +1418,7 @@ bool Sim::load(const std::string& path) {
         uint32_t nw = 0; if (!rd(f, nw) || nw > 1000) { fclose(f); return false; }
         n.wars.resize(nw);
         for (auto& x : n.wars) if (!rd(f, x)) { fclose(f); return false; }
-        n.allies.clear();n.discoveries.clear();n.overlord=0;n.subjectSince=0;n.decisionAt=-1000000;n.spentTech=0;
+        n.knownProvinces.clear();n.allies.clear();n.discoveries.clear();n.overlord=0;n.subjectSince=0;n.decisionAt=-1000000;n.spentTech=0;
         n.religion=C->strategy["religion_by_culture"][n.culture].string("anc");n.countryTag.clear();
         for(const auto& country:C->nationTemplates)if(country.name==n.name)n.countryTag=country.tag;
         n.electionYears=4;n.nextColonyAt=-1000000;n.sponsor=0;n.education=0;n.coexist=true;n.absolutePower=true;n.statecraft=false;
@@ -1414,6 +1431,11 @@ bool Sim::load(const std::string& path) {
             n.discoveries.resize(count);for(auto& x:n.discoveries)if(!rdStr(f,x)){fclose(f);return false;}
             if(ver>=4 && (!rd(f,n.electionYears)||!rd(f,n.nextColonyAt)||!rd(f,n.sponsor)||!rd(f,n.education)||!rd(f,n.coexist)||!rd(f,n.absolutePower)||!rd(f,n.statecraft))){fclose(f);return false;}
         } else for(const auto& t:C->technologies) if(n.tech>=t.points)n.discoveries.push_back(t.id);
+        if(ver>=5) {
+            uint32_t count=0;if(!rd(f,count)||count!=np){fclose(f);return false;}
+            n.knownProvinces.resize(count);for(auto& known:n.knownProvinces)if(!rd(f,known)||known>1){fclose(f);return false;}
+        }
+
     }
     uint32_t nch = 0;
     if (!rd(f, nch) || nch > 100000) { fclose(f); return false; }
@@ -1442,10 +1464,28 @@ bool Sim::load(const std::string& path) {
     for (auto& e : log) {
         if (!rd(f, e.year) || !rd(f, e.month) || !rd(f, e.kind) || !rdStr(f, e.text)) { fclose(f); return false; }
     }
+    explorers.clear();relations.clear();diplomacyAt.clear();
     day=1;judaismAppeared=judaismLost=christianRoot=rootChecked=false;
     if(ver>=4 && (!rd(f,day)||!rd(f,judaismAppeared)||!rd(f,judaismLost)||!rd(f,christianRoot)||!rd(f,rootChecked))){fclose(f);return false;}
+    relations.clear();diplomacyAt.clear();explorers.clear();
+    if(ver>=5) {
+        uint32_t count=0;
+        auto readContacts=[&](std::map<long long,int>& entries,bool opinions) {
+            if(!rd(f,count)||count>nn*nn)return false;
+            for(uint32_t i=0;i<count;++i) {
+                long long key=0;int value=0;if(!rd(f,key)||!rd(f,value))return false;
+                int a=(int)(key>>32),b=(int)(key&0xffffffff);
+                if(a<=0||b<=a||b>=(int)nn||(opinions&&(value< -100||value>100)))return false;
+                entries[key]=value;
+            }
+            return true;
+        };
+        if(!readContacts(relations,true)||!readContacts(diplomacyAt,false)||!rd(f,count)||count>nn*2){fclose(f);return false;}
+        explorers.resize(count);
+        for(auto& e:explorers)if(!rd(f,e.nation)||!rd(f,e.province)||!rd(f,e.target)||!rd(f,e.monthsLeft)||!rd(f,e.travelLeft)||!rd(f,e.naval)){fclose(f);return false;}
+    }
     fclose(f);
-    if(ver<4 && np<C->provinces.size()) {
+    if(ver<5 && np<C->provinces.size()) {
         for(size_t i=np;i<C->provinces.size();++i) {
             Province p;p.def=(int)i;p.pop=C->provinces[i].pop;p.localCulture=C->provinces[i].cultureId;
             p.localReligion=C->strategy["religion_by_culture"][p.localCulture].string("anc");p.settledAt=abs()-120;
@@ -1495,6 +1535,18 @@ bool Sim::load(const std::string& path) {
         for(int id:a.path) if(!validProvince(id)) return false;
     }
     for (const auto& c:chars) if(!validNation(c.nation) || c.traitA<0 || c.traitB<0 || c.traitA>=(int)C->traits.size() || c.traitB>=(int)C->traits.size()) return false;
+    for(size_t i=0;i<explorers.size();++i) {
+        const auto& e=explorers[i];
+        if(!validNation(e.nation)||e.nation==0||!validProvince(e.province)||(e.target!=-1&&!validProvince(e.target))||e.monthsLeft<1||e.monthsLeft>36||e.travelLeft<0||e.travelLeft>4)return false;
+        if(e.target!=-1) {
+            const auto& edges=e.naval?pdef(e.province).exploreSeaAdj:pdef(e.province).adj;
+            if(std::find(edges.begin(),edges.end(),e.target)==edges.end())return false;
+        }
+        for(size_t j=0;j<i;++j)if(explorers[j].nation==e.nation&&explorers[j].naval==e.naval)return false;
+    }
+    explorers.erase(std::remove_if(explorers.begin(),explorers.end(),[&](const Explorer& e){return !nationAlive(e.nation);}),explorers.end());
+    if(ver<5)initializeKnowledge();
+    else observeTerritory();
     alertPending = false;
     return true;
 }
@@ -1511,8 +1563,20 @@ bool Sim::research(int nation,int index) {
     n.spentTech+=t.points;n.discoveries.push_back(t.id);return true;
 }
 bool Sim::diplomatic(int a,int b,const std::string& action) {
-    if(a==b||!nationAlive(a)||!nationAlive(b))return false;
+    if(a==b||!nationAlive(a)||!nationAlive(b)||!knowsNation(a,b))return false;
     auto& me=nations[a];auto& other=nations[b];
+    long long key=(long long)warKey(a,b);
+    if(action=="improve") {
+        if(atWar(a,b)||me.gold<30||relation(a,b)>=100)return false;
+        auto last=diplomacyAt.find(key);if(last!=diplomacyAt.end()&&abs()-last->second<12)return false;
+        relations[key]=std::min(100,relation(a,b)+15);diplomacyAt[key]=abs();me.gold-=30;return true;
+    }
+    if(action=="request_maps"||action=="share_maps") {
+        if(atWar(a,b)||relation(a,b)<60)return false;
+        if(action=="request_maps") {if(me.gold<25||!exchangeMaps(a,b))return false;me.gold-=25;}
+        else if(!exchangeMaps(b,a))return false;
+        return true;
+    }
     auto allied=[&]{return std::find(me.allies.begin(),me.allies.end(),b)!=me.allies.end();};
     if(action=="civilize") {
         if(me.isCityState || !other.isCityState || atWar(a,b)||me.gold<100||other.sponsor)return false;
@@ -1521,7 +1585,7 @@ bool Sim::diplomatic(int a,int b,const std::string& action) {
     if(action=="peace") {if(!atWar(a,b)||warMonths(a,b)<6)return false;makePeace(a,b);return true;}
     if(action=="alliance") {
         if(atWar(a,b)||me.overlord||other.overlord||allied()||me.prestige<5)return false;
-        me.allies.push_back(b);other.allies.push_back(a);me.prestige-=5;return true;
+        me.allies.push_back(b);other.allies.push_back(a);me.prestige-=5;relations[key]=std::max(60,relation(a,b));return true;
     }
     if(action=="break") {
         if(!allied())return false;
@@ -1532,7 +1596,7 @@ bool Sim::diplomatic(int a,int b,const std::string& action) {
         if(atWar(a,b))return false;
         double* from=action=="gold"?&me.gold:action=="food"?&me.food:action=="wood"?&me.wood:action=="stone"?&me.stone:&me.copper;
         double* to=action=="gold"?&other.gold:action=="food"?&other.food:action=="wood"?&other.wood:action=="stone"?&other.stone:&other.copper;
-        if(*from<20)return false;*from-=20;*to+=20;return true;
+        if(*from<20)return false;*from-=20;*to+=20;relations[key]=std::min(100,relation(a,b)+5);return true;
     }
     if(action=="puppet") {
         if(!atWar(a,b)||other.overlord||me.overlord||nationArmyPower(a)<nationArmyPower(b)*2||me.gold<100||warMonths(a,b)<12)return false;

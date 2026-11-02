@@ -2325,7 +2325,7 @@
  },
  {
   "es": "Tierra",
-  "en": "Earth"
+  "en": "Land"
  },
  {
   "es": "CREAR PARTIDA",
@@ -6342,5 +6342,733 @@
  {
   "es": "Trirreme celta",
   "en": "Celtic Trireme"
+ },
+ {
+  "es": "Exploracion",
+  "en": "Exploration"
+ },
+ {
+  "es": "Exploracion terrestre",
+  "en": "Land exploration"
+ },
+ {
+  "es": "Exploracion maritima",
+  "en": "Sea exploration"
+ },
+ {
+  "es": "Provincias descubiertas",
+  "en": "Discovered provinces"
+ },
+ {
+  "es": "Naciones conocidas",
+  "en": "Known nations"
+ },
+ {
+  "es": "Bioma",
+  "en": "Biome"
+ },
+ {
+  "es": "Tundra",
+  "en": "Tundra"
+ },
+ {
+  "es": "Taiga",
+  "en": "Taiga"
+ },
+ {
+  "es": "Bosque templado",
+  "en": "Temperate forest"
+ },
+ {
+  "es": "Matorral mediterraneo",
+  "en": "Mediterranean scrub"
+ },
+ {
+  "es": "Pradera",
+  "en": "Grassland"
+ },
+ {
+  "es": "Humedal",
+  "en": "Wetland"
+ },
+ {
+  "es": "Alpino",
+  "en": "Alpine"
+ },
+ {
+  "es": "Alimento x",
+  "en": "Food x"
+ },
+ {
+  "es": "Defensa x",
+  "en": "Defense x"
+ },
+ {
+  "es": "Movimiento x",
+  "en": "Movement x"
+ },
+ {
+  "es": "Relaciones",
+  "en": "Relations"
+ },
+ {
+  "es": "prov. conocidas",
+  "en": "known prov."
+ },
+ {
+  "es": "No hay contactos. Envia exploradores para conocer otros pueblos.",
+  "en": "No contacts yet. Send explorers to meet other peoples."
+ },
+ {
+  "es": "Mejorar relaciones (30 oro)",
+  "en": "Improve relations (30 gold)"
+ },
+ {
+  "es": "Pedir mapas (25 oro, relacion 60)",
+  "en": "Request maps (25 gold, relations 60)"
+ },
+ {
+  "es": "Dar mapas (relacion 60)",
+  "en": "Give maps (relations 60)"
+ },
+ {
+  "es": "Los exploradores recorren las fronteras del mapa conocido durante 36 meses. No conquistan ni colonizan.",
+  "en": "Explorers follow the frontiers of the known map for up to 36 months. They do not claim territory."
+ },
+ {
+  "es": "Salida",
+  "en": "Departure"
+ },
+ {
+  "es": "Sin puerto",
+  "en": "No port"
+ },
+ {
+  "es": "Enviar exploradores",
+  "en": "Send explorers"
+ },
+ {
+  "es": "40 oro, 10 alimento",
+  "en": "40 gold, 10 food"
+ },
+ {
+  "es": "80 oro, 20 alimento, 20 madera",
+  "en": "80 gold, 20 food, 20 wood"
+ },
+ {
+  "es": "Expedicion de exploracion enviada.",
+  "en": "Exploration expedition dispatched."
+ },
+ {
+  "es": "No hay rutas de exploracion disponibles.",
+  "en": "No exploration routes available."
+ },
+ {
+  "es": "Mar: exige Navegacion a vela y un puerto costero. Tierra: selecciona una provincia propia para elegir la salida.",
+  "en": "Sea: requires Sailing and a coastal port. Land: select one of your provinces to choose the departure point."
+ },
+ {
+  "es": "Mar",
+  "en": "Sea"
+ },
+ {
+  "es": "meses restantes",
+  "en": "months remaining"
+ },
+ {
+  "es": "Retirar",
+  "en": "Recall"
+ },
+ {
+  "es": "Sin expediciones activas.",
+  "en": "No active expeditions."
+ },
+ {
+  "es": "Parte una expedicion maritima de exploracion.",
+  "en": "A seafaring expedition sets out."
+ },
+ {
+  "es": "Parte una expedicion terrestre de exploracion.",
+  "en": "A land expedition sets out."
+ },
+ {
+  "es": "Exploradores descubren",
+  "en": "Explorers discover"
+ },
+ {
+  "es": "La expedicion de exploracion ha regresado.",
+  "en": "The exploration expedition has returned."
+ },
+ {
+  "es": "No quedan rutas de exploracion accesibles.",
+  "en": "No accessible exploration routes remain."
+ },
+ {
+  "es": "Llegan nuevos mapas diplomaticos.",
+  "en": "New diplomatic maps arrive."
+ },
+ {
+  "es": "Ayuda (F1)",
+  "en": "Help (F1)"
+ },
+ {
+  "es": "Los territorios sin descubrir estan ocultos. Usa Exploracion para enviar exploradores o pide mapas mediante diplomacia con relacion 60.",
+  "en": "Undiscovered territories are hidden. Send explorers through Exploration or request diplomatic maps with relations of at least 60."
+ },
+ {
+  "es": "Narva y comunidades del Baltico",
+  "en": "Narva and Baltic communities"
+ },
+ {
+  "es": "Dilmun y comunidades del Golfo",
+  "en": "Dilmun and Gulf communities"
+ },
+ {
+  "es": "Namazga y comunidades del Oxus",
+  "en": "Namazga and Oxus communities"
+ },
+ {
+  "es": "Kelteminar y comunidades del Aral",
+  "en": "Kelteminar and Aral communities"
+ },
+ {
+  "es": "Botai y comunidades de la estepa central",
+  "en": "Botai and central steppe communities"
+ },
+ {
+  "es": "Afanasievo y comunidades del Altai",
+  "en": "Afanasievo and Altai communities"
+ },
+ {
+  "es": "Agrupacion regional de comunidades antiguas; una abstraccion de juego, no una genealogia etnica unica.",
+  "en": "A regional grouping of ancient communities; a game abstraction rather than a single ethnic genealogy."
+ },
+ {
+  "es": "Balticos",
+  "en": "Baltic peoples"
+ },
+ {
+  "es": "Dilmunitas",
+  "en": "Dilmunites"
+ },
+ {
+  "es": "Tribus del noroeste iberico",
+  "en": "Northwestern Iberian tribes"
+ },
+ {
+  "es": "Tribus de la Meseta",
+  "en": "Meseta tribes"
+ },
+ {
+  "es": "Tribus del Tajo",
+  "en": "Tagus tribes"
+ },
+ {
+  "es": "Tribus del levante iberico",
+  "en": "Eastern Iberian tribes"
+ },
+ {
+  "es": "Comunidades del Guadalquivir",
+  "en": "Guadalquivir communities"
+ },
+ {
+  "es": "Tribus del bajo Rin",
+  "en": "Lower Rhine tribes"
+ },
+ {
+  "es": "Tribus del Elba",
+  "en": "Elbe tribes"
+ },
+ {
+  "es": "Tribus del Vistula",
+  "en": "Vistula tribes"
+ },
+ {
+  "es": "Tribus de Jutlandia",
+  "en": "Jutland tribes"
+ },
+ {
+  "es": "Tribus de Svealand",
+  "en": "Svealand tribes"
+ },
+ {
+  "es": "Tribus de Noruega",
+  "en": "Norwegian tribes"
+ },
+ {
+  "es": "Comunidades de Narva",
+  "en": "Narva communities"
+ },
+ {
+  "es": "Comunidades de Finlandia",
+  "en": "Finnish communities"
+ },
+ {
+  "es": "Comunidades de Dilmun",
+  "en": "Dilmun communities"
+ },
+ {
+  "es": "Comunidades de Namazga",
+  "en": "Namazga communities"
+ },
+ {
+  "es": "Comunidades de Margiana",
+  "en": "Margiana communities"
+ },
+ {
+  "es": "Comunidades de Bactria",
+  "en": "Bactrian communities"
+ },
+ {
+  "es": "Comunidades de Sogdiana",
+  "en": "Sogdian communities"
+ },
+ {
+  "es": "Comunidades de Corasmia",
+  "en": "Khwarazm communities"
+ },
+ {
+  "es": "Tribus de Botai",
+  "en": "Botai tribes"
+ },
+ {
+  "es": "Tribus del Altai",
+  "en": "Altai tribes"
+ },
+ {
+  "es": "Suevos",
+  "en": "Suebi"
+ },
+ {
+  "es": "Corasmia",
+  "en": "Khwarazm"
+ },
+ {
+  "es": "Sogdiana",
+  "en": "Sogdia"
+ },
+ {
+  "es": "Escandinavia",
+  "en": "Scandinavia"
+ },
+ {
+  "es": "Baltico",
+  "en": "Baltic"
+ },
+ {
+  "es": "Golfo Persico",
+  "en": "Persian Gulf"
+ },
+ {
+  "es": "Estepa Central",
+  "en": "Central Steppe"
+ },
+ {
+  "es": "Comunidades regionales antiguas; las etiquetas geograficas no implican estados modernos en 3300 a.C.",
+  "en": "Ancient regional communities; geographic labels do not imply modern states in 3300 BC."
+ },
+ {
+  "es": "Formacion regional historica con fecha aproximada. Su cultura inicial representa continuidad geografica de juego, no descendencia etnica directa.",
+  "en": "A historical regional formation with an approximate date. Its starting culture represents geographic continuity in the game, not direct ethnic descent."
+ },
+ {
+  "es": "Ilustracion regional compartida con",
+  "en": "Regional illustration shared with"
+ },
+ {
+  "es": "No es una bandera ni prueba de descendencia directa.",
+  "en": "It is not a flag or evidence of direct descent."
+ },
+ {
+  "es": "Soldado Nordicos (Balticos)",
+  "en": "Nordic Soldier (Baltic peoples)"
+ },
+ {
+  "es": "Lancero Nordicos (Balticos)",
+  "en": "Nordic Spearman (Baltic peoples)"
+ },
+ {
+  "es": "Jinete Nordicos (Balticos)",
+  "en": "Nordic Horseman (Baltic peoples)"
+ },
+ {
+  "es": "Barco Nordicos (Balticos)",
+  "en": "Nordic Ship (Baltic peoples)"
+ },
+ {
+  "es": "Guerrero de bronce Nordicos (Balticos)",
+  "en": "Nordic Bronze warrior (Baltic peoples)"
+ },
+ {
+  "es": "Infante de hierro Nordicos (Balticos)",
+  "en": "Nordic Iron infantry (Baltic peoples)"
+ },
+ {
+  "es": "Infante profesional Nordicos (Balticos)",
+  "en": "Nordic Professional infantry (Baltic peoples)"
+ },
+ {
+  "es": "Arquero Nordicos (Balticos)",
+  "en": "Nordic Archer (Baltic peoples)"
+ },
+ {
+  "es": "Arquero compuesto Nordicos (Balticos)",
+  "en": "Nordic Composite bowman (Baltic peoples)"
+ },
+ {
+  "es": "Arquero profesional Nordicos (Balticos)",
+  "en": "Nordic Professional archer (Baltic peoples)"
+ },
+ {
+  "es": "Carro de guerra Nordicos (Balticos)",
+  "en": "Nordic War chariot (Baltic peoples)"
+ },
+ {
+  "es": "Caballeria Nordicos (Balticos)",
+  "en": "Nordic Cavalry (Baltic peoples)"
+ },
+ {
+  "es": "Jinete acorazado Nordicos (Balticos)",
+  "en": "Nordic Armored horseman (Baltic peoples)"
+ },
+ {
+  "es": "Galera Nordicos (Balticos)",
+  "en": "Nordic Galley (Baltic peoples)"
+ },
+ {
+  "es": "Birreme Nordicos (Balticos)",
+  "en": "Nordic Bireme (Baltic peoples)"
+ },
+ {
+  "es": "Trirreme Nordicos (Balticos)",
+  "en": "Nordic Trireme (Baltic peoples)"
+ },
+ {
+  "es": "Soldado Arabigos (Dilmunitas)",
+  "en": "Arabian Soldier (Dilmunites)"
+ },
+ {
+  "es": "Lancero Arabigos (Dilmunitas)",
+  "en": "Arabian Spearman (Dilmunites)"
+ },
+ {
+  "es": "Jinete Arabigos (Dilmunitas)",
+  "en": "Arabian Horseman (Dilmunites)"
+ },
+ {
+  "es": "Barco Arabigos (Dilmunitas)",
+  "en": "Arabian Ship (Dilmunites)"
+ },
+ {
+  "es": "Guerrero de bronce Arabigos (Dilmunitas)",
+  "en": "Arabian Bronze warrior (Dilmunites)"
+ },
+ {
+  "es": "Infante de hierro Arabigos (Dilmunitas)",
+  "en": "Arabian Iron infantry (Dilmunites)"
+ },
+ {
+  "es": "Infante profesional Arabigos (Dilmunitas)",
+  "en": "Arabian Professional infantry (Dilmunites)"
+ },
+ {
+  "es": "Arquero Arabigos (Dilmunitas)",
+  "en": "Arabian Archer (Dilmunites)"
+ },
+ {
+  "es": "Arquero compuesto Arabigos (Dilmunitas)",
+  "en": "Arabian Composite bowman (Dilmunites)"
+ },
+ {
+  "es": "Arquero profesional Arabigos (Dilmunitas)",
+  "en": "Arabian Professional archer (Dilmunites)"
+ },
+ {
+  "es": "Carro de guerra Arabigos (Dilmunitas)",
+  "en": "Arabian War chariot (Dilmunites)"
+ },
+ {
+  "es": "Caballeria Arabigos (Dilmunitas)",
+  "en": "Arabian Cavalry (Dilmunites)"
+ },
+ {
+  "es": "Jinete acorazado Arabigos (Dilmunitas)",
+  "en": "Arabian Armored horseman (Dilmunites)"
+ },
+ {
+  "es": "Galera Arabigos (Dilmunitas)",
+  "en": "Arabian Galley (Dilmunites)"
+ },
+ {
+  "es": "Birreme Arabigos (Dilmunitas)",
+  "en": "Arabian Bireme (Dilmunites)"
+ },
+ {
+  "es": "Trirreme Arabigos (Dilmunitas)",
+  "en": "Arabian Trireme (Dilmunites)"
+ },
+ {
+  "es": "Soldado Iranios (Oxus)",
+  "en": "Iranian Soldier (Oxus)"
+ },
+ {
+  "es": "Lancero Iranios (Oxus)",
+  "en": "Iranian Spearman (Oxus)"
+ },
+ {
+  "es": "Jinete Iranios (Oxus)",
+  "en": "Iranian Horseman (Oxus)"
+ },
+ {
+  "es": "Barco Iranios (Oxus)",
+  "en": "Iranian Ship (Oxus)"
+ },
+ {
+  "es": "Guerrero de bronce Iranios (Oxus)",
+  "en": "Iranian Bronze warrior (Oxus)"
+ },
+ {
+  "es": "Infante de hierro Iranios (Oxus)",
+  "en": "Iranian Iron infantry (Oxus)"
+ },
+ {
+  "es": "Infante profesional Iranios (Oxus)",
+  "en": "Iranian Professional infantry (Oxus)"
+ },
+ {
+  "es": "Arquero Iranios (Oxus)",
+  "en": "Iranian Archer (Oxus)"
+ },
+ {
+  "es": "Arquero compuesto Iranios (Oxus)",
+  "en": "Iranian Composite bowman (Oxus)"
+ },
+ {
+  "es": "Arquero profesional Iranios (Oxus)",
+  "en": "Iranian Professional archer (Oxus)"
+ },
+ {
+  "es": "Carro de guerra Iranios (Oxus)",
+  "en": "Iranian War chariot (Oxus)"
+ },
+ {
+  "es": "Caballeria Iranios (Oxus)",
+  "en": "Iranian Cavalry (Oxus)"
+ },
+ {
+  "es": "Jinete acorazado Iranios (Oxus)",
+  "en": "Iranian Armored horseman (Oxus)"
+ },
+ {
+  "es": "Galera Iranios (Oxus)",
+  "en": "Iranian Galley (Oxus)"
+ },
+ {
+  "es": "Birreme Iranios (Oxus)",
+  "en": "Iranian Bireme (Oxus)"
+ },
+ {
+  "es": "Trirreme Iranios (Oxus)",
+  "en": "Iranian Trireme (Oxus)"
+ },
+ {
+  "es": "Soldado Esteparios (Aral)",
+  "en": "Steppe Soldier (Aral)"
+ },
+ {
+  "es": "Lancero Esteparios (Aral)",
+  "en": "Steppe Spearman (Aral)"
+ },
+ {
+  "es": "Jinete Esteparios (Aral)",
+  "en": "Steppe Horseman (Aral)"
+ },
+ {
+  "es": "Barco Esteparios (Aral)",
+  "en": "Steppe Ship (Aral)"
+ },
+ {
+  "es": "Guerrero de bronce Esteparios (Aral)",
+  "en": "Steppe Bronze warrior (Aral)"
+ },
+ {
+  "es": "Infante de hierro Esteparios (Aral)",
+  "en": "Steppe Iron infantry (Aral)"
+ },
+ {
+  "es": "Infante profesional Esteparios (Aral)",
+  "en": "Steppe Professional infantry (Aral)"
+ },
+ {
+  "es": "Arquero Esteparios (Aral)",
+  "en": "Steppe Archer (Aral)"
+ },
+ {
+  "es": "Arquero compuesto Esteparios (Aral)",
+  "en": "Steppe Composite bowman (Aral)"
+ },
+ {
+  "es": "Arquero profesional Esteparios (Aral)",
+  "en": "Steppe Professional archer (Aral)"
+ },
+ {
+  "es": "Carro de guerra Esteparios (Aral)",
+  "en": "Steppe War chariot (Aral)"
+ },
+ {
+  "es": "Caballeria Esteparios (Aral)",
+  "en": "Steppe Cavalry (Aral)"
+ },
+ {
+  "es": "Jinete acorazado Esteparios (Aral)",
+  "en": "Steppe Armored horseman (Aral)"
+ },
+ {
+  "es": "Galera Esteparios (Aral)",
+  "en": "Steppe Galley (Aral)"
+ },
+ {
+  "es": "Birreme Esteparios (Aral)",
+  "en": "Steppe Bireme (Aral)"
+ },
+ {
+  "es": "Trirreme Esteparios (Aral)",
+  "en": "Steppe Trireme (Aral)"
+ },
+ {
+  "es": "Soldado Esteparios (Botai)",
+  "en": "Steppe Soldier (Botai)"
+ },
+ {
+  "es": "Lancero Esteparios (Botai)",
+  "en": "Steppe Spearman (Botai)"
+ },
+ {
+  "es": "Jinete Esteparios (Botai)",
+  "en": "Steppe Horseman (Botai)"
+ },
+ {
+  "es": "Barco Esteparios (Botai)",
+  "en": "Steppe Ship (Botai)"
+ },
+ {
+  "es": "Guerrero de bronce Esteparios (Botai)",
+  "en": "Steppe Bronze warrior (Botai)"
+ },
+ {
+  "es": "Infante de hierro Esteparios (Botai)",
+  "en": "Steppe Iron infantry (Botai)"
+ },
+ {
+  "es": "Infante profesional Esteparios (Botai)",
+  "en": "Steppe Professional infantry (Botai)"
+ },
+ {
+  "es": "Arquero Esteparios (Botai)",
+  "en": "Steppe Archer (Botai)"
+ },
+ {
+  "es": "Arquero compuesto Esteparios (Botai)",
+  "en": "Steppe Composite bowman (Botai)"
+ },
+ {
+  "es": "Arquero profesional Esteparios (Botai)",
+  "en": "Steppe Professional archer (Botai)"
+ },
+ {
+  "es": "Carro de guerra Esteparios (Botai)",
+  "en": "Steppe War chariot (Botai)"
+ },
+ {
+  "es": "Caballeria Esteparios (Botai)",
+  "en": "Steppe Cavalry (Botai)"
+ },
+ {
+  "es": "Jinete acorazado Esteparios (Botai)",
+  "en": "Steppe Armored horseman (Botai)"
+ },
+ {
+  "es": "Galera Esteparios (Botai)",
+  "en": "Steppe Galley (Botai)"
+ },
+ {
+  "es": "Birreme Esteparios (Botai)",
+  "en": "Steppe Bireme (Botai)"
+ },
+ {
+  "es": "Trirreme Esteparios (Botai)",
+  "en": "Steppe Trireme (Botai)"
+ },
+ {
+  "es": "Soldado Esteparios (Altai)",
+  "en": "Steppe Soldier (Altai)"
+ },
+ {
+  "es": "Lancero Esteparios (Altai)",
+  "en": "Steppe Spearman (Altai)"
+ },
+ {
+  "es": "Jinete Esteparios (Altai)",
+  "en": "Steppe Horseman (Altai)"
+ },
+ {
+  "es": "Barco Esteparios (Altai)",
+  "en": "Steppe Ship (Altai)"
+ },
+ {
+  "es": "Guerrero de bronce Esteparios (Altai)",
+  "en": "Steppe Bronze warrior (Altai)"
+ },
+ {
+  "es": "Infante de hierro Esteparios (Altai)",
+  "en": "Steppe Iron infantry (Altai)"
+ },
+ {
+  "es": "Infante profesional Esteparios (Altai)",
+  "en": "Steppe Professional infantry (Altai)"
+ },
+ {
+  "es": "Arquero Esteparios (Altai)",
+  "en": "Steppe Archer (Altai)"
+ },
+ {
+  "es": "Arquero compuesto Esteparios (Altai)",
+  "en": "Steppe Composite bowman (Altai)"
+ },
+ {
+  "es": "Arquero profesional Esteparios (Altai)",
+  "en": "Steppe Professional archer (Altai)"
+ },
+ {
+  "es": "Carro de guerra Esteparios (Altai)",
+  "en": "Steppe War chariot (Altai)"
+ },
+ {
+  "es": "Caballeria Esteparios (Altai)",
+  "en": "Steppe Cavalry (Altai)"
+ },
+ {
+  "es": "Jinete acorazado Esteparios (Altai)",
+  "en": "Steppe Armored horseman (Altai)"
+ },
+ {
+  "es": "Galera Esteparios (Altai)",
+  "en": "Steppe Galley (Altai)"
+ },
+ {
+  "es": "Birreme Esteparios (Altai)",
+  "en": "Steppe Bireme (Altai)"
+ },
+ {
+  "es": "Trirreme Esteparios (Altai)",
+  "en": "Steppe Trireme (Altai)"
+ },
+ {
+  "es": "Los exploradores recorren las fronteras del mapa conocido durante hasta 36 meses. No conquistan ni colonizan.",
+  "en": "Explorers follow the frontiers of the known map for up to 36 months. They do not claim territory."
+ },
+ {
+  "es": "Los mapas exigen paz y relacion 60. Mejorar relaciones: una vez al ano.",
+  "en": "Maps require peace and relations 60. Improve relations once a year."
  }
 ]
