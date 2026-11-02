@@ -6030,5 +6030,317 @@
  {
   "es": "Sin alianza",
   "en": "No alliance"
+ },
+ {
+  "es": "Luna",
+  "en": "Moon"
+ },
+ {
+  "es": "Leyes",
+  "en": "Laws"
+ },
+ {
+  "es": "Mandato",
+  "en": "Term"
+ },
+ {
+  "es": "Mandato: 2 anos",
+  "en": "Term: 2 years"
+ },
+ {
+  "es": "Mandato: 4 anos",
+  "en": "Term: 4 years"
+ },
+ {
+  "es": "Mandato: 8 anos",
+  "en": "Term: 8 years"
+ },
+ {
+  "es": "Monarquia absoluta",
+  "en": "Absolute monarchy"
+ },
+ {
+  "es": "Monarquia limitada",
+  "en": "Limited monarchy"
+ },
+ {
+  "es": "Convivencia cultural",
+  "en": "Cultural coexistence"
+ },
+ {
+  "es": "Asimilacion cultural",
+  "en": "Cultural assimilation"
+ },
+ {
+  "es": "Leyes: 20 oro; 5 anos entre cambios nacionales.",
+  "en": "Laws: 20 gold; 5 years between national reforms."
+ },
+ {
+  "es": "Poder absoluto: +5% militar, -3% estabilidad",
+  "en": "Absolute power: +5% military, -3% stability"
+ },
+ {
+  "es": "Poder limitado: +5% estabilidad, -2% ingresos",
+  "en": "Limited power: +5% stability, -2% income"
+ },
+ {
+  "es": "Formacion historica",
+  "en": "Historical formation"
+ },
+ {
+  "es": "Faltan instituciones: Escritura y Codigos legales, o ayuda externa.",
+  "en": "Institutions required: Writing and Legal Codes, or external assistance."
+ },
+ {
+  "es": "Ayudar tribu: 100 oro, 10 anos",
+  "en": "Assist tribe: 100 gold, 10 years"
+ },
+ {
+  "es": "adopta la cultura de su patrocinador.",
+  "en": "adopts its sponsor's culture."
+ },
+ {
+  "es": "La fecha, linaje religioso o gobierno no permite esta conversion.",
+  "en": "Date, religious lineage or government prevents this conversion."
+ },
+ {
+  "es": "Teocracia: solo evolucion de la misma religion.",
+  "en": "Theocracy: only evolution within the same religious lineage."
+ },
+ {
+  "es": "La expedicion requiere entre 15 y 25 anos, y despues hay 5 anos de espera.",
+  "en": "The expedition takes 15 to 25 years, followed by a 5-year cooldown."
+ },
+ {
+  "es": "inicia una expedicion hacia",
+  "en": "starts an expedition to"
+ },
+ {
+  "es": "Colonizar",
+  "en": "Colonize"
+ },
+ {
+  "es": "Exige frontera cercana consolidada, estabilidad 50, 30 alimentos y oro; limite 900 km desde la capital.",
+  "en": "Requires a settled neighboring border, 50 stability, 30 food and gold; limited to 900 km from the capital."
+ },
+ {
+  "es": "puntos tecnologicos",
+  "en": "technology points"
+ },
+ {
+  "es": "Judaismo",
+  "en": "Judaism"
+ },
+ {
+  "es": "Cristianismo",
+  "en": "Christianity"
+ },
+ {
+  "es": "Catolicismo",
+  "en": "Catholicism"
+ },
+ {
+  "es": "Cristianismo ortodoxo",
+  "en": "Orthodox Christianity"
+ },
+ {
+  "es": "Protestantismo",
+  "en": "Protestantism"
+ },
+ {
+  "es": "Reino de Israel",
+  "en": "Kingdom of Israel"
+ },
+ {
+  "es": "Israelita",
+  "en": "Israelite"
+ },
+ {
+  "es": "Celta",
+  "en": "Celtic"
+ },
+ {
+  "es": "Celtas",
+  "en": "Celts"
+ },
+ {
+  "es": "Arvernos",
+  "en": "Arverni"
+ },
+ {
+  "es": "Eduos",
+  "en": "Aedui"
+ },
+ {
+  "es": "Belgas",
+  "en": "Belgae"
+ },
+ {
+  "es": "Helvecios",
+  "en": "Helvetii"
+ },
+ {
+  "es": "Boyos",
+  "en": "Boii"
+ },
+ {
+  "es": "Catuvellaunos",
+  "en": "Catuvellauni"
+ },
+ {
+  "es": "Pueblos de Armorica",
+  "en": "Armorican peoples"
+ },
+ {
+  "es": "Tribus de la Galia",
+  "en": "Tribes of Gaul"
+ },
+ {
+  "es": "Tribus arvernas",
+  "en": "Arvernian tribes"
+ },
+ {
+  "es": "Tribus belgas",
+  "en": "Belgic tribes"
+ },
+ {
+  "es": "Tribus armoricanas",
+  "en": "Armorican tribes"
+ },
+ {
+  "es": "Tribus aquitanas",
+  "en": "Aquitanian tribes"
+ },
+ {
+  "es": "Tribus helvecias",
+  "en": "Helvetian tribes"
+ },
+ {
+  "es": "Tribus del Danubio",
+  "en": "Danubian tribes"
+ },
+ {
+  "es": "Tribus dacias",
+  "en": "Dacian tribes"
+ },
+ {
+  "es": "Tribus de Britania",
+  "en": "British tribes"
+ },
+ {
+  "es": "Tribus de Irlanda",
+  "en": "Irish tribes"
+ },
+ {
+  "es": "Tribus de Caledonia",
+  "en": "Caledonian tribes"
+ },
+ {
+  "es": "Tribus de Panonia",
+  "en": "Pannonian tribes"
+ },
+ {
+  "es": "Comunidades tribales regionales; las etiquetas de pueblos posteriores son una abstraccion de juego.",
+  "en": "Regional tribal communities; later peoples' labels are a gameplay abstraction."
+ },
+ {
+  "es": "Tradiciones celtas europeas de la Edad del Hierro.",
+  "en": "European Celtic traditions of the Iron Age."
+ },
+ {
+  "es": "rebeldes",
+  "en": "rebels"
+ },
+ {
+  "es": "religiosa",
+  "en": "religious"
+ },
+ {
+  "es": "ideologica",
+  "en": "ideological"
+ },
+ {
+  "es": "hambre",
+  "en": "hunger"
+ },
+ {
+  "es": "independencia",
+  "en": "independence"
+ },
+ {
+  "es": "Opcion de formacion israelita hacia 1000 a.C., fecha tradicional aproximada; religion judaica como abstraccion de su evolucion historica.",
+  "en": "Israelite formation around 1000 BC, an approximate traditional date; Judaism abstracts the tradition's historical development."
+ },
+ {
+  "es": "Pueblo o confederacion historica de la Edad del Hierro; fecha de disponibilidad aproximada para el juego.",
+  "en": "Historical Iron Age people or confederation; availability is approximate for gameplay."
+ },
+ {
+  "es": "Empiezas como una ciudad-estado historica. Coloniza provincias vecinas y funda una nacion (Egipto, Sumeria, Siria, Canaán...). Tus gobernantes y consejeros envejecen y mueren: jamas vuelven. El mandato republicano se fija por ley: 2, 4 u 8 anos.",
+  "en": "Start as an ancient community. Colonize neighboring provinces and found a nation (Egypt, Sumer, Syria, Canaan...). Rulers and advisers grow old and die permanently. Republican terms are set by law: 2, 4 or 8 years."
+ },
+ {
+  "es": "Soldado celta",
+  "en": "Celtic Soldier"
+ },
+ {
+  "es": "Lancero celta",
+  "en": "Celtic Spearman"
+ },
+ {
+  "es": "Jinete celta",
+  "en": "Celtic Horseman"
+ },
+ {
+  "es": "Barco celta",
+  "en": "Celtic Ship"
+ },
+ {
+  "es": "Guerrero de bronce celta",
+  "en": "Celtic Bronze warrior"
+ },
+ {
+  "es": "Infante de hierro celta",
+  "en": "Celtic Iron infantry"
+ },
+ {
+  "es": "Infante profesional celta",
+  "en": "Celtic Professional infantry"
+ },
+ {
+  "es": "Arquero celta",
+  "en": "Celtic Archer"
+ },
+ {
+  "es": "Arquero compuesto celta",
+  "en": "Celtic Composite bowman"
+ },
+ {
+  "es": "Arquero profesional celta",
+  "en": "Celtic Professional archer"
+ },
+ {
+  "es": "Carro de guerra celta",
+  "en": "Celtic War chariot"
+ },
+ {
+  "es": "Caballeria celta",
+  "en": "Celtic Cavalry"
+ },
+ {
+  "es": "Jinete acorazado celta",
+  "en": "Celtic Armored horseman"
+ },
+ {
+  "es": "Galera celta",
+  "en": "Celtic Galley"
+ },
+ {
+  "es": "Birreme celta",
+  "en": "Celtic Bireme"
+ },
+ {
+  "es": "Trirreme celta",
+  "en": "Celtic Trireme"
  }
 ]

@@ -395,6 +395,7 @@ bool Gfx::init(const Content& content, const std::string& contentDir) {
         if (id.empty() || id.find_first_not_of("abcdefghijklmnopqrstuvwxyz0123456789_-") != std::string::npos) continue;
         media[id].loadRaw(contentDir + "/media/" + id + ".rgba", 128, 128);
     }
+    moon.loadRaw(contentDir+"/media/moon_surface.rgba",512,256,true);
     if (!earth.loadRaw(contentDir + "/textures/earth.rgba", 2048, 1024, true)) return false;
     if (!font.init()) return false;
     if (!map.build(content, contentDir)) return false;
@@ -568,6 +569,17 @@ void Gfx::drawGlobe(const Sim& sim, int selected, float time, int width, int hei
     glEnable(GL_COLOR_MATERIAL);
     glColorMaterial(GL_FRONT, GL_AMBIENT_AND_DIFFUSE);
     glColor4ub(255, 255, 255, 255);
+    if(showMoon) {
+        glEnable(GL_NORMALIZE);
+        glDisable(GL_TEXTURE_2D);
+        // Keep the decorative Moon visible above the map, outside the side panels.
+        float depth=1.5f,tanHalf=std::tan(22.f*DEG);
+        Vec3 moonPos=cam.pos()+cam.forward()*depth+cam.right()*(.44f*depth*tanHalf*width/std::max(1,height))+cam.up()*(.72f*depth*tanHalf);
+        glPushMatrix();glTranslatef(moonPos.x,moonPos.y,moonPos.z);glScalef(.055f,.055f,.055f);
+        if(moon.id){glEnable(GL_TEXTURE_2D);glBindTexture(GL_TEXTURE_2D,moon.id);}
+        glColor4ub(145,145,145,255);glCallList(sphereList);glPopMatrix();
+        glEnable(GL_TEXTURE_2D);glColor4ub(255,255,255,255);
+    }
     glBindTexture(GL_TEXTURE_2D, earth.id);
     glCallList(sphereList);
 

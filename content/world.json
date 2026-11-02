@@ -376,16 +376,14 @@
    "pop": 8.0,
    "dev": 2,
    "region": "Egipto",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    41,
     45,
-    48,
-    72,
     73,
     115,
     143,
+    165,
     166
    ],
    "sea_adj": [],
@@ -404,20 +402,10 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Nordico",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    18,
-    20,
-    43,
-    51,
-    119
-   ],
-   "sea_adj": [
-    52,
-    57,
-    116
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -433,20 +421,18 @@
    "pop": 8.0,
    "dev": 2,
    "region": "Levante",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    13,
+    14,
     44,
     65,
     67,
-    104,
+    126,
     142,
     150
    ],
-   "sea_adj": [
-    71
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -465,12 +451,9 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    20,
-    39,
-    107,
-    135,
-    159,
-    161
+    216,
+    217,
+    218
    ],
    "sea_adj": [],
    "buildings": [],
@@ -491,13 +474,11 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    18,
-    20,
-    21,
-    117,
-    119,
-    120,
-    158
+    191,
+    208,
+    209,
+    210,
+    211
    ],
    "sea_adj": [],
    "buildings": [],
@@ -521,10 +502,9 @@
     13,
     29,
     65,
-    77,
     108,
-    109,
-    156
+    168,
+    169
    ],
    "sea_adj": [],
    "buildings": [],
@@ -542,20 +522,19 @@
    "pop": 4.0,
    "dev": 1,
    "region": "Levante",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    19,
     40,
     46,
     64,
     70,
     76,
-    138
+    138,
+    250,
+    251
    ],
-   "sea_adj": [
-    100
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -571,20 +550,19 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Britania",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    52,
-    62,
-    111,
-    162
+    231,
+    232,
+    233,
+    234,
+    239,
+    240,
+    241,
+    242
    ],
-   "sea_adj": [
-    43,
-    51,
-    112,
-    116
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -603,10 +581,7 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    79,
-    85,
-    121,
-    146
+    121
    ],
    "sea_adj": [],
    "buildings": [],
@@ -628,20 +603,10 @@
    "owner": 0,
    "adj": [
     27,
-    47,
-    69,
-    91,
-    104,
-    148
+    171,
+    172
    ],
-   "sea_adj": [
-    14,
-    19,
-    23,
-    118,
-    126,
-    131
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -657,20 +622,13 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Italia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     25,
-    38,
-    58,
-    86,
-    151
+    38
    ],
-   "sea_adj": [
-    28,
-    90,
-    158
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -686,15 +644,15 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Galias",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    21,
-    22,
-    28,
     93,
-    122,
-    125
+    194,
+    195,
+    199,
+    200,
+    201
    ],
    "sea_adj": [],
    "buildings": [],
@@ -715,8 +673,7 @@
    "coastal": true,
    "owner": 0,
    "adj": [
-    96,
-    155
+    96
    ],
    "sea_adj": [],
    "buildings": [],
@@ -737,13 +694,9 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    2,
     5,
     29,
-    65,
-    69,
-    77,
-    108
+    65
    ],
    "sea_adj": [],
    "buildings": [],
@@ -764,15 +717,15 @@
    "coastal": true,
    "owner": 0,
    "adj": [
-    142
+    2,
+    40,
+    44,
+    67,
+    126
    ],
    "sea_adj": [
-    9,
-    23,
-    82,
-    104,
-    118,
-    131
+    19,
+    150
    ],
    "buildings": [],
    "loyalty": 60.0,
@@ -793,12 +746,8 @@
    "owner": 0,
    "adj": [
     49,
-    53,
-    68,
-    98,
-    108,
     109,
-    137
+    169
    ],
    "sea_adj": [],
    "buildings": [],
@@ -819,21 +768,11 @@
    "coastal": true,
    "owner": 0,
    "adj": [
-    24,
-    35,
-    54,
-    105,
     133,
-    144
+    144,
+    174
    ],
-   "sea_adj": [
-    31,
-    47,
-    83,
-    89,
-    91,
-    148
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -854,11 +793,13 @@
    "adj": [
     53,
     81,
-    85,
-    99,
+    88,
     110,
+    134,
     137,
-    140
+    152,
+    154,
+    170
    ],
    "sea_adj": [],
    "buildings": [],
@@ -876,21 +817,18 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Galias",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    1,
-    4,
-    21,
-    111,
     119,
-    120,
-    162
+    190,
+    204,
+    205,
+    206,
+    207,
+    208
    ],
-   "sea_adj": [
-    112,
-    116
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -909,21 +847,16 @@
    "coastal": true,
    "owner": 9,
    "adj": [
-    6,
     40,
     44,
     67,
     70,
     126,
-    138
+    138,
+    250
    ],
    "sea_adj": [
-    9,
-    23,
-    27,
-    82,
-    104,
-    131
+    14
    ],
    "buildings": [],
    "loyalty": 60.0,
@@ -943,13 +876,10 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    1,
-    3,
-    4,
     107,
-    124,
     135,
-    161
+    161,
+    214
    ],
    "sea_adj": [],
    "buildings": [],
@@ -970,13 +900,15 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    4,
-    11,
-    18,
-    93,
-    111,
-    120,
-    125
+    185,
+    186,
+    187,
+    188,
+    191,
+    192,
+    193,
+    211,
+    212
    ],
    "sea_adj": [],
    "buildings": [],
@@ -994,18 +926,14 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Galias",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    11,
-    93,
-    111,
-    120
+    196,
+    197,
+    198
    ],
-   "sea_adj": [
-    26,
-    63
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1021,23 +949,17 @@
    "pop": 6.0,
    "dev": 1,
    "region": "Egipto",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     59,
     71,
-    72,
     103,
-    131
+    131,
+    164,
+    167
    ],
-   "sea_adj": [
-    9,
-    14,
-    19,
-    40,
-    70,
-    126
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1053,25 +975,10 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Balcanes",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    16,
-    35,
-    54,
-    105,
-    123,
-    133,
-    144
-   ],
-   "sea_adj": [
-    25,
-    32,
-    39,
-    90,
-    139,
-    158
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1087,19 +994,12 @@
    "pop": 2.0,
    "dev": 1,
    "region": "Italia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     10
    ],
-   "sea_adj": [
-    24,
-    34,
-    54,
-    90,
-    132,
-    149
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1115,19 +1015,10 @@
    "pop": 2.0,
    "dev": 1,
    "region": "Atlantico",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    28,
-    63,
-    122
-   ],
-   "sea_adj": [
-    22,
-    62,
-    75,
-    162
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1143,23 +1034,13 @@
    "pop": 12.0,
    "dev": 3,
    "region": "Anatolia",
-   "coastal": true,
+   "coastal": false,
    "owner": 3,
    "adj": [
     9,
-    47,
-    69,
-    77,
-    104,
-    171
+    104
    ],
-   "sea_adj": [
-    19,
-    64,
-    70,
-    71,
-    100
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1175,21 +1056,13 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Iberia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    11,
-    26,
-    122
+    122,
+    194
    ],
-   "sea_adj": [
-    10,
-    34,
-    39,
-    58,
-    114,
-    151
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1211,10 +1084,8 @@
     5,
     13,
     65,
-    77,
-    104,
     108,
-    156
+    168
    ],
    "sea_adj": [],
    "buildings": [],
@@ -1232,19 +1103,10 @@
    "pop": 4.0,
    "dev": 2,
    "region": "Sardena",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    34
-   ],
-   "sea_adj": [
-    38,
-    58,
-    86,
-    125,
-    132,
-    149
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1264,16 +1126,13 @@
    "owner": 0,
    "adj": [
     60,
-    83
+    83,
+    252,
+    253,
+    254,
+    255
    ],
-   "sea_adj": [
-    16,
-    32,
-    35,
-    54,
-    105,
-    144
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1289,20 +1148,10 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Libia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    100
-   ],
-   "sea_adj": [
-    24,
-    31,
-    54,
-    60,
-    61,
-    90,
-    91
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1318,17 +1167,10 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Caucaso",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    84,
-    102
-   ],
-   "sea_adj": [
-    36,
-    157,
-    160
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1344,19 +1186,10 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Sardena",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    30
-   ],
-   "sea_adj": [
-    25,
-    28,
-    38,
-    39,
-    58,
-    86
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1372,24 +1205,17 @@
    "pop": 4.0,
    "dev": 1,
    "region": "Grecia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    16,
-    24,
     54,
     105,
     133,
-    144
+    144,
+    174,
+    175
    ],
-   "sea_adj": [
-    31,
-    47,
-    60,
-    83,
-    128,
-    148
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1405,17 +1231,10 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Estepa",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    56,
-    106,
-    147
-   ],
-   "sea_adj": [
-    33,
-    157
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1434,10 +1253,7 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    80,
-    106,
-    147,
-    157
+    106
    ],
    "sea_adj": [],
    "buildings": [],
@@ -1459,19 +1275,10 @@
    "owner": 0,
    "adj": [
     10,
-    58,
-    86,
-    117,
-    151
+    178,
+    180
    ],
-   "sea_adj": [
-    30,
-    34,
-    125,
-    132,
-    139,
-    149
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1487,20 +1294,10 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Balcanes",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    3,
-    159
-   ],
-   "sea_adj": [
-    24,
-    28,
-    34,
-    114,
-    117,
-    158
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1516,23 +1313,22 @@
    "pop": 8.0,
    "dev": 2,
    "region": "Levante",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     6,
+    14,
     19,
     67,
     70,
     76,
     126,
-    138
+    138,
+    142,
+    250,
+    251
    ],
-   "sea_adj": [
-    23,
-    104,
-    118,
-    131
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1550,13 +1346,7 @@
    "region": "Egipto",
    "coastal": false,
    "owner": 0,
-   "adj": [
-    0,
-    59,
-    115,
-    130,
-    143
-   ],
+   "adj": [],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
@@ -1575,14 +1365,8 @@
    "region": "Arabia",
    "coastal": true,
    "owner": 0,
-   "adj": [
-    85
-   ],
-   "sea_adj": [
-    97,
-    99,
-    163
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1598,20 +1382,12 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Nordico",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    1,
-    51,
-    119
+    51
    ],
-   "sea_adj": [
-    7,
-    52,
-    62,
-    75,
-    116
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1627,20 +1403,18 @@
    "pop": 10.0,
    "dev": 2,
    "region": "Levante",
-   "coastal": true,
+   "coastal": false,
    "owner": 10,
    "adj": [
     2,
+    14,
     19,
-    65,
     67,
     126,
     142,
     150
    ],
-   "sea_adj": [
-    71
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1656,19 +1430,16 @@
    "pop": 6.0,
    "dev": 1,
    "region": "Egipto",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     0,
     48,
     73,
-    113,
-    115,
-    143
+    143,
+    165
    ],
-   "sea_adj": [
-    74
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1684,16 +1455,16 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Levante",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     6,
     64,
     76,
-    103,
-    131,
     136,
-    138
+    138,
+    250,
+    251
    ],
    "sea_adj": [],
    "buildings": [],
@@ -1714,20 +1485,10 @@
    "coastal": true,
    "owner": 0,
    "adj": [
-    9,
-    27,
-    91,
     128,
-    148
+    172
    ],
-   "sea_adj": [
-    16,
-    35,
-    60,
-    83,
-    105,
-    133
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1743,21 +1504,15 @@
    "pop": 5.0,
    "dev": 1,
    "region": "Egipto",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    0,
     45,
     73,
-    113,
-    115,
-    130,
-    143
+    143,
+    165
    ],
-   "sea_adj": [
-    74,
-    163
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1777,12 +1532,9 @@
    "owner": 0,
    "adj": [
     15,
-    53,
     68,
-    98,
     109,
-    141,
-    156
+    169
    ],
    "sea_adj": [],
    "buildings": [],
@@ -1807,9 +1559,12 @@
     87,
     88,
     99,
+    110,
+    134,
     152,
     153,
-    154
+    154,
+    170
    ],
    "sea_adj": [],
    "buildings": [],
@@ -1827,19 +1582,12 @@
    "pop": 2.0,
    "dev": 1,
    "region": "Nordico",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    1,
     43
    ],
-   "sea_adj": [
-    7,
-    52,
-    57,
-    92,
-    95
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1855,20 +1603,13 @@
    "pop": 2.0,
    "dev": 1,
    "region": "Britania",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    7,
-    75,
-    116
+    248,
+    249
    ],
-   "sea_adj": [
-    1,
-    43,
-    51,
-    112,
-    119
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1887,13 +1628,11 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    15,
     17,
-    49,
-    68,
     81,
-    98,
-    137
+    110,
+    137,
+    170
    ],
    "sea_adj": [],
    "buildings": [],
@@ -1911,24 +1650,15 @@
    "pop": 4.0,
    "dev": 1,
    "region": "Grecia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    16,
-    24,
     35,
     105,
-    133,
-    144
+    144,
+    175
    ],
-   "sea_adj": [
-    25,
-    31,
-    32,
-    60,
-    83,
-    128
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1946,12 +1676,7 @@
    "region": "Nordico",
    "coastal": false,
    "owner": 0,
-   "adj": [
-    95,
-    107,
-    124,
-    135
-   ],
+   "adj": [],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
@@ -1968,17 +1693,10 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Estepa",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    36,
-    80,
-    106,
-    147
-   ],
-   "sea_adj": [
-    160
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -1994,16 +1712,12 @@
    "pop": 2.0,
    "dev": 1,
    "region": "Nordico",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    92,
-    95
+    92
    ],
-   "sea_adj": [
-    1,
-    51
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2022,22 +1736,16 @@
    "coastal": true,
    "owner": 0,
    "adj": [
-    10,
-    38,
     86,
-    117,
     151,
-    158,
-    180
+    176,
+    177,
+    178,
+    179,
+    180,
+    183
    ],
-   "sea_adj": [
-    28,
-    30,
-    34,
-    125,
-    132,
-    139
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2057,12 +1765,12 @@
    "owner": 0,
    "adj": [
     23,
-    41,
     71,
     72,
     103,
     131,
-    136
+    164,
+    167
    ],
    "sea_adj": [],
    "buildings": [],
@@ -2080,20 +1788,17 @@
    "pop": 5.0,
    "dev": 1,
    "region": "Creta",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     31,
-    83
+    83,
+    252,
+    253,
+    254,
+    255
    ],
-   "sea_adj": [
-    32,
-    35,
-    47,
-    54,
-    105,
-    144
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2112,11 +1817,7 @@
    "coastal": false,
    "owner": 0,
    "adj": [],
-   "sea_adj": [
-    32,
-    90,
-    100
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2132,18 +1833,19 @@
    "pop": 2.0,
    "dev": 1,
    "region": "Britania",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    7,
-    162
+    162,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    241
    ],
-   "sea_adj": [
-    26,
-    43,
-    63,
-    112
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2159,19 +1861,10 @@
    "pop": 2.0,
    "dev": 1,
    "region": "Atlantico",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    26,
-    94
-   ],
-   "sea_adj": [
-    22,
-    62,
-    75,
-    111,
-    162
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2193,16 +1886,12 @@
     6,
     46,
     70,
-    71,
     76,
-    136,
-    138
+    138,
+    250,
+    251
    ],
-   "sea_adj": [
-    27,
-    118,
-    150
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2225,9 +1914,8 @@
     5,
     13,
     29,
-    44,
     108,
-    150
+    168
    ],
    "sea_adj": [],
    "buildings": [],
@@ -2245,12 +1933,10 @@
    "pop": 2.0,
    "dev": 1,
    "region": "Iran",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    127,
-    145,
-    146
+    145
    ],
    "sea_adj": [],
    "buildings": [],
@@ -2268,10 +1954,11 @@
    "pop": 6.0,
    "dev": 1,
    "region": "Levante",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     2,
+    14,
     19,
     40,
     44,
@@ -2298,13 +1985,9 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    15,
     49,
-    53,
-    84,
     109,
-    141,
-    156
+    141
    ],
    "sea_adj": [],
    "buildings": [],
@@ -2325,11 +2008,7 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    9,
-    13,
-    27,
-    77,
-    104
+    77
    ],
    "sea_adj": [],
    "buildings": [],
@@ -2347,7 +2026,7 @@
    "pop": 5.0,
    "dev": 1,
    "region": "Levante",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     6,
@@ -2356,16 +2035,11 @@
     64,
     76,
     126,
-    138
+    138,
+    250,
+    251
    ],
-   "sea_adj": [
-    23,
-    27,
-    82,
-    104,
-    118,
-    131
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2381,24 +2055,18 @@
    "pop": 9.0,
    "dev": 2,
    "region": "Egipto",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     23,
     59,
-    64,
     72,
     103,
     131,
-    136,
-    164
+    164,
+    167
    ],
-   "sea_adj": [
-    2,
-    27,
-    44,
-    150
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2417,13 +2085,11 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    0,
-    23,
     59,
     71,
     103,
-    131,
-    136
+    166,
+    167
    ],
    "sea_adj": [],
    "buildings": [],
@@ -2441,19 +2107,16 @@
    "pop": 9.0,
    "dev": 2,
    "region": "Egipto",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     0,
     45,
     48,
-    113,
-    115,
-    143
+    143,
+    165
    ],
-   "sea_adj": [
-    74
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2469,15 +2132,10 @@
    "pop": 2.0,
    "dev": 1,
    "region": "Arabia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [],
-   "sea_adj": [
-    45,
-    48,
-    73,
-    163
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2493,17 +2151,17 @@
    "pop": 2.0,
    "dev": 1,
    "region": "Britania",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    52,
-    182
+    182,
+    243,
+    244,
+    245,
+    246,
+    247
    ],
-   "sea_adj": [
-    26,
-    43,
-    63
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2519,7 +2177,7 @@
    "pop": 6.0,
    "dev": 2,
    "region": "Levante",
-   "coastal": true,
+   "coastal": false,
    "owner": 4,
    "adj": [
     6,
@@ -2527,12 +2185,11 @@
     46,
     64,
     70,
-    136,
-    138
+    138,
+    250,
+    251
    ],
-   "sea_adj": [
-    100
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2551,13 +2208,7 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    5,
-    13,
-    27,
-    29,
-    69,
-    104,
-    150
+    69
    ],
    "sea_adj": [],
    "buildings": [],
@@ -2577,10 +2228,7 @@
    "region": "Nubia",
    "coastal": false,
    "owner": 0,
-   "adj": [
-    113,
-    130
-   ],
+   "adj": [],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
@@ -2599,10 +2247,7 @@
    "region": "Iran",
    "coastal": false,
    "owner": 0,
-   "adj": [
-    8,
-    121
-   ],
+   "adj": [],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
@@ -2622,9 +2267,6 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    37,
-    56,
-    106,
     147
    ],
    "sea_adj": [],
@@ -2649,10 +2291,15 @@
     17,
     50,
     53,
+    87,
+    88,
     110,
     134,
     137,
-    140
+    152,
+    153,
+    154,
+    170
    ],
    "sea_adj": [],
    "buildings": [],
@@ -2672,15 +2319,10 @@
    "region": "Chipre",
    "coastal": true,
    "owner": 0,
-   "adj": [],
-   "sea_adj": [
-    14,
-    19,
-    70,
-    104,
-    126,
-    150
+   "adj": [
+    118
    ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2700,16 +2342,13 @@
    "owner": 6,
    "adj": [
     31,
-    60
+    60,
+    252,
+    253,
+    254,
+    255
    ],
-   "sea_adj": [
-    16,
-    35,
-    47,
-    54,
-    105,
-    128
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2727,13 +2366,7 @@
    "region": "Caucaso",
    "coastal": false,
    "owner": 0,
-   "adj": [
-    33,
-    68,
-    102,
-    141,
-    156
-   ],
+   "adj": [],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
@@ -2750,19 +2383,12 @@
    "pop": 2.0,
    "dev": 1,
    "region": "Arabia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    8,
-    17,
-    42,
-    99,
-    121,
-    140
+    99
    ],
-   "sea_adj": [
-    97
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2778,28 +2404,19 @@
    "pop": 4.0,
    "dev": 1,
    "region": "Italia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    10,
-    38,
     58,
-    117,
     151,
-    158,
     176,
     177,
     178,
-    179
+    179,
+    180,
+    183
    ],
-   "sea_adj": [
-    30,
-    34,
-    125,
-    132,
-    139,
-    149
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2819,12 +2436,16 @@
    "owner": 0,
    "adj": [
     50,
+    81,
     88,
+    99,
     110,
     134,
+    140,
     152,
     153,
-    154
+    154,
+    170
    ],
    "sea_adj": [],
    "buildings": [],
@@ -2845,13 +2466,17 @@
    "coastal": false,
    "owner": 0,
    "adj": [
+    17,
     50,
+    81,
     87,
+    99,
     110,
     134,
     152,
     153,
-    154
+    154,
+    170
    ],
    "sea_adj": [],
    "buildings": [],
@@ -2875,11 +2500,6 @@
     173
    ],
    "sea_adj": [
-    16,
-    91,
-    100,
-    133,
-    144,
     148
    ],
    "buildings": [],
@@ -2897,19 +2517,10 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Magreb",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [],
-   "sea_adj": [
-    10,
-    24,
-    25,
-    32,
-    61,
-    129,
-    139,
-    149
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2925,23 +2536,12 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Egeo",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    9,
-    47,
-    128,
-    148,
-    157
+    148
    ],
-   "sea_adj": [
-    16,
-    32,
-    89,
-    100,
-    133,
-    144
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2957,15 +2557,13 @@
    "pop": 2.0,
    "dev": 1,
    "region": "Nordico",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     57,
     95
    ],
-   "sea_adj": [
-    51
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -2981,16 +2579,17 @@
    "pop": 2.0,
    "dev": 1,
    "region": "Galias",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     11,
-    21,
-    22,
-    111,
-    120,
-    122,
-    125
+    185,
+    187,
+    194,
+    195,
+    199,
+    200,
+    201
    ],
    "sea_adj": [],
    "buildings": [],
@@ -3008,12 +2607,9 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Iberia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    63,
-    155
-   ],
+   "adj": [],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
@@ -3030,17 +2626,12 @@
    "pop": 2.0,
    "dev": 1,
    "region": "Nordico",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    55,
-    57,
-    92,
-    124
+    92
    ],
-   "sea_adj": [
-    51
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3056,15 +2647,12 @@
    "pop": 6.0,
    "dev": 2,
    "region": "Iberia",
-   "coastal": true,
+   "coastal": false,
    "owner": 12,
    "adj": [
-    12,
-    155
+    12
    ],
-   "sea_adj": [
-    125
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3080,14 +2668,10 @@
    "pop": 2.0,
    "dev": 1,
    "region": "Arabia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [],
-   "sea_adj": [
-    42,
-    85,
-    99
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3106,13 +2690,7 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    15,
-    49,
-    53,
-    108,
-    109,
-    137,
-    142
+    108
    ],
    "sea_adj": [],
    "buildings": [],
@@ -3130,21 +2708,19 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Mesopotamia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    17,
     50,
     85,
-    137,
+    87,
+    88,
     140,
-    146,
-    153
+    152,
+    153,
+    154
    ],
-   "sea_adj": [
-    42,
-    97
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3160,20 +2736,10 @@
    "pop": 1.0,
    "dev": 0,
    "region": "Libia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    32
-   ],
-   "sea_adj": [
-    6,
-    27,
-    61,
-    76,
-    89,
-    91,
-    138
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3189,11 +2755,9 @@
    "pop": 4.0,
    "dev": 1,
    "region": "Magreb",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    155
-   ],
+   "adj": [],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
@@ -3210,16 +2774,10 @@
    "pop": 4.0,
    "dev": 2,
    "region": "Caucaso",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    33,
-    84
-   ],
-   "sea_adj": [
-    157,
-    160
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3239,12 +2797,12 @@
    "owner": 1,
    "adj": [
     23,
-    46,
     59,
     71,
     72,
     131,
-    136
+    164,
+    167
    ],
    "sea_adj": [],
    "buildings": [],
@@ -3265,21 +2823,9 @@
    "coastal": true,
    "owner": 0,
    "adj": [
-    2,
-    9,
-    27,
-    29,
-    69,
-    77
+    27
    ],
-   "sea_adj": [
-    14,
-    19,
-    40,
-    70,
-    82,
-    138
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3295,25 +2841,17 @@
    "pop": 4.0,
    "dev": 1,
    "region": "Grecia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    16,
-    24,
     35,
     54,
     133,
     144,
+    174,
     175
    ],
-   "sea_adj": [
-    31,
-    47,
-    60,
-    83,
-    128,
-    148
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3332,12 +2870,8 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    36,
     37,
-    56,
-    80,
-    147,
-    157
+    147
    ],
    "sea_adj": [],
    "buildings": [],
@@ -3358,12 +2892,11 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    3,
     20,
-    55,
-    124,
     135,
-    161
+    161,
+    215,
+    216
    ],
    "sea_adj": [],
    "buildings": [],
@@ -3385,12 +2918,11 @@
    "owner": 0,
    "adj": [
     5,
-    13,
-    15,
     29,
     65,
     98,
-    109
+    168,
+    169
    ],
    "sea_adj": [],
    "buildings": [],
@@ -3411,13 +2943,9 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    5,
     15,
     49,
     68,
-    98,
-    108,
-    156,
     168,
     169
    ],
@@ -3441,12 +2969,17 @@
    "owner": 0,
    "adj": [
     17,
+    50,
+    53,
     81,
     87,
     88,
     134,
+    137,
     152,
-    154
+    153,
+    154,
+    170
    ],
    "sea_adj": [],
    "buildings": [],
@@ -3464,20 +2997,18 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Galias",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    7,
-    18,
-    21,
-    22,
-    93,
-    119,
-    120
+    120,
+    184,
+    189,
+    197,
+    202,
+    203,
+    204
    ],
-   "sea_adj": [
-    63
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3496,14 +3027,7 @@
    "coastal": true,
    "owner": 0,
    "adj": [],
-   "sea_adj": [
-    7,
-    18,
-    52,
-    62,
-    116,
-    119
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3521,14 +3045,7 @@
    "region": "Nubia",
    "coastal": false,
    "owner": 0,
-   "adj": [
-    45,
-    48,
-    73,
-    78,
-    130,
-    143
-   ],
+   "adj": [],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
@@ -3545,18 +3062,10 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Magreb",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    149
-   ],
-   "sea_adj": [
-    28,
-    39,
-    125,
-    129,
-    151
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3576,12 +3085,8 @@
    "owner": 0,
    "adj": [
     0,
-    41,
-    45,
-    48,
-    73,
-    130,
-    143
+    143,
+    166
    ],
    "sea_adj": [],
    "buildings": [],
@@ -3599,20 +3104,12 @@
    "pop": 1.0,
    "dev": 1,
    "region": "Britania",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    52,
     181
    ],
-   "sea_adj": [
-    1,
-    7,
-    18,
-    43,
-    112,
-    119
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3628,20 +3125,13 @@
    "pop": 5.0,
    "dev": 1,
    "region": "Italia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    4,
-    38,
-    58,
-    86,
-    125,
     151,
     158
    ],
-   "sea_adj": [
-    39
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3659,15 +3149,10 @@
    "region": "Chipre",
    "coastal": true,
    "owner": 0,
-   "adj": [],
-   "sea_adj": [
-    9,
-    14,
-    40,
-    64,
-    70,
-    138
+   "adj": [
+    82
    ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3683,21 +3168,13 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Nordico",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    1,
-    4,
     18,
-    43,
-    111,
-    120
+    207
    ],
-   "sea_adj": [
-    52,
-    112,
-    116
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3713,16 +3190,20 @@
    "pop": 4.0,
    "dev": 1,
    "region": "Galias",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    4,
-    18,
-    21,
-    22,
-    93,
     111,
-    119
+    184,
+    185,
+    188,
+    189,
+    190,
+    202,
+    203,
+    204,
+    205,
+    206
    ],
    "sea_adj": [],
    "buildings": [],
@@ -3743,10 +3224,7 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    8,
-    79,
-    85,
-    146
+    8
    ],
    "sea_adj": [],
    "buildings": [],
@@ -3764,18 +3242,13 @@
    "pop": 1.0,
    "dev": 1,
    "region": "Atlantico",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    11,
-    26,
     28,
-    93,
-    125
+    194
    ],
-   "sea_adj": [
-    151
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3794,10 +3267,8 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    24,
-    148,
-    157,
-    159
+    223,
+    224
    ],
    "sea_adj": [],
    "buildings": [],
@@ -3818,10 +3289,6 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    20,
-    55,
-    95,
-    107,
     135
    ],
    "sea_adj": [],
@@ -3840,23 +3307,10 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Galias",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    11,
-    21,
-    93,
-    117,
-    122
-   ],
-   "sea_adj": [
-    30,
-    38,
-    58,
-    86,
-    96,
-    114
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3872,9 +3326,11 @@
    "pop": 4.0,
    "dev": 1,
    "region": "Levante",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
+    2,
+    14,
     19,
     40,
     44,
@@ -3883,12 +3339,7 @@
     142,
     150
    ],
-   "sea_adj": [
-    9,
-    23,
-    82,
-    131
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3904,12 +3355,9 @@
    "pop": 4.0,
    "dev": 1,
    "region": "Iran",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    66,
-    140,
-    145,
     146
    ],
    "sea_adj": [],
@@ -3931,18 +3379,9 @@
    "coastal": true,
    "owner": 0,
    "adj": [
-    47,
-    91,
-    148
+    47
    ],
-   "sea_adj": [
-    35,
-    54,
-    83,
-    105,
-    133,
-    144
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3961,11 +3400,7 @@
    "coastal": false,
    "owner": 0,
    "adj": [],
-   "sea_adj": [
-    90,
-    114,
-    149
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -3983,13 +3418,7 @@
    "region": "Sahara",
    "coastal": false,
    "owner": 0,
-   "adj": [
-    41,
-    48,
-    78,
-    113,
-    115
-   ],
+   "adj": [],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
@@ -4006,25 +3435,17 @@
    "pop": 7.0,
    "dev": 1,
    "region": "Egipto",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     23,
-    46,
     59,
     71,
-    72,
     103,
+    164,
     167
    ],
-   "sea_adj": [
-    9,
-    14,
-    19,
-    40,
-    70,
-    126
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -4040,19 +3461,10 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Italia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    139
-   ],
-   "sea_adj": [
-    25,
-    30,
-    38,
-    58,
-    86,
-    149
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -4068,25 +3480,17 @@
    "pop": 6.0,
    "dev": 2,
    "region": "Grecia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     16,
-    24,
     35,
-    54,
     105,
     144,
-    174
+    174,
+    175
    ],
-   "sea_adj": [
-    47,
-    89,
-    91,
-    128,
-    139,
-    148
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -4105,13 +3509,17 @@
    "coastal": false,
    "owner": 0,
    "adj": [
+    17,
+    50,
     81,
     87,
     88,
     110,
+    137,
     152,
     153,
-    154
+    154,
+    170
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4132,12 +3540,9 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    3,
     20,
-    55,
     107,
-    124,
-    161
+    124
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4158,13 +3563,7 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    46,
-    59,
-    64,
-    71,
-    72,
-    76,
-    103
+    46
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4185,13 +3584,13 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    15,
     17,
     53,
     81,
-    98,
-    99,
-    140
+    110,
+    134,
+    152,
+    170
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4209,7 +3608,7 @@
    "pop": 6.0,
    "dev": 1,
    "region": "Levante",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     6,
@@ -4218,13 +3617,11 @@
     46,
     64,
     70,
-    76
+    76,
+    250,
+    251
    ],
-   "sea_adj": [
-    100,
-    104,
-    118
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -4242,17 +3639,8 @@
    "region": "Italia",
    "coastal": true,
    "owner": 0,
-   "adj": [
-    132
-   ],
-   "sea_adj": [
-    24,
-    38,
-    58,
-    86,
-    90,
-    133
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -4271,13 +3659,8 @@
    "coastal": false,
    "owner": 8,
    "adj": [
-    17,
-    81,
-    85,
-    99,
-    127,
-    137,
-    146
+    87,
+    99
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4295,13 +3678,10 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Iran",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    49,
-    68,
-    84,
-    156
+    68
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4319,16 +3699,14 @@
    "pop": 2.0,
    "dev": 1,
    "region": "Levante",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     2,
-    14,
+    40,
     44,
     67,
-    98,
-    126,
-    150
+    126
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4346,17 +3724,16 @@
    "pop": 10.0,
    "dev": 2,
    "region": "Egipto",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     0,
-    41,
     45,
     48,
     73,
-    113,
     115,
-    165
+    165,
+    166
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4374,24 +3751,18 @@
    "pop": 4.0,
    "dev": 1,
    "region": "Grecia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
     16,
-    24,
     35,
     54,
     105,
-    133
+    133,
+    174,
+    175
    ],
-   "sea_adj": [
-    31,
-    60,
-    89,
-    91,
-    128,
-    148
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -4407,12 +3778,10 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Iran",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    66,
-    127,
-    146
+    66
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4433,13 +3802,7 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    8,
-    66,
-    99,
-    121,
-    127,
-    140,
-    145
+    127
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4460,9 +3823,6 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    36,
-    37,
-    56,
     80,
     106
    ],
@@ -4485,21 +3845,11 @@
    "coastal": true,
    "owner": 5,
    "adj": [
-    9,
-    47,
-    91,
-    123,
-    128,
-    157,
-    172
+    91
    ],
    "sea_adj": [
-    16,
-    35,
     89,
-    105,
-    133,
-    144
+    173
    ],
    "buildings": [],
    "loyalty": 60.0,
@@ -4516,20 +3866,10 @@
    "pop": 6.0,
    "dev": 2,
    "region": "Magreb",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    114
-   ],
-   "sea_adj": [
-    25,
-    30,
-    38,
-    86,
-    90,
-    129,
-    132
-   ],
+   "adj": [],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -4550,16 +3890,11 @@
    "adj": [
     2,
     44,
-    65,
     67,
-    77,
-    126,
-    142
+    126
    ],
    "sea_adj": [
-    64,
-    71,
-    82
+    14
    ],
    "buildings": [],
    "loyalty": 60.0,
@@ -4576,21 +3911,20 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Italia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    10,
-    38,
     58,
     86,
     117,
-    158
+    176,
+    177,
+    178,
+    179,
+    180,
+    183
    ],
-   "sea_adj": [
-    28,
-    114,
-    122
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -4609,13 +3943,18 @@
    "coastal": false,
    "owner": 0,
    "adj": [
+    17,
     50,
+    81,
     87,
     88,
+    99,
     110,
     134,
+    137,
     153,
-    154
+    154,
+    170
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4637,12 +3976,15 @@
    "owner": 7,
    "adj": [
     50,
+    81,
     87,
     88,
     99,
+    110,
     134,
     152,
-    154
+    154,
+    170
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4663,9 +4005,12 @@
    "coastal": false,
    "owner": 2,
    "adj": [
+    17,
     50,
+    81,
     87,
     88,
+    99,
     110,
     134,
     152,
@@ -4688,14 +4033,9 @@
    "pop": 4.0,
    "dev": 1,
    "region": "Iberia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
-   "adj": [
-    12,
-    94,
-    96,
-    101
-   ],
+   "adj": [],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
@@ -4714,15 +4054,7 @@
    "region": "Anatolia",
    "coastal": false,
    "owner": 0,
-   "adj": [
-    5,
-    29,
-    49,
-    68,
-    84,
-    109,
-    141
-   ],
+   "adj": [],
    "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
@@ -4742,17 +4074,10 @@
    "coastal": true,
    "owner": 11,
    "adj": [
-    37,
-    91,
-    106,
-    123,
-    148
+    225,
+    226
    ],
-   "sea_adj": [
-    33,
-    36,
-    102
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -4768,21 +4093,12 @@
    "pop": 3.0,
    "dev": 1,
    "region": "Italia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    4,
-    58,
-    86,
-    117,
-    151,
-    161
+    117
    ],
-   "sea_adj": [
-    10,
-    24,
-    39
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -4801,9 +4117,9 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    3,
-    39,
-    123
+    219,
+    220,
+    222
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4824,11 +4140,7 @@
    "coastal": false,
    "owner": 0,
    "adj": [],
-   "sea_adj": [
-    33,
-    56,
-    102
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -4847,11 +4159,11 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    3,
     20,
     107,
-    135,
-    158
+    214,
+    215,
+    216
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4869,17 +4181,20 @@
    "pop": 4.0,
    "dev": 1,
    "region": "Britania",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [
-    7,
-    18,
-    62
+    62,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    241
    ],
-   "sea_adj": [
-    26,
-    63
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -4895,14 +4210,10 @@
    "pop": 4.0,
    "dev": 2,
    "region": "Arabia",
-   "coastal": true,
+   "coastal": false,
    "owner": 0,
    "adj": [],
-   "sea_adj": [
-    42,
-    48,
-    74
-   ],
+   "sea_adj": [],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false,
@@ -4922,7 +4233,12 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    71
+    23,
+    59,
+    71,
+    103,
+    131,
+    167
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4943,7 +4259,12 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    143
+    0,
+    45,
+    48,
+    73,
+    143,
+    166
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4964,7 +4285,11 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    0
+    0,
+    72,
+    115,
+    143,
+    165
    ],
    "sea_adj": [],
    "buildings": [],
@@ -4985,7 +4310,13 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    131
+    23,
+    59,
+    71,
+    72,
+    103,
+    131,
+    164
    ],
    "sea_adj": [],
    "buildings": [],
@@ -5006,7 +4337,12 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    109
+    5,
+    29,
+    65,
+    108,
+    109,
+    169
    ],
    "sea_adj": [],
    "buildings": [],
@@ -5027,7 +4363,12 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    109
+    5,
+    15,
+    49,
+    108,
+    109,
+    168
    ],
    "sea_adj": [],
    "buildings": [],
@@ -5048,6 +4389,17 @@
    "coastal": false,
    "owner": 0,
    "adj": [
+    17,
+    50,
+    53,
+    81,
+    87,
+    88,
+    110,
+    134,
+    137,
+    152,
+    153,
     154
    ],
    "sea_adj": [],
@@ -5069,7 +4421,8 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    27
+    9,
+    172
    ],
    "sea_adj": [],
    "buildings": [],
@@ -5090,7 +4443,9 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    148
+    9,
+    47,
+    171
    ],
    "sea_adj": [],
    "buildings": [],
@@ -5108,12 +4463,14 @@
    "resource": "pescado",
    "pop": 3.0,
    "dev": 1,
-   "coastal": false,
+   "coastal": true,
    "owner": 0,
    "adj": [
     89
    ],
-   "sea_adj": [],
+   "sea_adj": [
+    148
+   ],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false
@@ -5132,7 +4489,12 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    133
+    16,
+    35,
+    105,
+    133,
+    144,
+    175
    ],
    "sea_adj": [],
    "buildings": [],
@@ -5153,7 +4515,12 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    105
+    35,
+    54,
+    105,
+    133,
+    144,
+    174
    ],
    "sea_adj": [],
    "buildings": [],
@@ -5174,7 +4541,14 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    86
+    58,
+    86,
+    151,
+    177,
+    178,
+    179,
+    180,
+    183
    ],
    "sea_adj": [],
    "buildings": [],
@@ -5192,10 +4566,16 @@
    "resource": "sal",
    "pop": 3.0,
    "dev": 1,
-   "coastal": false,
+   "coastal": true,
    "owner": 0,
    "adj": [
+    58,
     86,
+    151,
+    176,
+    178,
+    179,
+    180,
     183
    ],
    "sea_adj": [],
@@ -5217,7 +4597,15 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    86
+    38,
+    58,
+    86,
+    151,
+    176,
+    177,
+    179,
+    180,
+    183
    ],
    "sea_adj": [],
    "buildings": [],
@@ -5238,7 +4626,14 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    86
+    58,
+    86,
+    151,
+    176,
+    177,
+    178,
+    180,
+    183
    ],
    "sea_adj": [],
    "buildings": [],
@@ -5256,10 +4651,18 @@
    "resource": "cobre",
    "pop": 3.0,
    "dev": 1,
-   "coastal": false,
+   "coastal": true,
    "owner": 0,
    "adj": [
-    58
+    38,
+    58,
+    86,
+    151,
+    176,
+    177,
+    178,
+    179,
+    183
    ],
    "sea_adj": [],
    "buildings": [],
@@ -5277,7 +4680,7 @@
    "resource": "pescado",
    "pop": 3.0,
    "dev": 1,
-   "coastal": false,
+   "coastal": true,
    "owner": 0,
    "adj": [
     116
@@ -5301,7 +4704,12 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    75
+    75,
+    243,
+    244,
+    245,
+    246,
+    247
    ],
    "sea_adj": [],
    "buildings": [],
@@ -5322,9 +4730,1914 @@
    "coastal": false,
    "owner": 0,
    "adj": [
-    177
+    58,
+    86,
+    151,
+    176,
+    177,
+    178,
+    179,
+    180
    ],
    "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 184,
+   "name": "Lutetia",
+   "lon": 2.35,
+   "lat": 48.85,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    111,
+    120,
+    185,
+    188,
+    189,
+    190,
+    202,
+    203,
+    204,
+    205,
+    206
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 185,
+   "name": "Avaricum",
+   "lon": 2.4,
+   "lat": 47.08,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    21,
+    93,
+    120,
+    184,
+    186,
+    187,
+    188,
+    189,
+    199,
+    201,
+    202
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 186,
+   "name": "Bibracte",
+   "lon": 4.04,
+   "lat": 46.92,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    21,
+    185,
+    187,
+    188,
+    189,
+    191,
+    192,
+    193,
+    212
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 187,
+   "name": "Gergovia",
+   "lon": 3.12,
+   "lat": 45.72,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    21,
+    93,
+    185,
+    186,
+    192,
+    193,
+    201
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 188,
+   "name": "Alesia",
+   "lon": 4.5,
+   "lat": 47.54,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    21,
+    120,
+    184,
+    185,
+    186,
+    189,
+    190,
+    191,
+    192,
+    211,
+    212
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 189,
+   "name": "Cenabum",
+   "lon": 1.9,
+   "lat": 47.9,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    111,
+    120,
+    184,
+    185,
+    186,
+    188,
+    190,
+    199,
+    202,
+    203,
+    204
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 190,
+   "name": "Durocortorum",
+   "lon": 4.03,
+   "lat": 49.25,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    18,
+    120,
+    184,
+    188,
+    189,
+    202,
+    203,
+    204,
+    206,
+    207,
+    208
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 191,
+   "name": "Vesontio",
+   "lon": 6.02,
+   "lat": 47.24,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    4,
+    21,
+    186,
+    188,
+    192,
+    193,
+    209,
+    210,
+    211,
+    212
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 192,
+   "name": "Lugdunum",
+   "lon": 4.83,
+   "lat": 45.76,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    21,
+    186,
+    187,
+    188,
+    191,
+    193,
+    211,
+    212
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 193,
+   "name": "Vienne",
+   "lon": 4.87,
+   "lat": 45.52,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    21,
+    186,
+    187,
+    191,
+    192,
+    212
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 194,
+   "name": "Tolosa",
+   "lon": 1.44,
+   "lat": 43.6,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    11,
+    28,
+    93,
+    122,
+    195
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 195,
+   "name": "Burdigala",
+   "lon": -0.58,
+   "lat": 44.84,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    11,
+    93,
+    194,
+    199,
+    200,
+    201
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 196,
+   "name": "Namnetes",
+   "lon": -1.55,
+   "lat": 47.22,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    22,
+    197,
+    198,
+    199,
+    200
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 197,
+   "name": "Condate",
+   "lon": -1.68,
+   "lat": 48.11,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    22,
+    111,
+    196,
+    198
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 198,
+   "name": "Darioritum",
+   "lon": -2.76,
+   "lat": 47.66,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": true,
+   "owner": 0,
+   "adj": [
+    22,
+    196,
+    197
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 199,
+   "name": "Lemonum",
+   "lon": 0.34,
+   "lat": 46.58,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    11,
+    93,
+    185,
+    189,
+    195,
+    196,
+    200,
+    201
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 200,
+   "name": "Mediolanum Santonum",
+   "lon": -0.63,
+   "lat": 45.75,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    11,
+    93,
+    195,
+    196,
+    199,
+    201
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 201,
+   "name": "Augustoritum",
+   "lon": 1.26,
+   "lat": 45.83,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    11,
+    93,
+    185,
+    187,
+    195,
+    199,
+    200
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 202,
+   "name": "Autricum",
+   "lon": 1.49,
+   "lat": 48.45,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    111,
+    120,
+    184,
+    185,
+    189,
+    190,
+    203,
+    204
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 203,
+   "name": "Rotomagus",
+   "lon": 1.1,
+   "lat": 49.44,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    111,
+    120,
+    184,
+    189,
+    190,
+    202,
+    204,
+    205,
+    206
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 204,
+   "name": "Samarobriva",
+   "lon": 2.3,
+   "lat": 49.89,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    18,
+    111,
+    120,
+    184,
+    189,
+    190,
+    202,
+    203,
+    205,
+    206
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 205,
+   "name": "Portus Itius",
+   "lon": 1.6,
+   "lat": 50.72,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": true,
+   "owner": 0,
+   "adj": [
+    18,
+    120,
+    184,
+    203,
+    204,
+    206
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 206,
+   "name": "Bagacum",
+   "lon": 3.79,
+   "lat": 50.3,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    18,
+    120,
+    184,
+    190,
+    203,
+    204,
+    205,
+    207,
+    208
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 207,
+   "name": "Atuatuca",
+   "lon": 5.46,
+   "lat": 50.78,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    18,
+    119,
+    190,
+    206,
+    208
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 208,
+   "name": "Treveris",
+   "lon": 6.64,
+   "lat": 49.75,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    4,
+    18,
+    190,
+    206,
+    207,
+    209
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 209,
+   "name": "Argentoratum",
+   "lon": 7.75,
+   "lat": 48.58,
+   "region": "Galia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    4,
+    191,
+    208,
+    210,
+    211
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 210,
+   "name": "Vindonissa",
+   "lon": 8.22,
+   "lat": 47.48,
+   "region": "Helvecia",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    4,
+    191,
+    209,
+    211,
+    212
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 211,
+   "name": "Aventicum",
+   "lon": 7.04,
+   "lat": 46.88,
+   "region": "Helvecia",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    4,
+    21,
+    188,
+    191,
+    192,
+    209,
+    210,
+    212
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 212,
+   "name": "Genava",
+   "lon": 6.14,
+   "lat": 46.2,
+   "region": "Helvecia",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    21,
+    186,
+    188,
+    191,
+    192,
+    193,
+    210,
+    211
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 213,
+   "name": "Manching",
+   "lon": 11.5,
+   "lat": 48.72,
+   "region": "Danubio",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    214
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 214,
+   "name": "Boiodurum",
+   "lon": 13.47,
+   "lat": 48.57,
+   "region": "Danubio",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    20,
+    161,
+    213,
+    215
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 215,
+   "name": "Vindobona",
+   "lon": 16.37,
+   "lat": 48.21,
+   "region": "Danubio",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    107,
+    161,
+    214,
+    216,
+    217
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 216,
+   "name": "Bratislava",
+   "lon": 17.11,
+   "lat": 48.15,
+   "region": "Danubio",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    3,
+    107,
+    161,
+    215,
+    217
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 217,
+   "name": "Aquincum",
+   "lon": 19.05,
+   "lat": 47.51,
+   "region": "Danubio",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    3,
+    215,
+    216,
+    218
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 218,
+   "name": "Sopianae",
+   "lon": 18.23,
+   "lat": 46.07,
+   "region": "Danubio",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    3,
+    217,
+    219,
+    220
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 219,
+   "name": "Singidunum",
+   "lon": 20.46,
+   "lat": 44.82,
+   "region": "Danubio",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    159,
+    218,
+    220,
+    222
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 220,
+   "name": "Sirmium",
+   "lon": 19.61,
+   "lat": 44.97,
+   "region": "Danubio",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    159,
+    218,
+    219
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 221,
+   "name": "Scupi",
+   "lon": 21.43,
+   "lat": 42.0,
+   "region": "Balcanes",
+   "culture": "balcanico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    222,
+    223
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 222,
+   "name": "Naissus",
+   "lon": 21.9,
+   "lat": 43.32,
+   "region": "Balcanes",
+   "culture": "balcanico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    159,
+    219,
+    221,
+    223
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 223,
+   "name": "Serdica",
+   "lon": 23.32,
+   "lat": 42.7,
+   "region": "Balcanes",
+   "culture": "balcanico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    123,
+    221,
+    222,
+    224
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 224,
+   "name": "Philippopolis",
+   "lon": 24.75,
+   "lat": 42.14,
+   "region": "Balcanes",
+   "culture": "balcanico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    123,
+    223
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 225,
+   "name": "Odessos",
+   "lon": 27.92,
+   "lat": 43.21,
+   "region": "Balcanes",
+   "culture": "balcanico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": true,
+   "owner": 0,
+   "adj": [
+    157,
+    226
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 226,
+   "name": "Tomis",
+   "lon": 28.65,
+   "lat": 44.17,
+   "region": "Dacia",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": true,
+   "owner": 0,
+   "adj": [
+    157,
+    225
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 227,
+   "name": "Sarmizegetusa",
+   "lon": 23.31,
+   "lat": 45.62,
+   "region": "Dacia",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    228,
+    229,
+    230
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 228,
+   "name": "Apulum",
+   "lon": 23.57,
+   "lat": 46.07,
+   "region": "Dacia",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    227,
+    229,
+    230
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 229,
+   "name": "Potaissa",
+   "lon": 23.79,
+   "lat": 46.57,
+   "region": "Dacia",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    227,
+    228,
+    230
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 230,
+   "name": "Porolissum",
+   "lon": 23.16,
+   "lat": 47.18,
+   "region": "Dacia",
+   "culture": "danubiano",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    227,
+    228,
+    229
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 231,
+   "name": "Camulodunum",
+   "lon": 0.9,
+   "lat": 51.89,
+   "region": "Britania",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    7,
+    162,
+    232,
+    233,
+    234,
+    240,
+    241,
+    242
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 232,
+   "name": "Verulamium",
+   "lon": -0.34,
+   "lat": 51.75,
+   "region": "Britania",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    7,
+    162,
+    231,
+    233,
+    234,
+    235,
+    237,
+    240,
+    241,
+    242
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 233,
+   "name": "Calleva",
+   "lon": -1.1,
+   "lat": 51.35,
+   "region": "Britania",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    7,
+    62,
+    162,
+    231,
+    232,
+    234,
+    235,
+    236,
+    237,
+    240,
+    241,
+    242
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 234,
+   "name": "Corinium",
+   "lon": -1.97,
+   "lat": 51.72,
+   "region": "Britania",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    7,
+    62,
+    162,
+    231,
+    232,
+    233,
+    235,
+    236,
+    237,
+    238,
+    240,
+    241
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 235,
+   "name": "Durnovaria",
+   "lon": -2.44,
+   "lat": 50.71,
+   "region": "Britania",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    62,
+    162,
+    232,
+    233,
+    234,
+    236,
+    237
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 236,
+   "name": "Isca",
+   "lon": -3.53,
+   "lat": 50.72,
+   "region": "Britania",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    62,
+    162,
+    233,
+    234,
+    235
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 237,
+   "name": "Viroconium",
+   "lon": -2.65,
+   "lat": 52.67,
+   "region": "Britania",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    62,
+    162,
+    232,
+    233,
+    234,
+    235,
+    238,
+    239,
+    240,
+    241
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 238,
+   "name": "Deva",
+   "lon": -2.89,
+   "lat": 53.19,
+   "region": "Britania",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    62,
+    234,
+    237,
+    239,
+    240,
+    241
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 239,
+   "name": "Eboracum",
+   "lon": -1.08,
+   "lat": 53.96,
+   "region": "Britania",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    7,
+    237,
+    238,
+    240,
+    241,
+    242
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 240,
+   "name": "Lindum",
+   "lon": -0.54,
+   "lat": 53.23,
+   "region": "Britania",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    7,
+    231,
+    232,
+    233,
+    234,
+    237,
+    238,
+    239,
+    241,
+    242
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 241,
+   "name": "Ratae",
+   "lon": -1.13,
+   "lat": 52.64,
+   "region": "Britania",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    7,
+    62,
+    162,
+    231,
+    232,
+    233,
+    234,
+    237,
+    238,
+    239,
+    240,
+    242
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 242,
+   "name": "Venta Icenorum",
+   "lon": 1.29,
+   "lat": 52.58,
+   "region": "Britania",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    7,
+    231,
+    232,
+    233,
+    239,
+    240,
+    241
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 243,
+   "name": "Rathcroghan",
+   "lon": -8.3,
+   "lat": 53.8,
+   "region": "Irlanda",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    75,
+    182,
+    244,
+    245,
+    246,
+    247
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 244,
+   "name": "Navan Fort",
+   "lon": -6.7,
+   "lat": 54.35,
+   "region": "Irlanda",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    75,
+    182,
+    243,
+    245,
+    246,
+    247
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 245,
+   "name": "Tara",
+   "lon": -6.61,
+   "lat": 53.58,
+   "region": "Irlanda",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    75,
+    182,
+    243,
+    244,
+    246,
+    247
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 246,
+   "name": "Cashel",
+   "lon": -7.89,
+   "lat": 52.52,
+   "region": "Irlanda",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    75,
+    182,
+    243,
+    244,
+    245,
+    247
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 247,
+   "name": "Dun Ailinne",
+   "lon": -6.76,
+   "lat": 53.12,
+   "region": "Irlanda",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    75,
+    182,
+    243,
+    244,
+    245,
+    246
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 248,
+   "name": "Dunadd",
+   "lon": -5.48,
+   "lat": 56.09,
+   "region": "Caledonia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    52,
+    249
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 249,
+   "name": "Traprain Law",
+   "lon": -2.67,
+   "lat": 55.96,
+   "region": "Caledonia",
+   "culture": "megalitico",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    52,
+    248
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 250,
+   "name": "Samaria",
+   "lon": 35.19,
+   "lat": 32.28,
+   "region": "Levante",
+   "culture": "semita",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    6,
+    19,
+    40,
+    46,
+    64,
+    70,
+    76,
+    138,
+    251
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 251,
+   "name": "Jerusalen",
+   "lon": 35.23,
+   "lat": 31.78,
+   "region": "Levante",
+   "culture": "semita",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    6,
+    40,
+    46,
+    64,
+    70,
+    76,
+    138,
+    250
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 252,
+   "name": "Phaistos",
+   "lon": 24.81,
+   "lat": 35.05,
+   "region": "Creta",
+   "culture": "egeo",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    31,
+    60,
+    83,
+    253,
+    254,
+    255
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 253,
+   "name": "Gortina",
+   "lon": 24.95,
+   "lat": 35.06,
+   "region": "Creta",
+   "culture": "egeo",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": false,
+   "owner": 0,
+   "adj": [
+    31,
+    60,
+    83,
+    252,
+    254,
+    255
+   ],
+   "sea_adj": [],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 254,
+   "name": "Malia",
+   "lon": 25.49,
+   "lat": 35.29,
+   "region": "Creta",
+   "culture": "egeo",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": true,
+   "owner": 0,
+   "adj": [
+    31,
+    60,
+    83,
+    252,
+    253
+   ],
+   "sea_adj": [
+    255
+   ],
+   "buildings": [],
+   "loyalty": 60.0,
+   "occupied": false
+  },
+  {
+   "id": 255,
+   "name": "Zakros",
+   "lon": 26.22,
+   "lat": 35.1,
+   "region": "Creta",
+   "culture": "egeo",
+   "terrain": "llanura",
+   "resource": "trigo",
+   "pop": 3.0,
+   "dev": 1,
+   "coastal": true,
+   "owner": 0,
+   "adj": [
+    31,
+    60,
+    83,
+    252,
+    253
+   ],
+   "sea_adj": [
+    254
+   ],
    "buildings": [],
    "loyalty": 60.0,
    "occupied": false
@@ -5538,6 +6851,198 @@
    "playable": true,
    "is_city_state": true,
    "desc": "Comunidades prehistoricas del Lacio. El nombre Latinos es una etiqueta de juego; Roma aun no existe."
+  },
+  {
+   "id": 14,
+   "name": "Tribus de la Galia",
+   "prov": "Bibracte",
+   "capital": 186,
+   "culture": "megalitico",
+   "gov": "monarquia",
+   "color": [
+    196,
+    125,
+    80
+   ],
+   "playable": true,
+   "is_city_state": true,
+   "desc": "Comunidades tribales regionales; las etiquetas de pueblos posteriores son una abstraccion de juego."
+  },
+  {
+   "id": 15,
+   "name": "Tribus arvernas",
+   "prov": "Gergovia",
+   "capital": 187,
+   "culture": "megalitico",
+   "gov": "monarquia",
+   "color": [
+    213,
+    125,
+    80
+   ],
+   "playable": true,
+   "is_city_state": true,
+   "desc": "Comunidades tribales regionales; las etiquetas de pueblos posteriores son una abstraccion de juego."
+  },
+  {
+   "id": 16,
+   "name": "Tribus belgas",
+   "prov": "Atuatuca",
+   "capital": 207,
+   "culture": "megalitico",
+   "gov": "monarquia",
+   "color": [
+    110,
+    125,
+    80
+   ],
+   "playable": true,
+   "is_city_state": true,
+   "desc": "Comunidades tribales regionales; las etiquetas de pueblos posteriores son una abstraccion de juego."
+  },
+  {
+   "id": 17,
+   "name": "Tribus armoricanas",
+   "prov": "Condate",
+   "capital": 197,
+   "culture": "megalitico",
+   "gov": "monarquia",
+   "color": [
+    127,
+    125,
+    80
+   ],
+   "playable": true,
+   "is_city_state": true,
+   "desc": "Comunidades tribales regionales; las etiquetas de pueblos posteriores son una abstraccion de juego."
+  },
+  {
+   "id": 18,
+   "name": "Tribus aquitanas",
+   "prov": "Burdigala",
+   "capital": 195,
+   "culture": "megalitico",
+   "gov": "monarquia",
+   "color": [
+    144,
+    125,
+    80
+   ],
+   "playable": true,
+   "is_city_state": true,
+   "desc": "Comunidades tribales regionales; las etiquetas de pueblos posteriores son una abstraccion de juego."
+  },
+  {
+   "id": 19,
+   "name": "Tribus helvecias",
+   "prov": "Aventicum",
+   "capital": 211,
+   "culture": "danubiano",
+   "gov": "monarquia",
+   "color": [
+    161,
+    125,
+    80
+   ],
+   "playable": true,
+   "is_city_state": true,
+   "desc": "Comunidades tribales regionales; las etiquetas de pueblos posteriores son una abstraccion de juego."
+  },
+  {
+   "id": 20,
+   "name": "Tribus del Danubio",
+   "prov": "Manching",
+   "capital": 213,
+   "culture": "danubiano",
+   "gov": "monarquia",
+   "color": [
+    178,
+    125,
+    80
+   ],
+   "playable": true,
+   "is_city_state": true,
+   "desc": "Comunidades tribales regionales; las etiquetas de pueblos posteriores son una abstraccion de juego."
+  },
+  {
+   "id": 21,
+   "name": "Tribus dacias",
+   "prov": "Sarmizegetusa",
+   "capital": 227,
+   "culture": "danubiano",
+   "gov": "monarquia",
+   "color": [
+    195,
+    125,
+    80
+   ],
+   "playable": true,
+   "is_city_state": true,
+   "desc": "Comunidades tribales regionales; las etiquetas de pueblos posteriores son una abstraccion de juego."
+  },
+  {
+   "id": 22,
+   "name": "Tribus de Britania",
+   "prov": "Camulodunum",
+   "capital": 231,
+   "culture": "megalitico",
+   "gov": "monarquia",
+   "color": [
+    212,
+    125,
+    80
+   ],
+   "playable": true,
+   "is_city_state": true,
+   "desc": "Comunidades tribales regionales; las etiquetas de pueblos posteriores son una abstraccion de juego."
+  },
+  {
+   "id": 23,
+   "name": "Tribus de Irlanda",
+   "prov": "Tara",
+   "capital": 245,
+   "culture": "megalitico",
+   "gov": "monarquia",
+   "color": [
+    109,
+    125,
+    80
+   ],
+   "playable": true,
+   "is_city_state": true,
+   "desc": "Comunidades tribales regionales; las etiquetas de pueblos posteriores son una abstraccion de juego."
+  },
+  {
+   "id": 24,
+   "name": "Tribus de Caledonia",
+   "prov": "Traprain Law",
+   "capital": 249,
+   "culture": "megalitico",
+   "gov": "monarquia",
+   "color": [
+    126,
+    125,
+    80
+   ],
+   "playable": true,
+   "is_city_state": true,
+   "desc": "Comunidades tribales regionales; las etiquetas de pueblos posteriores son una abstraccion de juego."
+  },
+  {
+   "id": 25,
+   "name": "Tribus de Panonia",
+   "prov": "Aquincum",
+   "capital": 217,
+   "culture": "danubiano",
+   "gov": "monarquia",
+   "color": [
+    143,
+    125,
+    80
+   ],
+   "playable": true,
+   "is_city_state": true,
+   "desc": "Comunidades tribales regionales; las etiquetas de pueblos posteriores son una abstraccion de juego."
   }
  ]
 }

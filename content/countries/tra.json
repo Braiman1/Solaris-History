@@ -12,5 +12,6 @@
  "desc": "Oro, caballos y montanas entre el Danubio y el Egeo.",
  "tag": "tra",
  "culture_tag": "balcanico",
- "religion_tag": "anc"
+ "religion_tag": "anc",
+ "earliest_year": -480
 }

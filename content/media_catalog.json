@@ -811,5 +811,99 @@
   "note": "A proto-cuneiform tablet from Uruk III in the Louvre.",
   "author_override": "Mbzt",
   "author_source": "https://commons.wikimedia.org/wiki/File:P1150884_Louvre_Uruk_III_tablette_%C3%A9criture_pr%C3%A9cun%C3%A9iforme_AO19936_rwk.jpg"
+ },
+ {
+  "id": "culture_celta",
+  "article": "Megalith",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Triple-Spiral-4turns green transparent.svg",
+  "note_es": "Representacion moderna de una triple espiral de tradicion megalitica; no es bandera nacional.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "nation_israel",
+  "article": "Canaan",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "The Ghassulian star.jpg",
+  "note_es": "Estrella de un mural ghassuliense del Calcolitico levantino; motivo arqueologico, no bandera.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "nation_arvernos",
+  "article": "Megalith",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Triple-Spiral-4turns green transparent.svg",
+  "note_es": "Representacion moderna de una triple espiral de tradicion megalitica; no es bandera nacional.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "nation_eduos",
+  "article": "Megalith",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Triple-Spiral-4turns green transparent.svg",
+  "note_es": "Representacion moderna de una triple espiral de tradicion megalitica; no es bandera nacional.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "nation_belgas",
+  "article": "Megalith",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Triple-Spiral-4turns green transparent.svg",
+  "note_es": "Representacion moderna de una triple espiral de tradicion megalitica; no es bandera nacional.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "nation_helvecios",
+  "article": "Megalith",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Triple-Spiral-4turns green transparent.svg",
+  "note_es": "Representacion moderna de una triple espiral de tradicion megalitica; no es bandera nacional.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "nation_boyos",
+  "article": "Megalith",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Triple-Spiral-4turns green transparent.svg",
+  "note_es": "Representacion moderna de una triple espiral de tradicion megalitica; no es bandera nacional.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "nation_catuvellaunos",
+  "article": "Megalith",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Triple-Spiral-4turns green transparent.svg",
+  "note_es": "Representacion moderna de una triple espiral de tradicion megalitica; no es bandera nacional.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "nation_armorica",
+  "article": "Megalith",
+  "note": "Documented archaeological image or later cultural symbol. Not an attested national flag in 3300 BC. See Spanish catalogue note for the exact context.",
+  "file": "Triple-Spiral-4turns green transparent.svg",
+  "note_es": "Representacion moderna de una triple espiral de tradicion megalitica; no es bandera nacional.",
+  "kind": "historical_illustration"
+ },
+ {
+  "id": "moon",
+  "file": "Solarsystemscope texture 2k moon.jpg",
+  "spherical": true,
+  "kind": "astronomical_texture",
+  "note": "Lunar surface texture for the decorative Moon; visual scale is illustrative.",
+  "note_es": "Textura lunar para el objeto decorativo; la escala visual es ilustrativa."
+ },
+ {
+  "id": "religion_jud",
+  "file": "Menorah.svg",
+  "kind": "religious_symbol",
+  "note_es": "Emblema representativo del judaismo; no fecha el origen de la religion.",
+  "note": "Conventional religious identifier; the game separately gates the appearance of this tradition."
+ },
+ {
+  "id": "religion_chr",
+  "file": "Ichthys.svg",
+  "kind": "religious_symbol",
+  "note_es": "Simbolo representativo de la tradicion cristiana; su uso grafico no adelanta su fecha de aparicion.",
+  "note": "Conventional religious identifier; the game separately gates the appearance of this tradition."
  }
 ]

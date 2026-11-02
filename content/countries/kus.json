@@ -12,5 +12,6 @@
  "desc": "Los arqueros del sur y el oro del desierto.",
  "tag": "kus",
  "culture_tag": "nubio",
- "religion_tag": "nil"
+ "religion_tag": "nil",
+ "earliest_year": -1070
 }

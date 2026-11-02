@@ -1,0 +1,19 @@
+{
+ "tag": "boi",
+ "id": "boyos",
+ "name": "Boyos",
+ "capital": "Manching",
+ "required_province": "Manching",
+ "culture_tag": "celta",
+ "religion_tag": "nat",
+ "earliest_year": -400,
+ "era": 0,
+ "gov": "monarquia",
+ "color": [
+  90,
+  145,
+  105
+ ],
+ "adj": "Celta",
+ "desc": "Pueblo o confederacion historica de la Edad del Hierro; fecha de disponibilidad aproximada para el juego."
+}

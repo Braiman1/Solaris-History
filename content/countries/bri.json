@@ -11,6 +11,8 @@
  "adj": "Britano",
  "desc": "Las islas del estaño y de los circulos de piedra.",
  "tag": "bri",
- "culture_tag": "megalitico",
- "religion_tag": "nat"
+ "culture_tag": "celta",
+ "religion_tag": "nat",
+ "earliest_year": -500,
+ "required_province": "Camulodunum"
 }

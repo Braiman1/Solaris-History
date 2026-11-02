@@ -69,7 +69,7 @@ struct TraitDef {
 
 struct NationTemplate {
     std::string id, name, culture, capitalName, gov, adj, desc;
-    std::string tag, religionTag;
+    std::string tag, religionTag, requiredProvince;
     int earliestYear = -3300;
     int era = 0;
     Color color;

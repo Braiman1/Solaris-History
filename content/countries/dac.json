@@ -12,5 +12,6 @@
  "desc": "Las grandes aldeas de la cultura Cucuteni-Tripilia.",
  "tag": "dac",
  "culture_tag": "danubiano",
- "religion_tag": "anc"
+ "religion_tag": "anc",
+ "earliest_year": -82
 }

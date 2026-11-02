@@ -251,7 +251,7 @@ void Game::update(double dt) {
     }
 
     // elecciones pendientes
-    if ((modal == Modal::None) && sim.nationAlive(sim.player) && !sim.nations[(size_t)sim.player].isCityState) {
+    if ((modal == Modal::None) && sim.nationAlive(sim.player)) {
         const Nation& n = sim.nations[(size_t)sim.player];
         const GovDef& g = C.gov(n.gov);
         if (g.election > 0) {
@@ -437,12 +437,13 @@ void Game::drawTopBar() {
     ui.text("SOLARIS HISTORY", 18, 5, 0.44f, pal::gold);
     const Nation& n = sim.nations[(size_t)sim.player];
 
-    ui.text(Locale::english ? Locale::text(monthName(sim.month)) + " " + yearLabel(sim.year) : dateLabel(sim.year, sim.month), 224, 4, 0.42f, pal::text);
+    ui.text((sim.year>=-300?std::to_string(sim.day)+" ":std::string()) + (Locale::english ? Locale::text(monthName(sim.month)) + " " + yearLabel(sim.year) : dateLabel(sim.year, sim.month)), 224, 4, 0.42f, pal::text);
     ui.text(C.era(n.era).name + "  ·  " + C.gov(n.gov).name, 224, 31, 0.26f, pal::dim);
 
     if (ui.smallButton("Menu", {18, 31, 100, 20})) {
         speed = 0; screen = Screen::Menu; menuPage = 0;
     }
+    if(ui.smallButton("Luna",{124,31,84,20}))G.showMoon=!G.showMoon;
     // velocidad
     const char* labels[5] = {"II", ">", ">>", ">>>", "x4"};
     for (int i = 0; i < 5; ++i) {
@@ -547,7 +548,7 @@ void Game::drawProvincePanel() {
     const TerrainDef& terr = C.terrainOfProvince(selectedProvince);
     const ResourceDef& res = C.resourceOfProvince(selectedProvince);
     drawMedia("resource_"+res.id, {r.x+r.w-54,r.y+10,40,40});
-    const CultureDef& cu = C.culture(pd.cultureId);
+    const CultureDef& cu = C.culture(pv.localCulture.empty()?pd.cultureId:pv.localCulture);
     bool mine = pv.owner == sim.player;
 
     ui.text("PROVINCIA", x, r.y + 10, 0.26f, pal::faint);
@@ -559,7 +560,7 @@ void Game::drawProvincePanel() {
     ui.rect({x, r.y + 110, 9, 9}, oc);
     std::string owner = pv.owner > 0 ? sim.nationName(pv.owner) : "Pueblos independientes";
     ui.text(ellipsize(G.font, owner, 0.34f, wd - 20), x + 16, r.y + 103, 0.34f, pv.owner == sim.player ? pal::gold : pal::text);
-    ui.text("Cultura: " + cu.shortName, x, r.y + 132, 0.28f, pal::dim);
+    ui.text("Cultura: " + cu.shortName+" · "+numStr(pv.assimilation*100,0)+"%", x, r.y + 132, 0.28f, pal::dim);
     ui.text("Recurso: " + res.name, x, r.y + 154, 0.28f, pal::dim);
 
     ui.text("Poblacion", x, r.y + 182, 0.26f, pal::faint);
@@ -615,12 +616,12 @@ void Game::drawProvincePanel() {
 
         const Province& colony = sim.province(selectedProvince);
         if (colony.colonizer) ui.text("Colonizacion: " + std::to_string(colony.colonyMonths) + " meses", x, by - 24, 0.28f, pal::gold);
-        std::string label = "Colonizar: 36 meses (" + numStr(cost, 0) + " oro)";
+        std::string label = "Colonizar: "+std::to_string(sim.colonyDuration(sim.player,selectedProvince)/12)+" anos (" + numStr(cost, 0) + " oro)";
         bool canAfford = sim.canColonize(sim.player, selectedProvince, &cost);
         if (ui.button(label, {x, by + 38, wd, 30}, canAfford, pal::good, 0.28f)) {
             if (sim.colonize(sim.player, selectedProvince)) setStatus("Expedicion enviada a " + pd.name + ".");
         }
-        if (ui.hover({x, by + 38, wd, 30}) && !canAfford) ui.tooltip = "Necesitas una provincia vecina, oro y ninguna expedicion activa.";
+        if (ui.hover({x, by + 38, wd, 30}) && !canAfford) ui.tooltip = "Exige frontera cercana consolidada, estabilidad 50, 30 alimentos y oro; limite 900 km desde la capital.";
     } else {
         if (ui.button("Diplomacia", {x, by + 38, wd, 28}, true, pal::goldDim, 0.28f)) openModal(Modal::Diplomacy);
     }
@@ -719,7 +720,7 @@ void Game::drawNationPanel() {
         Rect b(x, by, wd, 36);
         bool can = sim.canFound(sim.player);
         if (ui.button("FUNDAR NACION", b, can, pal::gold, 0.40f)) openModal(Modal::FoundNation);
-        if (!can && ui.hover(b)) ui.tooltip = "Necesitas 2 provincias, 60 oro, 5 de prestigio y 3 puntos tecnologicos.";
+        if (!can && ui.hover(b)) ui.tooltip = std::to_string(sim.requiredProvinces(sim.player))+" provincias, 60 oro, 5 prestigio y 3 puntos tecnologicos.";
         by += 42;
     }
     if (ui.button("Diplomacia", {x, by, (wd - 8) / 2, 30}, true, pal::goldDim, 0.29f)) openModal(Modal::Diplomacy);
@@ -932,13 +933,13 @@ void Game::drawFoundModal() {
     ui.text("Provincias " + std::to_string(provs) + "   ·   Oro " + numStr(n.gold, 0) +
             "   ·   Tecnologia " + numStr(n.tech, 1) + " / 3", r.x + 24, r.y + 66, 0.30f, pal::dim);
     bool can = sim.canFound(sim.player);
-    if (!can) ui.text("Requisitos: 2 provincias, 60 oro, 5 de prestigio y 3 puntos tecnologicos.", r.x + 24, r.y + 88, 0.27f, pal::bad);
-    else ui.text("Elige el nombre y el gobierno de tu pueblo.", r.x + 24, r.y + 88, 0.27f, pal::good);
+    if (!can) ui.text(n.isCityState && sim.year>=-500 && !sim.hasStatecraft(sim.player)?std::string("Faltan instituciones: Escritura y Codigos legales, o ayuda externa."):"Requisitos: "+std::to_string(sim.requiredProvinces(sim.player))+" provincias, 60 oro, 5 prestigio y 3 puntos tecnologicos.", r.x + 24, r.y + 88, 0.27f, pal::bad);
+    if(can) ui.text("Elige el nombre y el gobierno de tu pueblo.", r.x + 24, r.y + 88, 0.27f, pal::good);
 
     std::vector<int> list;
     for (int i = 0; i < (int)C.nationTemplates.size(); ++i) {
         const NationTemplate& t = C.nationTemplates[(size_t)i];
-        if (t.culture != n.culture || t.era > n.era || sim.year < t.earliestYear) continue;
+        if (t.culture != n.culture || (!n.isCityState && t.tag!="isr")) continue;
         list.push_back(i);
     }
     float ry = r.y + 118;
@@ -954,9 +955,10 @@ void Game::drawFoundModal() {
         ui.outline(row, used ? Color(80, 76, 70, 100) : pal::borderSoft, 1);
         if (!drawMedia("nation_"+t.id, {row.x+8,row.y+12,40,40})) ui.rect({row.x + 10, row.y + 14, 8, 40}, t.color);
         ui.text(t.name, row.x + 54, row.y + 8, 0.42f, used ? pal::faint : pal::text);
-        ui.text(C.gov(t.gov).name + "  ·  " + t.adj, row.x + 54, row.y + 38, 0.26f, pal::dim);
+        ui.text(C.gov(t.gov).name + "  ·  " + t.adj + (t.requiredProvince.empty()?"":" · "+t.requiredProvince)+" · "+yearLabel(t.earliestYear), row.x + 54, row.y + 38, 0.26f, pal::dim);
         ui.textBlock(t.desc, row.x + 54, row.y + 54, row.w - 190, 0.24f, pal::faint, 0, 1);
-        bool canThis = can && !used;
+        int homeland=C.findProvince(t.requiredProvince);
+        bool canThis = can && !used && sim.year>=t.earliestYear && n.era>=t.era && (t.requiredProvince.empty()||(homeland>=0&&sim.prov[homeland].owner==sim.player));
         if (used) ui.text("Nombre en uso", row.x + row.w - 130, row.y + 24, 0.24f, pal::bad);
         else if (ui.button("Fundar", {row.x + row.w - 118, row.y + 18, 104, 32}, canThis, pal::gold, 0.28f)) {
             if (sim.foundNation(sim.player, list[(size_t)idx])) {
@@ -1200,7 +1202,7 @@ void Game::drawHelpModal() {
     ui.text("PUEBLOS Y LIDERES", x, y, 0.28f, pal::gold);
     ui.textBlock("Empiezas como una ciudad-estado historica. Coloniza provincias vecinas y funda una nacion "
                  "(Egipto, Sumeria, Siria, Canaán...). Tus gobernantes y consejeros envejecen y mueren: "
-                 "jamas vuelven. En las republicas hay elecciones cada 8 anos y la reeleccion no detiene la edad.",
+                 "jamas vuelven. El mandato republicano se fija por ley: 2, 4 u 8 anos.",
                  x, y + 22, wd, 0.28f, pal::text, 1, 4);
     y += 110;
     ui.text("GUERRA", x, y, 0.28f, pal::gold);
@@ -1378,31 +1380,40 @@ void Game::drawNegotiation() {
     ui.text("Senor: "+sim.nationName(o.overlord),r.x+100,r.y+100,.26f,pal::dim);
     const auto& allies=sim.nations[sim.player].allies;
     ui.text(std::find(allies.begin(),allies.end(),o.id)!=allies.end()?"Alianza activa":"Sin alianza",r.x+100,r.y+125,.25f,pal::dim);
-    const char* labels[]={"Paz (6 meses de guerra)","Alianza (5 prestigio)","Romper alianza","Compartir 20 oro","Compartir 20 alimentos","Compartir 20 madera","Titere: 12 meses, 100 oro, fuerza x2","Anexar: titere 10 anos, 200 oro","Liberar titere","Compartir 20 piedra","Compartir 20 cobre"};
-    const char* actions[]={"peace","alliance","break","gold","food","wood","puppet","annex","release","stone","copper"};
-    for(int i=0;i<11;++i)if(ui.button(labels[i],{r.x+24+(i%2)*355.0f,r.y+150+(i/2)*64.0f,340,46},true,pal::gold,.27f))
+    const char* labels[]={"Paz (6 meses de guerra)","Alianza (5 prestigio)","Romper alianza","Compartir 20 oro","Compartir 20 alimentos","Compartir 20 madera","Titere: 12 meses, 100 oro, fuerza x2","Anexar: titere 10 anos, 200 oro","Liberar titere","Compartir 20 piedra","Compartir 20 cobre","Ayudar tribu: 100 oro, 10 anos"};
+    const char* actions[]={"peace","alliance","break","gold","food","wood","puppet","annex","release","stone","copper","civilize"};
+    for(int i=0;i<12;++i)if(ui.button(labels[i],{r.x+24+(i%2)*355.0f,r.y+150+(i/2)*64.0f,340,46},true,pal::gold,.27f))
         setStatus(sim.diplomatic(sim.player,diplomacyTarget,actions[i])?"Acuerdo realizado.":"La propuesta no cumple los requisitos.");
     if(statusTimer>0)ui.text(ellipsize(G.font,status,.26f,700),r.x+24,r.y+r.h-26,.26f,pal::gold);
 }
 void Game::drawNationDetails() {
     Rect r(P.w*.5f-420,P.h*.5f-280,840,560);drawModalFrame("Gestion nacional",r);
-    const char* tabs[]={"Decisiones","Religion","Cultura","Militar","Consejeros"};
-    for(int i=0;i<5;++i)if(ui.tab(tabs[i],{r.x+16+i*162.0f,r.y+58,156,30},nationTab==i))nationTab=i;
+    const char* tabs[]={"Decisiones","Religion","Cultura","Militar","Consejeros","Leyes"};
+    for(int i=0;i<6;++i)if(ui.tab(tabs[i],{r.x+16+i*135.0f,r.y+58,129,30},nationTab==i))nationTab=i;
     auto& n=sim.nations[sim.player];float x=r.x+24,y=r.y+114;
     if(nationTab==0) {
+        if(ui.smallButton("Formacion historica",{r.x+r.w-210,r.y+96,180,30}))openModal(Modal::FoundNation);
         ui.text("40 oro por decision; espera de 5 anos.",x,y,.3f,pal::dim);
         const char* names[]={"Festival: +10 estabilidad","Levas: +5 mano de obra, -5 estabilidad","Monarquia","Republica","Teocracia"};
         const char* actions[]={"festival","levy","monarquia","republica","teocracia"};
         for(int i=0;i<5;++i)if(ui.button(names[i],{x,y+44+i*64.0f,650,44}))setStatus(sim.decide(sim.player,actions[i])?"Acuerdo realizado.":"La propuesta no cumple los requisitos.");
         if(statusTimer>0)ui.text(status,x,r.y+r.h-28,.26f,pal::gold);
     } else if(nationTab==1) {
-        int i=0;for(const auto& rel:C.religions.array()) {
-            float yy=y+i++*74;drawMedia(rel["icon_media"].string(),{x,yy,52,52});
+        std::vector<int> available;
+        for(int f=0;f<(int)C.religions.size();++f)if(sim.year>=C.religions[f]["start_year"].integer(-3300))available.push_back(f);
+        if(ui.wheel)modalScroll-=(int)ui.wheel;
+        modalScroll=std::clamp(modalScroll,0,std::max(0,(int)available.size()-4));
+        for(int k=0;k<4 && k+modalScroll<(int)available.size();++k) {
+            int f=available[k+modalScroll];const auto& rel=C.religions[f];float yy=y+k*74;
+            drawMedia(rel["icon_media"].string(),{x,yy,52,52});
             ui.text(rel["name"].string()+(n.religion==rel["tag"].string()?" *":""),x+66,yy,.32f,pal::text);
             ui.text("Agricultura "+numStr(rel["farm"].number()*100,0)+"% · Militar "+numStr(rel["military"].number()*100,0)+"% · Estabilidad "+numStr(rel["stability"].number()*100,0)+"%",x+66,yy+27,.25f,pal::dim);
-            if(ui.smallButton("Adoptar",{r.x+r.w-130,yy,100,30},n.gold>=100 && sim.abs()-n.decisionAt>=60 && n.religion!=rel["tag"].string())){n.gold-=100;n.stability=clampf(n.stability-15,0,100);n.religion=rel["tag"].string();n.decisionAt=sim.abs();}
+            if(ui.smallButton("Adoptar",{r.x+r.w-130,yy,100,30}))setStatus(sim.adoptReligion(sim.player,f)?"Acuerdo realizado.":"La fecha, linaje religioso o gobierno no permite esta conversion.");
         }
-        ui.text("Conversion: 100 oro, -15 estabilidad; 5 anos de espera.",x,r.y+r.h-38,.27f,pal::war);
+        if(ui.smallButton("Subir",{x,r.y+r.h-80,90,26},modalScroll>0))--modalScroll;
+        if(ui.smallButton("Bajar",{x+100,r.y+r.h-80,90,26},modalScroll+4<(int)available.size()))++modalScroll;
+        ui.text(n.gov=="teocracia"?"Teocracia: solo evolucion de la misma religion.":"Conversion: 100 oro, -15 estabilidad; 5 anos de espera.",x,r.y+r.h-42,.25f,pal::war);
+        if(statusTimer>0)ui.text(ellipsize(G.font,status,.24f,780),x,r.y+r.h-22,.24f,pal::dim);
     } else if(nationTab==2) {
         drawMedia("culture_"+n.culture,{x,y,96,96});
         ui.text(C.culture(n.culture).name,x+120,y,.38f,pal::gold);
@@ -1412,8 +1423,17 @@ void Game::drawNationDetails() {
         ui.text("Modernizar ejercitos: 20 oro por unidad; exige tecnologia.",x,y,.3f,pal::dim);
         if(ui.button("Modernizar",{x,y+44,240,36}))for(int i=0;i<(int)sim.armies.size();++i)if(sim.armies[i].nation==sim.player)sim.upgradeArmy(i);
         int row=0;for(const auto& a:sim.armies)if(a.nation==sim.player && row<8)ui.text(sim.unitName(sim.player,a.unit)+" · "+std::to_string(a.men),x,y+100+row++*30,.29f,pal::text);
-    } else {
+    } else if(nationTab==4) {
         int row=0;for(int id:n.charIds){const auto& ch=sim.chars[id];if(ch.alive && ch.role==1) {ui.portrait({x,y+row*95,64,64},ch,n.color,false);ui.text(ch.name+" · "+std::to_string(ch.age(sim.abs())),x+85,y+row++*95,.34f,pal::gold);}}
+    } else if(nationTab==5) {
+        ui.text("Leyes: 20 oro; 5 anos entre cambios nacionales.",x,y,.29f,pal::dim);
+        const char* labels[]={"Mandato: 2 anos","Mandato: 4 anos","Mandato: 8 anos","Monarquia absoluta","Monarquia limitada","Convivencia cultural","Asimilacion cultural"};
+        const char* laws[]={"term2","term4","term8","absolute","limited","coexist","assimilate"};
+        for(int i=0;i<7;++i)if(ui.button(labels[i],{x+(i%2)*390.0f,y+44+(i/2)*62.0f,374,44},i<3?n.gov=="republica":i<5?n.gov=="monarquia":true,pal::gold,.30f))setStatus(sim.setLaw(sim.player,laws[i])?"Acuerdo realizado.":"La propuesta no cumple los requisitos.");
+        ui.text("Mandato "+std::to_string(n.electionYears)+" anos · "+(n.coexist?"Convivencia cultural":"Asimilacion cultural"),x,y+310,.3f,pal::gold);
+        if(n.gov=="monarquia")ui.text(n.absolutePower?"Poder absoluto: +5% militar, -3% estabilidad":"Poder limitado: +5% estabilidad, -2% ingresos",x,y+344,.27f,pal::dim);
+        if(statusTimer>0)ui.text(status,x,y+385,.25f,pal::dim);
+
     }
 }
 } // namespace sol

@@ -12,5 +12,6 @@
  "desc": "El reino de las Dos Tierras, del Delta a Elefantina.",
  "tag": "egi",
  "culture_tag": "egipcio",
- "religion_tag": "nil"
+ "religion_tag": "nil",
+ "earliest_year": -3100
 }

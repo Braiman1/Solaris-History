@@ -86,8 +86,10 @@ struct Gfx {
             if (t.name == n.name && mediaFor("nation_"+t.id)) return "nation_"+t.id;
         return "culture_"+n.culture;
     }
+    bool showMoon=true;
     Camera cam;
     Texture earth;
+    Texture moon;
     Texture glow;
     Font font;
     PoliticalMap map;

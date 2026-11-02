@@ -9,10 +9,14 @@ if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release)
 endif()
 
-add_library(solaris_sim src/content.cpp src/sim.cpp)
+add_library(solaris_sim src/content.cpp src/sim.cpp src/frontier.cpp)
 target_include_directories(solaris_sim PUBLIC include)
 include(CTest)
 if(BUILD_TESTING)
+    add_executable(FrontierTest tests/frontier_test.cpp)
+    target_link_libraries(FrontierTest PRIVATE solaris_sim)
+    add_test(NAME frontier COMMAND FrontierTest)
+    set_tests_properties(frontier PROPERTIES WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/..")
     add_executable(StrategyTest tests/strategy_test.cpp)
     target_link_libraries(StrategyTest PRIVATE solaris_sim)
     add_test(NAME strategy COMMAND StrategyTest)
@@ -29,6 +33,7 @@ add_executable(SolarisHistory WIN32
     src/content.cpp
     src/gfx.cpp
     src/sim.cpp
+    src/frontier.cpp
     src/platform.cpp
     src/ui.cpp
     src/game.cpp

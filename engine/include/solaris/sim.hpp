@@ -8,6 +8,9 @@
 namespace sol {
 
 struct Province {
+    float assimilation=0;
+    int controller=0, originalOwner=0, settledAt=0;
+    std::string localCulture, localReligion, rebelCause, preferredGov;
     int def = 0;
     int colonizer = 0, colonyMonths = 0;
     int owner = 0;          // 0 = independiente
@@ -25,6 +28,8 @@ struct NationMods {
 
 struct Nation {
     int id = 0;
+    int electionYears=4, nextColonyAt=-1000000, sponsor=0, education=0;
+    bool coexist=true, absolutePower=true, statecraft=false;
     int overlord=0, subjectSince=0, decisionAt=-1000000;
     float spentTech=0;
     std::string religion, countryTag;
@@ -79,6 +84,10 @@ struct LogEntry {
 
 struct Sim {
     const Content* C = nullptr;
+    int day=1;
+    bool judaismAppeared=false, judaismLost=false, christianRoot=false, rootChecked=false;
+    struct Rebellion {int province, owner;std::string cause;};
+    std::vector<Rebellion> pendingRebellions;
     int year = -3300, month = 0;
     std::vector<Province> prov;
     std::vector<Nation> nations; // indice = id (0 = independientes)
@@ -123,6 +132,15 @@ struct Sim {
     void makePeace(int a, int b);
     int warMonths(int a, int b) const;
 
+    int daysInMonth() const;
+    int requiredProvinces(int nation) const;
+    bool hasStatecraft(int nation) const;
+    int colonyDuration(int nation,int province) const;
+    bool colonyConnected(int nation,int province) const;
+    bool setLaw(int nation,const std::string& law);
+    bool adoptReligion(int nation,int religion);
+    void historicalTick();
+    void processRebellions();
     bool canFound(int nation) const;
     bool foundNation(int nation, int templateIndex);
     bool canColonize(int nation, int provId, float* costOut = nullptr) const;

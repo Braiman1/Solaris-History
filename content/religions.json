@@ -43,5 +43,55 @@
   "military": 0.03,
   "stability": 0.03,
   "icon_media": "nation_creta"
+ },
+ {
+  "tag": "jud",
+  "name": "Judaismo",
+  "parent": "",
+  "start_year": -1000,
+  "farm": -0.02,
+  "military": 0.02,
+  "stability": 0.08,
+  "icon_media": "religion_jud"
+ },
+ {
+  "tag": "chr",
+  "name": "Cristianismo",
+  "parent": "jud",
+  "start_year": 30,
+  "farm": -0.02,
+  "military": 0.02,
+  "stability": 0.08,
+  "icon_media": "religion_chr"
+ },
+ {
+  "tag": "cat",
+  "name": "Catolicismo",
+  "parent": "chr",
+  "start_year": 1054,
+  "farm": -0.02,
+  "military": 0.02,
+  "stability": 0.08,
+  "icon_media": "religion_chr"
+ },
+ {
+  "tag": "ort",
+  "name": "Cristianismo ortodoxo",
+  "parent": "chr",
+  "start_year": 1054,
+  "farm": -0.02,
+  "military": 0.02,
+  "stability": 0.08,
+  "icon_media": "religion_chr"
+ },
+ {
+  "tag": "pro",
+  "name": "Protestantismo",
+  "parent": "cat",
+  "start_year": 1517,
+  "farm": -0.02,
+  "military": 0.02,
+  "stability": 0.08,
+  "icon_media": "religion_chr"
  }
 ]

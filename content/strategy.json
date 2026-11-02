@@ -19,7 +19,8 @@
   "italico": "med",
   "iberico": "nat",
   "sardino": "med",
-  "chipriota": "med"
+  "chipriota": "med",
+  "celta": "nat"
  },
  "unit_names": {
   "egipcio": {
@@ -381,6 +382,24 @@
    "galera": "Galera Chipriotas",
    "birreme": "Birreme Chipriotas",
    "trirreme": "Trirreme Chipriotas"
+  },
+  "celta": {
+   "soldado": "Soldado celta",
+   "lancero": "Lancero celta",
+   "jinete": "Jinete celta",
+   "barco": "Barco celta",
+   "guerrero_bronce": "Guerrero de bronce celta",
+   "infante_hierro": "Infante de hierro celta",
+   "legionario": "Infante profesional celta",
+   "arquero": "Arquero celta",
+   "arquero_compuesto": "Arquero compuesto celta",
+   "arquero_clasico": "Arquero profesional celta",
+   "carro_guerra": "Carro de guerra celta",
+   "caballeria": "Caballeria celta",
+   "caballero_antiguo": "Jinete acorazado celta",
+   "galera": "Galera celta",
+   "birreme": "Birreme celta",
+   "trirreme": "Trirreme celta"
   }
  }
 }

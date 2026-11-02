@@ -13,7 +13,7 @@ int main(){
  int agriculture=0,copper=-1;for(int i=0;i<(int)c.technologies.size();++i)if(c.technologies[i].id=="cobre")copper=i;
  ck(!s.research(a,copper),"prerequisite required");ck(s.research(a,agriculture),"root research");ck(!s.research(a,agriculture),"no duplicate research");
  ck(s.decide(a,"republica"),"government decision");ck(!s.decide(a,"festival"),"decision cooldown");
- s.nations[a].religion="nat";s.save("strategy_test.sav");Sim loaded;loaded.C=&c;ck(loaded.load("strategy_test.sav"),"version 3 load");
+ s.nations[a].religion="nat";s.save("strategy_test.sav");Sim loaded;loaded.C=&c;ck(loaded.load("strategy_test.sav"),"version 4 load");
  ck(loaded.hasTech(a,"agricultura"),"research persisted");ck(loaded.nations[a].religion=="nat","religion persisted");ck(loaded.nations[a].decisionAt==s.nations[a].decisionAt,"cooldown persisted");std::remove("strategy_test.sav");
  Sim t;t.init(c,0);for(auto& army:t.armies)army.men=army.nation==a?10000:1;
  t.nations[a].gold=500;t.declareWar(a,b);t.year++;ck(t.diplomatic(a,b,"puppet"),"puppet after war");
@@ -24,7 +24,7 @@ int main(){
  auto before=t.nationColor(a);t.nations[a].gov="republica";auto after=t.nationColor(a);ck(before.r!=after.r||before.g!=after.g,"ideology changes shade");
  auto farm=t.mods(a).farm;t.nations[a].religion="nat";ck(t.mods(a).farm!=farm,"religion affects economy");
  Sim allied;allied.init(c,0);ck(allied.diplomatic(2,3,"alliance"),"defensive alliance setup");allied.declareWar(1,2);ck(allied.atWar(3,1),"defensive partner joins");
- ck(c.nationTemplates[c.nationTemplates.size()-1].tag=="rom","Rome country tag");
- ck(c.nationTemplates.size()==46,"country files loaded");ck(c.technologies.size()==27,"technology through year zero");
+ bool rom=false;for(const auto& country:c.nationTemplates)if(country.tag=="rom")rom=true;ck(rom,"Rome country tag");
+ ck(c.nationTemplates.size()==54,"country files loaded");ck(c.technologies.size()==27,"technology through year zero");
  std::printf("%d strategy checks, %d failures\n",count,failures);return failures?1:0;
 }

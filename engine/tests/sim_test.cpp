@@ -29,9 +29,9 @@ int main() {
         return 1;
     }
     std::printf("Contenido: %s\n", dir.c_str());
-    check(C.provinces.size() == 184, "184 provincias cargadas");
-    check(C.cityStates.size() == 13, "13 grupos iniciales cargados");
-    check(C.nationTemplates.size() == 46, "46 naciones fundables cargadas");
+    check(C.provinces.size() == 256, "256 provincias cargadas");
+    check(C.cityStates.size() == 25, "25 grupos iniciales cargados");
+    check(C.nationTemplates.size() == 54, "54 naciones fundables cargadas");
 
     check(Locale::load(dir+"/locales.json"), "catalogo bilingue cargado");
     Locale::english=true;
@@ -42,6 +42,8 @@ int main() {
     check(Locale::text("Cargar partida")=="Cargar partida", "cambio de idioma conserva el espanol");
     check(C.resourceIndex.count("estano")==1, "estano reconocido por el motor");
     check(C.resourceIndex.count("papiro")==1, "nuevo recurso papiro reconocido");
+    // Fixture at the Egyptian formation date; the production start remains 3300 BC.
+    C.startYear=-3100;
     Sim sim;
     sim.init(C, 0);
     float farmBefore=sim.mods(sim.player).farm;
@@ -64,7 +66,8 @@ int main() {
     }
     check(target >= 0, "existe una provincia vecina libre");
     sim.nations[(size_t)player].gold = 500;
-    sim.nations[(size_t)player].prestige = 100;
+    sim.nations[(size_t)player].prestige = 1000;
+    for(int other=1;other<(int)sim.nations.size();++other)if(other!=player)sim.diplomatic(player,other,"alliance");
     check(sim.canColonize(player, target), "se puede colonizar el vecino");
     check(sim.colonize(player, target), "colonizacion ejecutada");
     check(sim.prov[(size_t)target].owner == 0, "la expedicion no concede territorio instantaneo");
@@ -73,12 +76,12 @@ int main() {
     Sim pending;
     pending.C = &C;
     check(pending.load("sim_test_colony.sav"), "se carga una expedicion activa");
-    check(pending.prov[(size_t)target].colonyMonths == 36, "se conserva el progreso colonial");
+    check(pending.prov[(size_t)target].colonyMonths == 180, "se conserva el progreso colonial");
     std::remove("sim_test_colony.sav");
-    for (int i=0;i<35;++i) sim.step();
-    check(sim.prov[(size_t)target].owner == 0, "el territorio sigue libre tras 35 meses");
+    for (int i=0;i<179;++i) sim.step();
+    check(sim.prov[(size_t)target].owner == 0, "el territorio sigue libre tras 179 meses");
     sim.step();
-    check(sim.prov[(size_t)target].colonyMonths == 0, "la expedicion termina al mes 36");
+    check(sim.prov[(size_t)target].colonyMonths == 0, "la expedicion termina al mes 180");
     check(sim.prov[(size_t)target].owner == player, "el nuevo asentamiento pertenece al jugador");
 
     // fundacion de nacion
@@ -93,6 +96,9 @@ int main() {
     sim.nations[(size_t)player].tech = 2.99f;
     check(!sim.canFound(player), "menos de 3 puntos impide fundar");
     sim.nations[(size_t)player].tech = 3;
+    check(!sim.canFound(player), "dos provincias ya no bastan para fundar");
+    int owned=2;
+    for(auto& p:sim.prov)if(p.owner==0 && C.province(p.def).cultureId=="egipcio" && owned<4){p.owner=player;p.controller=player;p.assimilation=1;++owned;}
     check(sim.canFound(player), "se cumplen los requisitos de fundacion");
     check(sim.foundNation(player, tmpl), "fundacion ejecutada");
     check(!sim.nations[(size_t)player].isCityState, "el jugador ya no es ciudad-estado");
@@ -117,6 +123,7 @@ int main() {
     // guerra y movimiento
     int enemy = 2;
     check(enemy != player && sim.nationAlive(enemy), "hay una nacion rival viva");
+    sim.diplomatic(player,enemy,"break");
     sim.declareWar(player, enemy);
     check(sim.atWar(player, enemy), "la guerra esta declarada");
     int enemyCapital = target; // A reachable owned neighbor tests movement without assuming transit rights across neutral states.
@@ -163,7 +170,7 @@ int main() {
     latin.init(C,latinIndex);
     int lp=latin.player;
     latin.nations[lp].tech=3; latin.nations[lp].gold=500; latin.nations[lp].prestige=100;
-    for (auto& p : latin.prov) if (C.province(p.def).cultureId=="italico") {p.owner=lp;break;}
+    int latinOwned=1;for(auto& p:latin.prov)if(p.owner==0 && C.province(p.def).cultureId=="italico" && latinOwned<5){p.owner=lp;p.controller=lp;p.assimilation=1;++latinOwned;}
     int rome=-1;
     for(size_t i=0;i<C.nationTemplates.size();++i) if(C.nationTemplates[i].id=="roma") rome=(int)i;
     check(rome>=0, "Roma tiene una plantilla separada del grupo latino");

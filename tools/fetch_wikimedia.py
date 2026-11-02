@@ -99,6 +99,11 @@ def fetch(item, dest):
                     if not reference.strip(" \"'").startswith('#'): raise ValueError('SVG external styles are not supported')
         raw = cairosvg.svg2png(bytestring=raw,output_width=128,output_height=128)
     image = Image.open(io.BytesIO(raw)).convert('RGBA')
+    surface={}
+    if item.get('spherical'):
+        pixels=image.resize((512,256),Image.Resampling.LANCZOS).tobytes()
+        (dest/(item['id']+'_surface.rgba')).write_bytes(pixels)
+        surface=dict(surface_sha256=hashlib.sha256(pixels).hexdigest(),surface_width=512,surface_height=256)
     image.thumbnail((128,128), Image.Resampling.LANCZOS)
     canvas = Image.new('RGBA',(128,128),(0,0,0,0))
     canvas.alpha_composite(image,((128-image.width)//2,(128-image.height)//2))
@@ -109,7 +114,7 @@ def fetch(item, dest):
                 note=item.get('note','Encyclopedic illustration; not necessarily a contemporary flag.'),
                 note_es=item.get('note_es','Ilustracion enciclopedica, no necesariamente una bandera historica.'),
                 kind=item.get('kind','illustration'),original=info['url'],
-                author_source=item.get('author_source',info['descriptionurl']))
+                author_source=item.get('author_source',info['descriptionurl']),**surface)
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
@@ -136,7 +141,8 @@ def main():
         return (not args.refresh and record and path.exists()
                 and hashlib.sha256(path.read_bytes()).hexdigest()==record.get('sha256')
                 and (not item.get('file') or record.get('file')=='File:'+item['file'])
-                and record.get('article')==item.get('article'))
+                and record.get('article')==item.get('article')
+                and (not item.get('spherical') or ((dest/(item['id']+'_surface.rgba')).exists() and hashlib.sha256((dest/(item['id']+'_surface.rgba')).read_bytes()).hexdigest()==record.get('surface_sha256'))))
     pending=[]
     for item in items:
         if cached(item):

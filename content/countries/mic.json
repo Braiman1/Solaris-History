@@ -12,5 +12,6 @@
  "desc": "Los aqueos de la edad del bronce, ricos en oro y carros.",
  "tag": "mic",
  "culture_tag": "egeo",
- "religion_tag": "med"
+ "religion_tag": "med",
+ "earliest_year": -1600
 }

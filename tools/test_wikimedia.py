@@ -50,6 +50,10 @@ class ImporterTest(unittest.TestCase):
                 self.assertTrue(credits[item['id']]['source'].startswith('https://commons.wikimedia.org/'))
                 self.assertTrue(credits[item['id']]['license'])
                 self.assertTrue(credits[item['id']]['author'])
+                if 'surface_sha256' in credits[item['id']]:
+                    surface=(root/'media'/(item['id']+'_surface.rgba')).read_bytes()
+                    self.assertEqual(len(surface),512*256*4)
+                    self.assertEqual(hashlib.sha256(surface).hexdigest(),credits[item['id']]['surface_sha256'])
                 if item.get('file'):self.assertEqual(credits[item['id']]['file'],'File:'+item['file'])
                 if item['id'].startswith(('culture_','nation_')):
                     self.assertIn('note_es',credits[item['id']])

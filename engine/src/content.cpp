@@ -234,6 +234,7 @@ bool Content::load(const std::string& contentDir) {
         d.id = j["id"].string();
         d.name = j["name"].string(d.id);
         d.culture = j["culture_tag"].string(j["culture"].string());
+        d.requiredProvince=j["required_province"].string();
         d.tag=j["tag"].string(); d.religionTag=j["religion_tag"].string();
         d.capitalName = j["capital"].string();
         d.earliestYear = j["earliest_year"].integer(-3300);

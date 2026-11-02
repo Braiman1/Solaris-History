@@ -438,5 +438,27 @@
    "expansion": 1.0
   },
   "tag": "chipriota"
+ },
+ {
+  "id": "celta",
+  "name": "Celta",
+  "short": "Celtas",
+  "color": [
+   90,
+   110,
+   122
+  ],
+  "desc": "Tradiciones celtas europeas de la Edad del Hierro.",
+  "mods": {
+   "farm": 0.95,
+   "growth": 0.95,
+   "tech": 0.9,
+   "trade": 0.9,
+   "mil": 1.05,
+   "stab": 1.15,
+   "naval": 1.0,
+   "expansion": 1.0
+  },
+  "tag": "celta"
  }
 ]

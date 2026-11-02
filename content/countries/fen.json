@@ -12,5 +12,6 @@
  "desc": "Cedro, purpura y puertos que llegan a todo el Mediterraneo.",
  "tag": "fen",
  "culture_tag": "semita",
- "religion_tag": "mes"
+ "religion_tag": "mes",
+ "earliest_year": -1200
 }

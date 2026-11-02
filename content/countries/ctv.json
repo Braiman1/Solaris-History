@@ -1,0 +1,19 @@
+{
+ "tag": "ctv",
+ "id": "catuvellaunos",
+ "name": "Catuvellaunos",
+ "capital": "Camulodunum",
+ "required_province": "Camulodunum",
+ "culture_tag": "celta",
+ "religion_tag": "nat",
+ "earliest_year": -100,
+ "era": 0,
+ "gov": "monarquia",
+ "color": [
+  90,
+  145,
+  105
+ ],
+ "adj": "Celta",
+ "desc": "Pueblo o confederacion historica de la Edad del Hierro; fecha de disponibilidad aproximada para el juego."
+}

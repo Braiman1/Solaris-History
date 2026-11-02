@@ -11,6 +11,8 @@
  "adj": "Caledonio",
  "desc": "Las tierras altas del norte.",
  "tag": "cal",
- "culture_tag": "megalitico",
- "religion_tag": "nat"
+ "culture_tag": "celta",
+ "religion_tag": "nat",
+ "earliest_year": -500,
+ "required_province": "Traprain Law"
 }
